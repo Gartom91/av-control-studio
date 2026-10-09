@@ -1,12 +1,14 @@
 # AV Control — umowa licencyjna użytkownika końcowego
 
-**Projekt EULA 1.0 · etap planowania · 9 października 2026 r.**
+**Projekt EULA 1.1 · wydawca będący osobą fizyczną · etap planowania · 9 października 2026 r.**
 
 Dokument wymaga uzupełnienia danych wydawcy i wskazania wydań, których będzie dotyczył. Nie zastępuje licencji wydanych wcześniej kopii programu. Nie jest obecnie warunkiem aktualizacji ani podstawą naliczania opłat.
 
 ## 1. Strony, program i zakres dokumentu
 
-Licencjodawca: **[PEŁNA NAZWA OSOBY LUB FIRMY]**, adres **[ADRES]**, NIP lub inny numer identyfikacyjny, jeżeli ma zastosowanie: **[NIP / NUMER]**, kontakt w sprawach licencji i reklamacji: **[E-MAIL]**. Marka produktu: AV Control / TECHNIKAV. Serwis informacyjny: https://technikav.pl.
+Licencjodawca: **[IMIĘ I NAZWISKO]**, osoba fizyczna, adres do korespondencji i doręczeń: **[ADRES DO KORESPONDENCJI]**, kontakt w sprawach licencji: **[E-MAIL LICENCYJNY]**. Marka produktu: AV Control / TECHNIKAV. Serwis informacyjny: https://technikav.pl. Marka i domena nie oznaczają osobnego podmiotu będącego stroną umowy.
+
+Dokument nie wymaga, aby Licencjodawca był spółką lub prowadził zarejestrowaną działalność gospodarczą wyłącznie z powodu udzielania licencji. Przy rozpoczęciu odpłatnej sprzedaży należy ustalić status działalności, obowiązki podatkowe i wymagane informacje dla nabywcy. NIP i dane rejestrowe zostaną dodane, jeżeli będą miały zastosowanie do rzeczywistego modelu sprzedaży. PESEL, numer dowodu osobistego i skan dokumentu tożsamości nie stanowią wymaganych pól tej EULA i nie są przeznaczone do publikacji w repozytorium.
 
 Użytkownik oznacza osobę lub podmiot korzystający z programu. Program obejmuje AV Control Studio, AV Control Player, AV Control Imager oraz silnik AV Control na Raspberry Pi, w wersjach wskazanych w ofercie i pakiecie instalacyjnym. Pliki projektów, paneli, profili, modułów i skryptów utworzone przez Użytkownika nie stają się własnością Licencjodawcy.
 
@@ -17,6 +19,8 @@ Ta EULA będzie stosowana od wydania **[PIERWSZA WERSJA OBJĘTA EULA]**, udostę
 Jeżeli oferta danej wersji określa ją jako bezpłatną, Licencjodawca udziela niewyłącznej, bezpłatnej licencji na używanie tej wersji do celów prywatnych i zawodowych, instalowanie jej na urządzeniach Użytkownika, tworzenie i wykonywanie własnych projektów oraz wykonywanie kopii zapasowych. Bezpłatna wersja nie ma terminu wygaśnięcia, chyba że przed jej pobraniem została wyraźnie oznaczona jako czasowa wersja próbna z podanym terminem.
 
 Użytkownik może tworzyć i przenosić swoje projekty między własnymi instalacjami. Może instalować biblioteki i tworzyć własne symbole Python, zachowując warunki licencji tych bibliotek. Licencja na program nie przenosi praw do jego nazw, znaków, materiałów marketingowych ani kodu Licencjodawcy, poza uprawnieniami udzielonymi w tej umowie lub licencjach komponentów.
+
+W odniesieniu wyłącznie do nowych elementów objętych tą EULA, niewydanych wcześniej na MIT ani innej licencji przyznającej szersze uprawnienia, licencja nie udziela prawa do rozpowszechniania programu, jego sublicencjonowania, odsprzedaży kopii ani publikowania kodu Licencjodawcy bez osobnego zezwolenia, z zastrzeżeniem uprawnień wynikających z bezwzględnie obowiązującego prawa. Nie ogranicza to tworzenia, udostępniania i sprzedaży własnych projektów, paneli, profili ani symboli Użytkownika. Instalacje programu u klientów muszą korzystać z uprawnienia właściwego dla danej wersji.
 
 W przypadku przyszłej oferty płatnej jej zakres — w szczególności liczba instalacji lub kontrolerów — zostanie wskazany przed zakupem. Niniejszy projekt EULA nie ustanawia obecnie limitu liczby urządzeń, stron, paneli, sygnałów ani bloków logiki.
 
@@ -40,7 +44,7 @@ Nieprzedłużenie przyszłego uprawnienia do aktualizacji lub wsparcia nie powod
 
 ## 5. Wcześniejsze wydania i komponenty innych autorów
 
-Wydania programu udostępnione na licencji MIT pozostają objęte warunkami MIT w zakresie, w którym zostały na niej udostępnione. W szczególności publiczne wydanie AV Control 1.4.1 zawiera licencję MIT. Niniejsza EULA ani zmiana widoczności repozytorium nie zastępuje warunków takich kopii i nie odbiera uprawnień przyznanych w MIT.
+Wydania programu udostępnione na licencji MIT pozostają objęte warunkami MIT w zakresie, w którym zostały na niej udostępnione. W szczególności publiczne wydanie AV Control 1.4.1 zawiera licencję MIT. Niniejsza EULA ani zmiana widoczności repozytorium nie zastępuje warunków takich kopii i nie odbiera uprawnień przyznanych w MIT. Wcześniej wydany kod MIT wykorzystany w nowej wersji również zachowuje te warunki; EULA może obejmować nowe elementy i nowe świadczenia w zakresie praw, którymi dysponuje Licencjodawca. Zachowany tekst MIT nie oznacza udzielenia tej licencji na wszystkie nowe elementy przyszłego produktu.
 
 Biblioteki, środowiska wykonawcze i inne komponenty autorów trzecich zachowują własne licencje. Ich wykaz i wymagane informacje znajdują się w `THIRD-PARTY-LICENSES.txt` i dokumentacji pakietu. Jeżeli uprawnienia do danego komponentu są szersze od niniejszej EULA, zastosowanie mają uprawnienia przyznane w licencji tego komponentu.
 
@@ -66,4 +70,4 @@ Nowa wersja EULA może dotyczyć nowo oferowanych wersji programu lub nowych us�
 
 Prawo właściwe oraz zasady rozwiązywania sporów będą określone po uzupełnieniu danych Licencjodawcy i modelu dystrybucji. Nie może to pozbawiać konsumenta ochrony przysługującej mu z bezwzględnie obowiązujących przepisów. Jeżeli postanowienie okaże się nieskuteczne, nie zmienia to uprawnień wynikających z prawa ani ważności pozostałych postanowień w dopuszczalnym zakresie.
 
-**Do uzupełnienia przed zastosowaniem:** dane wydawcy; pierwsza objęta wersja i data; polityka prywatności; dane reklamacyjne; zgodność z rzeczywistym instalatorem, aktualizatorem i ofertą. Przed użyciem w sprzedaży dokument wymaga kontroli prawnej dla wybranego modelu oferty.
+**Do uzupełnienia przed zastosowaniem:** imię i nazwisko Licencjodawcy; adres do korespondencji i doręczeń; kontakt licencyjny i reklamacyjny; pierwsza objęta wersja i data; polityka prywatności; zgodność z rzeczywistym instalatorem, aktualizatorem i ofertą. Dane rejestrowe i podatkowe uzupełnia się tylko w zakresie właściwym dla rzeczywistego modelu sprzedaży. Przed użyciem w sprzedaży dokument wymaga kontroli prawnej dla wybranego modelu oferty.

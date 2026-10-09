@@ -16,6 +16,8 @@ Jeden tag `vX.Y.Z`, jeden opis z sekcjami **Polski** i **English**. Oba opisują
 
 Wymagane sekcje: **Co się zmieniło**, **Instalacja i aktualizacja**, **Weryfikacja i ograniczenia**, **Dystrybucja i licencja**. Planistyczna EULA nie jest warunkiem aktualizacji.
 
+Przed pierwszym wydaniem stosującym nową EULA uzupełnij dane Licencjodawcy będącego osobą fizyczną, jej zakres wersji i sposób akceptacji. Sprawdź zgodność treści w instalatorach, aktualizatorach i opisie wydania. Historyczne MIT oraz licencje komponentów muszą pozostać w pakietach. Nie przypisuj EULA wstecz do 1.4.1 ani innych wcześniej wydanych kopii MIT; nie publikuj nowej oferty płatnej z placeholderami.
+
 ## English
 
 One `vX.Y.Z` tag, one description with **Polski** and **English** sections. Both describe the same changes, update procedure, checks and limitations. Asset names are identical. GitHub does not choose language by a visitor's country; use the links at the top.
@@ -29,3 +31,5 @@ One `vX.Y.Z` tag, one description with **Polski** and **English** sections. Both
 7. Verify anonymous downloads, links and updater discovery. Attach later results as post-publication evidence; do not replace verified installers or images.
 
 Required sections: **What changed**, **Install and update**, **Verification and limitations**, **Distribution and licensing**. A planning EULA is not an update requirement.
+
+Before the first release applying the new EULA, complete the individual licensor's details, version scope and acceptance process. Verify consistency across installers, updaters and release notes. Historical MIT and third-party notices must remain in packages. Do not apply the EULA retroactively to 1.4.1 or other previously released MIT copies; do not publish a new paid offer with placeholders.

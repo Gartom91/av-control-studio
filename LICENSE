@@ -1,0 +1,55 @@
+AV Control — release licensing scope / zakres licencji wydań
+
+Polski
+
+To publiczne repozytorium służy dystrybucji wydań i dokumentacji.
+Obecność historycznego tekstu MIT nie oznacza udzielenia licencji MIT
+na wszystkie nowe elementy przyszłych wydań AV Control.
+
+Wcześniej opublikowane na MIT kopie, w tym wydanie 1.4.1, zachowują
+pierwotne warunki. Oryginalny tekst i oznaczenie praw pozostają bez zmian
+w LICENSE-MIT-1.4.1.txt oraz w odpowiednich historycznych pakietach.
+Niniejszy dokument ani prywatność repozytorium źródeł nie odbiera
+uprawnień wcześniej przyznanych na MIT.
+
+Nowe, oryginalne elementy rozwijane po 1.4.1 są przygotowywane do
+dystrybucji na własnej EULA, w zakresie praw przysługujących wydawcy.
+Właściwe warunki będą wskazane w danym wydaniu i jego instalatorze.
+Planowany licencjodawca: osoba fizyczna [IMIĘ I NAZWISKO], pod marką
+AV Control / TECHNIKAV. Dane pozostają do uzupełnienia.
+
+EULA-PL-PROJEKT.md jest dokumentem planistycznym. Nie jest jeszcze
+obowiązującą umową, nie uruchamia płatności i nie zmienia warunków
+wydanych wcześniej kopii. Samo pobranie aktualizacji nie oznacza zakupu.
+
+Kod ze starszych wydań MIT i komponenty innych autorów zachowują własne
+licencje i wymagane informacje także w przyszłych pakietach. Ograniczenia
+nowych elementów nie ograniczają tych uprawnień ani uprawnień wynikających
+z bezwzględnie obowiązującego prawa.
+
+English
+
+This public repository distributes releases and documentation.
+The presence of a historical MIT notice is not a blanket MIT grant
+for all new components of future AV Control releases.
+
+Previously published MIT copies, including release 1.4.1, retain their
+original terms. The original text and copyright notice remain unchanged
+in LICENSE-MIT-1.4.1.txt and the corresponding historical packages.
+This document and private source repository visibility do not withdraw
+previously granted MIT permissions.
+
+New original components developed after 1.4.1 are being prepared for
+distribution under a product EULA, to the extent rights are held by
+the publisher. Applicable terms will be specified in each release and
+installer. Proposed licensor: an individual [FULL NAME], using the
+AV Control / TECHNIKAV brand. Details remain to be completed.
+
+EULA-PL-PROJEKT.md is a planning document, not yet a binding agreement.
+It activates no fees and does not change the terms of previously
+distributed copies. Downloading an update is not a purchase.
+
+Code from earlier MIT releases and third-party components retain their
+own licenses and required notices in future packages. Restrictions on
+new components do not restrict these permissions or rights arising
+under mandatory applicable law.

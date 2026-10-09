@@ -83,9 +83,11 @@ Use the release's **Assets** section. [SHA256-DISTRIBUTION.txt](https://github.c
 
 Installed applications keep `Gartom91/av-control-studio` as their update address. The repository split does not require rewriting SD cards or changing projects. Routine control stays local; online update downloads need internet access.
 
+**Planned new product components will be covered by a product EULA.** The historical MIT notice covers earlier releases and code retained from them; it is not a blanket license for all new components of future versions. See the [licensing scope](LICENSE).
+
 Previously released MIT copies retain their terms: [MIT for 1.4.1](LICENSE-MIT-1.4.1.txt). Historical Python runtime packages may contain readable code; the private source repository is not a claim that distributed applications cannot be inspected.
 
-The [future EULA draft](EULA-PL-PROJEKT.md) is a planning document with publisher placeholders. Optional future charges are being considered; this draft activates no fees or new binding terms.
+The [future EULA draft](EULA-PL-PROJEKT.md) identifies an **individual** as the proposed licensor, with placeholders for a full name, correspondence address and email. Optional future charges are being considered; this draft activates no fees or new binding terms. Third-party library licenses remain preserved.
 
 ## Feedback
 

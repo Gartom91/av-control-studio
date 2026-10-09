@@ -83,9 +83,11 @@ Pobieraj pliki z sekcji **Assets** wydania. [SHA256-DISTRIBUTION.txt](https://gi
 
 Zainstalowane aplikacje nadal korzystają z `Gartom91/av-control-studio` do aktualizacji. Podział repozytoriów nie wymaga ponownego zapisu SD ani zmiany projektów. Sterowanie pozostaje lokalne; aktualizacje online wymagają internetu.
 
+**Planowane nowe elementy produktu będą objęte własną EULA.** Historyczny tekst MIT dotyczy wcześniejszych wydań i pochodzących z nich części kodu; nie jest ogólną licencją wszystkich nowych elementów przyszłych wersji. Zobacz [zakres licencji](LICENSE).
+
 Wcześniej wydane kopie MIT zachowują swoje warunki: [MIT dla 1.4.1](LICENSE-MIT-1.4.1.txt). Historyczne pakiety Python mogą zawierać czytelny kod Runtime; prywatne repozytorium źródeł nie oznacza uniemożliwienia analizy dystrybuowanych aplikacji.
 
-[Projekt przyszłej EULA](EULA-PL-PROJEKT.md) to dokument planistyczny z placeholderami wydawcy. Rozważamy opcjonalne przyszłe opłaty; dokument nie uruchamia opłat ani nowych wiążących warunków.
+[Projekt przyszłej EULA](EULA-PL-PROJEKT.md) wskazuje **osobę fizyczną** jako planowanego Licencjodawcę, z placeholderami imienia i nazwiska, adresu do korespondencji oraz e-maila. Rozważamy opcjonalne przyszłe opłaty; dokument nie uruchamia opłat ani nowych wiążących warunków. Licencje bibliotek innych autorów pozostają zachowane.
 
 ## Uwagi i zgłoszenia
 
