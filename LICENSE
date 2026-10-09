@@ -6,13 +6,13 @@ To publiczne repozytorium służy dystrybucji wydań i dokumentacji.
 Obecność historycznego tekstu MIT nie oznacza udzielenia licencji MIT
 na wszystkie nowe elementy przyszłych wydań AV Control.
 
-Wcześniej opublikowane na MIT kopie, w tym wydanie 1.4.1, zachowują
+Wcześniej opublikowane na MIT kopie i źródła, w tym wydanie 1.4.1, zachowują
 pierwotne warunki. Oryginalny tekst i oznaczenie praw pozostają bez zmian
 w LICENSE-MIT-1.4.1.txt oraz w odpowiednich historycznych pakietach.
 Niniejszy dokument ani prywatność repozytorium źródeł nie odbiera
 uprawnień wcześniej przyznanych na MIT.
 
-Nowe, oryginalne elementy rozwijane po 1.4.1 są przygotowywane do
+Nowe, oryginalne elementy nieudostępnione wcześniej na MIT są przygotowywane do
 dystrybucji na własnej EULA, w zakresie praw przysługujących wydawcy.
 Właściwe warunki będą wskazane w danym wydaniu i jego instalatorze.
 Planowany licencjodawca: osoba fizyczna [IMIĘ I NAZWISKO], pod marką
@@ -33,13 +33,13 @@ This public repository distributes releases and documentation.
 The presence of a historical MIT notice is not a blanket MIT grant
 for all new components of future AV Control releases.
 
-Previously published MIT copies, including release 1.4.1, retain their
+Previously published MIT copies and sources, including release 1.4.1, retain their
 original terms. The original text and copyright notice remain unchanged
 in LICENSE-MIT-1.4.1.txt and the corresponding historical packages.
 This document and private source repository visibility do not withdraw
 previously granted MIT permissions.
 
-New original components developed after 1.4.1 are being prepared for
+New original components not previously distributed under MIT are being prepared for
 distribution under a product EULA, to the extent rights are held by
 the publisher. Applicable terms will be specified in each release and
 installer. Proposed licensor: an individual [FULL NAME], using the

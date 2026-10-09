@@ -44,7 +44,7 @@ Nieprzedłużenie przyszłego uprawnienia do aktualizacji lub wsparcia nie powod
 
 ## 5. Wcześniejsze wydania i komponenty innych autorów
 
-Wydania programu udostępnione na licencji MIT pozostają objęte warunkami MIT w zakresie, w którym zostały na niej udostępnione. W szczególności publiczne wydanie AV Control 1.4.1 zawiera licencję MIT. Niniejsza EULA ani zmiana widoczności repozytorium nie zastępuje warunków takich kopii i nie odbiera uprawnień przyznanych w MIT. Wcześniej wydany kod MIT wykorzystany w nowej wersji również zachowuje te warunki; EULA może obejmować nowe elementy i nowe świadczenia w zakresie praw, którymi dysponuje Licencjodawca. Zachowany tekst MIT nie oznacza udzielenia tej licencji na wszystkie nowe elementy przyszłego produktu.
+Kopie programu oraz źródła udostępnione wcześniej na licencji MIT pozostają objęte warunkami MIT w zakresie, w którym zostały na niej udostępnione. W szczególności publiczne wydanie AV Control 1.4.1 zawiera licencję MIT. Niniejsza EULA ani zmiana widoczności repozytorium nie zastępuje warunków takich kopii i nie odbiera uprawnień przyznanych w MIT. Wcześniej wydany kod MIT wykorzystany w nowej wersji również zachowuje te warunki; EULA może obejmować nowe elementy i nowe świadczenia w zakresie praw, którymi dysponuje Licencjodawca. Zachowany tekst MIT nie oznacza udzielenia tej licencji na wszystkie nowe elementy przyszłego produktu.
 
 Biblioteki, środowiska wykonawcze i inne komponenty autorów trzecich zachowują własne licencje. Ich wykaz i wymagane informacje znajdują się w `THIRD-PARTY-LICENSES.txt` i dokumentacji pakietu. Jeżeli uprawnienia do danego komponentu są szersze od niniejszej EULA, zastosowanie mają uprawnienia przyznane w licencji tego komponentu.
 
