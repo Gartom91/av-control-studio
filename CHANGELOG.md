@@ -1,5 +1,12 @@
 # Releases · Wydania
 
+## 1.5.5 — 2026-10-10
+
+PL: Konta i hasła, logowanie do WWW/Player/HDMI, opcjonalne pamiętanie, wysuwana klawiatura z Alt/Shift i jednakowymi klawiszami; poprawka APT offline.
+
+EN: Accounts/passwords, browser/Player/HDMI sign-in, optional remembered sessions, sliding Alt/Shift keyboard with equal keys; offline APT fix.
+
+
 **[English README](README.en.md) · [Polski README](README.pl.md)**
 
 Every release has matching Polish and English notes. Download the packages from [GitHub Releases](https://github.com/Gartom91/av-control-studio/releases).

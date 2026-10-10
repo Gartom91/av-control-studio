@@ -11,7 +11,7 @@ Od wersji **1.5.4** kontroler może być jednocześnie odtwarzaczem panelu. Funk
 5. Podłącz mysz, touchpad lub ekran dotykowy USB. Ekran z dotykiem zwykle potrzebuje dwóch połączeń: HDMI przesyła obraz, USB przekazuje dotyk. Sam przewód HDMI nie przekazuje dotyku.
 6. Poczekaj na automatyczne wyświetlenie panelu. Po wykryciu monitora usługa uruchamia grafikę; bez monitora nie uruchamia środowiska graficznego ani widoku WWW.
 
-Panel nie wymaga wpisywania hasła administratora na ekranie. Dedykowane konto lokalne otrzymuje tylko uprawnienia operatora. Fizyczny dostęp do ekranu umożliwia uruchamianie akcji operatora — uwzględnij to przy umieszczaniu ekranu w instalacji.
+Od **1.5.5** przed panelem pojawia się logowanie kontem AV Control z tego kontrolera. Dostępna jest klawiatura ekranowa z Alt/Shift i opcja zapamiętania sesji na 30 dni, domyślnie wyłączona. Sesja HDMI ma tylko uprawnienia operatora. Zobacz [konta, hasła i klawiaturę — instrukcja oraz moduł szkolenia](KONTA-I-LOGOWANIE-PL.md).
 
 ## 2. Obsługa
 
@@ -21,7 +21,7 @@ Panel nie wymaga wpisywania hasła administratora na ekranie. Dedykowane konto l
 
 Mysz: klikaj przyciski i przeciągaj regulatory. Touchpad: używaj wskaźnika i kliknięć. Dotyk: dotykaj elementów i przesuwaj regulatory palcem. Zakładki stron i przyciski nawigacji pozostają częścią panelu.
 
-Na ekranie nie ma Studio, paska adresu, pulpitu, menedżera plików, przycisków wylogowania ani konfiguracji połączenia. Menu prawego przycisku, otwieranie nowych okien, wybór plików, pobieranie plików i gesty historii przeglądarki są zablokowane. Przewijanie treści panelu pozostaje dostępne, gdy strona nie mieści się na ekranie.
+Na ekranie nie ma Studio, paska adresu, pulpitu, menedżera plików ani konfiguracji połączenia. Dostępne są **Moje konto** do zmiany własnego hasła i **Wyloguj z panelu**, które wraca do ekranu logowania. Menu prawego przycisku, otwieranie nowych okien, wybór plików, pobieranie plików i gesty historii przeglądarki są zablokowane. Przewijanie treści panelu pozostaje dostępne, gdy strona nie mieści się na ekranie.
 
 Obsługiwane są urządzenia wejściowe rozpoznawane przez Linux/libinput, w szczególności standardowe USB HID. Specjalistyczne ekrany wymagające sterownika producenta lub kalibracji należy sprawdzić osobno. Podłączenie kilku ekranów nie tworzy niezależnych paneli: kiosk pokazuje panel na ostatnim wykrytym monitorze.
 

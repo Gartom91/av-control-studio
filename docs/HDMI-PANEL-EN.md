@@ -4,7 +4,7 @@ Starting with **1.5.4**, Raspberry Pi 3B, 4B and 5 automatically display the act
 
 Publish a project from Studio, connect HDMI and a standard Linux/libinput-supported USB mouse, touchpad or touchscreen. Touchscreens generally require separate HDMI video and USB touch connections. Without a monitor, the graphics session is stopped. With multiple monitors, the last connected monitor displays the panel.
 
-The dedicated local account has operator permissions only. There is no desktop, browser toolbar, project editor, connection chooser or logout control. Context menus, browser history gestures, file dialogs, downloads, new windows and external navigation are blocked. Page tabs and scrolling within the published panel remain available. Physical access to the screen allows operator actions.
+Since **1.5.5**, the panel requires an AV Control user account. It offers a themed onscreen keyboard and explicit, optional 30-day automatic sign-in. The session has operator permissions only, including when using an administrator account. **My account** changes the user's own password; **Sign out** returns to the login screen. There is no desktop, browser toolbar, project editor or connection chooser. Context menus, browser history gestures, file dialogs, downloads, new windows and external navigation are blocked. Page tabs and scrolling within the published panel remain available. See the [account guide](ACCOUNTS-AND-LOGIN-EN.md).
 
 **Ctrl+Alt+F2** opens the tty2 system login console; **Ctrl+Alt+F1** returns to the panel. Some keyboards require Fn. Log in using your own OS account; the console is never automatically authenticated. SSH remains available.
 

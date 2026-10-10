@@ -11,7 +11,7 @@ Projektuj panele, podłączaj urządzenia i programuj instalację lokalnie.
 
 **Polski · [English](README.en.md)**
 
-[**Pobierz 1.5.4 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.5.4) · [Historia wydań](CHANGELOG.md) · [Kurs szkoleniowy](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Szkolenie-1.5.4.zip)
+[**Pobierz 1.5.5 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.5.5) · [Historia wydań](CHANGELOG.md) · [Kurs szkoleniowy](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Szkolenie-1.5.5.zip)
 
 **Windows · Raspberry Pi 3B / 4B / 5 · Player Linux · Panele WWW**
 
@@ -32,12 +32,12 @@ To **oficjalne repozytorium dystrybucyjne**: instalatory, obrazy kontrolera, akt
 
 ## Wybierz aplikację
 
-| Aplikacja | Zastosowanie | Pobierz 1.5.4 |
+| Aplikacja | Zastosowanie | Pobierz 1.5.5 |
 | --- | --- | --- |
-| **Studio** | Urządzenia, protokoły, panele i logika; symulacja, debugger i publikowanie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Studio-1.5.4-Windows-x64.exe) |
-| **Player** | Obsługa opublikowanych paneli na osobnym komputerze, także w pełnym ekranie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Player-1.5.4-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Player-1.5.4-Linux-all.deb) · [Archiwum Linux](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Player-1.5.4-Linux.tar.gz) |
-| **Imager** | Wybór modelu RPi, ustawienia kont i sieci, zapis i weryfikacja karty SD. Obraz jest dołączony. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Imager-1.5.4-Windows-x64.exe) |
-| **Kontroler RPi** | Samodzielne wykonywanie logiki i komunikacja z urządzeniami. | [Obraz SD, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-RPi-1.5.4-arm64.img.xz) · [Aktualizacja Runtime](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Runtime-1.5.4-arm64.zip) |
+| **Studio** | Urządzenia, protokoły, panele i logika; symulacja, debugger i publikowanie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Studio-1.5.5-Windows-x64.exe) |
+| **Player** | Obsługa opublikowanych paneli na osobnym komputerze, także w pełnym ekranie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Player-1.5.5-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Player-1.5.5-Linux-all.deb) · [Archiwum Linux](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Player-1.5.5-Linux.tar.gz) |
+| **Imager** | Wybór modelu RPi, ustawienia kont i sieci, zapis i weryfikacja karty SD. Obraz jest dołączony. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Imager-1.5.5-Windows-x64.exe) |
+| **Kontroler RPi** | Samodzielne wykonywanie logiki i komunikacja z urządzeniami. | [Obraz SD, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-RPi-1.5.5-arm64.img.xz) · [Aktualizacja Runtime](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Runtime-1.5.5-arm64.zip) |
 | **Panel WWW** | Obsługa tych samych paneli na komputerze, tablecie lub telefonie. | Otwórz adres HTTPS kontrolera. |
 
 Windows: Windows 10 22H2 / Windows 11, x64; .NET i instalator WebView2 offline są dołączone. Publiczny Player Linux: Debian 13 / CPython 3.13 z GTK i WebKit. Obraz RPi: Raspberry Pi OS Lite 64-bit. Pakiet Runtime służy do aktualizacji istniejącego kontrolera AV Control.
@@ -82,10 +82,10 @@ Nie ma stałego limitu liczby urządzeń, stron ani bloków. Praktyczna pojemno�
 
 ## Nauka i weryfikacja
 
-- [Kurs offline](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Szkolenie-1.5.4.zip) — **37 rozdziałów, cztery dodatki, 59 ilustracji** i neutralne projekty przykładowe.
-- [PDF: 154 strony](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Program szkolenia](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/PROGRAM-SZKOLENIA-PL.md) — **osiem sesji / 19 godzin**.
-- [Pełna dokumentacja](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/AV-Control-Studio-1.5.4-Dokumentacja.zip) · [Python](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/SYMBOLE-PYTHON-PL.md) · [USB, RS485 i UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/USB-RS485-UART-PL.md) · [Ekspandery](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/EKSPANDERY-SIECIOWE-PL.md).
-- [Raport weryfikacji](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/WERYFIKACJA-1.5.4.md) · [Manifest budowania i testów](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/RELEASE-MANIFEST.json) · [Sumy SHA256](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/SHA256SUMS.txt).
+- [Kurs offline](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Szkolenie-1.5.5.zip) — **37 rozdziałów, cztery dodatki, 59 ilustracji** i neutralne projekty przykładowe.
+- [PDF: 154 strony](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Program szkolenia](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/PROGRAM-SZKOLENIA-PL.md) — **osiem sesji / 19 godzin**.
+- [Pełna dokumentacja](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Studio-1.5.5-Dokumentacja.zip) · [Python](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/SYMBOLE-PYTHON-PL.md) · [USB, RS485 i UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/USB-RS485-UART-PL.md) · [Ekspandery](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/EKSPANDERY-SIECIOWE-PL.md).
+- [Raport weryfikacji](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/WERYFIKACJA-1.5.5.md) · [Manifest budowania i testów](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/RELEASE-MANIFEST.json) · [Sumy SHA256](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/SHA256SUMS.txt).
 
 Szczegółowy kurs i interfejs są obecnie po polsku. README i opisy wydań są w obu językach; wybór znajduje się u góry.
 
@@ -93,7 +93,7 @@ Szczegółowy kurs i interfejs są obecnie po polsku. README i opisy wydań są 
 
 ## Dystrybucja i licencja
 
-Pobieraj załączniki z sekcji **Assets**. Manifest wiąże sprawdzone paczki z produktem i udanym CI dokładnego commitu. Wersja 1.5 dostarcza skompilowane aplikacje i dokumentację, bez ZIP-a źródeł produktu. Kod bajtowy i pakiety przeglądarkowe nie są szyfrowaniem ani gwarancją ochrony przed analizą. [Szczegóły pakowania](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.4/PAKOWANIE-BINARNE-1.5-PL.md).
+Pobieraj załączniki z sekcji **Assets**. Manifest wiąże sprawdzone paczki z produktem i udanym CI dokładnego commitu. Wersja 1.5 dostarcza skompilowane aplikacje i dokumentację, bez ZIP-a źródeł produktu. Kod bajtowy i pakiety przeglądarkowe nie są szyfrowaniem ani gwarancją ochrony przed analizą. [Szczegóły pakowania](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/PAKOWANIE-BINARNE-1.5-PL.md).
 
 Aplikacje nadal korzystają z tego repozytorium do aktualizacji. Podział repozytoriów nie wymaga ponownego zapisu SD ani wymiany projektu. Aktualizacje online i instalacja z PyPI wymagają internetu; praca lokalna pozostaje od nich niezależna.
 
@@ -102,3 +102,5 @@ Wcześniejsze wydania MIT i pochodzący z nich kod zachowują [pierwotne warunki
 [Projekt przyszłej EULA](EULA-PL-PROJEKT.md) wskazuje osobę fizyczną z placeholderami danych, adresu i kontaktu. Opisuje możliwe przyszłe opłaty; nie uruchamia płatności ani nowych wiążących warunków. Licencjonowanie przez TECHNIKAV pozostaje planowaną usługą opcjonalną.
 
 [Zgłoś błąd lub propozycję](https://github.com/Gartom91/av-control-studio/issues) · [Standard dwujęzycznych wydań](RELEASING.md) · [English](README.en.md)
+
+- [Konta użytkowników i wysuwana klawiatura](docs/KONTA-I-LOGOWANIE-PL.md): logowanie do paneli, własne hasło, administracja i moduł szkoleniowy.
