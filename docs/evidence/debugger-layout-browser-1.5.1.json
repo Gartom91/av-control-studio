@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "nativeWebView2": false,
+  "ownedSimulator": true,
+  "positions": [
+    "bottom",
+    "top",
+    "left",
+    "right"
+  ],
+  "dragHeight": true,
+  "dragWidth": true,
+  "keyboardResize": true,
+  "separateSizesPersistedAfterReload": true,
+  "fullDebugger": true,
+  "popupSharesControllerSession": true,
+  "popupStillLiveOnDevicesTab": true,
+  "popupThemeSync": true,
+  "watchSearchAndFrozenTracePreserved": true,
+  "windowCloseRestoresDock": true,
+  "logoutClosesWindow": true,
+  "focusBlockAcrossTabs": true,
+  "inputsAndSelectsAfterReattach": true,
+  "blockedPopupPreservesDock": true,
+  "offlineGuardTested": true,
+  "deviceInspectorFullWidth": true,
+  "piConfigurationFullWidth": true,
+  "configurationDrawerExpandable": true,
+  "responsiveWithoutPageOverflow": true,
+  "rightAlignedNavigation": true,
+  "projectSelectorLeftOfNavigation": true,
+  "logicPortGeometry": true,
+  "viewport": [
+    2200,
+    1200
+  ],
+  "deviceWidth": 1945,
+  "errors": []
+}
