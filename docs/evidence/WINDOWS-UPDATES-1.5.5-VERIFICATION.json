@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "at": "2026-10-10T15:58:15.634Z",
+  "apps": [
+    {
+      "app": "Studio",
+      "ok": true,
+      "oldVersion": "1.3.0",
+      "availableVersion": "1.5.5",
+      "bytes": 320255717,
+      "nativeWebView2": true,
+      "realPublicGitHub": true,
+      "downloadAndInstallInvoked": false
+    },
+    {
+      "app": "Player",
+      "ok": true,
+      "oldVersion": "1.3.0",
+      "availableVersion": "1.5.5",
+      "bytes": 295539078,
+      "nativeWebView2": true,
+      "realPublicGitHub": true,
+      "downloadAndInstallInvoked": false
+    },
+    {
+      "app": "Imager",
+      "ok": true,
+      "oldVersion": "1.3.0",
+      "availableVersion": "1.5.5",
+      "bytes": 1320238188,
+      "nativeWebView2": true,
+      "realPublicGitHub": true,
+      "downloadAndInstallInvoked": false
+    }
+  ]
+}

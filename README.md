@@ -89,7 +89,7 @@ There is no fixed device, page or block limit. Practical capacity depends on the
 
 The detailed course and UI are currently in Polish. README and release descriptions are available in Polish and English; use the language links above.
 
-[A physical Pi 4B passed the GitHub 1.5.2 → 1.5.3 update](docs/WERYFIKACJA-RPI-1.5.3-PO-PUBLIKACJI.md), preserving the project, settings, users, session and certificate with agreement across five panels. Computer tests and ARM64 emulation are reported separately. Physical 3B/5, clean SD boots, electrical UART/RS232/RS485/GPIO, purchased adapters and physical mobile devices require separate hardware trials. AV Control's installers currently have no publisher Authenticode signature; vendor installers are verified separately.
+[A physical Pi 4B passed the GitHub 1.5.3 → 1.5.5 update](docs/WERYFIKACJA-RPI-1.5.5-PO-PUBLIKACJI.md), preserving the project, settings, users, session and certificate with agreement across five panels. Computer tests and ARM64 emulation are reported separately. Physical 3B/5, clean SD boots, electrical UART/RS232/RS485/GPIO, purchased adapters and physical mobile devices require separate hardware trials. AV Control's installers currently have no publisher Authenticode signature; vendor installers are verified separately.
 
 ## Distribution and licensing
 
