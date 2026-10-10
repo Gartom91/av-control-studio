@@ -18,6 +18,8 @@ Inside the panel, **My account** lets every user change their own password by en
 
 The [detailed illustrated Polish guide](KONTA-I-LOGOWANIE-PL.md) includes a 60-minute training module covering roles, Alt/Shift input, password changes, remembered sessions, deletion and hardware acceptance. Screenshots are actual browser captures; the phone view is emulation. Physical HDMI, USB input and VT switching require separate hardware checks.
 
-## Sliding keyboard
+## Keyboard visibility and sliding dock
 
-The shared keyboard slides up from the bottom when a text field is selected. Click the handle or drag it upward to reveal it, and click or drag downward to hide it. Escape hides the keyboard before closing an account dialog. Character keys have equal dimensions; the focused field stays above the dock. On narrow screens, **#+=** opens punctuation and **ABC** returns to letters. Alt/Shift keep Polish accents and shifted characters on their existing keys. Reduced-motion preferences disable the animation.
+The onscreen keyboard and its handle are **hidden by default when accessing the controller from another PC through the web browser**. Enable it under **Settings → Text input**, through **My account** in the operator panel, or under **Input settings** before signing in. The preference belongs to this browser/workstation and does not change other panels or the project. The native Raspberry Pi **HDMI panel has the keyboard enabled by default**. Physical keyboards continue to work normally.
+
+Once enabled, the shared keyboard slides up from the bottom when a text field is selected. Click the handle or drag it upward to reveal it, and click or drag downward to hide it. Escape hides the keyboard before closing an account dialog. Character keys have equal dimensions; the focused field stays above the dock. On narrow screens, **#+=** opens punctuation and **ABC** returns to letters. Alt/Shift keep Polish accents and shifted characters on their existing keys. Reduced-motion preferences disable the animation.

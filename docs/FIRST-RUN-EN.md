@@ -73,7 +73,7 @@ A new card has no installation project deployed. Waiting for a panel is expected
 
 An administrator creates a separate operator account in Settings. Operators change their own passwords; administrators manage accounts and their passwords. See the [account and keyboard guide](ACCOUNTS-AND-LOGIN-EN.md).
 
-Panels require sign-in. **Loguj automatycznie na tym urządzeniu (30 dni)** (automatic login on this device for 30 days) is initially off and applies to that station. **Wyloguj z panelu** ends its remembered session. The virtual keyboard slides up when an input is selected; Shift and Alt provide extra characters. Physical keyboards also work.
+Panels require sign-in. **Loguj automatycznie na tym urządzeniu (30 dni)** (automatic login on this device for 30 days) is initially off and applies to that station. **Wyloguj z panelu** ends its remembered session. The onscreen keyboard is hidden by default on PC and in browsers; enable it in text input settings on the sign-in screen, in My account or in Settings. It is enabled by default on the native HDMI panel. It slides up when an input is selected; Shift and Alt provide extra characters. Physical keyboards also work.
 
 Connect HDMI and a USB mouse, touchpad or touchscreen. Pi 3B uses HDMI; 4B / 5 use micro HDMI. Touch generally needs a separate USB connection: HDMI carries the picture. The clean image enables the kiosk when a monitor is detected. It shows sign-in and then the active panel, without Studio or the desktop. With no project it waits for a panel. Select the start page under **Konfiguracja Raspberry Pi → Panel lokalny HDMI**. **Ctrl+Alt+F2** opens the tty2 system sign-in console; **Ctrl+Alt+F1** returns to the kiosk. See the [HDMI guide](HDMI-PANEL-EN.md).
 

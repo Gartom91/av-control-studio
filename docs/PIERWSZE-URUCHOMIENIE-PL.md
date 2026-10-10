@@ -73,7 +73,7 @@ Na nowej karcie nie ma Twojego opublikowanego projektu. Widok oczekiwania na pan
 
 Administrator tworzy osobne konto operatora w **Ustawieniach → użytkownicy**. Operator może zmienić własne hasło; administrator zarządza kontami i ich hasłami. [Instrukcja kont i klawiatury](KONTA-I-LOGOWANIE-PL.md).
 
-Panel wymaga logowania. Opcja **Loguj automatycznie na tym urządzeniu (30 dni)** jest domyślnie wyłączona i dotyczy danego stanowiska. **Wyloguj z panelu** usuwa jego zapamiętaną sesję. Klawiatura ekranowa wysuwa się od dołu po wybraniu pola; Shift i Alt udostępniają dodatkowe znaki. Fizyczna klawiatura działa normalnie.
+Panel wymaga logowania. Opcja **Loguj automatycznie na tym urządzeniu (30 dni)** jest domyślnie wyłączona i dotyczy danego stanowiska. **Wyloguj z panelu** usuwa jego zapamiętaną sesję. Klawiatura ekranowa jest domyślnie ukryta na PC i w przeglądarce; można ją włączyć w ustawieniach wprowadzania tekstu na ekranie logowania, w „Moje konto” lub w Ustawieniach. Na lokalnym panelu HDMI jest domyślnie włączona. Wysuwa się od dołu po wybraniu pola; Shift i Alt udostępniają dodatkowe znaki. Fizyczna klawiatura działa normalnie.
 
 Do panelu lokalnego podłącz monitor HDMI i mysz, touchpad lub dotyk USB. W 3B jest HDMI, w 4B / 5 micro HDMI. Dotyk zwykle wymaga osobnego USB — samo HDMI przenosi obraz. Nowy obraz domyślnie uruchamia kiosk po wykryciu monitora; wyświetla logowanie, a następnie aktywny panel, bez edytora i pulpitu. Bez projektu pokazuje oczekiwanie. Ustawienia i stronę początkową wybierasz w **Konfiguracja Raspberry Pi → Panel lokalny HDMI**. Z klawiatury **Ctrl+Alt+F2** otwiera konsolę logowania tty2, **Ctrl+Alt+F1** wraca do kiosku. [Pełna instrukcja HDMI](PANEL-HDMI-PL.md).
 
