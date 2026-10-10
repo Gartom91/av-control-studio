@@ -53,9 +53,28 @@ Windows: Windows 10 22H2 / Windows 11, x64; .NET i instalator WebView2 offline s
 - **Codzienna edycja:** prawy klik i skróty do wycinania, kopiowania, wklejania, duplikacji, usuwania, zmiany nazwy, wyrównywania, grup, warstw, kopiowania wyglądu, blokowania pozycji i przechodzenia do końców połączenia.
 - **Własny wygląd:** jasny, ciemny i systemowy motyw programu, dopasowane przewijanie oraz osiem motywów paneli z dostrajaniem poszczególnych elementów.
 
-![Panel Liquid — filtrowanie treści w tle i subtelne odbicia](media/liquid-panel.png)
+![Sala konferencyjna — panel Liquid z czytelnym układem i subtelnymi odbiciami](media/liquid-panel.png)
 
-*Glass, Liquid, Frost i Szron filtrują rzeczywistą treść pod kontrolkami. Soft Dark zapewnia delikatne wypukłości i gradienty; Paper, Workshop i Contrast mają odmienny charakter. Efekty mają wariant oszczędny. Zdjęcie przedstawia rzeczywisty rendering panelu.*
+*Jeden przykładowy panel, jeden układ i te same powiązania. Liquid filtruje rzeczywiste tło pod kontrolkami. To zrzut działającego panelu, z wirtualnymi sygnałami i bez komend sprzętowych.*
+
+<details>
+<summary>Porównaj Frost, Soft Dark i Paper</summary>
+
+**Frost** — jasne, rozproszone powierzchnie nad spokojnym tłem.
+
+![Ten sam panel w motywie Frost](media/frost-panel.png)
+
+**Soft Dark** — subtelnie wypukłe przyciski i ciemne gradienty.
+
+![Ten sam panel w motywie Soft Dark](media/softdark-panel.png)
+
+**Paper** — jasny, oszczędny wygląd i wyraźna typografia.
+
+![Ten sam panel w motywie Paper](media/paper-panel.png)
+
+</details>
+
+[Pobierz edytowalny projekt demonstracyjny](media/Sala-konferencyjna.avctrl) — cztery strony o tym samym układzie; otwórz w Studio 1.6.0 lub nowszym i uruchom symulację. Projekt zawiera wyłącznie wirtualne sygnały, bez urządzeń, akcji i poleceń startowych. [Raport renderowania](media/panel-showcase-verification.json).
 
 [Instrukcja wyboru projektu ze zrzutami](docs/WYBOR-PROJEKTU-PL.md)
 
@@ -79,6 +98,14 @@ Nie ma stałego limitu liczby urządzeń, stron ani bloków. Praktyczna pojemno�
 3. Sprawdź przykłady i wybierz **Uruchom symulację**. Przed włączeniem transportów fizycznych zdefiniuj własne polecenia sprzętu.
 4. Przygotuj SD aplikacją **Imager**; przed jej wymazaniem potwierdź wybrany nośnik.
 5. Opublikuj projekt i obsługuj go w **Playerze** albo panelu WWW kontrolera.
+
+## Pierwsze uruchomienie Raspberry Pi
+
+Po przygotowaniu karty w **AV Control Imager** i pierwszym starcie domyślny adres to **https://av-control.local:8443/**. Własna nazwa, np. `sala-a`, daje **https://sala-a.local:8443/**. IP przydziela DHCP; obraz nie ma stałego adresu `192.168.1.23`.
+
+Zaloguj się do WWW jako **`admin`** hasłem ustawionym w Imagerze. **`avoperator`** jest odrębnym kontem Linux/SSH. Odczytaj `AV-Control-parowanie.txt` i `AV-Control-CA.crt` z partycji boot po zakończeniu pierwszej konfiguracji: Studio/Player używają adresu i odcisku, przeglądarka wymaga zaufania właściwemu CA i zgodności nazwy certyfikatu. Następnie opublikuj pierwszy projekt; nowa karta oczekuje na panel.
+
+[**Pełna procedura first-run**](docs/PIERWSZE-URUCHOMIENIE-PL.md) — Imager, sieć i DHCP, certyfikaty, konta, publikowanie, logowanie i HDMI/USB, aktualizacje, opcjonalny TECHNIKAV oraz rozwiązywanie problemów.
 
 ## Nauka i weryfikacja
 

@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "realApplicationRenderer": true,
+  "layoutsIdentical": true,
+  "checks": [
+    {
+      "theme": "liquid",
+      "controls": 7,
+      "overlap": false,
+      "liveValue": "42 %"
+    },
+    {
+      "theme": "frost",
+      "controls": 7,
+      "overlap": false,
+      "liveValue": "42 %"
+    },
+    {
+      "theme": "softdark",
+      "controls": 7,
+      "overlap": false,
+      "liveValue": "42 %"
+    },
+    {
+      "theme": "paper",
+      "controls": 7,
+      "overlap": false,
+      "liveValue": "42 %"
+    }
+  ],
+  "virtualTransportsOnly": true,
+  "errors": []
+}

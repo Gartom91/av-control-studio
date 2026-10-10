@@ -53,9 +53,28 @@ Windows: Windows 10 22H2 / Windows 11, x64; .NET and an offline WebView2 install
 - **Everyday editing:** right click and shortcuts for cut/copy/paste, duplicate, delete, rename, alignment, groups, layers, style copying, position locking and jumping to connection endpoints.
 - **Your appearance:** light, dark and system application themes, matching scrollbars and eight panel presets, with independently adjustable controls.
 
-![Liquid panel — live backdrop filtering and subtle reflections](media/liquid-panel.png)
+![Conference room — Liquid panel with a clear layout and subtle reflections](media/liquid-panel.png)
 
-*Glass, Liquid, Frost and Rime filter the live content beneath controls. Soft Dark uses gentle raised edges and gradients. Paper, Workshop and Contrast provide different visual directions. Effects have an economical setting; this image is a real panel rendering.*
+*One sample panel, one layout and the same bindings. Liquid filters the real background beneath its controls. This screenshot comes from the working renderer, with virtual signals and no hardware commands.*
+
+<details>
+<summary>Compare Frost, Soft Dark and Paper</summary>
+
+**Frost** — light, diffuse surfaces over a quiet background.
+
+![The same panel in Frost](media/frost-panel.png)
+
+**Soft Dark** — gently raised buttons and dark gradients.
+
+![The same panel in Soft Dark](media/softdark-panel.png)
+
+**Paper** — a restrained light appearance and clear typography.
+
+![The same panel in Paper](media/paper-panel.png)
+
+</details>
+
+[Download the editable demonstration project](media/Sala-konferencyjna.avctrl) — four pages sharing the same layout; open in Studio 1.6.0 or newer and start simulation. It contains only virtual signals, without devices, actions or startup commands. [Rendering report](media/panel-showcase-verification.json).
 
 [Illustrated project-picker guide](docs/PROJECT-PICKER-EN.md)
 
@@ -79,6 +98,14 @@ There is no fixed device, page or block limit. Practical capacity depends on the
 3. Explore the examples and select **Uruchom symulację**. Define your own equipment commands before enabling physical transports.
 4. Use **Imager** to prepare a Pi SD card; confirm the selected target before erasing it.
 5. Publish the project and use **Player** or the controller's web panel for daily operation.
+
+## Raspberry Pi first run
+
+After preparing a card with **AV Control Imager** and completing its first boot, the default URL is **https://av-control.local:8443/**. A custom name such as `room-a` gives **https://room-a.local:8443/**. DHCP assigns the IP; the image does not use a fixed `192.168.1.23` address.
+
+Sign in to the web interface as **`admin`** with the password you chose in Imager. **`avoperator`** is the separate Linux/SSH account. Read `AV-Control-parowanie.txt` and `AV-Control-CA.crt` from the boot partition after provisioning: Studio/Player use the URL and fingerprint; browsers require the correct CA trust and a covered certificate name. Then deploy a project; a new card waits for its first panel.
+
+[**Complete first-run procedure**](docs/FIRST-RUN-EN.md) — Imager, DHCP/network discovery, certificates, accounts, deployment, login and HDMI/USB, updates, optional TECHNIKAV enrollment and troubleshooting.
 
 ## Learn and verify
 
