@@ -11,7 +11,7 @@ Projektuj panele, podłączaj urządzenia i programuj instalację lokalnie.
 
 **Polski · [English](README.en.md)**
 
-[**Pobierz 1.6.0 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.0) · [Historia wydań](CHANGELOG.md) · [Kurs szkoleniowy](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Szkolenie-1.6.0.zip)
+[**Pobierz 1.6.1 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.1) · [Historia wydań](CHANGELOG.md) · [Kurs szkoleniowy](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Szkolenie-1.6.1.zip)
 
 **Windows · Raspberry Pi 3B / 4B / 5 · Player Linux · Panele WWW**
 
@@ -32,12 +32,12 @@ To **oficjalne repozytorium dystrybucyjne**: instalatory, obrazy kontrolera, akt
 
 ## Wybierz aplikację
 
-| Aplikacja | Zastosowanie | Pobierz 1.6.0 |
+| Aplikacja | Zastosowanie | Pobierz 1.6.1 |
 | --- | --- | --- |
-| **Studio** | Urządzenia, protokoły, panele i logika; symulacja, debugger i publikowanie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Studio-1.6.0-Windows-x64.exe) |
-| **Player** | Obsługa opublikowanych paneli na osobnym komputerze, także w pełnym ekranie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Player-1.6.0-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Player-1.6.0-Linux-all.deb) · [Archiwum Linux](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Player-1.6.0-Linux.tar.gz) |
-| **Imager** | Wybór modelu RPi, ustawienia kont i sieci, zapis i weryfikacja karty SD. Obraz jest dołączony. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Imager-1.6.0-Windows-x64.exe) |
-| **Kontroler RPi** | Samodzielne wykonywanie logiki i komunikacja z urządzeniami. | [Obraz SD, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-RPi-1.6.0-arm64.img.xz) · [Aktualizacja Runtime](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Runtime-1.6.0-arm64.zip) |
+| **Studio** | Urządzenia, protokoły, panele i logika; symulacja, debugger i publikowanie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Studio-1.6.1-Windows-x64.exe) |
+| **Player** | Obsługa opublikowanych paneli na osobnym komputerze, także w pełnym ekranie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Player-1.6.1-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Player-1.6.1-Linux-all.deb) · [Archiwum Linux](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Player-1.6.1-Linux.tar.gz) |
+| **Imager** | Wybór modelu RPi, ustawienia kont i sieci, zapis i weryfikacja karty SD. Obraz jest dołączony. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Imager-1.6.1-Windows-x64.exe) |
+| **Kontroler RPi** | Samodzielne wykonywanie logiki i komunikacja z urządzeniami. | [Obraz SD, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-RPi-1.6.1-arm64.img.xz) · [Aktualizacja Runtime](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Runtime-1.6.1-arm64.zip) |
 | **Panel WWW** | Obsługa tych samych paneli na komputerze, tablecie lub telefonie. | Otwórz adres HTTPS kontrolera. |
 
 Windows: Windows 10 22H2 / Windows 11, x64; .NET i instalator WebView2 offline są dołączone. Publiczny Player Linux: Debian 13 / CPython 3.13 z GTK i WebKit. Obraz RPi: Raspberry Pi OS Lite 64-bit. Pakiet Runtime służy do aktualizacji istniejącego kontrolera AV Control.
@@ -47,7 +47,7 @@ Windows: Windows 10 22H2 / Windows 11, x64; .NET i instalator WebView2 offline s
 - **Bieżący podgląd logiki:** przeliczenie po zmianach i co około 200 ms, bez publikowania; niezależna pamięć i reset podglądu.
 - **Rzetelny stan komunikacji:** gotowość gniazda UDP lub portu szeregowego jest odróżniona od aktualnej odpowiedzi; TCP korzysta z systemowego keepalive.
 - **Powitanie i metryka projektu:** osobny ekran startowy, dane instalacji/klienta/zespołu/serwisu, lista odbiorowa i historia.
-- **Autonomiczna diagnostyka:** stan kontrolera, awarie komunikacji, brak odpowiedzi i incydenty; opcjonalne raporty i popup w TECHNIKAV oraz e-mail konfigurowany przez właściciela.
+- **Autonomiczna diagnostyka:** stan kontrolera, awarie komunikacji, brak odpowiedzi i incydenty; opcjonalne raporty i popup w TECHNIKAV oraz czteroetapowy kreator Proton Mail, szyfrowany token SMTP i konfigurowani odbiorcy.
 - **Wprowadzanie tekstu:** klawiatura ekranowa domyślnie ukryta na PC/WWW, a włączona na lokalnym HDMI. Włączysz ją lokalnie w Ustawieniach, Moje konto lub ustawieniach logowania.
 - **Tła panelu:** upload z inspektora, gradienty, kadrowanie/skala/pozycja/kafelki i narożniki 9-slice; wspólny wygląd edytora i operatora.
 - **Panel lokalny HDMI:** automatyczny kiosk na Raspberry Pi, mysz/touchpad/dotyk USB, strona początkowa i konsola tty2. [Instrukcja i ćwiczenia](docs/PANEL-HDMI-PL.md).
@@ -115,10 +115,10 @@ Zaloguj się do WWW jako **`admin`** hasłem ustawionym w Imagerze. **`avoperato
 
 ## Nauka i weryfikacja
 
-- [Kurs offline](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Szkolenie-1.6.0.zip) — **52 rozdziały, cztery dodatki, 72 ilustracje** i neutralne projekty przykładowe.
-- [PDF: 191 stron](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Program szkolenia](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/PROGRAM-SZKOLENIA-PL.md) — **10 sesji / 22 godziny**.
-- [Pełna dokumentacja](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Studio-1.6.0-Dokumentacja.zip) · [Python](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/SYMBOLE-PYTHON-PL.md) · [USB, RS485 i UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/USB-RS485-UART-PL.md) · [Ekspandery](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/EKSPANDERY-SIECIOWE-PL.md).
-- [Raport weryfikacji](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/WERYFIKACJA-1.6.0.md) · [Manifest budowania i testów](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/RELEASE-MANIFEST.json) · [Sumy SHA256](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/SHA256SUMS.txt).
+- [Kurs offline](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Szkolenie-1.6.1.zip) — **52 rozdziały, cztery dodatki, 75 ilustracji** i neutralne projekty przykładowe.
+- [PDF: 195 stron](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Program szkolenia](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/PROGRAM-SZKOLENIA-PL.md) — **10 sesji / 22 godziny**.
+- [Pełna dokumentacja](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/AV-Control-Studio-1.6.1-Dokumentacja.zip) · [Python](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/SYMBOLE-PYTHON-PL.md) · [USB, RS485 i UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/USB-RS485-UART-PL.md) · [Ekspandery](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/EKSPANDERY-SIECIOWE-PL.md).
+- [Raport weryfikacji](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/WERYFIKACJA-1.6.1.md) · [Manifest budowania i testów](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/RELEASE-MANIFEST.json) · [Sumy SHA256](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/SHA256SUMS.txt).
 
 Szczegółowy kurs i interfejs są obecnie po polsku. README i opisy wydań są w obu językach; wybór znajduje się u góry.
 
@@ -126,7 +126,7 @@ Szczegółowy kurs i interfejs są obecnie po polsku. README i opisy wydań są 
 
 ## Dystrybucja i licencja
 
-Pobieraj załączniki z sekcji **Assets**. Manifest wiąże sprawdzone paczki z produktem i udanym CI dokładnego commitu. Wersja 1.5 dostarcza skompilowane aplikacje i dokumentację, bez ZIP-a źródeł produktu. Kod bajtowy i pakiety przeglądarkowe nie są szyfrowaniem ani gwarancją ochrony przed analizą. [Szczegóły pakowania](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/PAKOWANIE-BINARNE-1.5-PL.md).
+Pobieraj załączniki z sekcji **Assets**. Manifest wiąże sprawdzone paczki z produktem i udanym CI dokładnego commitu. Wersja 1.5 dostarcza skompilowane aplikacje i dokumentację, bez ZIP-a źródeł produktu. Kod bajtowy i pakiety przeglądarkowe nie są szyfrowaniem ani gwarancją ochrony przed analizą. [Szczegóły pakowania](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.1/PAKOWANIE-BINARNE-1.5-PL.md).
 
 Aplikacje nadal korzystają z tego repozytorium do aktualizacji. Podział repozytoriów nie wymaga ponownego zapisu SD ani wymiany projektu. Aktualizacje online i instalacja z PyPI wymagają internetu; praca lokalna pozostaje od nich niezależna.
 

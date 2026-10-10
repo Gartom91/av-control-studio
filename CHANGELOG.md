@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## 1.6.1 — 2026-10-10
+
+PL: Agent 1.1.1: poprawka fałszywego alarmu systemu plików. Kreator Proton Mail w TECHNIKAV, szyfrowany token SMTP, test bez wysyłki i harmonogram. Podręcznik 195 stron / 75 ilustracji. [Pełny opis](docs/releases/v1.6.1.md#polski).
+
+EN: Agent 1.1.1 fixes the false read-only filesystem alarm. TECHNIKAV Proton Mail wizard, encrypted SMTP token, no-mail connection test and scheduling. Handbook: 195 pages / 75 illustrations. [Full notes](docs/releases/v1.6.1.md#english).
+
 ## 1.6.0 — 2026-10-10
 
 PL: Powitanie i metryka projektu, autonomiczna diagnostyka i raporty TECHNIKAV, tła/9-slice, klawiatura PC ukryta domyślnie i HDMI włączona, główny podręcznik 191 stron. [Pełny opis](docs/releases/v1.6.0.md#polski).
