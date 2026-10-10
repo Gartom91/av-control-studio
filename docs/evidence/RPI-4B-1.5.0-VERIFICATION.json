@@ -1,0 +1,102 @@
+{
+  "ok": true,
+  "physicalRaspberryPi": true,
+  "model": "4B",
+  "oldVersion": "1.4.1",
+  "newVersion": "1.5.0",
+  "strictCaAndHostnameTls": true,
+  "pinnedCertificateUnchanged": true,
+  "publicGitHubCheckAndDownload": true,
+  "runtimeBundleSha256": "bc0abf258812f1b077a3541d441fee4cece37943419257402e8866d3f6bc15c4",
+  "realSystemdUpdate": true,
+  "updatePhase": "complete",
+  "previousVersion": "1.4.1",
+  "preservation": {
+    "projectId": true,
+    "revision": true,
+    "projectCanonicalSha256": true,
+    "certificateSha256": true,
+    "persistentSignals": true,
+    "persistentMemory": true,
+    "users": true,
+    "session": true,
+    "agentConnection": true,
+    "uartEnabled": true,
+    "updatePreferences": true
+  },
+  "projectId": "avctrl-training-room-v1",
+  "revision": 2,
+  "existingSessionRetained": true,
+  "trainingProjectValidatedOnly": true,
+  "readOnlyVerificationRetry": true,
+  "existingSessionVerifiedBeforeBrowserRetry": true,
+  "panelComparisonMethod": "All shared eventSequence snapshots, including signal quality and timestamps",
+  "networkMacPreviewOnly": true,
+  "missingMacRejected": true,
+  "networkApplied": false,
+  "projectActivated": false,
+  "deviceActions": 0,
+  "services": [
+    "avcontrol",
+    "avcontrol-config",
+    "avcontrol-agent"
+  ],
+  "servicesActive": true,
+  "agentVersion": "1.0.4",
+  "browser": {
+    "ok": true,
+    "strictTlsPreflight": true,
+    "physicalRaspberryPi": true,
+    "health": {
+      "ok": true,
+      "version": "1.5.0",
+      "simulation": false,
+      "instanceId": "556f8c580dea4604a213e94abe01cbbb",
+      "fleetProtocol": 1
+    },
+    "projectId": "avctrl-training-room-v1",
+    "revision": 2,
+    "trainingManual": {
+      "chaptersAndAppendices": 41,
+      "imagesLoaded": 59,
+      "sameOriginEmbedding": true
+    },
+    "websocketPanels": 5,
+    "panelSnapshots": [
+      14,
+      13,
+      13,
+      12,
+      12
+    ],
+    "matchingEventsCompared": [
+      6523,
+      6533,
+      6544,
+      6554,
+      6564,
+      6574,
+      6584,
+      6594,
+      6604,
+      6614,
+      6624
+    ],
+    "allPanelsAgree": true,
+    "pageErrors": [],
+    "cleanupOnlyLeaseReleases": 3,
+    "leaseAcquisitions": 0,
+    "actuatingRequests": 0,
+    "resources": {
+      "rssBytes": 84967424,
+      "cpuPercent": 19.7,
+      "timerLagMs": 16.8961190211121,
+      "queuedEvents": 0,
+      "activeTasks": 0
+    }
+  },
+  "physicalUsbEthernet": false,
+  "physicalGateway": false,
+  "freshSdBoot": false,
+  "date": "2026-10-10T00:33:43.462751+00:00"
+}

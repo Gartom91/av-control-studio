@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "at": "2026-10-10T00:35:21.846176+00:00",
+  "physicalRaspberryPi": true,
+  "model": "4B",
+  "installedRuntime": "1.5.0",
+  "serviceAccount": "avcontrol",
+  "workerRunsAsServiceUser": true,
+  "python": "3.13.5",
+  "numpy": "2.5.3",
+  "helperImported": true,
+  "freshOfflineInstall": true,
+  "offlineWheel": {
+    "name": "numpy-2.5.3-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "c76d5dde9f445058f83d0c02af00557a4db91de9a9a57c0df87d1535001d654b"
+  },
+  "results": [
+    10,
+    15,
+    20,
+    30,
+    40
+  ],
+  "onlinePyPiInstall": true,
+  "onlineRequirements": [
+    "numpy==2.5.3",
+    "six==1.17.0"
+  ],
+  "trustInvalidatedByHelperChange": true,
+  "preservation": {
+    "projectId": true,
+    "revision": true,
+    "projectCanonicalSha256": true,
+    "persistentSignals": true,
+    "persistentMemory": true,
+    "users": true,
+    "agentConnection": true,
+    "uartEnabled": true,
+    "certificateSha256": true
+  },
+  "projectActivated": false,
+  "deviceActions": 0,
+  "extraData": "Isolated library caches, approvals and audit entries only"
+}

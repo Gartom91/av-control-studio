@@ -85,7 +85,7 @@ Nie ma stałego limitu liczby urządzeń, stron ani bloków. Praktyczna pojemno�
 
 Szczegółowy kurs i interfejs są obecnie po polsku. README i opisy wydań są w obu językach; wybór znajduje się u góry.
 
-Testy komputerowe, emulacja ARM64 i istniejąca fizyczna 4B mają odrębne dowody. Fizyczne 3B/5, rozruch nowej karty, komunikacja elektryczna UART/RS232/RS485/GPIO, zakupione adaptery i rzeczywiste urządzenia mobilne wymagają osobnych prób sprzętowych. Instalatory AV Control nie mają obecnie podpisu Authenticode wydawcy; instalatory producentów są sprawdzane osobno.
+[Fizyczna RPi 4B przeszła aktualizację GitHub 1.4.1 → 1.5.0](docs/WERYFIKACJA-RPI-1.5.0-PO-PUBLIKACJI.md), zachowanie danych, zgodność pięciu paneli oraz własny Python z NumPy offline/PyPI. Testy komputerowe i emulacja ARM64 mają odrębne dowody. Fizyczne 3B/5, rozruch nowej karty, komunikacja elektryczna UART/RS232/RS485/GPIO, zakupione adaptery i rzeczywiste urządzenia mobilne wymagają osobnych prób sprzętowych. Instalatory AV Control nie mają obecnie podpisu Authenticode wydawcy; instalatory producentów są sprawdzane osobno.
 
 ## Dystrybucja i licencja
 
