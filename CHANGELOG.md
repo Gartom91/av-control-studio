@@ -1,6 +1,16 @@
 # Releases · Wydania
 
+## 1.6.2 — 2026-10-10
+
+PL: Poprawka fokusu klawiatury wirtualnej i obowiązkowe testy regresji. Agent 1.1.1, kreator Proton Mail na TECHNIKAV 0.12.408, podręcznik 195 stron / 75 ilustracji. [Pełny opis](docs/releases/v1.6.2.md#polski).
+
+EN: Virtual keyboard focus fix with mandatory regression checks. Agent 1.1.1, Proton Mail wizard on TECHNIKAV hosting 0.12.408, 195-page handbook / 75 illustrations. [Full notes](docs/releases/v1.6.2.md#english).
+
 ## 1.6.1 — 2026-10-10
+
+PL: **Wydanie testowe:** odtworzono błąd fokusu klawiatury; poprawka jest w 1.6.2.
+
+EN: **Prerelease:** a keyboard focus race was reproduced; fixed in 1.6.2.
 
 PL: Agent 1.1.1: poprawka fałszywego alarmu systemu plików. Kreator Proton Mail w TECHNIKAV, szyfrowany token SMTP, test bez wysyłki i harmonogram. Podręcznik 195 stron / 75 ilustracji. [Pełny opis](docs/releases/v1.6.1.md#polski).
 
