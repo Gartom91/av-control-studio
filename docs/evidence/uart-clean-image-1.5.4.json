@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "source": "fresh Raspberry Pi OS Lite image built from pinned base",
+  "uartEnabledByDefault": true,
+  "serialConsoleRemoved": true,
+  "models": [
+    {
+      "model": "3B",
+      "uart0Status": "okay",
+      "driver": "arm,pl011",
+      "pins": [],
+      "routing": "VideoCore firmware with disable-bt; UART0 pin group selected",
+      "deviceTree": "/soc/serial@7e201000"
+    },
+    {
+      "model": "4B",
+      "uart0Status": "okay",
+      "driver": "arm,pl011",
+      "pins": [],
+      "routing": "VideoCore firmware with disable-bt; UART0 pin group selected",
+      "deviceTree": "/soc/serial@7e201000"
+    },
+    {
+      "model": "5",
+      "uart0Status": "okay",
+      "driver": "arm,pl011",
+      "pins": [
+        "gpio14",
+        "gpio15"
+      ],
+      "routing": "RP1 explicit GPIO14/15",
+      "deviceTree": "/axi/pcie@1000120000/rp1/serial@30000"
+    }
+  ],
+  "systemConfiguratorInstalled": true,
+  "cleanUserState": true,
+  "physicalHardware": false,
+  "fullKernelBoot": false,
+  "electricalCommunication": false
+}

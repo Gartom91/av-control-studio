@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "at": "2026-10-10T11:46:27.353Z",
+  "nativeWebView2": true,
+  "frozenRuntime": true,
+  "bundledSdk": "3.13.15",
+  "freshDataDirectory": true,
+  "offlineWheelInstall": true,
+  "wheel": "numpy-2.5.3-cp313-cp313-win_amd64.whl",
+  "numpy": "2.5.3",
+  "helperImport": true,
+  "results": [
+    10,
+    15,
+    20,
+    25,
+    35
+  ],
+  "trustInvalidatedByChange": true,
+  "pageErrors": []
+}

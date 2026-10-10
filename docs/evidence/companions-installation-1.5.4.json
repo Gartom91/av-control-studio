@@ -1,0 +1,83 @@
+{
+  "ok": true,
+  "apps": [
+    {
+      "installation": true,
+      "app": "Player",
+      "selfTest": {
+        "ok": true,
+        "editorApisBlocked": true,
+        "dpapi": true,
+        "embeddedRuntime": false,
+        "githubUpdateTests": true
+      },
+      "uninstall": true,
+      "physicalDiskWritten": false,
+      "nativeAcceptance": {
+        "ok": true,
+        "native": true,
+        "adminGetsOnlyPanels": true,
+        "operator": false,
+        "pages": true,
+        "imageFrameAndHiddenLabel": true,
+        "elementAndScopedPageCss": true,
+        "commands": true,
+        "sliderFinalValue": true,
+        "momentary": true,
+        "momentaryLeaseExpiresDuringDisconnect": true,
+        "interlock": true,
+        "fullscreen": true,
+        "savedConnectionAndSession": true,
+        "windowsUpdateSettings": true,
+        "projectUpdate": true,
+        "disconnectBlocksControls": true,
+        "reconnectDoesNotReplay": true,
+        "errors": []
+      }
+    },
+    {
+      "installation": true,
+      "app": "Imager",
+      "selfTest": {
+        "ok": true,
+        "models": [
+          "3B",
+          "4B",
+          "5"
+        ],
+        "unsafeTargetsRejected": true,
+        "swappedTargetRejected": true,
+        "hashChecked": true,
+        "encryptedJobs": true,
+        "verificationEnabled": true,
+        "fixtures": true,
+        "imageVerified": true,
+        "physicalDiskWritten": false,
+        "githubUpdateTests": true
+      },
+      "uninstall": true,
+      "physicalDiskWritten": false,
+      "nativeAcceptance": {
+        "ok": true,
+        "native": true,
+        "offlineImage": true,
+        "models": [
+          "3B",
+          "4B",
+          "5"
+        ],
+        "diskEnumeration": true,
+        "protectedDisksExcluded": true,
+        "invalidTargetRejected": true,
+        "unconfirmedWriteRejected": true,
+        "readOnlyPlanTested": false,
+        "physicalDiskWritten": false,
+        "windowsUpdateSettings": true,
+        "updatesManualOffline": true,
+        "actualWriteInvoked": false,
+        "errors": []
+      }
+    }
+  ],
+  "freshMachineWithoutWebView2": false
+}

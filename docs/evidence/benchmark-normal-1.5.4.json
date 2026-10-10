@@ -1,0 +1,51 @@
+{
+  "version": "1.5.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.12.14",
+  "architecture": "AMD64",
+  "hardwareModel": "",
+  "physicalRaspberryPi": false,
+  "devices": 100,
+  "blocks": 2000,
+  "panels": 5,
+  "seconds": 8.26263710000785,
+  "concurrentActionsPerBatch": 5,
+  "targetActionsPerSecond": 50,
+  "commands": {
+    "count": 105,
+    "p50Ms": 145.55580000160262,
+    "p95Ms": 294.6059999958379,
+    "maxMs": 401.4592999883462
+  },
+  "scan": {
+    "count": 195,
+    "p50Ms": 18.532000001869164,
+    "p95Ms": 55.924600004800595,
+    "maxMs": 77.76390000071842
+  },
+  "timerLag": {
+    "count": 195,
+    "p50Ms": 0,
+    "p95Ms": 27.000000001862645,
+    "maxMs": 37.999999985913746
+  },
+  "rssPeakMiB": 88.40234375,
+  "cpuPercentOneCore": 72.80514595024734,
+  "panelSnapshots": [
+    39,
+    39,
+    39,
+    39,
+    39
+  ],
+  "allPanelsSawFinalValue": true,
+  "finalPanelConvergenceMs": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "commandErrors": []
+}

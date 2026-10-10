@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "architecture": "aarch64",
+  "environment": "QEMU user on x86_64 / packaged Raspberry Pi OS filesystem",
+  "version": "1.5.4",
+  "dynamicLogicAndPython": "Dynamic gates, pulse selectors and guarded Python passed on ARM64",
+  "pythonSymbolApi": true,
+  "serialModesAndDirectionSoftwareProbe": true,
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "health": {
+    "ok": true,
+    "version": "1.5.4",
+    "simulation": true,
+    "instanceId": "c840b50086b340bea28b492f01ca9544",
+    "fleetProtocol": 1
+  },
+  "sqlitePersistence": true,
+  "retainedSignalAfterProcessRestart": true,
+  "apiDeploymentAndAction": true,
+  "panelAppearanceAndCssApi": true,
+  "panelAppearanceAfterProcessRestart": true,
+  "networkGatewaysDeploymentAndRetention": true,
+  "rfc2217BackendPackaged": true,
+  "agentBootstrapPackaged": true,
+  "agentVersion": "1.0.4",
+  "nativeArmDependencies": [
+    "gpiod",
+    "pydantic-core",
+    "cryptography",
+    "psutil"
+  ],
+  "crcVector": true,
+  "physicalHardware": false,
+  "fullKernelBoot": false
+}

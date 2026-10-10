@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "version": "1.5.4",
+  "compiledPackage": true,
+  "nativeGtk": true,
+  "nativeWebKit": true,
+  "bundledStylesApplied": true,
+  "realTlsPinCheckBeforeHttp": true,
+  "operatorLogin": true,
+  "panelAction": true,
+  "blockedEditorAndAdminRoutes": true,
+  "fullscreen": true,
+  "offlineControlsDisabled": true,
+  "noOfflineActionReplay": true,
+  "profileSelectionSurvivesRelaunch": true,
+  "passwordsAndSessionTokensPersisted": false,
+  "softwareFixture": true,
+  "physicalLinuxDesktopVerified": false,
+  "bridgeCalls": 22
+}

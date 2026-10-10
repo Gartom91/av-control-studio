@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "environment": "QEMU aarch64 / regular image files / fixture GitHub metadata",
+  "realArm64Processes": true,
+  "oldVersion": "1.5.3",
+  "newVersion": "1.5.4",
+  "bundleSha256": "a05522fbbca146037f2e2bd3eeb377e2400f28dcb39973828384b1d44e2b78ed",
+  "bundleBytes": 189682312,
+  "realSqliteAndRetainedMemory": true,
+  "userAndSessionPreserved": true,
+  "certificateAndKeyUnchanged": true,
+  "localHttpsPinHealth": true,
+  "existingCertificateCompatibility": true,
+  "successfulReplacement": true,
+  "manualRollback": true,
+  "failedHealthRollback": true,
+  "installSecondsIncludingEmulation": 16.47,
+  "systemdExecution": false,
+  "physicalHardware": false,
+  "physicalPowerLoss": false
+}

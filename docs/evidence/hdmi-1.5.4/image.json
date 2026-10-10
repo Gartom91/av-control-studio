@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "version": "1.5.4",
+  "cleanImage": true,
+  "compiledArmImports": true,
+  "offlinePackages": 186,
+  "kioskEnabled": true,
+  "tty2LoginEnabled": true,
+  "unprivilegedKioskAccount": true,
+  "noEmbeddedCredentials": true,
+  "physicalHdmi": false,
+  "physicalUsbInput": false,
+  "physicalVtSwitch": false
+}

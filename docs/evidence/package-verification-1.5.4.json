@@ -1,0 +1,101 @@
+{
+  "ok": true,
+  "version": "1.5.4",
+  "recordedAt": "2026-10-10T11:56:47.618063+00:00",
+  "build": {
+    "version": "1.5.4",
+    "sourceSha256": "5dab2583dbfc87d027e0d6e719eaa07a5219655592e6b830739179bdacd53909",
+    "fileCount": 318
+  },
+  "artifacts": [
+    {
+      "name": "AV-Control-Studio-1.5.4-Windows-x64.exe",
+      "path": "artifacts/AV-Control-Studio-1.5.4-Windows-x64.exe",
+      "bytes": 319636380,
+      "sha256": "bbce619ee1ef8d962215ca6597043c51aeaacea0faf80d532643f8dc5dff0e56"
+    },
+    {
+      "name": "AV-Control-Player-1.5.4-Windows-x64.exe",
+      "path": "artifacts/AV-Control-Player-1.5.4-Windows-x64.exe",
+      "bytes": 295034633,
+      "sha256": "9e288fbf23d759285986f3de69205d112d352be0220f73480ad026eda2e3282c"
+    },
+    {
+      "name": "AV-Control-Imager-1.5.4-Windows-x64.exe",
+      "path": "artifacts/AV-Control-Imager-1.5.4-Windows-x64.exe",
+      "bytes": 1318285930,
+      "sha256": "b95d1c20c0dce258241643f8461d137338a16a45e812f7e020ae65e6f16cbb40"
+    },
+    {
+      "name": "AV-Control-Player-1.5.4-Linux-all.deb",
+      "path": "artifacts/AV-Control-Player-1.5.4-Linux-all.deb",
+      "bytes": 369872,
+      "sha256": "c37a0e82ded722297f81e36cd2a8cb463a061b50cc29570fe7952531a30f11ba"
+    },
+    {
+      "name": "AV-Control-Player-1.5.4-Linux.tar.gz",
+      "path": "artifacts/AV-Control-Player-1.5.4-Linux.tar.gz",
+      "bytes": 410546,
+      "sha256": "1ca6c6d0c648bc4081ffdb7ad6f3b7bb0ce234525feda7ec631646163bef4053"
+    },
+    {
+      "name": "AV-Control-Agent-1.0.4.zip",
+      "path": "artifacts/AV-Control-Agent-1.0.4.zip",
+      "bytes": 59500,
+      "sha256": "5d9a5d601d22f6fa1f7e08ffcfbaaea1adc635f4ced031db926201fc3018789c"
+    },
+    {
+      "name": "AV-Control-RPi-1.5.4-arm64.img.xz",
+      "path": "work/AV-Control-RPi-1.5.4-arm64.img.xz",
+      "bytes": 997351380,
+      "sha256": "7ef2fecf63a6fbd0c324f34f0d746e97df2064b9e89ec4626b77f24ccd441ac4"
+    },
+    {
+      "name": "AV-Control-Runtime-1.5.4-arm64.zip",
+      "path": "work/AV-Control-Runtime-1.5.4-arm64.zip",
+      "bytes": 189682312,
+      "sha256": "a05522fbbca146037f2e2bd3eeb377e2400f28dcb39973828384b1d44e2b78ed"
+    }
+  ],
+  "receipts": [
+    {
+      "name": "installation-1.5.4.json",
+      "path": "docs/evidence/installation-1.5.4.json",
+      "bytes": 581,
+      "sha256": "900c6dd38697ceceef08a5284c53c41eec8d308a0e7cf25269b049bb1ceb59a8"
+    },
+    {
+      "name": "companions-installation-1.5.4.json",
+      "path": "docs/evidence/companions-installation-1.5.4.json",
+      "bytes": 2225,
+      "sha256": "13a1e8248059e070ca9123b20c1a7211acb7ad1bca565f0c0f8d2ee0581eb54b"
+    },
+    {
+      "name": "linux-player-1.5.4.json",
+      "path": "docs/evidence/linux-player-1.5.4.json",
+      "bytes": 536,
+      "sha256": "35ff85fffbaa04ff037f416a08c903f95f3734fe09669288965a29d7e958c928"
+    },
+    {
+      "name": "native-studio-1.5.4.json",
+      "path": "docs/evidence/native-studio-1.5.4.json",
+      "bytes": 3491,
+      "sha256": "2be25484e8ac9d77953a4deb56f52caececfd6e44f8ef74290f3833b5f5fbfdf"
+    },
+    {
+      "name": "python-native-windows-1.5.4.json",
+      "path": "docs/evidence/python-native-windows-1.5.4.json",
+      "bytes": 402,
+      "sha256": "6ee863a7ebf31ba01c0fb0ad75b57ae423fb2dac5167487ad4959adaa15c39c4"
+    },
+    {
+      "name": "update-arm-1.5.4.json",
+      "path": "docs/evidence/update-arm-1.5.4.json",
+      "bytes": 702,
+      "sha256": "ade69030e20d9145a79a6578dd13a940d690ab23d95231805feb12008be8b457"
+    }
+  ],
+  "installerTests": "install, native acceptance and uninstall on the current Windows host",
+  "freshWindowsWithoutWebView2": false,
+  "physicalSdWrite": false
+}
