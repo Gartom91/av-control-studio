@@ -11,7 +11,7 @@ Build operator panels, connect equipment and program your installation locally.
 
 **[Polski](README.pl.md) · English**
 
-[**Download 1.5.5 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.5.5) · [Release history](CHANGELOG.md) · [Training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Szkolenie-1.5.5.zip)
+[**Download 1.6.0 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.0) · [Release history](CHANGELOG.md) · [Training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Szkolenie-1.6.0.zip)
 
 **Windows · Raspberry Pi 3B / 4B / 5 · Linux Player · Browser panels**
 
@@ -32,18 +32,24 @@ This is the **official distribution repository** for installers, controller imag
 
 ## Choose your application
 
-| Application | Purpose | Download 1.5.5 |
+| Application | Purpose | Download 1.6.0 |
 | --- | --- | --- |
-| **Studio** | Design devices, protocols, panels and logic; simulate, debug and publish. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Studio-1.5.5-Windows-x64.exe) |
-| **Player** | Operate published panels on a separate computer, including full screen. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Player-1.5.5-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Player-1.5.5-Linux-all.deb) · [Linux archive](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Player-1.5.5-Linux.tar.gz) |
-| **Imager** | Select the Pi model, configure initial accounts/network, write and verify an SD card. Includes the image. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Imager-1.5.5-Windows-x64.exe) |
-| **RPi Controller** | Execute logic and communicate with devices autonomously. | [SD image, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-RPi-1.5.5-arm64.img.xz) · [Runtime update](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Runtime-1.5.5-arm64.zip) |
+| **Studio** | Design devices, protocols, panels and logic; simulate, debug and publish. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Studio-1.6.0-Windows-x64.exe) |
+| **Player** | Operate published panels on a separate computer, including full screen. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Player-1.6.0-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Player-1.6.0-Linux-all.deb) · [Linux archive](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Player-1.6.0-Linux.tar.gz) |
+| **Imager** | Select the Pi model, configure initial accounts/network, write and verify an SD card. Includes the image. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Imager-1.6.0-Windows-x64.exe) |
+| **RPi Controller** | Execute logic and communicate with devices autonomously. | [SD image, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-RPi-1.6.0-arm64.img.xz) · [Runtime update](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Runtime-1.6.0-arm64.zip) |
 | **Web panel** | Operate the same panels on a computer, tablet or phone. | Open the controller's HTTPS address. |
 
 Windows: Windows 10 22H2 / Windows 11, x64; .NET and an offline WebView2 installer are included. Public Linux Player: Debian 13 / CPython 3.13 with GTK and WebKit. Pi image: Raspberry Pi OS Lite 64-bit. A Runtime update is for an existing AV Control controller, rather than an SD card.
 
 ## Signal Workshop
 
+- **Live draft logic:** recalculation after edits and about every 200 ms without publishing; independent preview memory and reset.
+- **Communication status:** UDP socket or serial port readiness is separate from a fresh device reply; TCP uses operating-system keepalive.
+- **Welcome and project records:** separate start page, installation/client/team/service metadata, handover checklist and history.
+- **Autonomous diagnostics:** controller health, communication faults, stale replies and incidents; optional scoped reports and login alerts in TECHNIKAV, with owner-configured email.
+- **Text input:** onscreen keyboard hidden by default on PC/web and enabled by default on native HDMI. Enable it locally in Settings, My account or sign-in input settings.
+- **Panel backgrounds:** upload from the inspector, gradients, crop/scale/position/tiling and nine-slice corners, shared by editor and operator.
 - **Local HDMI panel:** automatic Raspberry Pi operator kiosk, USB mouse/touchpad/touchscreen input, initial-page selection and tty2 login console. [Guide](docs/HDMI-PANEL-EN.md).
 - **One logic workspace:** devices, signals, protocol definitions, commands, sequences and Python share an explorer and contextual settings. Device names and icons describe the actual equipment.
 - **Clear diagrams:** ports align with labels; routing avoids symbols, separates paths and shows crossings. Variable-input gates, Truth table, pulse Interlock with SET ALL/CLEAR, timers, counters, memories, latches and flip-flops are available.
@@ -53,9 +59,28 @@ Windows: Windows 10 22H2 / Windows 11, x64; .NET and an offline WebView2 install
 - **Everyday editing:** right click and shortcuts for cut/copy/paste, duplicate, delete, rename, alignment, groups, layers, style copying, position locking and jumping to connection endpoints.
 - **Your appearance:** light, dark and system application themes, matching scrollbars and eight panel presets, with independently adjustable controls.
 
-![Liquid panel — live backdrop filtering and subtle reflections](media/liquid-panel.png)
+![Conference room — Liquid panel with a clear layout and subtle reflections](media/liquid-panel.png)
 
-*Glass, Liquid, Frost and Rime filter the live content beneath controls. Soft Dark uses gentle raised edges and gradients. Paper, Workshop and Contrast provide different visual directions. Effects have an economical setting; this image is a real panel rendering.*
+*One sample panel, one layout and the same bindings. Liquid filters the real background beneath its controls. This screenshot comes from the working renderer, with virtual signals and no hardware commands.*
+
+<details>
+<summary>Compare Frost, Soft Dark and Paper</summary>
+
+**Frost** — light, diffuse surfaces over a quiet background.
+
+![The same panel in Frost](media/frost-panel.png)
+
+**Soft Dark** — gently raised buttons and dark gradients.
+
+![The same panel in Soft Dark](media/softdark-panel.png)
+
+**Paper** — a restrained light appearance and clear typography.
+
+![The same panel in Paper](media/paper-panel.png)
+
+</details>
+
+[Download the editable demonstration project](media/Sala-konferencyjna.avctrl) — four pages sharing the same layout; open in Studio 1.6.0 or newer and start simulation. It contains only virtual signals, without devices, actions or startup commands. [Rendering report](media/panel-showcase-verification.json).
 
 [Illustrated project-picker guide](docs/PROJECT-PICKER-EN.md)
 
@@ -80,12 +105,20 @@ There is no fixed device, page or block limit. Practical capacity depends on the
 4. Use **Imager** to prepare a Pi SD card; confirm the selected target before erasing it.
 5. Publish the project and use **Player** or the controller's web panel for daily operation.
 
+## Raspberry Pi first run
+
+After preparing a card with **AV Control Imager** and completing its first boot, the default URL is **https://av-control.local:8443/**. A custom name such as `room-a` gives **https://room-a.local:8443/**. DHCP assigns the IP; the image does not use a fixed `192.168.1.23` address.
+
+Sign in to the web interface as **`admin`** with the password you chose in Imager. **`avoperator`** is the separate Linux/SSH account. Read `AV-Control-parowanie.txt` and `AV-Control-CA.crt` from the boot partition after provisioning: Studio/Player use the URL and fingerprint; browsers require the correct CA trust and a covered certificate name. Then deploy a project; a new card waits for its first panel.
+
+[**Complete first-run procedure**](docs/FIRST-RUN-EN.md) — Imager, DHCP/network discovery, certificates, accounts, deployment, login and HDMI/USB, updates, optional TECHNIKAV enrollment and troubleshooting.
+
 ## Learn and verify
 
-- [Offline training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Szkolenie-1.5.5.zip) — **37 chapters, four appendices, 59 illustrations** and neutral example projects.
-- [154-page PDF](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Training programme](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/PROGRAM-SZKOLENIA-PL.md) — **eight sessions / 19 hours**.
-- [Complete documentation](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/AV-Control-Studio-1.5.5-Dokumentacja.zip) · [Python manual](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/SYMBOLE-PYTHON-PL.md) · [USB, RS485 and UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/USB-RS485-UART-PL.md) · [Network gateways](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/EKSPANDERY-SIECIOWE-PL.md).
-- [Verification report](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/WERYFIKACJA-1.5.5.md) · [Build/test manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/RELEASE-MANIFEST.json) · [SHA256 sums](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/SHA256SUMS.txt).
+- [Offline training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Szkolenie-1.6.0.zip) — **52 chapters, four appendices, 72 illustrations** and neutral example projects.
+- [191-page PDF](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Training programme](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/PROGRAM-SZKOLENIA-PL.md) — **10 sessions / 22 hours**.
+- [Complete documentation](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/AV-Control-Studio-1.6.0-Dokumentacja.zip) · [Python manual](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/SYMBOLE-PYTHON-PL.md) · [USB, RS485 and UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/USB-RS485-UART-PL.md) · [Network gateways](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/EKSPANDERY-SIECIOWE-PL.md).
+- [Verification report](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/WERYFIKACJA-1.6.0.md) · [Build/test manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/RELEASE-MANIFEST.json) · [SHA256 sums](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/SHA256SUMS.txt).
 
 The detailed course and UI are currently in Polish. README and release descriptions are available in Polish and English; use the language links above.
 
@@ -93,7 +126,7 @@ The detailed course and UI are currently in Polish. README and release descripti
 
 ## Distribution and licensing
 
-Use the release's **Assets** section. The manifest links verified packages to the tested product and exact successful CI commit. Version 1.5 distributes compiled applications and documentation with no product source archive. Bytecode and browser bundles are not encryption or a guarantee against reverse engineering. [Packaging details](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.5/PAKOWANIE-BINARNE-1.5-PL.md).
+Use the release's **Assets** section. The manifest links verified packages to the tested product and exact successful CI commit. Version 1.5 distributes compiled applications and documentation with no product source archive. Bytecode and browser bundles are not encryption or a guarantee against reverse engineering. [Packaging details](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.0/PAKOWANIE-BINARNE-1.5-PL.md).
 
 Installed applications continue to use this repository for updates. The repository split does not require an SD rewrite or project replacement. Online update checks and PyPI installations require internet; local operation remains independent of them.
 

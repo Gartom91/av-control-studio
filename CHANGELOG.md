@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## 1.6.0 — 2026-10-10
+
+PL: Powitanie i metryka projektu, autonomiczna diagnostyka i raporty TECHNIKAV, tła/9-slice, klawiatura PC ukryta domyślnie i HDMI włączona, główny podręcznik 191 stron. [Pełny opis](docs/releases/v1.6.0.md#polski).
+
+EN: Welcome/project records, autonomous diagnostics and TECHNIKAV reports, backgrounds/nine-slice, PC keyboard hidden by default and HDMI enabled, 191-page integrated handbook. [Full notes](docs/releases/v1.6.0.md#english).
+
 ## 1.5.5 — 2026-10-10
 
 PL: Konta i hasła, logowanie do WWW/Player/HDMI, opcjonalne pamiętanie, wysuwana klawiatura z Alt/Shift i jednakowymi klawiszami; poprawka APT offline.

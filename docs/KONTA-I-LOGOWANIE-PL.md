@@ -1,4 +1,4 @@
-# Konta, logowanie do panelu i klawiatura ekranowa — 1.5.5
+# Konta, logowanie do panelu i klawiatura ekranowa — 1.6.0
 
 Ta instrukcja uzupełnia podręcznik Signal Workshop. Konta należą do konkretnego kontrolera lub lokalnego symulatora; plik projektu `.avctrl` nie zawiera haseł ani danych kont. Konto systemowe Raspberry Pi używane do SSH i tty2 jest oddzielne od konta AV Control.
 
@@ -34,7 +34,7 @@ Administrator resetuje hasło innej osoby przez formularz edycji. Nie widzi obec
 1. Otwórz Player, panel przeglądarkowy lub podłącz ekran HDMI do kontrolera. Przed logowaniem nie można sterować opublikowanym projektem.
 2. Kliknij lub dotknij pole **Login**. Wpisz nazwę konta utworzonego na tym kontrolerze.
 3. Wybierz **Hasło** i wpisz hasło. Pole maskuje wpisane znaki.
-4. Użyj klawiatury ekranowej lub fizycznej USB. Klawiatura płynnie wysuwa się od dolnej krawędzi po wybraniu pola. Możesz ją schować kliknięciem uchwytu, przeciągnięciem go w dół lub klawiszem Escape, a przywrócić dotknięciem innego pola lub pociągnięciem uchwytu w górę. Formularz pozostaje niezależny od klawiatury, a aktywne pole jest przewijane nad nią.
+4. Użyj klawiatury fizycznej lub ekranowej. Przy wejściu przez WWW klawiatura wraz z uchwytem jest domyślnie ukryta. Włącz ją w **Ustawienia → Wprowadzanie tekstu**, w panelu operatora przez **Moje konto**, a przed logowaniem przez **Ustawienia wprowadzania**. Wybór dotyczy tej przeglądarki; nie zmienia panelu HDMI, w którym klawiatura jest domyślnie włączona. Po włączeniu klawiatura płynnie wysuwa się od dołu po wybraniu pola. Schowasz ją uchwytem, przeciągnięciem w dół lub klawiszem Escape, a przywrócisz dotknięciem pola lub pociągnięciem uchwytu w górę. Aktywne pole jest przewijane nad klawiaturę.
 5. Opcja **Loguj automatycznie na tym urządzeniu (30 dni)** domyślnie pozostaje wyłączona. Zaznacz ją tylko wtedy, gdy chcesz zapamiętać dostęp na danym stanowisku.
 6. Kliknij **Otwórz panel** lub ekranowy **Enter**. Błędne dane pozostawiają formularz logowania; sprawdź aktywne Alt i Shift oraz wielkość liter.
 
