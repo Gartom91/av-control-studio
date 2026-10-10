@@ -16,6 +16,6 @@ Formularz urządzenia i konfiguracja Raspberry Pi wykorzystują pełną dostępn
 
 ![Formularz urządzenia bez ograniczenia do 1000 pikseli](evidence/debugger-layout/device-full-width.png)
 
-Weryfikacja wersji 1.5.1: [przeglądarka](evidence/debugger-layout-browser-1.5.1.json), [zainstalowane Studio Windows WebView2](evidence/debugger-layout-native-1.5.1.json). Testy używają własnych symulatorów i nie wysyłają poleceń do urządzeń instalacji. Obejmują regulację, zapis ustawień, osobne okno, obsługę pól po powrocie, przejście do bloku z debuggera, motyw, bodźce 1/0, zmianę kart, zwężenie, powrót i wylogowanie. Próby blokady okna i utraty połączenia wykonano w przeglądarce. Brak błędów JavaScript. Wyniki fizycznej aktualizacji RPi są raportowane oddzielnie.
+Weryfikacja wersji 1.5.2: [przeglądarka](evidence/debugger-layout-browser-1.5.2.json), [zainstalowane Studio Windows WebView2](evidence/debugger-layout-native-1.5.2.json). Testy używają własnych symulatorów i nie wysyłają poleceń do urządzeń instalacji. Obejmują regulację, zapis ustawień, osobne okno, obsługę pól po powrocie, przejście do bloku z debuggera, motyw, bodźce 1/0, zmianę kart, zwężenie, powrót i wylogowanie. Próby blokady okna i utraty połączenia wykonano w przeglądarce. Brak błędów JavaScript. Wyniki fizycznej aktualizacji RPi są raportowane oddzielnie.
 
 Szczegółowy kurs: [rozdział 34](tutorial/TUTORIAL-PL.md), [sesja 4](tutorial/PROGRAM-SZKOLENIA-PL.md).
