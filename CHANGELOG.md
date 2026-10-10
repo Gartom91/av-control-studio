@@ -8,6 +8,7 @@ Każde wydanie ma odpowiadający sobie opis po polsku i angielsku. Pakiety pobie
 
 | Version / Wersja | Date / Data | Changes / Zmiany | Files / Pliki |
 | --- | --- | --- | --- |
+| **1.5.3** | 2026-10-10 | [PL: wyszukiwane, stylizowane menu projektów](docs/releases/v1.5.3.md#polski) · [EN: searchable themed project menu](docs/releases/v1.5.3.md#english) | [Release / Wydanie](https://github.com/Gartom91/av-control-studio/releases/tag/v1.5.3) |
 | **1.5.2** | 2026-10-10 | [PL: wyróżniony selektor projektu](docs/releases/v1.5.2.md#polski) · [EN: prominent project selector](docs/releases/v1.5.2.md#english) | [Release / Wydanie](https://github.com/Gartom91/av-control-studio/releases/tag/v1.5.2) |
 | **1.5.1** | 2026-10-10 | [PL: układ, osobny debugger i poprawki](docs/releases/v1.5.1.md#polski) · [EN: workspace, detached debugger and fixes](docs/releases/v1.5.1.md#english) | [Release / Wydanie](https://github.com/Gartom91/av-control-studio/releases/tag/v1.5.1) |
 | **1.5.0** | 2026-10-10 | [PL: Signal Workshop, Python, debugger i wygląd](docs/releases/v1.5.0.md#polski) · [EN: Signal Workshop, Python, debugger and appearance](docs/releases/v1.5.0.md#english) | [Release / Wydanie](https://github.com/Gartom91/av-control-studio/releases/tag/v1.5.0) |
