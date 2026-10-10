@@ -1,0 +1,25 @@
+{
+  "ok": false,
+  "version": "1.5.4",
+  "physicalPi4b": true,
+  "updateOutcome": "rolled_back",
+  "restoredVersion": "1.5.3",
+  "previousApplicationHealthy": true,
+  "preservation": {
+    "projectId": true,
+    "revision": true,
+    "projectCanonicalSha256": true,
+    "certificateSha256": true,
+    "users": true,
+    "agentConnection": true,
+    "uartEnabled": true,
+    "updatePreferences": true
+  },
+  "failure": "APT repository entries require archives in its cache when --no-download is used. Local pinned .deb paths alone are insufficient on an existing OS with package indexes.",
+  "fixedIn": "1.5.5",
+  "fixAcquireOnlyVerifiedOnPhysicalPi": true,
+  "physicalHdmi": false,
+  "physicalUsbInput": false,
+  "physicalVtSwitch": false,
+  "testActions": 0
+}
