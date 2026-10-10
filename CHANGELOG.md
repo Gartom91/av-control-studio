@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## 1.6.3 — 2026-10-10
+
+PL: Naprawa przezroczystego okna konta i niewidocznych pól hasła. Niezależne okno, motywy Studio i panelu, układ responsywny, przewijanie nad klawiaturę i testy natywnych rendererów. Podręcznik i program zaktualizowane w miejscu. [Pełny opis](docs/releases/v1.6.3.md#polski).
+
+EN: Fixed the transparent account dialog and invisible password fields. Independent dialog, Studio and panel palettes, responsive layout, keyboard scrolling and native renderer checks. The original handbook and training programme are updated in place. [Full notes](docs/releases/v1.6.3.md#english).
+
 ## 1.6.2 — 2026-10-10
 
 PL: Poprawka fokusu klawiatury wirtualnej i obowiązkowe testy regresji. Agent 1.1.1, kreator Proton Mail na TECHNIKAV 0.12.408, podręcznik 195 stron / 75 ilustracji. [Pełny opis](docs/releases/v1.6.2.md#polski).
