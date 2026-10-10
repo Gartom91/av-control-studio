@@ -7,90 +7,94 @@
 
 # Jedna instalacja. Twoje urządzenia. Twoja logika.
 
-Projektuj panele, łącz urządzenia i steruj instalacją lokalnie.
+Projektuj panele, podłączaj urządzenia i programuj instalację lokalnie.
 
 **Polski · [English](README.en.md)**
 
-[**Pobierz najnowsze wydanie**](https://github.com/Gartom91/av-control-studio/releases/latest) · [Historia wydań](CHANGELOG.md) · [Kurs szkoleniowy](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Szkolenie-1.4.0.zip)
+[**Pobierz 1.5.0 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.5.0) · [Historia wydań](CHANGELOG.md) · [Kurs szkoleniowy](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Szkolenie-1.5.0.zip)
 
-**Windows · Raspberry Pi 3B / 4B / 5 · Panele w przeglądarce**
+**Windows · Raspberry Pi 3B / 4B / 5 · Player Linux · Panele WWW**
 
 </div>
 
 ---
 
-AV Control to konfigurowalna platforma do sal AV, ekspozycji i innych instalacji urządzeń. Samodzielnie definiujesz urządzenia, protokoły, panele operatora oraz logikę działania. Projekt pracuje na Raspberry Pi niezależnie od komputera użytego do projektowania. Codzienne sterowanie działa bez chmury i internetu.
+AV Control to konfigurowalna platforma do sal AV, wystaw i innych instalacji. Definiujesz urządzenia, protokoły, panele i logikę; Raspberry Pi wykonuje projekt samodzielnie po zamknięciu Studio. Codzienne sterowanie działa lokalnie, bez chmury i internetu.
 
-To **oficjalne repozytorium dystrybucji**: instalatory, obrazy kontrolera, aktualizacje, instrukcje i raporty weryfikacji. Rozwój produktu i historia źródeł znajdują się w osobnym repozytorium prywatnym. Automatyczne archiwa GitHub „Source code” zawierają dokumentację tego repozytorium dystrybucji.
+To **oficjalne repozytorium dystrybucyjne**: instalatory, obrazy kontrolera, aktualizacje, instrukcje i raporty weryfikacji. Źródła i historia rozwoju produktu znajdują się w osobnym prywatnym repozytorium. Automatyczne archiwa „Source code” GitHub zawierają dokumentację tego repozytorium dystrybucyjnego.
 
-> **Aktualne wydanie stabilne: 1.4.1.** Nowy interfejs Signal Workshop, debugger i rozbudowane środowisko Python są w przygotowaniu. Poniżej opisujemy funkcje wydanej wersji.
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="media/studio-light.png" />
+  <img src="media/signal-workshop.png" alt="Signal Workshop — logika, sygnały, urządzenia i uporządkowane połączenia" />
+</picture>
+
+*Rzeczywiste zrzuty aplikacji. Przykłady używają wirtualnych transportów i wyłączonych połączeń sprzętowych.*
 
 ## Wybierz aplikację
 
-| Aplikacja | Do czego służy | Pobieranie 1.4.1 |
+| Aplikacja | Zastosowanie | Pobierz 1.5.0 |
 | --- | --- | --- |
-| **Studio** | Konfiguracja urządzeń, projektowanie paneli i logiki, symulacja oraz publikowanie projektów. | [Instalator Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Studio-1.4.1-Windows-x64.exe) |
-| **Player** | Obsługa opublikowanych paneli na osobnym komputerze, także na pełnym ekranie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Player-1.4.1-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Player-1.4.1-Linux-all.deb) · [Archiwum Linux](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Player-1.4.1-Linux.tar.gz) |
-| **Imager** | Zapis i weryfikacja karty SD; wybór modelu maliny oraz pierwsza konfiguracja konta i sieci. Zawiera obraz kontrolera. | [Instalator Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Imager-1.4.1-Windows-x64.exe) |
-| **Kontroler RPi** | Samodzielne wykonywanie logiki i komunikacja z urządzeniami po zamknięciu Studio. | [Obraz SD, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-RPi-1.4.1-arm64.img.xz) · [Aktualizacja Runtime](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Runtime-1.4.1-arm64.zip) |
-| **Panel WWW** | Obsługa tych samych paneli z komputera, tabletu lub telefonu. | Otwórz adres HTTPS kontrolera; nie wymaga osobnego instalatora. |
+| **Studio** | Urządzenia, protokoły, panele i logika; symulacja, debugger i publikowanie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Studio-1.5.0-Windows-x64.exe) |
+| **Player** | Obsługa opublikowanych paneli na osobnym komputerze, także w pełnym ekranie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Player-1.5.0-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Player-1.5.0-Linux-all.deb) · [Archiwum Linux](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Player-1.5.0-Linux.tar.gz) |
+| **Imager** | Wybór modelu RPi, ustawienia kont i sieci, zapis i weryfikacja karty SD. Obraz jest dołączony. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Imager-1.5.0-Windows-x64.exe) |
+| **Kontroler RPi** | Samodzielne wykonywanie logiki i komunikacja z urządzeniami. | [Obraz SD, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-RPi-1.5.0-arm64.img.xz) · [Aktualizacja Runtime](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Runtime-1.5.0-arm64.zip) |
+| **Panel WWW** | Obsługa tych samych paneli na komputerze, tablecie lub telefonie. | Otwórz adres HTTPS kontrolera. |
 
-Aplikacje Windows obsługują Windows 10 22H2 i Windows 11, x64. Instalatory dostarczają .NET oraz instalator WebView2 offline. Obraz RPi opiera się na Raspberry Pi OS Lite 64-bit. Pakiet Runtime aktualizuje istniejący kontroler AV Control — nie jest obrazem SD.
+Windows: Windows 10 22H2 / Windows 11, x64; .NET i instalator WebView2 offline są dołączone. Publiczny Player Linux: Debian 13 / CPython 3.13 z GTK i WebKit. Obraz RPi: Raspberry Pi OS Lite 64-bit. Pakiet Runtime służy do aktualizacji istniejącego kontrolera AV Control.
 
-## Najważniejsze możliwości
+## Signal Workshop
+
+- **Jeden obszar logiki:** urządzenia, sygnały, protokoły, komendy, sekwencje i Python we wspólnym eksploratorze z ustawieniami kontekstowymi. Nazwa i ikona urządzenia opisują rzeczywisty sprzęt.
+- **Czytelne schematy:** porty wyrównane z opisami, prowadzenie przewodów wokół symboli, rozdzielanie tras i oznaczanie przecięć. Bramki o zmiennej liczbie wejść, Truth table, impulsowy Interlock z SET ALL/CLEAR, timery, liczniki, pamięci, zatrzaski i przerzutniki.
+- **Pełny Python:** edytor kodu, typowane porty, stan, parametry, moduły pomocnicze i dokładne wersje bibliotek. Import NumPy i innych bibliotek, instalacja z PyPI lub zgodnych wheel offline oraz próba w Studio. Administrator zatwierdza konkretny kod, helpery i wymagania; zmiana unieważnia zgodę. Pełny CPython wykonuje zaufany kod i nie jest piaskownicą bezpieczeństwa.
+- **Debugger:** wartości i jakość sygnałów, pamięci, timery, sekwencje, TX/RX, ślad zdarzeń i przyczyny blokad. Wymuszanie wejść oraz pauza/krok logiki w symulatorze. Pauza nie zamraża komunikacji, trwających sekwencji ani procesów Python.
+- **Codzienna edycja:** prawy klik i skróty do wycinania, kopiowania, wklejania, duplikacji, usuwania, zmiany nazwy, wyrównywania, grup, warstw, kopiowania wyglądu, blokowania pozycji i przechodzenia do końców połączenia.
+- **Własny wygląd:** jasny, ciemny i systemowy motyw programu, dopasowane przewijanie oraz osiem motywów paneli z dostrajaniem poszczególnych elementów.
+
+![Panel Liquid — filtrowanie treści w tle i subtelne odbicia](media/liquid-panel.png)
+
+*Glass, Liquid, Frost i Szron filtrują rzeczywistą treść pod kontrolkami. Soft Dark zapewnia delikatne wypukłości i gradienty; Paper, Workshop i Contrast mają odmienny charakter. Efekty mają wariant oszczędny. Zdjęcie przedstawia rzeczywisty rendering panelu.*
+
+## Połączenia i automatyzacja
 
 | Obszar | Funkcje |
 | --- | --- |
-| **Połączenia** | Konwertery USB–RS232/RS485, UART maliny, klient/nasłuch TCP, UDP i cyfrowe GPIO. Stabilny wybór USB przez `by-id` lub `by-path`, wykrywanie konfliktów i diagnostyka. |
-| **Rozbudowa sieci** | Dodatkowe adaptery USB–Ethernet na RPi; ekspandery szeregowe Ethernet/Wi-Fi z adresami kanałów, TCP/UDP oraz standardowym RFC2217, jeśli urządzenie go obsługuje. |
-| **Własne protokoły** | Ramki ASCII/UTF-8/HEX, parametry, zakończenia ramek, kolejność bajtów, SUM/XOR/CRC, odczyt odpowiedzi, komunikaty spontaniczne i odpytywanie. Profile wielokrotnego użytku, adresy i porty konkretnej instalacji. |
-| **Panele WYSIWYG** | Strony, przyciski, przełączniki, fadery, suwaki, pokrętła, wartości, kontrolki, teksty i grafiki. Przeciąganie, rozmiar, wyrównywanie, warstwy, grupy, cofanie/ponawianie i warianty PC/tablet/telefon. Import grafik, ukrywanie etykiet, ramki, zaokrąglenia i własny CSS. |
-| **Logika graficzna** | Bramki z regulowaną liczbą wejść, działania, porównania, zbocza, timery, liczniki, trwałe pamięci, zatrzaski i przerzutniki. Impulsowy Interlock z SET ALL/CLEAR, edytowalna Truth table i moduły wielokrotnego użytku. |
-| **Automatyzacja** | Komendy i sekwencje z opóźnieniami, warunkami, oczekiwaniem na odpowiedź, timeoutem i anulowaniem. Zezwolenia i wzajemne wykluczanie sprawdzane w silniku także dla API i wielu paneli. |
-| **Symbole Python** | Typowane porty, parametry, pamięć, próba działania w aplikacji i podręcznik offline. Wersja 1.4.1 korzysta z ograniczonego środowiska symboli. |
-| **Symulacja** | Wirtualne transporty, wymuszanie wejść, odpowiedzi, opóźnień i awarii; diagnostyka ramek, jakości sygnałów, pamięci, sekwencji i przyczyn blokad. |
-| **Publikowanie** | Walidacja, przygotowanie i aktywacja projektu, historia wdrożeń oraz przywracanie. Aktualizacje Studio, Playera, Imagera i Runtime RPi ze sprawdzaniem SHA-256. RPi wykonuje kopię danych i powrót po nieudanym sprawdzeniu uruchomienia. |
+| **Porty szeregowe i GPIO** | USB–RS232/RS485, UART RPi i cyfrowe GPIO; stabilne identyfikatory USB, wykrywanie linii, konflikty, format transmisji, kontrola przepływu i kierunek RS485. UART jest domyślnie włączony w czystym obrazie bez konsoli szeregowej. |
+| **Rozbudowa sieci** | Klient/nasłuch TCP, UDP, dodatkowe adaptery USB–Ethernet na malinie oraz ekspandery Ethernet/Wi-Fi z ustawieniami kanałów, TCP/UDP i standardowym RFC2217, jeśli sprzęt go obsługuje. Presety wyjaśniają Unitek Y-105, USR-W610 i CH343P TTL. |
+| **Własne protokoły** | ASCII/UTF-8/HEX, parametry, końce/długości ramek, kolejność bajtów, SUM/XOR/CRC, pola odpowiedzi, mapowanie stanów, komunikaty spontaniczne i odpytywanie. Profile wielokrotnego użytku z osobnymi adresami instalacji. |
+| **Panele WYSIWYG** | Strony, przyciski, przełączniki, fadery, slidery, pokrętła, wartości, kontrolki, tekst i grafiki z dysku; opcjonalne etykiety, ramki, rogi, CSS i warianty PC/tablet/telefon. Edytor i operator używają wspólnego renderera. |
+| **Akcje i sekwencje** | Oczekiwanie, timeouty i anulowanie; zezwolenia oraz wzajemne wykluczanie sprawdzane przez silnik dla API i wielu paneli. Jakość sygnału rozróżnia wartości poprawne, przeterminowane, nieznane i błędne. |
+| **Publikowanie i praca** | Walidacja, przygotowanie, aktywacja, historia/przywracanie, role administrator/operator, HTTPS i przypięcie certyfikatu. Ustawienia RPi przez WWW z potwierdzeniem/powrotem sieci. Aktualizacje GitHub wszystkich aplikacji Windows i Runtime ze sprawdzeniem SHA256 i powrotem RPi po błędzie uruchomienia. |
 
 Nie ma stałego limitu liczby urządzeń, stron ani bloków. Praktyczna pojemność zależy od kontrolera i obciążenia. Jeden kontroler wykonuje jeden aktywny projekt; Studio przechowuje wiele projektów i połączeń z kontrolerami.
 
-![Panel operatora wydanej wersji — projekt szkoleniowy Wirtualna sala AV](media/operator-panel.png)
-
-*Rzeczywisty zrzut z wydanego projektu szkoleniowego. Połączenia sprzętowe w przykładzie są wyłączone.*
-
 ## Zacznij bez sprzętu
 
-1. Zainstaluj **Studio** z tabeli powyżej.
-2. Zaloguj się do lokalnego symulatora: `admin` / `simulation`. Te dane dotyczą wyłącznie lokalnego symulatora.
-3. Wybierz **Otwórz projekt szkoleniowy**, a następnie **Podręcznik szkoleniowy**.
-4. Sprawdź panele i wybierz **Uruchom symulację**. Przed podłączeniem sprzętu skonfiguruj własne komendy.
-5. Przygotuj kartę SD aplikacją **Imager**. Zapis obrazu usuwa zawartość wskazanej karty; najpierw sprawdź wybrany nośnik.
-6. Opublikuj projekt. Do codziennej obsługi użyj **Playera** lub panelu WWW; Studio nie musi pozostawać otwarte.
+1. Zainstaluj **Studio** i zaloguj się do lokalnego symulatora: `admin` / `simulation`.
+2. Wybierz **Otwórz projekt szkoleniowy** oraz **Podręcznik szkoleniowy**.
+3. Sprawdź przykłady i wybierz **Uruchom symulację**. Przed włączeniem transportów fizycznych zdefiniuj własne polecenia sprzętu.
+4. Przygotuj SD aplikacją **Imager**; przed jej wymazaniem potwierdź wybrany nośnik.
+5. Opublikuj projekt i obsługuj go w **Playerze** albo panelu WWW kontrolera.
 
 ## Nauka i weryfikacja
 
-- [Kurs offline: HTML i projekt](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Szkolenie-1.4.0.zip) — 32 rozdziały, cztery dodatki, 39 screenshotów i trzy schematy.
-- [Podręcznik PDF](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Studio-Tutorial-PL-1.4.0.pdf) — 116 stron; kurs 1.4.0 obejmuje również 1.4.1.
-- [Pełna dokumentacja](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Studio-1.4.1-Dokumentacja.zip) · [Ekspandery](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/EKSPANDERY-SIECIOWE-PL.md) · [USB, RS485 i UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/USB-RS485-UART-PL.md).
-- [Weryfikacja wydania](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/WERYFIKACJA-1.4.1.md) · [Raport aktualizacji fizycznej 4B](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/WERYFIKACJA-RPI-1.4.1-PO-PUBLIKACJI.md).
+- [Kurs offline](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Szkolenie-1.5.0.zip) — **37 rozdziałów, cztery dodatki, 59 ilustracji** i neutralne projekty przykładowe.
+- [PDF: 153 strony](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Program szkolenia](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/PROGRAM-SZKOLENIA-PL.md) — **osiem sesji / 19 godzin**.
+- [Pełna dokumentacja](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Studio-1.5.0-Dokumentacja.zip) · [Python](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/SYMBOLE-PYTHON-PL.md) · [USB, RS485 i UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/USB-RS485-UART-PL.md) · [Ekspandery](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/EKSPANDERY-SIECIOWE-PL.md).
+- [Raport weryfikacji](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/WERYFIKACJA-1.5.0.md) · [Manifest budowania i testów](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/RELEASE-MANIFEST.json) · [Sumy SHA256](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/SHA256SUMS.txt).
 
-Szczegółowy kurs i interfejs aplikacji są obecnie po polsku. README i opisy wydań są po polsku i angielsku.
+Szczegółowy kurs i interfejs są obecnie po polsku. README i opisy wydań są w obu językach; wybór znajduje się u góry.
 
-Wyniki komputerowe, emulacja ARM64 i fizyczna 4B są raportowane oddzielnie. Nie potwierdzono fizycznej pracy 3B/5, rozruchu świeżej karty na wszystkich modelach, elektrycznej komunikacji UART/GPIO ani zakupionych adapterów. Zakres prób opisuje raport danego wydania. Instalatory AV Control nie mają obecnie podpisu Authenticode.
+Testy komputerowe, emulacja ARM64 i istniejąca fizyczna 4B mają odrębne dowody. Fizyczne 3B/5, rozruch nowej karty, komunikacja elektryczna UART/RS232/RS485/GPIO, zakupione adaptery i rzeczywiste urządzenia mobilne wymagają osobnych prób sprzętowych. Instalatory AV Control nie mają obecnie podpisu Authenticode wydawcy; instalatory producentów są sprawdzane osobno.
 
-## Aktualizacje, integralność i licencja
+## Dystrybucja i licencja
 
-Pobieraj pliki z sekcji **Assets** wydania. [SHA256-DISTRIBUTION.txt](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/SHA256-DISTRIBUTION.txt) i [DISTRIBUTION-MANIFEST.json](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/DISTRIBUTION-MANIFEST.json) opisują publiczne pakiety. Pierwotny historyczny manifest wymienia także archiwum źródeł produktu wyłączone z tej dystrybucji.
+Pobieraj załączniki z sekcji **Assets**. Manifest wiąże sprawdzone paczki z produktem i udanym CI dokładnego commitu. Wersja 1.5 dostarcza skompilowane aplikacje i dokumentację, bez ZIP-a źródeł produktu. Kod bajtowy i pakiety przeglądarkowe nie są szyfrowaniem ani gwarancją ochrony przed analizą. [Szczegóły pakowania](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/PAKOWANIE-BINARNE-1.5-PL.md).
 
-Zainstalowane aplikacje nadal korzystają z `Gartom91/av-control-studio` do aktualizacji. Podział repozytoriów nie wymaga ponownego zapisu SD ani zmiany projektów. Sterowanie pozostaje lokalne; aktualizacje online wymagają internetu.
+Aplikacje nadal korzystają z tego repozytorium do aktualizacji. Podział repozytoriów nie wymaga ponownego zapisu SD ani wymiany projektu. Aktualizacje online i instalacja z PyPI wymagają internetu; praca lokalna pozostaje od nich niezależna.
 
-**Planowane nowe elementy produktu będą objęte własną EULA.** Historyczny tekst MIT dotyczy wcześniejszych wydań i pochodzących z nich części kodu; nie jest ogólną licencją wszystkich nowych elementów przyszłych wersji. Zobacz [zakres licencji](LICENSE).
+Wcześniejsze wydania MIT i pochodzący z nich kod zachowują [pierwotne warunki MIT](LICENSE-MIT-1.4.1.txt). MIT nie jest ogólną licencją wszystkich nowych elementów rozwijanych po 1.4.1; zobacz [zakres licencji](LICENSE). Komponenty innych autorów zachowują swoje licencje.
 
-Wcześniej wydane kopie MIT zachowują swoje warunki: [MIT dla 1.4.1](LICENSE-MIT-1.4.1.txt). Historyczne pakiety Python mogą zawierać czytelny kod Runtime; prywatne repozytorium źródeł nie oznacza uniemożliwienia analizy dystrybuowanych aplikacji.
+[Projekt przyszłej EULA](EULA-PL-PROJEKT.md) wskazuje osobę fizyczną z placeholderami danych, adresu i kontaktu. Opisuje możliwe przyszłe opłaty; nie uruchamia płatności ani nowych wiążących warunków. Licencjonowanie przez TECHNIKAV pozostaje planowaną usługą opcjonalną.
 
-[Projekt przyszłej EULA](EULA-PL-PROJEKT.md) wskazuje **osobę fizyczną** jako planowanego Licencjodawcę, z placeholderami imienia i nazwiska, adresu do korespondencji oraz e-maila. Rozważamy opcjonalne przyszłe opłaty; dokument nie uruchamia opłat ani nowych wiążących warunków. Licencje bibliotek innych autorów pozostają zachowane.
-
-## Uwagi i zgłoszenia
-
-[Zgłoś błąd lub propozycję funkcji](https://github.com/Gartom91/av-control-studio/issues). Podaj wersję, model kontrolera i sposób odtworzenia problemu. Usuń hasła, tokeny i adresy instalacji ze zrzutów oraz raportów.
-
-[Format dwujęzycznych wydań](RELEASING.md) · [English](README.en.md) · [Wszystkie wydania](https://github.com/Gartom91/av-control-studio/releases)
+[Zgłoś błąd lub propozycję](https://github.com/Gartom91/av-control-studio/issues) · [Standard dwujęzycznych wydań](RELEASING.md) · [English](README.en.md)

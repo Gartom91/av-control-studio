@@ -7,90 +7,94 @@
 
 # One installation. Your devices. Your logic.
 
-Design control panels, connect equipment and run your installation locally.
+Build operator panels, connect equipment and program your installation locally.
 
 **[Polski](README.pl.md) · English**
 
-[**Download the latest release**](https://github.com/Gartom91/av-control-studio/releases/latest) · [Release history](CHANGELOG.md) · [Training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Szkolenie-1.4.0.zip)
+[**Download 1.5.0 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.5.0) · [Release history](CHANGELOG.md) · [Training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Szkolenie-1.5.0.zip)
 
-**Windows · Raspberry Pi 3B / 4B / 5 · Browser panels**
+**Windows · Raspberry Pi 3B / 4B / 5 · Linux Player · Browser panels**
 
 </div>
 
 ---
 
-AV Control is a configurable platform for AV rooms, exhibitions and other equipment installations. You define the devices, protocols, operator panels and control logic. Projects run on a Raspberry Pi independently of the design computer. Routine control works without cloud services or an internet connection.
+AV Control is a configurable platform for AV rooms, exhibitions and equipment installations. Define your devices, protocols, panels and logic; the Raspberry Pi runs the project independently after Studio closes. Daily control works locally without cloud services or an internet connection.
 
-This is the **official distribution repository** for installers, controller images, updates, manuals and verification reports. Product development and source history are maintained in a separate private repository. GitHub's automatic “Source code” downloads contain this repository's distribution documentation.
+This is the **official distribution repository** for installers, controller images, updates, manuals and verification reports. Product sources and development history are maintained in a separate private repository. GitHub's automatic “Source code” downloads contain this repository's distribution documentation.
 
-> **Current stable release: 1.4.1.** The new Signal Workshop interface, debugger and expanded Python environment are in development. The features below describe the released version.
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="media/studio-light.png" />
+  <img src="media/signal-workshop.png" alt="Signal Workshop — logic, signals, devices and organized connections" />
+</picture>
+
+*Real application screenshots. The examples use virtual transports and disabled hardware connections.*
 
 ## Choose your application
 
-| Application | Purpose | Download for 1.4.1 |
+| Application | Purpose | Download 1.5.0 |
 | --- | --- | --- |
-| **Studio** | Configure devices, design panels and logic, simulate and publish projects. | [Windows x64 installer](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Studio-1.4.1-Windows-x64.exe) |
-| **Player** | Run published operator panels on a separate computer, including full screen operation. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Player-1.4.1-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Player-1.4.1-Linux-all.deb) · [Linux archive](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Player-1.4.1-Linux.tar.gz) |
-| **Imager** | Write and verify an SD card; select the Pi model and configure the initial account and network. Includes the controller image. | [Windows x64 installer](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Imager-1.4.1-Windows-x64.exe) |
-| **RPi Controller** | Execute logic and communicate with devices after Studio closes. | [SD image, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-RPi-1.4.1-arm64.img.xz) · [Runtime update](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Runtime-1.4.1-arm64.zip) |
-| **Web panel** | Operate the same published panels from a computer, tablet or phone. | Open the controller's HTTPS address; no separate installer. |
+| **Studio** | Design devices, protocols, panels and logic; simulate, debug and publish. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Studio-1.5.0-Windows-x64.exe) |
+| **Player** | Operate published panels on a separate computer, including full screen. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Player-1.5.0-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Player-1.5.0-Linux-all.deb) · [Linux archive](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Player-1.5.0-Linux.tar.gz) |
+| **Imager** | Select the Pi model, configure initial accounts/network, write and verify an SD card. Includes the image. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Imager-1.5.0-Windows-x64.exe) |
+| **RPi Controller** | Execute logic and communicate with devices autonomously. | [SD image, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-RPi-1.5.0-arm64.img.xz) · [Runtime update](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Runtime-1.5.0-arm64.zip) |
+| **Web panel** | Operate the same panels on a computer, tablet or phone. | Open the controller's HTTPS address. |
 
-Windows applications support Windows 10 22H2 and Windows 11, x64. Installers provide .NET and the offline WebView2 installer. The Pi image uses Raspberry Pi OS Lite 64-bit. A Runtime update is for an existing AV Control controller; it is not an SD image.
+Windows: Windows 10 22H2 / Windows 11, x64; .NET and an offline WebView2 installer are included. Public Linux Player: Debian 13 / CPython 3.13 with GTK and WebKit. Pi image: Raspberry Pi OS Lite 64-bit. A Runtime update is for an existing AV Control controller, rather than an SD card.
 
-## Main capabilities
+## Signal Workshop
+
+- **One logic workspace:** devices, signals, protocol definitions, commands, sequences and Python share an explorer and contextual settings. Device names and icons describe the actual equipment.
+- **Clear diagrams:** ports align with labels; routing avoids symbols, separates paths and shows crossings. Variable-input gates, Truth table, pulse Interlock with SET ALL/CLEAR, timers, counters, memories, latches and flip-flops are available.
+- **Full Python:** a code editor, typed ports, state, parameters, helper modules and pinned dependencies. Import NumPy or other libraries, install from PyPI or compatible offline wheels, and test inside Studio. Administrator approval follows the exact code, helpers and requirements; changing them invalidates approval. Full CPython runs trusted code and is not a security sandbox.
+- **Debugger:** watch signal values and quality, memory, timers, sequences and device TX/RX; inspect traces and blocking reasons. Simulation supports forced inputs and pause/step for logic scans. Pause does not freeze transport I/O, running sequences or Python processes.
+- **Everyday editing:** right click and shortcuts for cut/copy/paste, duplicate, delete, rename, alignment, groups, layers, style copying, position locking and jumping to connection endpoints.
+- **Your appearance:** light, dark and system application themes, matching scrollbars and eight panel presets, with independently adjustable controls.
+
+![Liquid panel — live backdrop filtering and subtle reflections](media/liquid-panel.png)
+
+*Glass, Liquid, Frost and Rime filter the live content beneath controls. Soft Dark uses gentle raised edges and gradients. Paper, Workshop and Contrast provide different visual directions. Effects have an economical setting; this image is a real panel rendering.*
+
+## Connect and automate
 
 | Area | Capabilities |
 | --- | --- |
-| **Connections** | USB–RS232/RS485, Pi UART, TCP clients/listeners, UDP and digital GPIO. Stable USB selection through `by-id` or `by-path`, port conflict detection and diagnostics. |
-| **Network expansion** | Additional USB–Ethernet adapters on the Pi; Ethernet/Wi-Fi serial gateways with per-channel addresses, TCP/UDP and standard RFC2217 where supported. |
-| **Your protocols** | ASCII/UTF-8/HEX frames, parameters, framing, byte order, SUM/XOR/CRC, response parsing, spontaneous replies and polling. Reusable profiles with installation-specific addresses and ports. |
-| **WYSIWYG panels** | Pages, buttons, switches, faders, sliders, knobs, values, indicators, text and images. Drag, resize, align, layers, groups, undo/redo and computer/tablet/phone layouts. Image import, optional labels, borders, rounded corners and custom CSS. |
-| **Visual logic** | Variable-input gates, arithmetic, comparisons, edges, timers, counters, retained memories, latches and flip-flops. Pulse Interlock with SET ALL/CLEAR, configurable Truth table outputs and reusable modules. |
-| **Automation** | Commands and sequences with delays, conditions, response waits, timeouts and cancellation. Engine-side permissions and mutual exclusion apply to API requests and multiple panels too. |
-| **Python symbols** | Typed ports, parameters, state, an in-app test and an offline manual. Version 1.4.1 uses the restricted symbol environment. |
-| **Simulation** | Virtual transports, forced inputs, injected replies, delays and faults; diagnostics for frames, signal quality, memories, sequences and blocking conditions. |
-| **Deployment** | Validate, prepare and activate projects; deployment history and restore. Updates for Studio, Player, Imager and Pi Runtime with SHA-256 checks. Pi updates include data backup and rollback after a failed startup check. |
+| **Serial and GPIO** | USB–RS232/RS485, Pi UART and digital GPIO; stable USB identifiers, detected lines, conflict checks, serial format, flow control and RS485 direction. UART is enabled in the clean image without a serial console. |
+| **Network expansion** | TCP client/listener, UDP, additional USB–Ethernet adapters on Pi and Ethernet/Wi-Fi serial gateways with per-channel settings, TCP/UDP and standard RFC2217 where supported. Presets explain Unitek Y-105, USR-W610 and CH343P TTL. |
+| **Your protocols** | ASCII/UTF-8/HEX, parameters, frame endings/lengths, byte order, SUM/XOR/CRC, response fields, state mapping, spontaneous replies and polling. Reusable profiles keep installation addresses separate. |
+| **WYSIWYG panels** | Pages, buttons, switches, faders, sliders, knobs, readouts, indicators, text and disk images; optional labels, frames, corners, CSS and PC/tablet/phone layouts. Editor and operator use the same renderer. |
+| **Reliable actions** | Sequences, waits, timeouts and cancellation; permissions and mutual exclusion checked by the engine across API clients and multiple panels. Signal quality separates good, stale, unknown and error values. |
+| **Deployment and operation** | Project validation, staged activation, history/restore, administrator/operator roles, HTTPS and certificate pinning. Browser-based Pi settings include network confirmation/rollback. GitHub updates cover all Windows apps and Pi Runtime with SHA256 checks and Pi startup rollback. |
 
-There is no fixed limit on device, page or block counts. Practical capacity depends on the controller and workload. One controller runs one active project; Studio keeps multiple projects and controller connections.
-
-![Released operator panel: the virtual AV room training project](media/operator-panel.png)
-
-*A real screenshot from the released training project. Hardware connections are disabled in the example.*
+There is no fixed device, page or block limit. Practical capacity depends on the controller and workload. One controller runs one active project; Studio stores multiple projects and controller connections.
 
 ## Start without hardware
 
-1. Install **Studio** from the table above.
-2. Sign in to the local simulator with `admin` / `simulation`. These credentials apply only to the local simulator.
-3. Select **Otwórz projekt szkoleniowy** (open the training project), then **Podręcznik szkoleniowy** (training manual).
-4. Explore the panels and choose **Uruchom symulację** (start simulation). Configure your own commands before connecting equipment.
-5. Use **Imager** to prepare a Pi controller's SD card. Writing an image erases the selected card; verify the target first.
-6. Publish your project. Use **Player** or the web panel for daily operation; Studio does not need to remain open.
+1. Install **Studio** and sign in to its local simulator: `admin` / `simulation`.
+2. Select **Otwórz projekt szkoleniowy** (open training project) and **Podręcznik szkoleniowy** (training manual).
+3. Explore the examples and select **Uruchom symulację**. Define your own equipment commands before enabling physical transports.
+4. Use **Imager** to prepare a Pi SD card; confirm the selected target before erasing it.
+5. Publish the project and use **Player** or the controller's web panel for daily operation.
 
 ## Learn and verify
 
-- [Offline course: HTML + project](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Szkolenie-1.4.0.zip) — 32 chapters, four appendices, 39 screenshots and three diagrams.
-- [Training PDF](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Studio-Tutorial-PL-1.4.0.pdf) — 116 pages; the 1.4.0 course also covers 1.4.1.
-- [Complete documentation](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/AV-Control-Studio-1.4.1-Dokumentacja.zip) · [Network gateways](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/EKSPANDERY-SIECIOWE-PL.md) · [USB, RS485 and UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/USB-RS485-UART-PL.md).
-- [Release verification](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/WERYFIKACJA-1.4.1.md) · [Physical Pi 4B update report](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/WERYFIKACJA-RPI-1.4.1-PO-PUBLIKACJI.md).
+- [Offline training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Szkolenie-1.5.0.zip) — **37 chapters, four appendices, 59 illustrations** and neutral example projects.
+- [153-page PDF](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Training programme](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/PROGRAM-SZKOLENIA-PL.md) — **eight sessions / 19 hours**.
+- [Complete documentation](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/AV-Control-Studio-1.5.0-Dokumentacja.zip) · [Python manual](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/SYMBOLE-PYTHON-PL.md) · [USB, RS485 and UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/USB-RS485-UART-PL.md) · [Network gateways](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/EKSPANDERY-SIECIOWE-PL.md).
+- [Verification report](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/WERYFIKACJA-1.5.0.md) · [Build/test manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/RELEASE-MANIFEST.json) · [SHA256 sums](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/SHA256SUMS.txt).
 
-The detailed course and application UI are currently in Polish. README and release notes are available in Polish and English.
+The detailed course and UI are currently in Polish. README and release descriptions are available in Polish and English; use the language links above.
 
-Computer tests, ARM64 emulation and a physical Pi 4B are reported separately. Physical Pi 3B/5, fresh SD boots on all models, electrical UART/GPIO communication and purchased external adapters have not yet been confirmed. See each release report for actual coverage. AV Control installers currently have no Authenticode signature.
+Computer tests, ARM64 emulation and existing physical Pi 4B tests are reported separately. Physical 3B/5, clean SD boots, electrical UART/RS232/RS485/GPIO, purchased adapters and physical mobile devices require separate hardware trials. AV Control's installers currently have no publisher Authenticode signature; vendor installers are verified separately.
 
-## Updates, integrity and licensing
+## Distribution and licensing
 
-Use the release's **Assets** section. [SHA256-DISTRIBUTION.txt](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/SHA256-DISTRIBUTION.txt) and [DISTRIBUTION-MANIFEST.json](https://github.com/Gartom91/av-control-studio/releases/download/v1.4.1/DISTRIBUTION-MANIFEST.json) list the public packages. The original historical manifest also lists a product source archive excluded from this distribution.
+Use the release's **Assets** section. The manifest links verified packages to the tested product and exact successful CI commit. Version 1.5 distributes compiled applications and documentation with no product source archive. Bytecode and browser bundles are not encryption or a guarantee against reverse engineering. [Packaging details](https://github.com/Gartom91/av-control-studio/releases/download/v1.5.0/PAKOWANIE-BINARNE-1.5-PL.md).
 
-Installed applications keep `Gartom91/av-control-studio` as their update address. The repository split does not require rewriting SD cards or changing projects. Routine control stays local; online update downloads need internet access.
+Installed applications continue to use this repository for updates. The repository split does not require an SD rewrite or project replacement. Online update checks and PyPI installations require internet; local operation remains independent of them.
 
-**Planned new product components will be covered by a product EULA.** The historical MIT notice covers earlier releases and code retained from them; it is not a blanket license for all new components of future versions. See the [licensing scope](LICENSE).
+Earlier MIT releases and code derived from them keep their [original MIT terms](LICENSE-MIT-1.4.1.txt). MIT is not a blanket license for all new additions after 1.4.1; see the [license scope](LICENSE). Third-party components retain their licenses.
 
-Previously released MIT copies retain their terms: [MIT for 1.4.1](LICENSE-MIT-1.4.1.txt). Historical Python runtime packages may contain readable code; the private source repository is not a claim that distributed applications cannot be inspected.
+The [future EULA draft](EULA-PL-PROJEKT.md) uses an individual licensor with identity/address/contact placeholders. It explains possible future fees; it does not activate payments or new binding conditions. Licensing through TECHNIKAV remains a planned optional service.
 
-The [future EULA draft](EULA-PL-PROJEKT.md) identifies an **individual** as the proposed licensor, with placeholders for a full name, correspondence address and email. Optional future charges are being considered; this draft activates no fees or new binding terms. Third-party library licenses remain preserved.
-
-## Feedback
-
-[Report a bug or request a feature](https://github.com/Gartom91/av-control-studio/issues). Include the version, controller model and reproduction steps. Remove passwords, tokens and installation addresses from screenshots and reports.
-
-[Bilingual release format](RELEASING.md) · [Polski](README.pl.md) · [All releases](https://github.com/Gartom91/av-control-studio/releases)
+[Report a bug or suggest a feature](https://github.com/Gartom91/av-control-studio/issues) · [Bilingual release standard](RELEASING.md) · [Polski](README.pl.md)
