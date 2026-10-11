@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## 1.6.5 — 2026-10-11
+
+PL: Przycisk X ukrywa 100 rodzajów podpowiedzi i instrukcji w Studio. Ustawienia pozwalają wyszukać i przywrócić pojedynczy blok lub wszystkie naraz. Wybór jest zapamiętywany na stanowisku, także po restarcie. Pakiety zbudowano i sprawdzono lokalnie; pełny podręcznik Signal Workshop jest dołączony. [Szczegóły i pobieranie](docs/releases/v1.6.5.md#polski).
+
+EN: X buttons hide 100 guidance topics in Studio. Settings support search, individual restoration and restoring everything. Preferences persist on the workstation across restarts. Packages were built and verified locally and include the full Signal Workshop handbook. [Details and downloads](docs/releases/v1.6.5.md#english).
+
 ## 1.6.4 — 2026-10-11
 
 PL: Wydanie zawiera pełny, 206-stronicowy podręcznik Signal Workshop w instalatorach, obrazie RPi, dokumentacji i kursie offline. Poprawiono pięć luk potwierdzonych w przeglądzie Daybreak oraz inne błędy wykryte podczas kontroli. Nowe aktualizatory sprawdzają podpisany manifest; ograniczenie pierwszej aktualizacji ze starszej wersji opisano w informacji o wydaniu. [Szczegóły i pobieranie](docs/releases/v1.6.4.md#polski).

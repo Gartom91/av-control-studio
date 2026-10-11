@@ -11,7 +11,7 @@ Build operator panels, connect equipment and program your installation locally.
 
 **[Polski](README.pl.md) · English**
 
-[**Download 1.6.4 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.4) · [Release history](CHANGELOG.md) · [Offline training](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Szkolenie-1.6.4.zip)
+[**Download 1.6.5 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.5) · [Release history](CHANGELOG.md) · [Offline training](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Szkolenie-1.6.5.zip)
 
 **Windows · Raspberry Pi 3B / 4B / 5 · Linux Player · Browser panels**
 
@@ -32,15 +32,21 @@ This is the **official distribution repository** for installers, controller imag
 
 ## Choose your application
 
-| Application | Purpose | Download 1.6.4 |
+| Application | Purpose | Download 1.6.5 |
 | --- | --- | --- |
-| **Studio** | Design devices, protocols, panels and logic; simulate, debug and publish. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Studio-1.6.4-Windows-x64.exe) |
-| **Player** | Operate published panels on a separate computer, including full screen. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Player-1.6.4-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Player-1.6.4-Linux-all.deb) · [Linux archive](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Player-1.6.4-Linux.tar.gz) |
-| **Imager** | Select the Pi model, configure initial accounts/network, write and verify an SD card. Includes the image. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Imager-1.6.4-Windows-x64.exe) |
-| **RPi Controller** | Execute logic and communicate with devices autonomously. | [SD image, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-RPi-1.6.4-arm64.img.xz) · [Runtime update](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Runtime-1.6.4-arm64.zip) |
+| **Studio** | Design devices, protocols, panels and logic; simulate, debug and publish. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Studio-1.6.5-Windows-x64.exe) |
+| **Player** | Operate published panels on a separate computer, including full screen. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Player-1.6.5-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Player-1.6.5-Linux-all.deb) · [Linux archive](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Player-1.6.5-Linux.tar.gz) |
+| **Imager** | Select the Pi model, configure initial accounts/network, write and verify an SD card. Includes the image. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Imager-1.6.5-Windows-x64.exe) |
+| **RPi Controller** | Execute logic and communicate with devices autonomously. | [SD image, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-RPi-1.6.5-arm64.img.xz) · [Runtime update](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Runtime-1.6.5-arm64.zip) |
 | **Web panel** | Operate the same panels on a computer, tablet or phone. | Open the controller's HTTPS address. |
 
 Windows: Windows 10 22H2 / Windows 11, x64; .NET and an offline WebView2 installer are included. Public Linux Player: Debian 13 / CPython 3.13 with GTK and WebKit. Pi image: Raspberry Pi OS Lite 64-bit. A Runtime update is for an existing AV Control controller, rather than an SD card.
+
+## Hide and restore guidance
+
+**New in 1.6.5:** use **X** to hide 100 guidance topics and instruction blocks. Studio remembers the choice on this workstation across projects and restarts. Open **Ustawienia → Podpowiedzi i instrukcje** to search and restore one block or restore everything.
+
+![Restore hidden guidance in Studio settings](media/guidance-settings.png)
 
 ## Signal Workshop
 
@@ -115,23 +121,23 @@ Sign in to the web interface as **`admin`** with the password you chose in Image
 
 ## Learn and verify
 
-**Training revision: 11 October 2026, included in AV Control 1.6.4.** The **206-page handbook** covers **52 chapters and four appendices**, with **74 current application screenshots and three diagrams**. The programme contains **10 sessions / 22 hours**, plus an optional **one-hour physical HDMI module**.
+**Training revision: 11 October 2026, included in AV Control 1.6.5.** The **206-page handbook** covers **52 chapters and four appendices**, with **74 current application screenshots and three diagrams**. The programme contains **10 sessions / 22 hours**, plus an optional **one-hour physical HDMI module**.
 
-- [Offline training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Szkolenie-1.6.4.zip) — handbook HTML/PDF, training programme, illustrations and neutral examples.
-- [PDF: 206 pages](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Training programme, Markdown](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/PROGRAM-SZKOLENIA-PL.md).
+- [Offline training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Szkolenie-1.6.5.zip) — handbook HTML/PDF, training programme, illustrations and neutral examples.
+- [PDF: 206 pages](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Training programme, Markdown](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/PROGRAM-SZKOLENIA-PL.md).
 
-The revised handbook is included in the 1.6.4 installers, Raspberry Pi image, documentation archive and offline course. Downloading the course alone does not update the software.
+The revised handbook is included in the 1.6.5 installers, Raspberry Pi image, documentation archive and offline course. Downloading the course alone does not update the software.
 
-- [Complete documentation](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/AV-Control-Studio-1.6.4-Dokumentacja.zip) · [Python manual](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/SYMBOLE-PYTHON-PL.md) · [USB, RS485 and UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/USB-RS485-UART-PL.md) · [Network gateways](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/EKSPANDERY-SIECIOWE-PL.md).
-- [Verification report](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/WERYFIKACJA-1.6.4.md) · [Build/test manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/RELEASE-MANIFEST.json) · [ECDSA signature](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/RELEASE-SIGNATURE.json) · [SHA256 sums](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/SHA256SUMS.txt).
+- [Complete documentation](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/AV-Control-Studio-1.6.5-Dokumentacja.zip) · [Python manual](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/SYMBOLE-PYTHON-PL.md) · [USB, RS485 and UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/USB-RS485-UART-PL.md) · [Network gateways](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/EKSPANDERY-SIECIOWE-PL.md).
+- [Verification report](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/WERYFIKACJA-1.6.5.md) · [Build/test manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/RELEASE-MANIFEST.json) · [ECDSA signature](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/RELEASE-SIGNATURE.json) · [SHA256 sums](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/SHA256SUMS.txt).
 
 The detailed course and UI are currently in Polish. README and release descriptions are available in Polish and English; use the language links above.
 
-[A physical Pi 4B passed the GitHub 1.5.3 → 1.5.5 update](docs/WERYFIKACJA-RPI-1.5.5-PO-PUBLIKACJI.md), preserving the project, settings, users, session and certificate with agreement across five panels. Version 1.6.4 was tested in ARM64 emulation and with a file-based Imager write; a physical 1.6.4 update remains unverified. Physical 3B/5, clean SD boots, electrical UART/RS232/RS485/GPIO, purchased adapters and physical mobile devices require separate hardware trials. AV Control's installers currently have no publisher Authenticode signature; vendor installers are verified separately.
+[A physical Pi 4B passed the GitHub 1.5.3 → 1.5.5 update](docs/WERYFIKACJA-RPI-1.5.5-PO-PUBLIKACJI.md), preserving the project, settings, users, session and certificate with agreement across five panels. Version 1.6.5 was tested in ARM64 emulation and through installed application checks; a physical 1.6.5 update remains unverified. Physical 3B/5, clean SD boots, electrical UART/RS232/RS485/GPIO, purchased adapters and physical mobile devices require separate hardware trials. AV Control's installers currently have no publisher Authenticode signature; vendor installers are verified separately.
 
 ## Distribution and licensing
 
-Use the release's **Assets** section. The signed manifest links verified packages to the tested product and exact successful CI commit. Version 1.6.4 distributes compiled applications and documentation with no product source archive. Bytecode and browser bundles are not encryption or a guarantee against reverse engineering. [Packaging details](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.4/PAKOWANIE-BINARNE-1.5-PL.md).
+Use the release's **Assets** section. The signed manifest links verified packages to the tested product and exact successful CI commit. Version 1.6.5 distributes compiled applications and documentation with no product source archive. Bytecode and browser bundles are not encryption or a guarantee against reverse engineering. [Packaging details](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.5/PAKOWANIE-BINARNE-1.5-PL.md).
 
 An updater installed before 1.6.4 cannot yet verify the independent signature during its first upgrade. Follow the [1.6.4 release notes](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.4) for that transition.
 
