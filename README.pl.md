@@ -11,7 +11,7 @@ Projektuj panele, podłączaj urządzenia i programuj instalację lokalnie.
 
 **Polski · [English](README.en.md)**
 
-[**Pobierz 1.6.3 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.3) · [Historia wydań](CHANGELOG.md) · [Kurs szkoleniowy](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3.zip)
+[**Pobierz 1.6.3 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.3) · [Historia wydań](CHANGELOG.md) · [Rewizja szkolenia: 11.10.2026](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3-rev20261011.zip)
 
 **Windows · Raspberry Pi 3B / 4B / 5 · Player Linux · Panele WWW**
 
@@ -115,8 +115,13 @@ Zaloguj się do WWW jako **`admin`** hasłem ustawionym w Imagerze. **`avoperato
 
 ## Nauka i weryfikacja
 
-- [Kurs offline](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3.zip) — **52 rozdziały, cztery dodatki, 75 ilustracji** i neutralne projekty przykładowe.
-- [PDF: 195 stron](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Program szkolenia](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/PROGRAM-SZKOLENIA-PL.md) — **10 sesji / 22 godziny**.
+**Rewizja szkolenia: 11 października 2026, dla AV Control 1.6.3.** Główny podręcznik obejmuje **52 rozdziały i cztery dodatki**, z **74 aktualnymi zrzutami aplikacji i trzema diagramami**. Program zawiera **10 sesji / 22 godziny** oraz opcjonalny **jednogodzinny odbiór fizycznego panelu HDMI**.
+
+- [Poprawiony kurs offline](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3-rev20261011.zip) — podręcznik HTML/PDF, program szkolenia, ilustracje i neutralne przykłady.
+- [PDF: 206 stron](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Studio-Tutorial-PL-1.6.3-rev20261011.pdf) · [Program szkolenia, Markdown](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/PROGRAM-SZKOLENIA-PL-1.6.3-rev20261011.md).
+- [Sumy SHA256 rewizji szkolenia](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3-rev20261011-SHA256SUMS.txt).
+
+To rewizja dokumentacji. Istniejące instalatory 1.6.3, obraz kontrolera, Runtime i pierwotne załączniki wydania pozostają bez zmian. Osadzony w nich podręcznik i pierwotne archiwum dokumentacji zawierają wcześniejszą rewizję; pobierz nowy kurs osobno i otwórz jego `docs/tutorial/index.html`. Kolejne wydanie aplikacji będzie zawierało poprawiony podręcznik. Pobranie kursu nie uruchamia aktualizacji oprogramowania.
 - [Pełna dokumentacja](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Studio-1.6.3-Dokumentacja.zip) · [Python](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/SYMBOLE-PYTHON-PL.md) · [USB, RS485 i UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/USB-RS485-UART-PL.md) · [Ekspandery](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/EKSPANDERY-SIECIOWE-PL.md).
 - [Raport weryfikacji](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/WERYFIKACJA-1.6.3.md) · [Manifest budowania i testów](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/RELEASE-MANIFEST.json) · [Sumy SHA256](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/SHA256SUMS.txt).
 
