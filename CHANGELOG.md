@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## 1.6.4 — 2026-10-11
+
+PL: Wydanie zawiera pełny, 206-stronicowy podręcznik Signal Workshop w instalatorach, obrazie RPi, dokumentacji i kursie offline. Poprawiono pięć luk potwierdzonych w przeglądzie Daybreak oraz inne błędy wykryte podczas kontroli. Nowe aktualizatory sprawdzają podpisany manifest; ograniczenie pierwszej aktualizacji ze starszej wersji opisano w informacji o wydaniu. [Szczegóły i pobieranie](docs/releases/v1.6.4.md#polski).
+
+EN: This release includes the complete 206-page Signal Workshop handbook in the installers, Pi image, documentation and offline course. Five vulnerabilities confirmed by Daybreak and other reviewed defects were fixed. New updaters verify a signed manifest; the first upgrade from an older version is covered in the release notes. [Details and downloads](docs/releases/v1.6.4.md#english).
+
 ## 1.6.3 — rewizja dokumentacji / documentation revision — 2026-10-11
 
 PL: Zweryfikowano treść i ilustracje głównego podręcznika względem aplikacji 1.6.3; poprawiono ścieżki UI, instrukcje Python/NumPy i bibliotek, debugger, transporty, diagnostykę, konta i klawiaturę oraz konfigurację Proton Mail. Nowy podręcznik ma **206 stron, 52 rozdziały, 4 dodatki, 74 aktualne zrzuty aplikacji i 3 diagramy**. Program: **10 sesji / 22 godziny**, opcjonalnie **1 godzina fizycznego HDMI**. Rewizję pobiera się osobno; instalatory, obraz RPi, Runtime i pierwotne załączniki 1.6.3 pozostają niezmienione. Aplikacje nadal mają osadzony wcześniejszy podręcznik; nowy zostanie osadzony w kolejnym wydaniu. [Szczegóły i pliki](docs/releases/v1.6.3.md#rewizja-dokumentacji-20261011).
