@@ -11,7 +11,7 @@ Build operator panels, connect equipment and program your installation locally.
 
 **[Polski](README.pl.md) · English**
 
-[**Download 1.6.3 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.3) · [Release history](CHANGELOG.md) · [Training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3.zip)
+[**Download 1.6.3 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.3) · [Release history](CHANGELOG.md) · [Training revision: 11 Oct 2026](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3-rev20261011.zip)
 
 **Windows · Raspberry Pi 3B / 4B / 5 · Linux Player · Browser panels**
 
@@ -115,8 +115,13 @@ Sign in to the web interface as **`admin`** with the password you chose in Image
 
 ## Learn and verify
 
-- [Offline training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3.zip) — **52 chapters, four appendices, 75 illustrations** and neutral example projects.
-- [195-page PDF](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Training programme](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/PROGRAM-SZKOLENIA-PL.md) — **10 sessions / 22 hours**.
+**Training revision: 11 October 2026, for AV Control 1.6.3.** The integrated handbook covers **52 chapters and four appendices**, with **74 current application screenshots and three diagrams**. The programme contains **10 sessions / 22 hours**, plus an optional **one-hour physical HDMI module**.
+
+- [Revised offline training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3-rev20261011.zip) — handbook HTML/PDF, training programme, illustrations and neutral examples.
+- [PDF: 206 pages](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Studio-Tutorial-PL-1.6.3-rev20261011.pdf) · [Training programme, Markdown](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/PROGRAM-SZKOLENIA-PL-1.6.3-rev20261011.md).
+- [Training revision SHA256 sums](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Szkolenie-1.6.3-rev20261011-SHA256SUMS.txt).
+
+This is a documentation revision. The existing 1.6.3 installers, controller image, Runtime and original release assets remain unchanged. Their embedded handbook and original documentation archive contain the earlier revision; download the revised course separately and open its `docs/tutorial/index.html`. The next application release will include the revised handbook. This download does not trigger a software update.
 - [Complete documentation](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/AV-Control-Studio-1.6.3-Dokumentacja.zip) · [Python manual](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/SYMBOLE-PYTHON-PL.md) · [USB, RS485 and UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/USB-RS485-UART-PL.md) · [Network gateways](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/EKSPANDERY-SIECIOWE-PL.md).
 - [Verification report](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/WERYFIKACJA-1.6.3.md) · [Build/test manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/RELEASE-MANIFEST.json) · [SHA256 sums](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.3/SHA256SUMS.txt).
 

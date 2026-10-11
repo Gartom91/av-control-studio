@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## 1.6.3 — rewizja dokumentacji / documentation revision — 2026-10-11
+
+PL: Zweryfikowano treść i ilustracje głównego podręcznika względem aplikacji 1.6.3; poprawiono ścieżki UI, instrukcje Python/NumPy i bibliotek, debugger, transporty, diagnostykę, konta i klawiaturę oraz konfigurację Proton Mail. Nowy podręcznik ma **206 stron, 52 rozdziały, 4 dodatki, 74 aktualne zrzuty aplikacji i 3 diagramy**. Program: **10 sesji / 22 godziny**, opcjonalnie **1 godzina fizycznego HDMI**. Rewizję pobiera się osobno; instalatory, obraz RPi, Runtime i pierwotne załączniki 1.6.3 pozostają niezmienione. Aplikacje nadal mają osadzony wcześniejszy podręcznik; nowy zostanie osadzony w kolejnym wydaniu. [Szczegóły i pliki](docs/releases/v1.6.3.md#rewizja-dokumentacji-20261011).
+
+EN: Reviewed the original handbook's text and illustrations against application 1.6.3; corrected UI paths, Python/NumPy and library instructions, debugger, transports, diagnostics, accounts/keyboard and Proton Mail setup. The revised handbook contains **206 pages, 52 chapters, 4 appendices, 74 current application screenshots and 3 diagrams**. Programme: **10 sessions / 22 hours**, with an optional **1-hour physical HDMI module**. Download the revision separately; 1.6.3 installers, Pi image, Runtime and original release assets remain unchanged. Applications still embed the earlier handbook; the next release will include the revision. [Details and downloads](docs/releases/v1.6.3.md#documentation-revision-20261011).
+
 ## 1.6.3 — 2026-10-10
 
 PL: Naprawa przezroczystego okna konta i niewidocznych pól hasła. Niezależne okno, motywy Studio i panelu, układ responsywny, przewijanie nad klawiaturę i testy natywnych rendererów. Podręcznik i program zaktualizowane w miejscu. [Pełny opis](docs/releases/v1.6.3.md#polski).
