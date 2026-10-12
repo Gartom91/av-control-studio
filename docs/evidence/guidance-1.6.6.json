@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "verified": [
+    "welcome cards, search, individual and collective restoration",
+    "keyboard dismissal, navigation, reload persistence, project preserved",
+    "preferences synchronize between Studio windows",
+    "profiles-workflow",
+    "signals-role",
+    "all six original guide-card roles, wizard note and Python instruction",
+    "project help, publishing help, settings help, validation feedback remains usable",
+    "dark and light themes, tablet layout and restoration",
+    "invalid preferences, unknown topics and duplicates handled",
+    "touch dismissal has a 44-pixel target",
+    "hide and restore work in the session if storage is unavailable"
+  ],
+  "errors": []
+}

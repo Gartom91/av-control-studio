@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "pairing": true,
+  "upload": true,
+  "svgConversion": true,
+  "originalSvgPreserved": true,
+  "designer": true,
+  "distinctPageSubset": true,
+  "firmwareUpload": true,
+  "otaRequestAndConfirmation": true,
+  "revocation": true,
+  "pageErrors": []
+}

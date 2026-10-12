@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-12",
+  "board": "Raspberry Pi 4 Model B Rev 1.4",
+  "display": {
+    "connector": "HDMI-A-1",
+    "width": 2560,
+    "height": 1440,
+    "refreshHz": 58.297,
+    "modeChanged": false
+  },
+  "graphics": {
+    "cage": "0.3.1",
+    "webkitGtk": "2.54.0",
+    "mesa": "26.2.2",
+    "gpu": "V3D 4.2.14.0"
+  },
+  "fix": "WEBKIT_DISABLE_DMABUF_RENDERER=1",
+  "beforeSha256": "255284581ddf8459d24f62144f16fbc1e318be2db10da02f958f305dc7f40cc5",
+  "afterSha256": "65f5b5209da6a221bab35898ab515ce84acf61cfb1a7bef01d93e445d6dcc99a",
+  "afterFrameCorrect": true,
+  "physicalHdmiConfirmedByOwner": true,
+  "ownerResponse": "Tak, obraz jest poprawny",
+  "runtimeServiceUnchanged": true,
+  "runtimeHealthOk": true,
+  "runtimeVersion": "1.6.5",
+  "bootAndPanelSettingsUnchanged": true,
+  "localPanelTestsPassed": 3,
+  "synthetic1280x720PatternCorrectWithBothModes": true,
+  "syntheticPatternReproducedOriginalCorruption": false,
+  "kioskServiceRestartVerified": true,
+  "wholeDeviceRebootTested": false
+}

@@ -1,0 +1,88 @@
+{
+  "apps": [
+    {
+      "physicalDiskWritten": false,
+      "app": "Player",
+      "nativeAcceptance": {
+        "ok": true,
+        "native": true,
+        "adminGetsOnlyPanels": true,
+        "operator": false,
+        "pages": true,
+        "imageFrameAndHiddenLabel": true,
+        "elementAndScopedPageCss": true,
+        "commands": true,
+        "sliderFinalValue": true,
+        "momentary": true,
+        "momentaryLeaseExpiresDuringDisconnect": true,
+        "interlock": true,
+        "fullscreen": true,
+        "savedConnectionAndSession": true,
+        "windowsUpdateSettings": true,
+        "projectUpdate": true,
+        "disconnectBlocksControls": true,
+        "reconnectDoesNotReplay": true,
+        "errors": []
+      },
+      "installation": true,
+      "selfTest": {
+        "ok": true,
+        "editorApisBlocked": true,
+        "dpapi": true,
+        "embeddedRuntime": false,
+        "githubUpdateTests": true
+      },
+      "uninstall": true,
+      "keptInstalled": false
+    },
+    {
+      "installation": true,
+      "app": "Imager",
+      "physicalDiskWritten": false,
+      "selfTest": {
+        "ok": true,
+        "models": [
+          "3B",
+          "4B",
+          "5"
+        ],
+        "unsafeTargetsRejected": true,
+        "swappedTargetRejected": true,
+        "hashChecked": true,
+        "encryptedJobs": true,
+        "verificationEnabled": true,
+        "fixtures": true,
+        "imageVerified": true,
+        "physicalDiskWritten": false,
+        "githubUpdateTests": true
+      },
+      "nativeAcceptance": {
+        "ok": true,
+        "native": true,
+        "offlineImage": true,
+        "models": [
+          "3B",
+          "4B",
+          "5"
+        ],
+        "diskEnumeration": true,
+        "protectedDisksExcluded": true,
+        "invalidTargetRejected": true,
+        "unconfirmedWriteRejected": true,
+        "readOnlyPlanTested": false,
+        "physicalDiskWritten": false,
+        "windowsUpdateSettings": true,
+        "updatesManualOffline": true,
+        "actualWriteInvoked": false,
+        "errors": []
+      },
+      "uninstall": false,
+      "keptInstalled": true,
+      "installedImageSha256": "0cf885acb95489433bb3800464a637ec9a38a6c7372ce1c40483314f6abeae36",
+      "installedHandbookSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf"
+    }
+  ],
+  "freshMachineWithoutWebView2": false,
+  "imagerFinalManualRebuild": true,
+  "ok": true
+}

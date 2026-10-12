@@ -1,0 +1,24 @@
+{
+  "installation": true,
+  "ok": true,
+  "installedRuntime": {
+    "ok": true,
+    "health": {
+      "ok": true,
+      "version": "1.6.6",
+      "simulation": true,
+      "instanceId": "8bf347744f914b9ab5824d66d23b620d",
+      "fleetProtocol": 1
+    },
+    "role": "admin",
+    "dpapi": true,
+    "certificatePinning": true,
+    "wrongPinRejected": true,
+    "wrongHostnameRejected": true,
+    "expiredCertificateRejected": true,
+    "githubUpdateTests": true
+  },
+  "uninstall": true,
+  "freshMachineWithoutWebView2": false,
+  "installedWebView2": true
+}

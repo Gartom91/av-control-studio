@@ -1,0 +1,2194 @@
+{
+  "ok": true,
+  "at": "2026-10-12T19:59:36.773597+00:00",
+  "appVersion": "1.6.6",
+  "documentationRevision": "12 października 2026",
+  "pdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+  "sourceSha256": "8eb18cd71dab8c34a958d3f0421fa493221862f15c52ded85a634fcefadcdbe0",
+  "pages": 217,
+  "individuallyReviewed": 217,
+  "sources": [
+    {
+      "report": "work/manual-1.6.6-initial-individual-review.json",
+      "pdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326"
+    },
+    {
+      "report": "work/manual-1.6.6-final-changed-review.json",
+      "pdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf"
+    }
+  ],
+  "reviews": [
+    {
+      "page": 1,
+      "status": "PASS",
+      "pngSha256": "4e03cabee4b872d64628be6a98530c02ab4feb6a8d77585bdfae1576f15a832e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-final-changed-review.json",
+      "reviewedPdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+      "identicalPageReused": false,
+      "note": "Final versioned instructions and cover are readable; tables, figures and paragraphs remain within page bounds."
+    },
+    {
+      "page": 2,
+      "status": "PASS",
+      "pngSha256": "437e85500b1325096392b4fe4e77eb4febf2d37e756043dbc24727e7e0e48417",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 3,
+      "status": "PASS",
+      "pngSha256": "6e3698f28fa8ccf63802756f8000d21e6fe83b32a2cd4258f9ddbc7049fa772c",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 4,
+      "status": "PASS",
+      "pngSha256": "74a8800e0853e20b2c61ee65ef648c13c92530868e035ada2dc1489bb546b402",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 5,
+      "status": "PASS",
+      "pngSha256": "4923499402a6ff889cebafb5c478b1a7ec0a02eefc13f67bec2c5ae986f740cb",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 6,
+      "status": "PASS",
+      "pngSha256": "685b10a9ea154a7bc7d547e4502a24e27afe710bae5812346fb96cef7ba19842",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 7,
+      "status": "PASS",
+      "pngSha256": "572c9c3795a894ee047df2bc1cab3d1619bc50a58b901b3a00451bb35de05655",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 8,
+      "status": "PASS",
+      "pngSha256": "87189f3733d88db6243f2f3e0f24c080b48155bd2969d28a5abcc16628f48315",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 9,
+      "status": "PASS",
+      "pngSha256": "3dd87bc8dd02d10f78971d19bdcaf09050eec32d2db836c51083837593ae74fc",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 10,
+      "status": "PASS",
+      "pngSha256": "400bbedb9bfea072d5233f1c55138eb3345d8f6772a75f226f4f36881bed0a47",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 11,
+      "status": "PASS",
+      "pngSha256": "35ede45f1779a2c53c6e9b6e750154f28f79a549bbab77097230edd63900d798",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 12,
+      "status": "PASS",
+      "pngSha256": "e9f9e3a06f41fb50d28efccf87d788190ab15691b6c8f32a2d0827f1c94e764d",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 13,
+      "status": "PASS",
+      "pngSha256": "5ddd37e374b531eb18db8ca25f61f7e34c27622b81663cfbc49709f5039928b1",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 14,
+      "status": "PASS",
+      "pngSha256": "49694de3064d539f00dfa6ee9204699ddb72ee08cc7dce8589d48ad64ceefdc1",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 15,
+      "status": "PASS",
+      "pngSha256": "73577cb9e3e8979b904b10c67cc2424beaa134c39d4dac10f37f09afadcc9d0f",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 16,
+      "status": "PASS",
+      "pngSha256": "d38338d6d70cd1f692cd862525181aa108f204c1c88621212bc993ba987db3d0",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 17,
+      "status": "PASS",
+      "pngSha256": "dc4393b46f55b64a8ea21080f5c5bd9252e8bdb89da8861cad81b7101e52f782",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 18,
+      "status": "PASS",
+      "pngSha256": "15e7d97b8952f7db1ca52054bb282f1b247ef7537adc5128782df40f5c52d536",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 19,
+      "status": "PASS",
+      "pngSha256": "9fedfcc7ec1fd5531fefd836f93eb881ff492e4293a4cb108e80e276426e074f",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 20,
+      "status": "PASS",
+      "pngSha256": "4de126b3a6f58b30a373aab0fbb244060a50e0f3b60664c40beb40cba3630cbc",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 21,
+      "status": "PASS",
+      "pngSha256": "165767ac575dddd8cded468e86dd296ea379cd526c608ede627347d3a462a753",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 22,
+      "status": "PASS",
+      "pngSha256": "b1e32a8eb89e4dcc15badc1530a98594f2a925e8f5bf7994d000a9f24f20126f",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 23,
+      "status": "PASS",
+      "pngSha256": "2ca842612fc99baed653d0eba35c1f4f9d2b8a55b303c98d6111d148078519ee",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 24,
+      "status": "PASS",
+      "pngSha256": "89e5506fac2254fffcb1f04862f9dcac11d06f6a8759a19a7f19080ee6332865",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 25,
+      "status": "PASS",
+      "pngSha256": "b4d874937475a0b748eb7f3d2e07a63f9e20515ca1702692adb184936afacf85",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 26,
+      "status": "PASS",
+      "pngSha256": "51b8653d9090b35e4cc8a0de4d10e856d05b3d8725ae771b017dc14fc7df59df",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 27,
+      "status": "PASS",
+      "pngSha256": "6954d7cfc2990807013de0b00b97635a43d567aad1d6fe29dd2d4ca2c5112781",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 28,
+      "status": "PASS",
+      "pngSha256": "3729af82b7899415541c8a1de249e02c5962806ea3a2c2c182b9007101ea41d1",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 29,
+      "status": "PASS",
+      "pngSha256": "7a3c2bc1c3d782e864dfe2f97133ea1ae7a941acf5e16a8e73051aea846c8d7b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 30,
+      "status": "PASS",
+      "pngSha256": "b3b019419eaff567754d8dbc42d78d6538cb131a6ba73a694202211671ac742f",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 31,
+      "status": "PASS",
+      "pngSha256": "c1e40b2893564eaa027b77e5ec9bba10f354a78d83d5130afd6fd1a82aab4dc6",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 32,
+      "status": "PASS",
+      "pngSha256": "89bb3ba060f28b6320f6ed4b3d779a2b7d496945497c58c4f81e241002568042",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 33,
+      "status": "PASS",
+      "pngSha256": "8ba83756d97e363967dd19ea68e4922c0c6fcb38865912d557fb3e8c484651bd",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 34,
+      "status": "PASS",
+      "pngSha256": "358e1c23152802d68b6b0e6e71b73f0f9c94217814dce91c6b748f50a3788e49",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 35,
+      "status": "PASS",
+      "pngSha256": "ec38422dde100506848588a7155b541a8944e8e51f6f3c34a3b37975e9f5aa9a",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 36,
+      "status": "PASS",
+      "pngSha256": "7f5db45699be62886995cbf9004e77898398e72e67f056ec0b51d8c058460b20",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 37,
+      "status": "PASS",
+      "pngSha256": "b3c17527f85c99e613bfb9cf40e7c5e3117806acd71c253f3c78396fb52cb77c",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 38,
+      "status": "PASS",
+      "pngSha256": "4c8f5932bfbbe017a12ea3cc9edd981bcbcdb072b49670b140ae94d2cf2a9f37",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 39,
+      "status": "PASS",
+      "pngSha256": "a58a7b9aa0b70a58666b44cee57f95b1d507d58a16d55e5581b580ffbdbcdcc3",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 40,
+      "status": "PASS",
+      "pngSha256": "25f2ccb228d936863be210e673db01458e68856b7c4620db661562e8b57d55e1",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 41,
+      "status": "PASS",
+      "pngSha256": "069956e30ccbc4d8bb9c4ad1a571722a2e714f0210913cda0450638cbf7fe2f2",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 42,
+      "status": "PASS",
+      "pngSha256": "6f71effbc8eb79c7a251fb37e4d5dab2bb63576660d05d6b54440040527968cc",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 43,
+      "status": "PASS",
+      "pngSha256": "0cb249fa6ea4ed20ec36e993e7ce8649b7bd1a8cdf6c044ec497545d2062b846",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 44,
+      "status": "PASS",
+      "pngSha256": "3cb648d387e7e9e2978e321dc09e60f92a57af2ef58d3193a3e8141de11b1223",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 45,
+      "status": "PASS",
+      "pngSha256": "b1231e66b8ed2af16577c9e9aafe2c25d354ccc7af6586d36fd8c811c61b05bf",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 46,
+      "status": "PASS",
+      "pngSha256": "827fde40b94614920cd83ac1dc61a93a1264d36ef1d6b38deade598398f42803",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 47,
+      "status": "PASS",
+      "pngSha256": "010c1d93ee1a7aec07beae753daa2071427ad3116137f312ab6692a356be49da",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 48,
+      "status": "PASS",
+      "pngSha256": "8b3c9b74d563349a2bcf571d1eb22227db0cd0ec535f2b776f62a2e6ce0711f5",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 49,
+      "status": "PASS",
+      "pngSha256": "3617be27bd709563fc6e5e72780c288008dfe09cd7bf6af5113be07573397f23",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 50,
+      "status": "PASS",
+      "pngSha256": "d343a3f436095c2fe84131e39a214cd71e7f89c9288a0bae9b353d5ca81ddd09",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 51,
+      "status": "PASS",
+      "pngSha256": "c986cf6f0a69fb1bc88501f58b4b1eb48c3b095bfb610e639bd5f33b5179bd55",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 52,
+      "status": "PASS",
+      "pngSha256": "e1b723b5bd80ed8e3c7a5c0714bb6d7e219791f415a14be3106d90c42b522ed0",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 53,
+      "status": "PASS",
+      "pngSha256": "5ccf146839956d5bdbf5b6aa35461ca6b787ac5226e10bf580706417f30e2cd8",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 54,
+      "status": "PASS",
+      "pngSha256": "55ef7bc78e174e27fa226a89a5467312ecb957752f0ef4ce739e157d9017c726",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 55,
+      "status": "PASS",
+      "pngSha256": "9c2c4f36306fe85bb05d53d426a0a6543fc376bcd2c0e77883e1d387ec823368",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 56,
+      "status": "PASS",
+      "pngSha256": "41e023bf7b8e96c2159ec8cdc27cf78615930a53eac8d7cf07b08d36bce89cda",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 57,
+      "status": "PASS",
+      "pngSha256": "f4fc46a2cadf05cc690b68473ceb9f5734e069fec8b45b008a204e807eb6f62d",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 58,
+      "status": "PASS",
+      "pngSha256": "720d22211cd7f1cafc9ae27a00e515492a5cee1c77ffcc153d0548c5eb8dcc83",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 59,
+      "status": "PASS",
+      "pngSha256": "576ac89a09e5d2aec93f908e49830d55783c92fbbf8116edb3fde4a8e86818bc",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 60,
+      "status": "PASS",
+      "pngSha256": "74096bea6f7c22693f66624a611841fb4e444a1853ae833b1ec9a6b9e42c4d00",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 61,
+      "status": "PASS",
+      "pngSha256": "75d21494d9ae4992d71282292508039eb51ada1f36c3119ee5916963d476c796",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 62,
+      "status": "PASS",
+      "pngSha256": "7dd00db0e36bd604556d59d98d9809529d5d55355c6ef67a925a78a2362c1f09",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 63,
+      "status": "PASS",
+      "pngSha256": "b7c95310dce72dacdfc06002a1db2564fcce8fd14e2774059d467d9a5e950858",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-final-changed-review.json",
+      "reviewedPdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+      "identicalPageReused": false,
+      "note": "Final versioned instructions and cover are readable; tables, figures and paragraphs remain within page bounds."
+    },
+    {
+      "page": 64,
+      "status": "PASS",
+      "pngSha256": "9e08a1ac6e10079e83f3e3d209ee1c84c96aa570a7980578b61e2f59a88a8679",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 65,
+      "status": "PASS",
+      "pngSha256": "642c26b229269548d29b1d2edfaf2c6b1ca5e11c26e9a1b79c16582eda1567c0",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 66,
+      "status": "PASS",
+      "pngSha256": "279b9d922c488e5d9a9d1c352382e1edec47c08c82f77331ae28b3e6f152151d",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 67,
+      "status": "PASS",
+      "pngSha256": "b92fba3a02b59a81d7cde3873eb485eb7137a8d5bae840cfbc2a487accabdb13",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 68,
+      "status": "PASS",
+      "pngSha256": "a442757d92eebf72cf4cf69dbc96cb58084f1ddf4d0d0bbad9c96da2a0b68b57",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 69,
+      "status": "PASS",
+      "pngSha256": "63347a9a02e26963f29eea1c78a3968f1bd7ce50815cf6ae35080fc9b3eef83e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 70,
+      "status": "PASS",
+      "pngSha256": "b33416ab298674587825d6292224a06691272c26bdf12bd23b23258333a23311",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 71,
+      "status": "PASS",
+      "pngSha256": "fb7ea86315d601dc65ede2d3f2f92809d8227bee2eb6c020a9e68a55ffcb5708",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 72,
+      "status": "PASS",
+      "pngSha256": "82e24d8d1c03a0a64551819b9f7d1596af1ec1965525338fc987d353365759be",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 73,
+      "status": "PASS",
+      "pngSha256": "b232595c6e9ad5fa9bbed8277b69c81b227a48957e615fbb0a6c2a227c4df6bc",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 74,
+      "status": "PASS",
+      "pngSha256": "bf687d4c38cb500e36d55217e19b512bc7d2659742103ee0eb334654d8e071d2",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 75,
+      "status": "PASS",
+      "pngSha256": "81dba845c1872217f99ee621ea27c628f1e9d6a5faaf6a412f62e86fdd62f1c6",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 76,
+      "status": "PASS",
+      "pngSha256": "66c765f69e39fa37a9fda2b93a80249783989aca51ef28d0da97ed88115ecdce",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 77,
+      "status": "PASS",
+      "pngSha256": "2a9717a8246601e2fc8a02ca1d6bbfbfd8380b0bc24606f07cec987cfb41fc1b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 78,
+      "status": "PASS",
+      "pngSha256": "8c2c45c5729c9bc66123a00e322f83603b71127de0c9bfb5b2a9b869ab4e3e6b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 79,
+      "status": "PASS",
+      "pngSha256": "c5b0d9116d1770f402b209deec1ea8fc7549dc6aef368285ed1f9f6627ad3e2b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 80,
+      "status": "PASS",
+      "pngSha256": "edbbb791e646999ec9fb89f046d02befef339907da8f0c80e983a1313c7f2da8",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 81,
+      "status": "PASS",
+      "pngSha256": "227127490e6814b1e3abdc9501322bf6e2c32acec71b3ef196686bd49624fe40",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 82,
+      "status": "PASS",
+      "pngSha256": "7c086b67a5a92fb4aa905b78ab4fef91ba3bdaafcb3233eb7b5bc8d0deed685e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 83,
+      "status": "PASS",
+      "pngSha256": "db65ee22c93604cdd8b20c74ad52b0de4aa926717eb327e7c07ab394d8ba3b71",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 84,
+      "status": "PASS",
+      "pngSha256": "3e1d51805c5c529f0632c38400ff923c63a2f86a84e8928e10e94e4177e21b50",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 85,
+      "status": "PASS",
+      "pngSha256": "ae5179f759d759a9c95310f33236fe7d8070fb2de7ece703ab448fad73d73622",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 86,
+      "status": "PASS",
+      "pngSha256": "edfad692fae8781e8059b32336a67b485e56b11413221c9969952293bc79bee3",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 87,
+      "status": "PASS",
+      "pngSha256": "378a4f06eced7aa3db106abae7a1292ff607563ae396d7ee595f890e38e85767",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 88,
+      "status": "PASS",
+      "pngSha256": "58c86efc5d43c475f24726244c15fac1fba20c58963cebdfee41710500b3e9c9",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 89,
+      "status": "PASS",
+      "pngSha256": "097d8492608d5df5c3e97211edd5e0be3480241819550af7145569877101032b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 90,
+      "status": "PASS",
+      "pngSha256": "131441271bcdfaed60af21c16beb5871c5090415a2637b810b026958d7529f96",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 91,
+      "status": "PASS",
+      "pngSha256": "e60e686a00bd5b1a361829541f021bdfacb38f00435fa06c8f3971c4cd4a94cb",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-final-changed-review.json",
+      "reviewedPdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+      "identicalPageReused": false,
+      "note": "Final versioned instructions and cover are readable; tables, figures and paragraphs remain within page bounds."
+    },
+    {
+      "page": 92,
+      "status": "PASS",
+      "pngSha256": "b4aba82cf2e71b88c4f4193bf18afa685431552d3f6df004285948cd66bf8b05",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-final-changed-review.json",
+      "reviewedPdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+      "identicalPageReused": false,
+      "note": "Final versioned instructions and cover are readable; tables, figures and paragraphs remain within page bounds."
+    },
+    {
+      "page": 93,
+      "status": "PASS",
+      "pngSha256": "b370aa35027730cb6ab548d3790ada5d1df0fba06c2717e59c1a610cf7e6a01c",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 94,
+      "status": "PASS",
+      "pngSha256": "a5c2294e95f55fbbf0bbd9eba0830e2d5469fcf1fc938c7c6ecd15a7473982a8",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 95,
+      "status": "PASS",
+      "pngSha256": "73a3ef10cba6fecea7c21bf72f13870d0c015e54d3d0fa793c65e49778149c5c",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-final-changed-review.json",
+      "reviewedPdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+      "identicalPageReused": false,
+      "note": "Final versioned instructions and cover are readable; tables, figures and paragraphs remain within page bounds."
+    },
+    {
+      "page": 96,
+      "status": "PASS",
+      "pngSha256": "f53a7f7758820e2314a37f1ff007e8fbf3982773be4e6f6b0ec8d594e45ced7c",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 97,
+      "status": "PASS",
+      "pngSha256": "2cc49e48839a64d15acd281d19ebc3d30bc5b756478cf666e03f8fce542e3e3e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 98,
+      "status": "PASS",
+      "pngSha256": "a4e44648a6d860c5f4e857ae64e1a1bca72cc18a3b2ea94eb803221a02394272",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 99,
+      "status": "PASS",
+      "pngSha256": "72ea391b8bdb0c324ea88a1d91ab2661a036cbaa2b6f6c0aa54cd820e1d8fe5e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 100,
+      "status": "PASS",
+      "pngSha256": "500abda55a67698161137e0bed6c30e6e9d414e248d9e07c99b9fc7ca80bb233",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 101,
+      "status": "PASS",
+      "pngSha256": "53f26bc60a4bc4e573be6bbc3fb23507f8cf7913bdd52aadb63a1ae00108d08a",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-final-changed-review.json",
+      "reviewedPdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+      "identicalPageReused": false,
+      "note": "Final versioned instructions and cover are readable; tables, figures and paragraphs remain within page bounds."
+    },
+    {
+      "page": 102,
+      "status": "PASS",
+      "pngSha256": "606a901138d9a0c343a3c6c319db2a5f692aa544541eeb1fd085ead3f9bb512f",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 103,
+      "status": "PASS",
+      "pngSha256": "d3bf912c73aceb98cee820dd51b1737396c2fb9c78682c88967d9c22303ebd5e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 104,
+      "status": "PASS",
+      "pngSha256": "d05f100b4eea76bcac592bd674732d7a80fb84dfed6588d11d08fcf27c02d280",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-final-changed-review.json",
+      "reviewedPdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+      "identicalPageReused": false,
+      "note": "Final versioned instructions and cover are readable; tables, figures and paragraphs remain within page bounds."
+    },
+    {
+      "page": 105,
+      "status": "PASS",
+      "pngSha256": "9cc29305cb7c4e7114e3866eb6075d52138f3662efb8974795fa6207c8fcf6b1",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 106,
+      "status": "PASS",
+      "pngSha256": "c8470c9e08dc20b02acd71db57a132821451d2f2ad58b29369e88aa2bf8a76c6",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 107,
+      "status": "PASS",
+      "pngSha256": "91e4677a28c7a1d11beb97426c29cb6d93a6e72752a57eaa08e01ec81ffb3afa",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 108,
+      "status": "PASS",
+      "pngSha256": "19a11fa852393a4d6fb142a694597204e51dfd3f16cf37b76eefe438e0f58ad1",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 109,
+      "status": "PASS",
+      "pngSha256": "93f68e3e97abcf9853492ef86aae01543f1ea171c07c2b731a39b9c06c4d83ab",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 110,
+      "status": "PASS",
+      "pngSha256": "f42058ccda85c9d97087b7dc96d254907576d3da74c3e8fbffe305f1aaafa5c0",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 111,
+      "status": "PASS",
+      "pngSha256": "243dc05675dab2a536a7895cc501b1a246a12ff2dc62c983416879fea6efdd76",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 112,
+      "status": "PASS",
+      "pngSha256": "16de972113ac27cb593f215e9957f2ca309f20d5f7e9d63f272e67a932710e2a",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 113,
+      "status": "PASS",
+      "pngSha256": "13b27989a8efceaf21cf0f4d252c589c25bf3d0c7aa66439f0922eea64e782ec",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 114,
+      "status": "PASS",
+      "pngSha256": "ee4684d6051228028f5c7363eb1cd8a557043cc72538b554c1f09636190ca89b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 115,
+      "status": "PASS",
+      "pngSha256": "c97126d4a592be98f49fb9c3212ba8ed97d65c8bed4063963efd281fa4212330",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 116,
+      "status": "PASS",
+      "pngSha256": "4786f4ce7d89204d6983e9572ba193583cff2ded336519f36870107aa0a6af8e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 117,
+      "status": "PASS",
+      "pngSha256": "57e5191f25ab3205c3334af3ce376665d43c11d4732f758db52bc201b6946da6",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 118,
+      "status": "PASS",
+      "pngSha256": "078798f569a11791e626d6b1e344e8b0ea68b114ecd5e96aae2545884a9bd1fb",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 119,
+      "status": "PASS",
+      "pngSha256": "a174bc6ba51e111f4b7c0fabbc9c3f699cab4c4170e56d84b35f63f7070432b3",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 120,
+      "status": "PASS",
+      "pngSha256": "32f4ac81ac49426de81aa3201338504efea33364fbaf1dd5ccdd3fd79bc64c7a",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 121,
+      "status": "PASS",
+      "pngSha256": "3742c7e9545287370e0d7eb1ac89db4e407602af00677bde966e559d46198d98",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 122,
+      "status": "PASS",
+      "pngSha256": "7320217ad0f824a90c1e09385bd40d54b2b5d98b03eec684b43a67cf30d7a736",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 123,
+      "status": "PASS",
+      "pngSha256": "76bce4dc4e80de10bc2de7c024bfabe042da360f412a4ec952bc4ec03950d3e5",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 124,
+      "status": "PASS",
+      "pngSha256": "5c858558a0e45a9d99a8a00a46ab3063bb3f84086c193ede5fb9499e191e96e4",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 125,
+      "status": "PASS",
+      "pngSha256": "90649eb989d4a8fb42ddbf14d9f3c621b38da8c3c44cce5e7773134a047ce12b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 126,
+      "status": "PASS",
+      "pngSha256": "55b245db68b5bbf27ec9b50ea68e0ddd64ba00f78532346c0e8343b8bca53250",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 127,
+      "status": "PASS",
+      "pngSha256": "fef962680969897dbf47032b943b64c2b7bf9471e80e15bb7b97fc0c542ccd48",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 128,
+      "status": "PASS",
+      "pngSha256": "3611217b728b226c88d5de11cfe4cd1f0650e1b757e6bda76097f0354f1a5d15",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 129,
+      "status": "PASS",
+      "pngSha256": "c07c3a0c4734e25077ed06d7017a1541b24a88b0c975f9fc74b863bcc7b943b5",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 130,
+      "status": "PASS",
+      "pngSha256": "198ba5c56923c51c41edd433b03ed8be63854b21a22922c37212adc189f73c65",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 131,
+      "status": "PASS",
+      "pngSha256": "4803bb54b0687b96169669cd5ee4c12e538ce2f21a99f24b3f792da7b1594b2e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 132,
+      "status": "PASS",
+      "pngSha256": "26815ce05624b418f1006db3cb7fda1ee1e5b80bca19be6d4b7002c939e85aa5",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 133,
+      "status": "PASS",
+      "pngSha256": "baa6984ed758f053e67b8c0544e9178dc525617142cefe5654fa6cf832cfce61",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 134,
+      "status": "PASS",
+      "pngSha256": "4311933dbdc0d0936d6116ae41845029868723bcdf8a2488576def99532b8317",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 135,
+      "status": "PASS",
+      "pngSha256": "a9b90ceaeb57713bf3b50246c9ae005784f0f6988a7b48d7e357a7c372442d2c",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 136,
+      "status": "PASS",
+      "pngSha256": "65d104ae9097fe682fbbcdf2501c5e817a07aba0e7cbf2ba8b685b23c3565ad7",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 137,
+      "status": "PASS",
+      "pngSha256": "2a998c7ec103f4baf7a6e55728672d09d019f06d83bfe1bfc83e0f7fa86b5a23",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 138,
+      "status": "PASS",
+      "pngSha256": "e6ab7fd8cb1315849316d43ac85df729c6aadae07ae4563beb57eef3fa2d96a9",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 139,
+      "status": "PASS",
+      "pngSha256": "95fa707a4a1d35c7fddb3f9e9569faec460aa2e1efb489a70f6d39710b052392",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 140,
+      "status": "PASS",
+      "pngSha256": "6da643f6bfaf04ef4965163e27ff980d37c10ee8bd8c693186575f3c6e24bba4",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 141,
+      "status": "PASS",
+      "pngSha256": "e606772aee7700d6f9f1a70c5b8d7743ec8e6f8c25a8e45f0176c38e071263ef",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 142,
+      "status": "PASS",
+      "pngSha256": "f26f430630633775fefb2cf3f9a4c486891f317aed220aae493f858030f4a32a",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 143,
+      "status": "PASS",
+      "pngSha256": "e23999173dc590bcf83a7f18764a91751ca61d8011e49dea4116d08f0e27b5d1",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 144,
+      "status": "PASS",
+      "pngSha256": "458459f9f18be7ed395829f46ca3726870c1df490dc204cff05cf5286c6fa924",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 145,
+      "status": "PASS",
+      "pngSha256": "bc21508ea0b617b6f8e69a9cac7488d7d09d48ea030819c4d6f92a8c85ef5e80",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 146,
+      "status": "PASS",
+      "pngSha256": "e0cdf0370668ad4d25e1531919a328117bc9a616f90673730190dc2b6f18ebbc",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 147,
+      "status": "PASS",
+      "pngSha256": "83ed78c265da518222d106622081d25ffcff99ca74fbda9c5187fb6c57f86a18",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 148,
+      "status": "PASS",
+      "pngSha256": "370d5c8b789edf29cb74961bb005f4e8a06a99a847873e8faa84e81a13df0dc2",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 149,
+      "status": "PASS",
+      "pngSha256": "38c54fe1c4d550abcdff116486a27b8125be67734bb37cc5c89e8e7dbbdf62cb",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 150,
+      "status": "PASS",
+      "pngSha256": "8ff67a702fd229d567309c9dcef589f9ddca3af125fe1fc0da9ef73ed45c9ba7",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 151,
+      "status": "PASS",
+      "pngSha256": "9789c5d16d2b2895f3357818ac72b865b193ad7bcff0dceeca751c03030a4d1e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 152,
+      "status": "PASS",
+      "pngSha256": "f0a51083866dcd26129c61c90afc42e0baf4e8b8c4ada4382b61074b5871ad19",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 153,
+      "status": "PASS",
+      "pngSha256": "2852e681e79b46572d2d8a58c8af113fcc727f24528c6632054dfec5686d717f",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 154,
+      "status": "PASS",
+      "pngSha256": "f5cce9b32b044babdedd31e1b99b686fcfc2524063809fece4b27369d4f53a4d",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 155,
+      "status": "PASS",
+      "pngSha256": "2a866234169404cf592378a3805e23c00a5cd8a7625abc91deffcdcb8eec89cf",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 156,
+      "status": "PASS",
+      "pngSha256": "e1d1740e8d1c3ddde717a9594dd819e0c9a242cc860b19eb7eb17e2fdaebe53e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 157,
+      "status": "PASS",
+      "pngSha256": "5d8484d817055a962b1dc58c37a9deeeef7e4aab98b7c33c3606a36f18cb04fa",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 158,
+      "status": "PASS",
+      "pngSha256": "ee4618f9806b344326c6c41a9e1d7d1b82c06a8fe58f10b65993b30c3a86018d",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 159,
+      "status": "PASS",
+      "pngSha256": "0973d36ef5abbeed8f18c3dd2c5b33fc24fdbd466d1e19d62a0385b8555a06e3",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 160,
+      "status": "PASS",
+      "pngSha256": "5a39192002ac70265384152aff85bdaa64bab554c4846ab5939277ac5e027947",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 161,
+      "status": "PASS",
+      "pngSha256": "c7ea28b838cea688a2bb5ea766baa98e0682811c2a3ef3378c1590bef147ba6b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 162,
+      "status": "PASS",
+      "pngSha256": "cc0279e7e066ae33de58fa03a1df78b94bc9152eabf0fd8d7b2819d5d2ed4694",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 163,
+      "status": "PASS",
+      "pngSha256": "492ec8a0550700abfe5f9ad5b3b41eb9f5ab74cf028bb9b7f35543da87388645",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 164,
+      "status": "PASS",
+      "pngSha256": "2336b41d46d030af62b262b6ac370d90e3621178a58a08eed924a3bf8d34733e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 165,
+      "status": "PASS",
+      "pngSha256": "1e2bfa417a5cccfe2425148fa95109096c3e104de5c77fe591c847e20027152b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 166,
+      "status": "PASS",
+      "pngSha256": "2123dddc6856048cc83934a4b6d17bb6d2fdb55122d590fbff8b7621aeb898c2",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 167,
+      "status": "PASS",
+      "pngSha256": "09f8dc37e65d62603b40aefa0a630ea3c03650b43949a0b0652d7d89f451f5fa",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 168,
+      "status": "PASS",
+      "pngSha256": "92929a6ff2a06c6a40e10fa2d993293726a2cd3dc329c4bbecb5d6a3b982dd92",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 169,
+      "status": "PASS",
+      "pngSha256": "cd1a9bc72d417e56dab4dc76684bfa91523059dd1e9c402f6e763537460ca7c2",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 170,
+      "status": "PASS",
+      "pngSha256": "1f4c95ed1e9c06d935a38b315ec4a2b969a42f8386178f68c01a28e7a55773ab",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 171,
+      "status": "PASS",
+      "pngSha256": "bf78b6d836b206ee65a78756eeb62f0a90438189cf1fbecd9873b7c7e556b1c8",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 172,
+      "status": "PASS",
+      "pngSha256": "33a1775e690884a58f2071b080387b0bde838a7a311b0e4afc10e2859a800130",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 173,
+      "status": "PASS",
+      "pngSha256": "9d1f632754eddc779c5086c6f8147d0e4add67d01b2ad75c5c006e8115b0a5f7",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 174,
+      "status": "PASS",
+      "pngSha256": "a1ce5f63616927b53193eb48082b7c75d37ea98c76a89d2619f4ebb0332d9035",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 175,
+      "status": "PASS",
+      "pngSha256": "f2e9e56eb2fc0c1f0f14064e4012873c57677cb514f6f9c2eb8ce7804f9937f2",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 176,
+      "status": "PASS",
+      "pngSha256": "dff7041a86dc214d7a01c41c36a62f458c5336a27973f704501005f3fdd423ed",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 177,
+      "status": "PASS",
+      "pngSha256": "bd69da19efd1d5e92ed9baa23f232b5e893e61f9e4de06adb3d8fc34c06853b9",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 178,
+      "status": "PASS",
+      "pngSha256": "2690cba5a1e7e266c7eb6fdb068e330757b966a886e24fd36ac5816d539777cf",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 179,
+      "status": "PASS",
+      "pngSha256": "c1504526f90d6c4bc5997145065cc1c06245afcf2b5fe8d82e8a7cdd8777b5df",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 180,
+      "status": "PASS",
+      "pngSha256": "2bcf9acc947533d22877db7ca1548754fd661a0450371800ff7136b2cafb10fa",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 181,
+      "status": "PASS",
+      "pngSha256": "7c1e17467912a39db06f24b90ece4e00ca4da3fdb3fb6d91f89713082340c903",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 182,
+      "status": "PASS",
+      "pngSha256": "378f15eea2f29a2d9ce9545379683a4bbb0211ca67a4316748d1255787cf7ac6",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 183,
+      "status": "PASS",
+      "pngSha256": "8ab406030bbafc7285cb0700fd3e0551a21486e640dc6039f508e2992fdfe14d",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 184,
+      "status": "PASS",
+      "pngSha256": "e418b3503715e30ef1e727a7580e6a381dc439ae9f5f0139bec4259d27d8946e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 185,
+      "status": "PASS",
+      "pngSha256": "12e5b7557a571b31f0ed114bb5e34e43097b2a3450f7b74102e74cbc48068667",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 186,
+      "status": "PASS",
+      "pngSha256": "5e330256a5253ee396a1468f53cddd17ec3f91e4dfaed4b36715a9292618d7f9",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 187,
+      "status": "PASS",
+      "pngSha256": "577d34cc0c40f72238435032a3707b8174315dfcf7f9ab1879a4d3f423461363",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 188,
+      "status": "PASS",
+      "pngSha256": "9c3cab631f28ef0e226fa642530d8a537487149283b810104b3cc0e9f2a3548a",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 189,
+      "status": "PASS",
+      "pngSha256": "06450495d74844cb899ed0e9fd7f1608e35a3cddec18967db93ddd8a2e2254ed",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 190,
+      "status": "PASS",
+      "pngSha256": "099d198e7a7c13f3cc864a8e20960253f9e2890386861056908b7f6bebe01679",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 191,
+      "status": "PASS",
+      "pngSha256": "94709d6c56efa7d62ea6b920956fb3ab54cfebf209a31a1916d0cd578f2c8bcf",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 192,
+      "status": "PASS",
+      "pngSha256": "7068b8ac58d81ac6832371ad3654077a5d6baaa4153178bfa9b9d592d5ea20d5",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 193,
+      "status": "PASS",
+      "pngSha256": "3572f13c47ed79d09ee08e57534ad32e6c3025d7344c333e414e86a89ce1a442",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 194,
+      "status": "PASS",
+      "pngSha256": "fbc7d6dc5f3e57a27fde6c3ca7863ec9e326650d416c053de830fb1505fcedfc",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 195,
+      "status": "PASS",
+      "pngSha256": "430c7a2ab2a2ba0708cbbd6873719b583ae5f133c7a0b9b83267b6831d474036",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 196,
+      "status": "PASS",
+      "pngSha256": "c0e67735716e827944d352d19ed528aa7b00c6b546428600e9bdc8fc8dad03a6",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 197,
+      "status": "PASS",
+      "pngSha256": "8ba4525b7fbb5ba0ae22c22b68e6388d0c422da35655942d553add71ed4abedf",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 198,
+      "status": "PASS",
+      "pngSha256": "f49fcec22447ad675161f6ac6cc5764452cad4e5f24bdcf437fb14d5f1116b7b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 199,
+      "status": "PASS",
+      "pngSha256": "65d2144ca820bfca60adef88cfff6bbc8f6c9380ecaa97556f3098c3634af6a4",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 200,
+      "status": "PASS",
+      "pngSha256": "f4df645f9ebe9f69ecaa539f5436663b4a3211751181e11e97836041947f340b",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 201,
+      "status": "PASS",
+      "pngSha256": "d1c16f2d8fed400f951d675c6fb314a444baff0c7f1893ef64fc1a3fd138828a",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 202,
+      "status": "PASS",
+      "pngSha256": "20aa8bcde17c3d3bbc92955b2a1702a147acb69183175bff7b0c9aab797cd742",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 203,
+      "status": "PASS",
+      "pngSha256": "01bac910dbe223b1b93e2ab2eacbfb2b3e67b1a514fe05781563f9e5c6109efc",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 204,
+      "status": "PASS",
+      "pngSha256": "d312ad0ed9ad3db6c383da0ea127d3fc0cbfa0fbb3d128a43dc59127be22001e",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 205,
+      "status": "PASS",
+      "pngSha256": "058f9ac605576d3e52a3aef33fb84d404e74cb74d7f72ba05bca1bf71548f4aa",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 206,
+      "status": "PASS",
+      "pngSha256": "552a561738a5518c9d0abcca4c4679d12998f1504b69d08f8ed35a3bd1b5de5d",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 207,
+      "status": "PASS",
+      "pngSha256": "79dc3ce934766589894e6986b26562564677c0a64ffa5cfebc55cf45efdfabf8",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 208,
+      "status": "PASS",
+      "pngSha256": "9785ed4cf03a709c7c9cd3fdddd83a6c486111ef148c96c229b208713ac02eb0",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 209,
+      "status": "PASS",
+      "pngSha256": "887a156f1c6c5449a8376a7bac740a8a0ebd6097106e4e91a27253593c1cf0bd",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 210,
+      "status": "PASS",
+      "pngSha256": "0c058d7a854c31fffe0c18fdded23de1b17aab4459759980a1204a9d1e5153a0",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 211,
+      "status": "PASS",
+      "pngSha256": "71e57fa85c8ebb77e9457f8de8cc8658274b7f4c10c3a78e3c27699de32deeb6",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 212,
+      "status": "PASS",
+      "pngSha256": "c8ae9dc383335d13cfd0ebf21ab0994c46ead23caad34f738079e636a6b080bc",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 213,
+      "status": "PASS",
+      "pngSha256": "66ad3a23979582a240b3708122ef6b00c55dc8778a858f073d412169c8eb4001",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 214,
+      "status": "PASS",
+      "pngSha256": "a3c4995943d3d0cf3a45ee4c4dd6fffd6c401ea754a23a54e1ced583836bd138",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-final-changed-review.json",
+      "reviewedPdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+      "identicalPageReused": false,
+      "note": "Final versioned instructions and cover are readable; tables, figures and paragraphs remain within page bounds."
+    },
+    {
+      "page": 215,
+      "status": "PASS",
+      "pngSha256": "f082b03b117854b04cf4b3cb961126c28a86530a6693dc75d54d853dd2848309",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    },
+    {
+      "page": 216,
+      "status": "PASS",
+      "pngSha256": "2e9d2e000cd227b65aa4711c6fef2513c162bdbff43e40b21fe5c83fc5217c72",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-final-changed-review.json",
+      "reviewedPdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+      "identicalPageReused": false,
+      "note": "Final versioned instructions and cover are readable; tables, figures and paragraphs remain within page bounds."
+    },
+    {
+      "page": 217,
+      "status": "PASS",
+      "pngSha256": "f07d34c6a5d2a785d40f72b3d75a7c5657af477b083d278f1e6ce695030d4941",
+      "method": "Individual full-page view_image",
+      "reviewReport": "work/manual-1.6.6-initial-individual-review.json",
+      "reviewedPdfSha256": "12640ca4b22e659f77d62704d33526baf6b100a7e4b70874ca6114a9eb584326",
+      "identicalPageReused": true,
+      "note": "Readable full page; no overlapping text, missing glyphs, clipped PDF content or displaced figures."
+    }
+  ],
+  "unresolvedIssues": [],
+  "physicalHardwareVerified": false
+}

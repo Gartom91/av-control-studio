@@ -1,0 +1,400 @@
+{
+  "ok": true,
+  "pages": 217,
+  "chapters": 55,
+  "appendices": 4,
+  "words": 36793,
+  "images": 83,
+  "screenshots": 80,
+  "currentScreenshots": 3,
+  "diagrams": 3,
+  "edition": "Signal Workshop | aplikacja 1.6.6 | rewizja 2026-10-12",
+  "date": "12 października 2026",
+  "pdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+  "sourceSha256": "8eb18cd71dab8c34a958d3f0421fa493221862f15c52ded85a634fcefadcdbe0",
+  "pdfName": "AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf",
+  "landscapePages": [
+    10,
+    13,
+    14,
+    17,
+    20,
+    25,
+    30,
+    37,
+    40,
+    41,
+    44,
+    45,
+    49,
+    50,
+    54,
+    55,
+    56,
+    60,
+    64,
+    65,
+    68,
+    69,
+    72,
+    79,
+    80,
+    81,
+    88,
+    90,
+    96,
+    100,
+    103,
+    106,
+    112,
+    116,
+    117,
+    118,
+    119,
+    120,
+    125,
+    126,
+    131,
+    132,
+    137,
+    138,
+    145,
+    153,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    166,
+    168,
+    172,
+    177,
+    180,
+    185,
+    186,
+    187,
+    196,
+    197,
+    199,
+    203,
+    206,
+    207,
+    209,
+    210
+  ],
+  "issues": [],
+  "bookmarks": 60,
+  "chapterPageRanges": [
+    {
+      "title": "Spis treści",
+      "start": 2,
+      "end": 5
+    },
+    {
+      "title": "01. Jak pracować z kursem",
+      "start": 6,
+      "end": 7
+    },
+    {
+      "title": "02. Studio, silnik, Player i Imager",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "title": "03. Pierwsze uruchomienie i otwarcie przykładu",
+      "start": 11,
+      "end": 14
+    },
+    {
+      "title": "04. Mapa interfejsu i codzienna obsługa",
+      "start": 15,
+      "end": 17
+    },
+    {
+      "title": "05. Pierwsze eksperymenty w Wirtualnej sali",
+      "start": 18,
+      "end": 20
+    },
+    {
+      "title": "06. Tworzenie własnego projektu od zera",
+      "start": 21,
+      "end": 22
+    },
+    {
+      "title": "07. Sygnały: wartość, typ, zapis i jakość",
+      "start": 23,
+      "end": 25
+    },
+    {
+      "title": "08. Akcje: deklarowanie zadań i parametrów",
+      "start": 26,
+      "end": 27
+    },
+    {
+      "title": "09. Panel WYSIWYG: strony, pozycje, warstwy i wiązania",
+      "start": 28,
+      "end": 30
+    },
+    {
+      "title": "10. Grafiki, etykiety i wygląd bez CSS",
+      "start": 31,
+      "end": 33
+    },
+    {
+      "title": "11. Bramki logiczne z dowolną liczbą wejść",
+      "start": 34,
+      "end": 37
+    },
+    {
+      "title": "12. Interlock jako pamięć wyboru",
+      "start": 38,
+      "end": 41
+    },
+    {
+      "title": "13. Truth table: kombinacja wyjść wybierana impulsem",
+      "start": 42,
+      "end": 45
+    },
+    {
+      "title": "14. Pamięci, zatrzaski, przerzutniki i timery",
+      "start": 46,
+      "end": 50
+    },
+    {
+      "title": "15. Sekwencje i zezwolenia akcji",
+      "start": 51,
+      "end": 56
+    },
+    {
+      "title": "16. Protokoły od pierwszego tekstu do ramki z CRC",
+      "start": 57,
+      "end": 61
+    },
+    {
+      "title": "17. USB-RS232/485 i UART: podłączenie nowego portu",
+      "start": 62,
+      "end": 65
+    },
+    {
+      "title": "18. TCP, UDP i cyfrowe GPIO",
+      "start": 66,
+      "end": 69
+    },
+    {
+      "title": "19. Symulacja, odpowiedzi i diagnostyka",
+      "start": 70,
+      "end": 72
+    },
+    {
+      "title": "20. Wygląd panelu i CSS",
+      "start": 73,
+      "end": 82
+    },
+    {
+      "title": "21. Własny symbol Python: podstawy i tryb ograniczony",
+      "start": 83,
+      "end": 88
+    },
+    {
+      "title": "22. Układ PC, tabletu i telefonu",
+      "start": 89,
+      "end": 90
+    },
+    {
+      "title": "23. AV Control Imager: nowa karta SD od początku",
+      "start": 91,
+      "end": 93
+    },
+    {
+      "title": "24. Konfiguracja Raspberry Pi przez przeglądarkę",
+      "start": 94,
+      "end": 97
+    },
+    {
+      "title": "25. Publikowanie, wersje i przywracanie",
+      "start": 98,
+      "end": 100
+    },
+    {
+      "title": "26. AV Control Player i panel przeglądarkowy",
+      "start": 101,
+      "end": 103
+    },
+    {
+      "title": "27. Aktualizacje Studio, Playera, Imagera i RPi",
+      "start": 104,
+      "end": 106
+    },
+    {
+      "title": "28. Projekt końcowy: zbuduj własną instalację od zera",
+      "start": 107,
+      "end": 109
+    },
+    {
+      "title": "29. Dodatkowa sieć przez adapter USB-Ethernet",
+      "start": 110,
+      "end": 113
+    },
+    {
+      "title": "30. Wieloportowy ekspander Ethernet do RS-232 / RS-485",
+      "start": 114,
+      "end": 120
+    },
+    {
+      "title": "31. Konwerter Wi-Fi, UDP i zdalne ustawianie RFC2217",
+      "start": 121,
+      "end": 122
+    },
+    {
+      "title": "32. Laboratorium ekspanderów i adresów magistrali",
+      "start": 123,
+      "end": 126
+    },
+    {
+      "title": "33. Urządzenie jako symbol i czytelne połączenia",
+      "start": 127,
+      "end": 132
+    },
+    {
+      "title": "34. Debugger: od jakości sygnału do pojedynczego kroku",
+      "start": 133,
+      "end": 138
+    },
+    {
+      "title": "35. Pełny CPython, NumPy, helpery i własne biblioteki",
+      "start": 139,
+      "end": 147
+    },
+    {
+      "title": "36. Osiem motywów panelu i materiały kontrolek",
+      "start": 148,
+      "end": 153
+    },
+    {
+      "title": "37. Prawy przycisk, schowek i globalny wygląd",
+      "start": 154,
+      "end": 163
+    },
+    {
+      "title": "38. Przygotowanie stanowiska",
+      "start": 164,
+      "end": 164
+    },
+    {
+      "title": "39. Ekran powitalny",
+      "start": 165,
+      "end": 166
+    },
+    {
+      "title": "40. Metryka instalacji",
+      "start": 167,
+      "end": 168
+    },
+    {
+      "title": "41. Zespół, kontakty i odpowiedzialność",
+      "start": 169,
+      "end": 169
+    },
+    {
+      "title": "42. Terminy, dokumenty i odbiór",
+      "start": 170,
+      "end": 170
+    },
+    {
+      "title": "43. Historia i praca silnika",
+      "start": 171,
+      "end": 172
+    },
+    {
+      "title": "44. Jak działa monitoring",
+      "start": 173,
+      "end": 173
+    },
+    {
+      "title": "45. Co jest sprawdzane",
+      "start": 174,
+      "end": 175
+    },
+    {
+      "title": "46. Konfiguracja urządzenia i przygotowanie serwisu",
+      "start": 176,
+      "end": 177
+    },
+    {
+      "title": "47. Zapytanie kontrolne",
+      "start": 178,
+      "end": 178
+    },
+    {
+      "title": "48. Raporty na TECHNIKAV",
+      "start": 179,
+      "end": 181
+    },
+    {
+      "title": "49. E-mail i harmonogram hostingu",
+      "start": 182,
+      "end": 188
+    },
+    {
+      "title": "50. Internet, kolejność i historia",
+      "start": 189,
+      "end": 189
+    },
+    {
+      "title": "51. Ćwiczenia i kryteria zaliczenia",
+      "start": 190,
+      "end": 190
+    },
+    {
+      "title": "52. Klawiatura, konta i codzienna obsługa",
+      "start": 191,
+      "end": 199
+    },
+    {
+      "title": "53. TAB5 ST7123: uruchomienie i parowanie",
+      "start": 200,
+      "end": 203
+    },
+    {
+      "title": "54. TAB5: biblioteka SD, belka i firmware przez Wi-Fi",
+      "start": 204,
+      "end": 207
+    },
+    {
+      "title": "55. HDMI, podpowiedzi i odbiór stanowiska",
+      "start": 208,
+      "end": 210
+    },
+    {
+      "title": "Dodatek A. Inwentarz projektu szkoleniowego",
+      "start": 211,
+      "end": 212
+    },
+    {
+      "title": "Dodatek B. Diagnozowanie problemów",
+      "start": 213,
+      "end": 214
+    },
+    {
+      "title": "Dodatek C. Słownik i wskazówki prowadzącego",
+      "start": 215,
+      "end": 215
+    },
+    {
+      "title": "Dodatek D. Źródła i materiały dodatkowe",
+      "start": 216,
+      "end": 217
+    }
+  ],
+  "localLinksChecked": 99,
+  "renderEngine": "Poppler pdftoppm 110 dpi",
+  "imageProvenanceChecked": 83,
+  "renderedPages": 217,
+  "renderDirectory": "work/pdf-review-workshop/acf495d51676",
+  "physicalRpiVerified": false,
+  "visualReviewStillRequired": false,
+  "visualReviewPassed": true,
+  "individuallyReviewedPages": 217,
+  "visualReviewReport": "page-review.json"
+}

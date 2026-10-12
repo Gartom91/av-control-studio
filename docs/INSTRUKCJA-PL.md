@@ -1,4 +1,4 @@
-# Instrukcja AV Control Studio 1.6.5
+# Instrukcja AV Control Studio 1.6.6
 
 Na ekranie powitalnym znajdziesz **Otwórz projekt szkoleniowy** oraz **Podręcznik szkoleniowy**. Ilustrowany kurs Signal Workshop działa offline: 206 stron, 52 rozdziały, 4 dodatki i 77 ilustracji. Neutralny przykład Wirtualna sala AV ma 5 stron, 10 urządzeń i 3 ekspandery sieciowe. [Źródło kursu](tutorial/TUTORIAL-PL.md). Administrator kontrolera ma zakładkę **Raspberry Pi**: [konfiguracja WWW](KONFIGURACJA-RPI-PL.md).
 

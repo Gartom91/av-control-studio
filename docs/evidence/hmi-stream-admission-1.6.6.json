@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "version": "1.6.6",
+  "build": {
+    "version": "1.6.6",
+    "sourceSha256": "dfd6f5154fead2662256a807c2ffdd4f9502fb7d0dc474e320f5fcb00c4525dd",
+    "fileCount": 361
+  },
+  "scanId": "647b4947-0ac2-4e44-b3c9-e87c7ba100bc",
+  "scanBase": "b455bc9500b6a9b77ba6b18b5ede58ddab7f5192",
+  "scanHead": "d408d04b64b5361fed8d2d9a6cd5fbaf0633f58e",
+  "findingSeverity": "low",
+  "before": {
+    "ok": false,
+    "limit": 2,
+    "simultaneouslyHeldForTwoSeconds": 4,
+    "statuses": [
+      429,
+      429,
+      200,
+      200,
+      200,
+      429,
+      429,
+      200
+    ],
+    "loopbackSimulationOnly": true,
+    "realUvicornHttp": true,
+    "credentialsPrinted": false
+  },
+  "after": {
+    "ok": true,
+    "limit": 2,
+    "simultaneouslyHeldForTwoSeconds": 2,
+    "statuses": [
+      429,
+      200,
+      429,
+      429,
+      200,
+      429,
+      429,
+      429
+    ],
+    "loopbackSimulationOnly": true,
+    "realUvicornHttp": true,
+    "credentialsPrinted": false
+  },
+  "focusedHmiOtaTestsPassed": 24,
+  "portableCppSessionTestPassedOnLinux": true,
+  "physicalHardwareTouched": false,
+  "postFixReview": "Independent read-only implementation review; stale jobs, touch target rebuild and SD metadata bounds corrected"
+}

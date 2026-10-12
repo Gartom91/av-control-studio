@@ -1,0 +1,23 @@
+{
+  "loginRequired": true,
+  "virtualKeyboard": true,
+  "slidingKeyboard": true,
+  "screenKeyLogin": true,
+  "logoutInPanel": true,
+  "ok": true,
+  "backend": "wayland-0",
+  "nativeGtkWebKit": true,
+  "operatorPanelOnly": true,
+  "navigationBlocked": true,
+  "newWindowsBlocked": true,
+  "contextMenuBlocked": true,
+  "browserGesturesDisabled": true,
+  "fullscreenExitBlocked": true,
+  "pageNavigation": true,
+  "offlineRecovery": true,
+  "restartNoReplay": true,
+  "actionsInIsolatedFixture": 1,
+  "physicalHdmi": false,
+  "physicalUsbInput": false,
+  "physicalVtSwitch": false
+}

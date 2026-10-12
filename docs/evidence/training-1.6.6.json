@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "at": "2026-10-12T20:34:01.242Z",
+  "pdfSha256": "acf495d51676dc45d4da50dadb9918c4a592d4e6d2ba1e12cfb6be9bfe4a0ecf",
+  "sourceSha256": "8eb18cd71dab8c34a958d3f0421fa493221862f15c52ded85a634fcefadcdbe0",
+  "illustrationHashesChecked": 83,
+  "projectId": "avctrl-training-room-v1",
+  "simulation": true,
+  "physicalTransportEnabled": false,
+  "offlineManual": true,
+  "manualChapters": 59,
+  "manualImages": 83,
+  "pdfName": "AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf",
+  "pdfAndExampleDownloads": true,
+  "manualLocalLinks": true,
+  "trainingProgramme": true,
+  "operatorExercises": true,
+  "serverGuard": true,
+  "logicPortGeometry": [
+    {
+      "ports": 11,
+      "maxLabelOffset": 0.000033055003525867045,
+      "maxSideOffset": 0.9999799666645298
+    },
+    {
+      "ports": 19,
+      "maxLabelOffset": 0.00004343325394699696,
+      "maxSideOffset": 1.000094105383552
+    },
+    {
+      "ports": 17,
+      "maxLabelOffset": 0.00004343325394699696,
+      "maxSideOffset": 1.000094105383552
+    },
+    {
+      "ports": 18,
+      "maxLabelOffset": 0.000037718359297089795,
+      "maxSideOffset": 1.0000268600437419
+    },
+    {
+      "ports": 13,
+      "maxLabelOffset": 0.00008668363673974305,
+      "maxSideOffset": 1.000068952881541
+    }
+  ],
+  "pageErrors": []
+}

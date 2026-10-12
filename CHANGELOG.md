@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## 1.6.6 — 2026-10-12
+
+PL: Poprawka HDMI Raspberry Pi, oficjalna obsługa TAB5 ST7123, biblioteka SD, parowanie i firmware 0.2.4 przez Wi‑Fi. Podręcznik ma 217 stron, 55 rozdziałów i 83 ilustracje. Pakiety i siedem bramek CI zbudowano lokalnie. [Szczegóły i pobieranie](docs/releases/v1.6.6.md#polski).
+
+EN: Raspberry Pi HDMI fix, official TAB5 ST7123 support, SD panel library, pairing and Wi‑Fi firmware 0.2.4 updates. The handbook has 217 pages, 55 chapters and 83 illustrations. Packages and seven CI gates were built locally. [Details and downloads](docs/releases/v1.6.6.md#english).
+
 ## 1.6.5 — 2026-10-11
 
 PL: Przycisk X ukrywa 100 rodzajów podpowiedzi i instrukcji w Studio. Ustawienia pozwalają wyszukać i przywrócić pojedynczy blok lub wszystkie naraz. Wybór jest zapamiętywany na stanowisku, także po restarcie. Pakiety zbudowano i sprawdzono lokalnie; pełny podręcznik Signal Workshop jest dołączony. [Szczegóły i pobieranie](docs/releases/v1.6.5.md#polski).

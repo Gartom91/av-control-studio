@@ -1,10 +1,10 @@
-# AV Control Imager i AV Control Player 1.6.5
+# AV Control Imager i AV Control Player 1.6.6
 
 Dwie niezależne aplikacje na Windows 10 22H2 / Windows 11 x64. Każda ma własny instalator i skrót. Studio nie musi być zainstalowane ani uruchomione. Wymagany .NET jest dołączony, a instalatory zawierają również instalator środowiska WebView2 firmy Microsoft. Po instalacji aplikacje działają w sieci lokalnej, bez chmury.
 
 ## AV Control Imager — karta SD dla RPi 3B, 4B i 5
 
-Instalator **AV-Control-Imager-1.6.5-Windows-x64.exe** zawiera obraz Raspberry Pi OS Lite 64-bit z silnikiem AV Control i oficjalny Raspberry Pi Imager 2.0.11.1. Nie trzeba pobierać obrazu osobno ani wybierać go z katalogu systemów. Wszystkie trzy modele korzystają ze wspólnego obrazu ARM64. Model wybierasz w aplikacji.
+Instalator **AV-Control-Imager-1.6.6-Windows-x64.exe** zawiera obraz Raspberry Pi OS Lite 64-bit z silnikiem AV Control i oficjalny Raspberry Pi Imager 2.0.11.1. Nie trzeba pobierać obrazu osobno ani wybierać go z katalogu systemów. Wszystkie trzy modele korzystają ze wspólnego obrazu ARM64. Model wybierasz w aplikacji.
 
 1. Zainstaluj Imager w chronionym katalogu Program Files. Windows poprosi o uprawnienia administratora podczas instalacji i zapisu karty SD. Zapewnij około 2 GB wolnego miejsca na instalację; konfigurator zapisuje skompresowany obraz bez tworzenia pełnej kopii na PC.
 2. Podłącz czytnik z kartą SD (minimum 8 GB; zalecane 16 GB lub więcej).
@@ -25,7 +25,7 @@ Hasła nie są zapisywane w projektach ani w argumentach procesu. Zadanie zapisu
 
 ## AV Control Player — samodzielny panel operatora
 
-Instalator **AV-Control-Player-1.6.5-Windows-x64.exe** zawiera tylko odtwarzacz i jego środowisko. Nie uruchamia własnego symulatora ani silnika logiki. Sterowanie wykonuje kontroler RPi lub istniejący symulator Studio.
+Instalator **AV-Control-Player-1.6.6-Windows-x64.exe** zawiera tylko odtwarzacz i jego środowisko. Nie uruchamia własnego symulatora ani silnika logiki. Sterowanie wykonuje kontroler RPi lub istniejący symulator Studio.
 
 1. W Studio przygotuj projekt i opublikuj go na kontrolerze. W ustawieniach kontrolera utwórz konto z rolą **operator**.
 2. Zainstaluj i uruchom **AV Control Player** na komputerze operatora.
