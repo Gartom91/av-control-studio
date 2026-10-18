@@ -1,6 +1,6 @@
 # Weryfikacja AV Control 1.6.7
 
-Stan dowodów: **18 października 2026**. Wersja aplikacji: **1.6.7**; firmware M5Stack TAB5 ST7123: **0.2.5**. Raport opisuje wykonane testy oprogramowania i pakietów oraz oddzielne warunki końcowej publikacji. Nie poświadcza odbioru nowej wersji na fizycznym Raspberry Pi ani TAB5.
+Stan dowodów: **18 października 2026**. Wersja aplikacji: **1.6.7**; firmware M5Stack TAB5 ST7123: **0.2.5**. Raport opisuje wykonane testy oprogramowania i pakietów oraz potwierdzoną publikację wydania. Nie poświadcza odbioru nowej wersji na fizycznym Raspberry Pi ani TAB5.
 
 ## Tożsamość sprawdzonego oprogramowania
 
@@ -75,16 +75,17 @@ Pierwsza próba `windows-package` zakończyła się błędem ładowania `_cffi_b
 
 ## Stan końcowych bram wydania
 
-Lokalne testy, opisane pakiety, końcowe CI oraz podpis kompletu 49 plików są sprawdzone. Publikacja i pobrania publiczne wymagają własnych dowodów:
+Lokalne testy, opisane pakiety, końcowe CI, podpis oraz publikacja kompletu 49 plików są sprawdzone. Osobne dowody potwierdzają wszystkie publiczne pobrania i próby sprawdzania aktualizacji:
 
-| Etap | Stan w tym raporcie | Dowód wymagany do zamknięcia |
+| Etap | Stan w tym raporcie | Dowód i zakres |
 | --- | --- | --- |
 | Ostateczny commit źródeł i siedem zadań CI | **PASS 7/7** | [Dowód CI](evidence/release-ci-1.6.7.json): commit `5e60c8438956137d91dd42b2fab7919bcf8b9ce8`, siedem wyników `success`, daty oraz lokalne runnery. |
-| Podpis i kontrola kompletnego zestawu | **PASS lokalnie, 49 plików** | [Dowód sprawdzenia podpisu ECDSA i skróty metadanych](evidence/release-signing-1.6.7.json). Do publikacji: [manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/RELEASE-MANIFEST.json), [podpis](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/RELEASE-SIGNATURE.json), [sumy plików](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/SHA256SUMS.txt). |
-| Publikacja v1.6.7 | **WYMAGANE** | Publiczne wydanie, komplet załączników, anonimowe pobranie i porównanie skrótów oraz sprawdzenie odnośników. |
+| Podpis i kontrola kompletnego zestawu | **PASS, 49 plików** | [Dowód sprawdzenia podpisu ECDSA i skróty metadanych](evidence/release-signing-1.6.7.json). Opublikowane: [manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/RELEASE-MANIFEST.json), [podpis](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/RELEASE-SIGNATURE.json), [sumy plików](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/SHA256SUMS.txt). |
+| Publikacja v1.6.7 | **PASS** | [Dowód publikacji](evidence/publication-1.6.7.json): 49 załączników, 66 sprawdzonych odnośników README. [Pobrania publiczne](evidence/public-downloads-1.6.7.json): **49/49 anonimowych GET**, zgodne SHA256 i liczby bajtów, poprawny pobrany podpis i sumy kontrolne. |
+| Sprawdzanie aktualizacji w aplikacjach Windows | **PASS 6/6** | [Próby natywnego updateCheck](evidence/publication-1.6.7.json): Studio, Player i Imager 1.6.6 wykrywają 1.6.7; wersja 1.6.7 zwraca `idle` i brak nowszej wersji. Bez wywołania pobierania i instalacji aktualizacji. |
 | Fizyczny odbiór instalacji | **NIEZWERYFIKOWANE** | Osobny raport dla wskazanego urządzenia i rzeczywistych hashy wdrożonych artefaktów. |
 
-Podpisany manifest sprawdzono lokalnie przed publikacją; niniejszy raport nie nadaje publikacji ani pobraniom publicznym z góry wyniku pozytywnego. Po publikacji raport jej weryfikacji należy dołączyć oddzielnie, z datą i adresem wydania.
+[Wydanie v1.6.7](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.7) opublikowano **18 października 2026 o 16:49:29 UTC**. Weryfikacja anonimowych pobrań zakończyła się o **16:52:03 UTC**; objęła treść wszystkich 49 załączników, a nie tylko odpowiedzi HEAD. Podpis sprawdzono ponownie na dokładnych pobranych bajtach manifestu i podpisu. Próby `updateCheck` korzystały z rzeczywistego publicznego GitHub w natywnych oknach WebView2.
 
 ## Granice akceptacji
 

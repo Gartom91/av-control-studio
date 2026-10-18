@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "version": "1.6.7",
+  "url": "https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.7",
+  "assets": 49,
+  "publicAssetsVerified": true,
+  "githubDigestsVerified": true,
+  "anonymousHeadAllAssets": true,
+  "anonymousManifestChecksumsAndRuntimeDownloaded": true,
+  "runtimeSha256": "5ef2be5120fb5fb6d0f459ce70eeed631234935e82196a343d8b2e4f1a36d0c4",
+  "publicCommit": "b69826f30637012f8b81f02d02211507cb00e0a0",
+  "publishedAt": "2026-10-18T16:49:29Z",
+  "verifiedAt": "2026-10-18T16:52:03.913342+00:00",
+  "sourceCommit": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+  "publicDownloads": {
+    "ok": true,
+    "method": "Anonymous HTTPS GET of every asset; streaming SHA-256 and exact byte count",
+    "passed": 49,
+    "total": 49,
+    "signatureVerified": true,
+    "checksumsVerified": true,
+    "evidence": "public-downloads-1.6.7.json"
+  },
+  "nativePublicUpdateChecks": {
+    "ok": true,
+    "startedAt": "2026-10-18T16:50:21.489Z",
+    "finishedAt": "2026-10-18T16:50:55.823Z",
+    "expectedCases": 6,
+    "passedCases": 6,
+    "downloadAndInstallInvoked": false,
+    "apps": [
+      {
+        "app": "Studio",
+        "scenario": "1.6.6-to-1.6.7",
+        "ok": true,
+        "nativeWebView2": true,
+        "operation": "updateCheck",
+        "downloadAndInstallInvoked": false,
+        "executableSha256": "1449a3bee48313fa44b49cd0d3159679e5950d8bb8caf60f7ed25f40e660f06b",
+        "result": {
+          "app": "Studio",
+          "availableVersion": "1.6.7",
+          "bytes": 319890803,
+          "checkedAt": 1792342225,
+          "currentVersion": "1.6.6",
+          "error": "",
+          "lastInstall": null,
+          "percent": 0,
+          "phase": "available",
+          "preferences": {
+            "autoCheck": false,
+            "installOnExit": false
+          },
+          "repository": "https://github.com/Gartom91/av-control-studio",
+          "supported": true
+        },
+        "realPublicGitHub": true
+      },
+      {
+        "app": "Player",
+        "scenario": "1.6.6-to-1.6.7",
+        "ok": true,
+        "nativeWebView2": true,
+        "operation": "updateCheck",
+        "downloadAndInstallInvoked": false,
+        "executableSha256": "a36ea7ae2b258cccfd7db899a19712349be1186014d803cd226d18f88711ea63",
+        "result": {
+          "app": "Player",
+          "availableVersion": "1.6.7",
+          "bytes": 302432829,
+          "checkedAt": 1792342237,
+          "currentVersion": "1.6.6",
+          "error": "",
+          "lastInstall": null,
+          "percent": 0,
+          "phase": "available",
+          "preferences": {
+            "autoCheck": false,
+            "installOnExit": false
+          },
+          "repository": "https://github.com/Gartom91/av-control-studio",
+          "supported": true
+        },
+        "realPublicGitHub": true
+      },
+      {
+        "app": "Imager",
+        "scenario": "1.6.6-to-1.6.7",
+        "ok": true,
+        "nativeWebView2": true,
+        "operation": "updateCheck",
+        "downloadAndInstallInvoked": false,
+        "executableSha256": "ce02f677e96bf9daba51bf8372198d8e7ba7d0426619e2df9cc4863e6f0aae98",
+        "result": {
+          "app": "Imager",
+          "availableVersion": "1.6.7",
+          "bytes": 1331772865,
+          "checkedAt": 1792342239,
+          "currentVersion": "1.6.6",
+          "error": "",
+          "lastInstall": null,
+          "percent": 0,
+          "phase": "available",
+          "preferences": {
+            "autoCheck": false,
+            "installOnExit": false
+          },
+          "repository": "https://github.com/Gartom91/av-control-studio",
+          "supported": true
+        },
+        "realPublicGitHub": true
+      },
+      {
+        "app": "Studio",
+        "scenario": "1.6.7-no-update",
+        "ok": true,
+        "nativeWebView2": true,
+        "operation": "updateCheck",
+        "downloadAndInstallInvoked": false,
+        "executableSha256": "c018bdb03feef99a1a6df28798f42adca2c7c862d715eaa8eef1798f10ac65b9",
+        "result": {
+          "app": "Studio",
+          "availableVersion": null,
+          "bytes": null,
+          "checkedAt": 1792342242,
+          "currentVersion": "1.6.7",
+          "error": "",
+          "lastInstall": null,
+          "percent": 0,
+          "phase": "idle",
+          "preferences": {
+            "autoCheck": false,
+            "installOnExit": false
+          },
+          "repository": "https://github.com/Gartom91/av-control-studio",
+          "supported": true
+        },
+        "realPublicGitHub": true
+      },
+      {
+        "app": "Player",
+        "scenario": "1.6.7-no-update",
+        "ok": true,
+        "nativeWebView2": true,
+        "operation": "updateCheck",
+        "downloadAndInstallInvoked": false,
+        "executableSha256": "c18a3ec1dd4ad29ac71962ed4a173a00e52ec35416b098044fd3a3386673b1a7",
+        "result": {
+          "app": "Player",
+          "availableVersion": null,
+          "bytes": null,
+          "checkedAt": 1792342254,
+          "currentVersion": "1.6.7",
+          "error": "",
+          "lastInstall": null,
+          "percent": 0,
+          "phase": "idle",
+          "preferences": {
+            "autoCheck": false,
+            "installOnExit": false
+          },
+          "repository": "https://github.com/Gartom91/av-control-studio",
+          "supported": true
+        },
+        "realPublicGitHub": true
+      },
+      {
+        "app": "Imager",
+        "scenario": "1.6.7-no-update",
+        "ok": true,
+        "nativeWebView2": true,
+        "operation": "updateCheck",
+        "downloadAndInstallInvoked": false,
+        "executableSha256": "9a77a51ce956842efa242afc3513a36ec0308f97bced8e42f678bafcef34783d",
+        "result": {
+          "app": "Imager",
+          "availableVersion": null,
+          "bytes": null,
+          "checkedAt": 1792342255,
+          "currentVersion": "1.6.7",
+          "error": "",
+          "lastInstall": null,
+          "percent": 0,
+          "phase": "idle",
+          "preferences": {
+            "autoCheck": false,
+            "installOnExit": false
+          },
+          "repository": "https://github.com/Gartom91/av-control-studio",
+          "supported": true
+        },
+        "realPublicGitHub": true
+      }
+    ]
+  },
+  "publicReadme": {
+    "ok": true,
+    "version": "1.6.7",
+    "publicReadmes": [
+      "README.md",
+      "README.en.md",
+      "README.pl.md"
+    ],
+    "downloadLinksChecked": 66,
+    "uniqueAssetLinks": 21,
+    "latestRelease": "https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.7",
+    "assets": 49
+  },
+  "inputEvidence": [
+    {
+      "file": "release-1.6.7-published.json",
+      "sha256": "54be7eab19ce930de483febebffbeb0384b2676a928f5c1d87e5e21c5cac4f6d"
+    },
+    {
+      "file": "release-downloads-1.6.7.json",
+      "sha256": "1f4d1fe9363db27324c85d85deab03de328c0798046a131c33ac7a42fa0a7821"
+    },
+    {
+      "file": "native-public-updates-1.6.7/report.json",
+      "sha256": "0f05d60aed160c2f4d9f50d8b4f45228a1c4ca0742edd9a5a4bbebaa7ef3f920"
+    },
+    {
+      "file": "public-readme-1.6.7.json",
+      "sha256": "9c44a33fd06c0a85b5660092a251b76e6fc054f189109775d14b6fb874a40dc3"
+    }
+  ],
+  "limits": [
+    "Native application tests invoked updateCheck against the real public GitHub repository; update download and installation were not invoked.",
+    "Physical RPi, HDMI, SD and TAB5 acceptance remains unverified for this release."
+  ]
+}
