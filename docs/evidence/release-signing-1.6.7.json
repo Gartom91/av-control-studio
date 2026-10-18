@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "at": "2026-10-18T16:43:36.036699+00:00",
+  "version": "1.6.7",
+  "sourceCommit": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+  "signedManifestVerified": true,
+  "files": 49,
+  "ciJobs": 7,
+  "windowsTemporaryRunnerCredentialsAbsent": true,
+  "githubRunners": 0,
+  "artifacts": [
+    {
+      "file": "RELEASE-MANIFEST.json",
+      "sha256": "bb7fc399b4d1ce5cebd878e9c044cf016c2088d29d4e7986386c1d2e670511ce"
+    },
+    {
+      "file": "RELEASE-SIGNATURE.json",
+      "sha256": "4dd4e7c61a467af63a36f9190c687bb8c14a5f746693df0b03c4270c8259a3ea"
+    },
+    {
+      "file": "SHA256SUMS.txt",
+      "sha256": "eae5fe4c446aaee42f4844d21aa1e3b333ee233aba37164a9fa59804f96609e1"
+    }
+  ],
+  "scope": "Local verification before publication; no public-download result is claimed."
+}

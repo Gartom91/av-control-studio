@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "version": "1.6.7",
+  "pdfSha256": "e85efa4a0c661b5a2caccc88d42e7c87ebd4b86eec175b9935a258b8e94ff898",
+  "copies": [
+    {
+      "package": "Windows app",
+      "pdfSha256": "e85efa4a0c661b5a2caccc88d42e7c87ebd4b86eec175b9935a258b8e94ff898",
+      "markdownBytesMatch": true
+    },
+    {
+      "package": "Windows player",
+      "pdfSha256": "e85efa4a0c661b5a2caccc88d42e7c87ebd4b86eec175b9935a258b8e94ff898",
+      "markdownBytesMatch": true
+    },
+    {
+      "package": "Windows imager",
+      "pdfSha256": "e85efa4a0c661b5a2caccc88d42e7c87ebd4b86eec175b9935a258b8e94ff898",
+      "markdownBytesMatch": true
+    },
+    {
+      "package": "ARM update docs/tutorial",
+      "pdfSha256": "e85efa4a0c661b5a2caccc88d42e7c87ebd4b86eec175b9935a258b8e94ff898",
+      "markdownBytesMatch": true
+    },
+    {
+      "package": "ARM update web/manuals/tutorial",
+      "pdfSha256": "e85efa4a0c661b5a2caccc88d42e7c87ebd4b86eec175b9935a258b8e94ff898",
+      "markdownBytesMatch": true
+    },
+    {
+      "package": "RPi image docs/tutorial",
+      "pdfSha256": "e85efa4a0c661b5a2caccc88d42e7c87ebd4b86eec175b9935a258b8e94ff898",
+      "markdownBytesMatch": true
+    },
+    {
+      "package": "RPi image web/manuals/tutorial",
+      "pdfSha256": "e85efa4a0c661b5a2caccc88d42e7c87ebd4b86eec175b9935a258b8e94ff898",
+      "markdownBytesMatch": true
+    }
+  ],
+  "physicalSdWrite": false
+}

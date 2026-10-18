@@ -53,7 +53,7 @@ Błąd HTTPS przez IP zwykle oznacza, że IP nie jest wpisane do certyfikatu. U�
 
 ## 4. Zaloguj się i sprawdź konfigurację
 
-Otwórz adres kontrolera i zaloguj się do AV Control jako **`admin`**, hasłem ustawionym w Imagerze. Login **`avoperator`** służy Linuxowi / SSH i nie jest domyślnym kontem WWW. Dane `admin` / `simulation` należą wyłącznie do lokalnego symulatora Studio i nie działają jako fabryczne konto Raspberry Pi.
+Otwórz adres kontrolera i zaloguj się do AV Control jako **`admin`**, hasłem ustawionym w Imagerze. Login **`avoperator`** służy Linuxowi / SSH i nie jest domyślnym kontem WWW. Studio 1.6.7 automatycznie loguje właściciela lokalnego symulatora prywatnym poświadczeniem; wspólne hasło symulatora zostało usunięte. Poświadczenie lokalnego Studio nie jest kontem Raspberry Pi ani hasłem do Playera. Do Playera utwórz osobnego operatora z własnym hasłem.
 
 W **Ustawienia → Konfiguracja Raspberry Pi** sprawdź model, nazwę, adresy, czas, temperaturę, miejsce na dysku i interfejsy sieciowe. UART jest domyślnie włączony w nowym obrazie, bez konsoli szeregowej. Wybór urządzenia i jego protokołu wykonujesz później w projekcie. Dodatkowy USB–Ethernet konfiguruj tu jako osobny interfejs, najlepiej według MAC.
 

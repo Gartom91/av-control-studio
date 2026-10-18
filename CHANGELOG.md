@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## 1.6.7 — 2026-10-18
+
+PL: Naprawiono wszystkie 25 ustaleń audytu: logikę i protokoły, kontrolki i pliki Studio, sesję HDMI, odzyskiwanie aktualizacji, kontrakty API i dokumentację oraz trzy problemy bezpieczeństwa. Lokalny symulator używa prywatnego poświadczenia właściciela zamiast wspólnego hasła. TAB5 0.2.5: kontrolki z samą akcją i blokada konfiguracji USB. Dodano regresje i zaktualizowano tekst podręcznika, zachowując jawne historyczne pochodzenie ilustracji. [Pełna lista i pobieranie](docs/releases/v1.6.7.md#polski).
+
+EN: Fixed all 25 audit findings across logic and protocols, Studio controls and files, HDMI sessions, update recovery, API contracts and documentation, including three security issues. The local simulator uses a private owner credential instead of a shared password. TAB5 0.2.5 adds action-only controls and USB configuration locking. Added regression checks and revised handbook text while retaining explicit historical illustration provenance. [Full list and downloads](docs/releases/v1.6.7.md#english).
+
 ## 1.6.6 — 2026-10-12
 
 PL: Poprawka HDMI Raspberry Pi, oficjalna obsługa TAB5 ST7123, biblioteka SD, parowanie i firmware 0.2.4 przez Wi‑Fi. Podręcznik ma 217 stron, 55 rozdziałów i 83 ilustracje. Pakiety i siedem bramek CI zbudowano lokalnie. [Szczegóły i pobieranie](docs/releases/v1.6.6.md#polski).

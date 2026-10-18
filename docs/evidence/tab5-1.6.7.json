@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "firmware": {
+    "ok": true,
+    "firmwareVersion": "0.2.5",
+    "target": "m5stack-tab5-st7123",
+    "build": {
+      "version": "1.6.7",
+      "sourceSha256": "59ebee5d3de8491bcd42079b590604865afbdd1307c8219f79f01adca50ee710",
+      "fileCount": 366
+    },
+    "files": [
+      {
+        "name": "firmware.bin",
+        "bytes": 2409024,
+        "sha256": "2ac507ecd4d566f5237d80f42e51ebac57835fe09e7f7a6717e5a055d4397a78"
+      },
+      {
+        "name": "bootloader.bin",
+        "bytes": 21488,
+        "sha256": "854cf9d3dea75e5a74e4975c079043b0eb0658f8d9cca569201fa1dcd89a2c3f"
+      },
+      {
+        "name": "partitions.bin",
+        "bytes": 3072,
+        "sha256": "81b878afa6569d22b99f06b89f02002e3c8d2bc543b4c585f3953d23776ab456"
+      },
+      {
+        "name": "boot_app0.bin",
+        "bytes": 8192,
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+      }
+    ]
+  },
+  "otaInspection": {
+    "sha256": "2ac507ecd4d566f5237d80f42e51ebac57835fe09e7f7a6717e5a055d4397a78",
+    "version": "0.2.5",
+    "target": "m5stack-tab5-st7123",
+    "bytes": 2409024
+  },
+  "artifacts": [
+    {
+      "name": "AV-Control-TAB5-ST7123-0.2.5.zip",
+      "bytes": 1615388,
+      "sha256": "babb1b818ef089ea576f2b2f721cf181fd55397d3ad34505b37b126285848ef1"
+    },
+    {
+      "name": "AV-Control-TAB5-ST7123-0.2.5-OTA.bin",
+      "bytes": 2409024,
+      "sha256": "2ac507ecd4d566f5237d80f42e51ebac57835fe09e7f7a6717e5a055d4397a78"
+    }
+  ],
+  "at": "2026-10-18T16:22:40.769909+00:00",
+  "version": "1.6.7",
+  "firmwareVersion": "0.2.5",
+  "build": {
+    "version": "1.6.7",
+    "sourceSha256": "59ebee5d3de8491bcd42079b590604865afbdd1307c8219f79f01adca50ee710",
+    "fileCount": 366
+  },
+  "localRunnerBuilt": true,
+  "builder": "Local Windows release builder / PlatformIO 6.2.0",
+  "ciFirmwareGate": "Independent self-hosted Linux build required by final exact-commit release gate",
+  "buildReceipt": "docs/evidence/tab5-build-1.6.7.json",
+  "productSourceArchive": false,
+  "physicalFirmware025Verified": false,
+  "physicalBaseline": {
+    "firmwareVersion": "0.2.3",
+    "report": "docs/WERYFIKACJA-TAB5.md"
+  },
+  "usbArchiveMembers": 14
+}

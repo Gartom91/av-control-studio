@@ -53,7 +53,7 @@ A certificate error when using an IP often means that IP was not included in the
 
 ## 4. Sign in and check settings
 
-Open the controller URL and sign in to AV Control as **`admin`**, using your Imager password. **`avoperator`** is the Linux / SSH account, not the default web account. Studio's local simulator credentials `admin` / `simulation` are not factory Pi credentials.
+Open the controller URL and sign in to AV Control as **`admin`**, using your Imager password. **`avoperator`** is the Linux / SSH account, not the default web account. Studio 1.6.7 automatically signs the local simulator owner in with a private credential; the shared simulator password has been removed. Studio's local credential is neither a Raspberry Pi account nor a password to enter in Player. Create a separate operator with your own password for Player.
 
 In **Ustawienia → Konfiguracja Raspberry Pi**, check the model, hostname, addresses, time, temperature, free storage and network interfaces. UART is enabled in the clean image without a serial console. Configure its device and protocol later in the project. Additional USB–Ethernet interfaces can be configured here, preferably bound to their MAC address.
 

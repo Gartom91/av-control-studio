@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "at": "2026-10-18T16:07:26.142878+00:00",
+  "agentVersion": "1.1.1",
+  "build": {
+    "version": "1.6.7",
+    "sourceSha256": "59ebee5d3de8491bcd42079b590604865afbdd1307c8219f79f01adca50ee710",
+    "fileCount": 366
+  },
+  "pythonAbi": "3.13",
+  "compiledArchive": true,
+  "archive": {
+    "name": "AV-Control-Agent-1.1.1.zip",
+    "bytes": 74019,
+    "sha256": "e0b09a291874a1d16b663af99297f7932b62eaf552e3cb82f68317575cc34c93"
+  },
+  "manifestFilesVerified": 14,
+  "compiledAudit": {
+    "readableImplementationFiles": 0,
+    "compatibilityLaunchers": 3,
+    "compiledModules": 3
+  },
+  "launchersStarted": [
+    "avcontrol_agent.py --help",
+    "install.py --help"
+  ],
+  "regressionTests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "47",
+    "time": "1.782",
+    "timestamp": "2026-10-18T18:07:15.274029+02:00",
+    "hostname": "Tomasz-prv"
+  },
+  "testSourceHashes": {
+    "test_agent.py": "e78ee9951ad856a706ead918837580e309829ea3a83f3e3768771c59e8847f6c",
+    "test_agent_filesystem.py": "a24411627d931eb3d1c9b6926c5edb942caf3e37d7039cad1dd8c06128925d68",
+    "test_agent_install.py": "b46cbb98603fa283b50225265e3a767147d2dd3b08a0d0ecf79e8964940ebaa4"
+  },
+  "junitPath": "work/agent-package-1.6.7.xml",
+  "isolatedInstallerFilesystem": true,
+  "realUnprivilegedVenv": true,
+  "externalEnrollmentPerformed": false,
+  "productionServiceStarted": false
+}

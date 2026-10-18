@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "releaseVersion": "1.6.7",
+  "recordedDate": "2026-10-18",
+  "status": "PASS",
+  "sourceCommit": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+  "sourceSha256": "59ebee5d3de8491bcd42079b590604865afbdd1307c8219f79f01adca50ee710",
+  "runId": 39145061336,
+  "runUrl": "https://github.com/Gartom91/av-control-studio-source/actions/runs/39145061336",
+  "conclusion": "success",
+  "jobsPassed": 7,
+  "jobsTotal": 7,
+  "jobs": [
+    {
+      "name": "windows-package",
+      "id": 117729043556,
+      "head_sha": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+      "run_attempt": 2,
+      "conclusion": "success",
+      "status": "completed",
+      "runner_name": "avctrl-local-windows-1.6.7-0",
+      "labels": [
+        "self-hosted",
+        "Windows",
+        "X64",
+        "av-control-local"
+      ],
+      "started_at": "2026-10-18T16:35:56Z",
+      "completed_at": "2026-10-18T16:40:17Z",
+      "html_url": "https://github.com/Gartom91/av-control-studio-source/actions/runs/39145061336/job/117729043556"
+    },
+    {
+      "name": "runtime (ubuntu-latest)",
+      "id": 117729044525,
+      "head_sha": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+      "run_attempt": 2,
+      "conclusion": "success",
+      "status": "completed",
+      "runner_name": "avctrl-local-linux-1.6.7-1",
+      "labels": [
+        "self-hosted",
+        "Linux",
+        "X64",
+        "av-control-local"
+      ],
+      "started_at": "2026-10-18T16:28:07Z",
+      "completed_at": "2026-10-18T16:29:22Z",
+      "html_url": "https://github.com/Gartom91/av-control-studio-source/actions/runs/39145061336/job/117729044525"
+    },
+    {
+      "name": "kiosk",
+      "id": 117729044881,
+      "head_sha": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+      "run_attempt": 2,
+      "conclusion": "success",
+      "status": "completed",
+      "runner_name": "avctrl-local-linux-1.6.7-4",
+      "labels": [
+        "self-hosted",
+        "Linux",
+        "X64",
+        "av-control-local"
+      ],
+      "started_at": "2026-10-18T16:34:34Z",
+      "completed_at": "2026-10-18T16:35:06Z",
+      "html_url": "https://github.com/Gartom91/av-control-studio-source/actions/runs/39145061336/job/117729044881"
+    },
+    {
+      "name": "runtime (windows-latest)",
+      "id": 117729045139,
+      "head_sha": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+      "run_attempt": 2,
+      "conclusion": "success",
+      "status": "completed",
+      "runner_name": "avctrl-local-windows-1.6.7-1",
+      "labels": [
+        "self-hosted",
+        "Windows",
+        "X64",
+        "av-control-local"
+      ],
+      "started_at": "2026-10-18T16:32:05Z",
+      "completed_at": "2026-10-18T16:33:53Z",
+      "html_url": "https://github.com/Gartom91/av-control-studio-source/actions/runs/39145061336/job/117729045139"
+    },
+    {
+      "name": "tab5",
+      "id": 117729072051,
+      "head_sha": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+      "run_attempt": 2,
+      "conclusion": "success",
+      "status": "completed",
+      "runner_name": "avctrl-local-linux-1.6.7-0",
+      "labels": [
+        "self-hosted",
+        "Linux",
+        "X64",
+        "av-control-local"
+      ],
+      "started_at": "2026-10-18T16:27:19Z",
+      "completed_at": "2026-10-18T16:27:59Z",
+      "html_url": "https://github.com/Gartom91/av-control-studio-source/actions/runs/39145061336/job/117729072051"
+    },
+    {
+      "name": "interface",
+      "id": 117729072201,
+      "head_sha": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+      "run_attempt": 2,
+      "conclusion": "success",
+      "status": "completed",
+      "runner_name": "avctrl-local-linux-1.6.7-3",
+      "labels": [
+        "self-hosted",
+        "Linux",
+        "X64",
+        "av-control-local"
+      ],
+      "started_at": "2026-10-18T16:30:07Z",
+      "completed_at": "2026-10-18T16:34:26Z",
+      "html_url": "https://github.com/Gartom91/av-control-studio-source/actions/runs/39145061336/job/117729072201"
+    },
+    {
+      "name": "linux-player",
+      "id": 117729078356,
+      "head_sha": "5e60c8438956137d91dd42b2fab7919bcf8b9ce8",
+      "run_attempt": 2,
+      "conclusion": "success",
+      "status": "completed",
+      "runner_name": "avctrl-local-linux-1.6.7-2",
+      "labels": [
+        "self-hosted",
+        "Linux",
+        "X64",
+        "av-control-local"
+      ],
+      "started_at": "2026-10-18T16:29:29Z",
+      "completed_at": "2026-10-18T16:30:00Z",
+      "html_url": "https://github.com/Gartom91/av-control-studio-source/actions/runs/39145061336/job/117729078356"
+    }
+  ],
+  "testResults": {
+    "runtimeWindows": {
+      "passed": 588,
+      "skipped": 29
+    },
+    "runtimeLinux": {
+      "passed": 611,
+      "skipped": 6
+    },
+    "isolatedLinuxRootBootstrap": {
+      "passed": 4
+    }
+  },
+  "environmentRetry": {
+    "job": "windows-package",
+    "initialFailure": "_cffi_backend loading failed because the Windows runner work directory exceeded MAX_PATH constraints.",
+    "resolution": "The same commit was rerun with a shorter runner work directory.",
+    "sameSourceCommit": true,
+    "productCodeChanged": false,
+    "finalConclusion": "success"
+  },
+  "metadataInputs": [
+    {
+      "file": "ci-final-1.6.7.json",
+      "sha256": "555c6c0c9eb76afaaa2ef8969cde647543c69c35b94b466331d3acabf9d3c8e9"
+    },
+    {
+      "file": "ci-jobs-final-1.6.7.json",
+      "sha256": "e3b6dd5a52bf0d280932326e345e08b5aede8f422004551d372e25b24f32ed85"
+    }
+  ],
+  "limits": [
+    "CI ran on self-hosted local runners; runner names and labels are retained above.",
+    "This receipt confirms software CI only; physical RPi, HDMI, SD and TAB5 acceptance is not implied.",
+    "The local signed release manifest was verified separately; publication and public downloads remain separate gates requiring a post-publication verification report."
+  ]
+}

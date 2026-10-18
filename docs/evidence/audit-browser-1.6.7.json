@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "UI-05 rejected toggle restores unchanged signal",
+      "ok": true
+    },
+    {
+      "name": "UI-05 accepted toggle remains functional",
+      "ok": true
+    },
+    {
+      "name": "UI-02 disabled knob pointer-up and cancellation send no action",
+      "ok": true
+    },
+    {
+      "name": "UI-02 enabled knob keyboard still works",
+      "ok": true
+    },
+    {
+      "name": "UI-02 disabling during drag prevents commit",
+      "ok": true
+    },
+    {
+      "name": "UI-06 range step empty numeric entries rejected",
+      "ok": true
+    },
+    {
+      "name": "UI-06 valid numeric entry accepted",
+      "ok": true
+    },
+    {
+      "name": "UI-09 Space and Enter hold renew and release without autorepeat leaks",
+      "ok": true
+    },
+    {
+      "name": "UI-09 focus loss releases hold",
+      "ok": true
+    },
+    {
+      "name": "UI-01 multitouch keeps single timer until final pointer releases",
+      "ok": true
+    },
+    {
+      "name": "UI-01 delayed press response cannot resurrect released lease",
+      "ok": true
+    },
+    {
+      "name": "UI-01 unmount releases lease and stops renewal",
+      "ok": true
+    },
+    {
+      "name": "UI-07 unchanged project reloads after session expiration and login",
+      "ok": true
+    },
+    {
+      "name": "UI-07 transient session error recovers at same revision",
+      "ok": true
+    },
+    {
+      "name": "UI-03 edits during publish survive activation response",
+      "ok": true
+    },
+    {
+      "name": "UI-03 edit history remains usable after publish",
+      "ok": true
+    },
+    {
+      "name": "UI-04 failed server validation leaves current project and save target unchanged",
+      "ok": true
+    },
+    {
+      "name": "UI-04 malformed archive leaves current save target unchanged",
+      "ok": true
+    },
+    {
+      "name": "UI-04 accepted native open acknowledges new save target",
+      "ok": true
+    },
+    {
+      "name": "UI-03 switching projects during publish preserves new document",
+      "ok": true
+    },
+    {
+      "name": "UI-04 malformed startup file never becomes a save target",
+      "ok": true
+    }
+  ]
+}

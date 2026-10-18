@@ -57,10 +57,12 @@ Aktualizacja zapisuje drugi obszar aplikacji. Niepełny albo błędny plik nie z
 
 ## Firmware i pakiety
 
-Obsługa TAB5 jest częścią oficjalnego Studio 1.6.6. Pobierz pakiet firmware 0.2.4 oraz aplikacje z [wydania 1.6.6](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.6). Pierwsze wgrywanie przez USB opisuje instrukcja dołączona do pakietu; dalsze aktualizacje aplikacji wykonasz ze Studio przez Wi-Fi. Numer firmware jest niezależny od numeru Studio.
+Obsługa TAB5 jest częścią oficjalnego Studio od 1.6.6. Pobierz pakiet firmware 0.2.5 oraz aplikacje z [wydania 1.6.7](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.7). Pierwsze wgrywanie przez USB opisuje instrukcja dołączona do pakietu; dalsze aktualizacje aplikacji wykonasz ze Studio przez Wi-Fi. Numer firmware jest niezależny od numeru Studio.
 
 Zwykłe wgrywanie firmware zachowuje Wi-Fi, parowanie, hasło konfiguracji i ustawienia. Jeśli hasło zostanie zapomniane, odzyskanie dostępu wymaga fizycznego USB i jawnego wymazania pamięci ustawień; usuwa to także Wi-Fi i parowanie. Hasła nie można odczytać przez menu ani diagnostykę USB.
 
+W firmware 0.2.5 zmiana konfiguracji chronionego panelu przez USB wymaga najpierw lokalnego odblokowania menu hasłem. Samo podłączenie kabla nie odblokowuje konfiguracji. Pierwsze przygotowanie bez ustawionego hasła pozostaje osobnym etapem. Firmware 0.2.5 obsługuje również kontrolki powiązane wyłącznie z akcją. Historyczne próby sprzętowe firmware 0.2.3 nie są odbiorem nowego pliku 0.2.5.
+
 Sprzęt i sposób wejścia do trybu wgrywania opisuje [dokumentacja M5Stack TAB5](https://docs.m5stack.com/en/core/Tab5).
 
-Firmware 0.2.4 po starcie lub wyborze z SD potwierdza układ przez przypięte połączenie z kontrolerem przed włączeniem sterowania. Podczas braku sieci zachowuje wyłącznie lokalny podgląd. Skan biblioteki ma ograniczony zakres pracy; katalog powinien zawierać tylko pliki paneli zapisane przez TAB5.
+Od firmware 0.2.4 panel po starcie lub wyborze z SD potwierdza układ przez przypięte połączenie z kontrolerem przed włączeniem sterowania. Podczas braku sieci zachowuje wyłącznie lokalny podgląd. Skan biblioteki ma ograniczony zakres pracy; katalog powinien zawierać tylko pliki paneli zapisane przez TAB5.

@@ -1,0 +1,97 @@
+{
+  "at": "2026-10-18T16:03:21.075994+00:00",
+  "firmwareVersion": "0.2.5",
+  "result": "SUCCESS",
+  "exitCode": 0,
+  "command": "C:\\Users\\tomas\\.platformio\\penv\\Scripts\\platformio.exe run -d firmware/tab5",
+  "durationSeconds": 241.37,
+  "ramUsedBytes": 41944,
+  "ramCapacityBytes": 512000,
+  "flashUsedBytes": 2323032,
+  "flashCapacityBytes": 5242880,
+  "warnings": [
+    "SdFat.h:461 File not defined because __has_include(FS.h)",
+    "ESP32 framework esp32-hal-spi.c:597 discards volatile qualifier"
+  ],
+  "sources": [
+    {
+      "path": "firmware/tab5/src/tab5.cpp",
+      "bytes": 93739,
+      "sha256": "9a9f677f054e844f42b0ce81b59c45885bd709f23a08a89821a8d3bfd9a7fdf3"
+    },
+    {
+      "path": "firmware/tab5/src/panel_control.h",
+      "bytes": 1039,
+      "sha256": "bf64ae65b06989aabcf11896fc40f9118108af6d02017c6d0940aab8c4285c2c"
+    },
+    {
+      "path": "firmware/tab5/src/setup_authorization.h",
+      "bytes": 619,
+      "sha256": "5118d69e22de234f03d5aaea4e5145afa6d9c4dade7c03644dc7df0615cbac96"
+    },
+    {
+      "path": "firmware/tab5/src/panel_session.h",
+      "bytes": 613,
+      "sha256": "7b161416bc9ac2bf957223f29d94944c61a7b1b2b3d66f549564f836c6bcf178"
+    },
+    {
+      "path": "firmware/tab5/platformio.ini",
+      "bytes": 574,
+      "sha256": "a71aaf050f6de09aa90c107f2811d1968b86931bdd95f50ece8d02cf139c320e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "firmware/tab5/.pio/build/tab5/firmware.bin",
+      "bytes": 2409024,
+      "sha256": "2ac507ecd4d566f5237d80f42e51ebac57835fe09e7f7a6717e5a055d4397a78"
+    },
+    {
+      "path": "firmware/tab5/.pio/build/tab5/firmware.factory.bin",
+      "bytes": 2540096,
+      "sha256": "37df5618bdfa562fa0d3aacf14d633faed54bebe770cae5002d364f87758a456"
+    },
+    {
+      "path": "firmware/tab5/.pio/build/tab5/firmware.elf",
+      "bytes": 27991852,
+      "sha256": "304b723c9c0524ee885a2f3bfd6a28adb2adfb737d58a41a0bb890262f90e72a"
+    },
+    {
+      "path": "firmware/tab5/.pio/build/tab5/bootloader.bin",
+      "bytes": 21488,
+      "sha256": "854cf9d3dea75e5a74e4975c079043b0eb0658f8d9cca569201fa1dcd89a2c3f"
+    },
+    {
+      "path": "firmware/tab5/.pio/build/tab5/partitions.bin",
+      "bytes": 3072,
+      "sha256": "81b878afa6569d22b99f06b89f02002e3c8d2bc543b4c585f3953d23776ab456"
+    }
+  ],
+  "portableRegression": {
+    "runner": "WSL AVControlNetwork /opt/avctrl-build/venv/bin/python",
+    "junit": {
+      "path": "work/audit-tab5-portable-linux.xml",
+      "bytes": 1061,
+      "sha256": "dc716d0d2e39a540ed70bc9a48a595c917b8216295dc76f4f7753c19b1d684ea"
+    },
+    "suite": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "6",
+      "time": "6.082",
+      "timestamp": "2026-10-18T17:58:20.982941+02:00",
+      "hostname": "Tomasz-prv"
+    }
+  },
+  "capturedOutput": {
+    "path": "work/audit-tab5-build-final-tail.log",
+    "bytes": 6921,
+    "sha256": "f3b769406485250f675d83c8a2e74ff0148ab2714017a621b7735f14f01a2e63"
+  },
+  "limitations": [
+    "No physical TAB5 device was flashed or tested in this task.",
+    "Artifact signing and release packaging remain owned by the parent release workflow."
+  ]
+}

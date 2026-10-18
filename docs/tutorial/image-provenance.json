@@ -1,11 +1,11 @@
 {
   "ok": true,
-  "reviewDate": "2026-10-12",
-  "appVersion": "1.6.6",
-  "generatedAt": "2026-10-12T19:28:38.368445+00:00",
+  "reviewDate": "2026-10-18",
+  "appVersion": "1.6.7",
+  "generatedAt": "2026-10-18T15:46:15.298543+00:00",
   "screenshots": 80,
   "diagrams": 3,
-  "retainedScreenshots": 74,
+  "retainedScreenshots": 80,
   "images": [
     {
       "file": "architektura.png",
@@ -25,10 +25,10 @@
       "product": "AV Control",
       "type": "screenshot",
       "physicalHardware": false,
-      "caption": "Ekran wejścia do Studio w lokalnym symulatorze",
+      "caption": "Historyczny ekran wejścia do Studio 1.6.3; w 1.6.7 logowanie właściciela lokalnego symulatora jest automatyczne",
       "path": "images/workshop-login.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-project.png",
@@ -41,8 +41,8 @@
       "physicalHardware": false,
       "caption": "Strona projektu szkoleniowego w Studio",
       "path": "images/workshop-project.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-logic-overview.png",
@@ -55,8 +55,8 @@
       "physicalHardware": false,
       "caption": "Signal Workshop: cztery karty, eksplorator i schemat jako główny obszar pracy",
       "path": "images/workshop-logic-overview.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-operator-room.png",
@@ -69,8 +69,8 @@
       "physicalHardware": false,
       "caption": "Gotowy panel Sala z grafiką, scenami i suwakiem",
       "path": "images/workshop-operator-room.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-signals.png",
@@ -83,8 +83,8 @@
       "physicalHardware": false,
       "caption": "Sygnał Poziom żądany i jego właściwości",
       "path": "images/workshop-signals.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-panel-editor.png",
@@ -97,8 +97,8 @@
       "physicalHardware": false,
       "caption": "Edytor WYSIWYG z panelem szkoleniowym",
       "path": "images/workshop-panel-editor.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-image-properties.png",
@@ -111,8 +111,8 @@
       "physicalHardware": false,
       "caption": "Właściwości grafiki: wybór z dysku, brak etykiety, ramka i promień",
       "path": "images/workshop-image-properties.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-logic-and4.png",
@@ -125,8 +125,8 @@
       "physicalHardware": false,
       "caption": "Bramka AND z czterema wejściami i wyrównanymi portami",
       "path": "images/workshop-logic-and4.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-operator-scenes.png",
@@ -139,8 +139,8 @@
       "physicalHardware": false,
       "caption": "Strona Sceny i logika: wybory, wyniki Interlocku i Truth table",
       "path": "images/workshop-operator-scenes.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-logic-interlock.png",
@@ -153,8 +153,8 @@
       "physicalHardware": false,
       "caption": "Interlock trzech scen z dodatkowymi wejściami SET ALL i CLEAR",
       "path": "images/workshop-logic-interlock.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-logic-truth-table.png",
@@ -167,8 +167,8 @@
       "physicalHardware": false,
       "caption": "Schemat Truth table dla trzech wejść i trzech wyjść",
       "path": "images/workshop-logic-truth-table.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-truth-table-matrix.png",
@@ -181,8 +181,8 @@
       "physicalHardware": false,
       "caption": "Edytowalna macierz parametrów Truth table",
       "path": "images/workshop-truth-table-matrix.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-operator-lab.png",
@@ -195,8 +195,8 @@
       "physicalHardware": false,
       "caption": "Strona Laboratorium: cztery warunki, pamięć, timery i sekwencja",
       "path": "images/workshop-operator-lab.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-logic-timers.png",
@@ -209,8 +209,8 @@
       "physicalHardware": false,
       "caption": "Pamięć T oraz timery TON i TP na schemacie",
       "path": "images/workshop-logic-timers.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-sequence.png",
@@ -223,8 +223,8 @@
       "physicalHardware": false,
       "caption": "Parametry pierwszego kroku sekwencji: Wykonaj akcję i ustaw Sekwencja zakończona na 0",
       "path": "images/workshop-sequence.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-sequence-wait.png",
@@ -237,8 +237,8 @@
       "physicalHardware": false,
       "caption": "Szósty krok sekwencji: Czekaj na warunek Gotowość dla sekwencji, timeout 6000 ms",
       "path": "images/workshop-sequence-wait.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-interlocks.png",
@@ -251,8 +251,8 @@
       "physicalHardware": false,
       "caption": "Reguły zezwolenia akcji",
       "path": "images/workshop-interlocks.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-protocol-ascii.png",
@@ -265,8 +265,8 @@
       "physicalHardware": false,
       "caption": "Prosty edytor protokołu ASCII",
       "path": "images/workshop-protocol-ascii.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-protocol-advanced.png",
@@ -279,8 +279,8 @@
       "physicalHardware": false,
       "caption": "Edytor zaawansowany: ramkowanie, separator HEX i limit ramki",
       "path": "images/workshop-protocol-advanced.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-device-usb.png",
@@ -293,8 +293,8 @@
       "physicalHardware": false,
       "caption": "Konfiguracja urządzenia szeregowego",
       "path": "images/workshop-device-usb.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "uart-piny.png",
@@ -316,8 +316,8 @@
       "physicalHardware": false,
       "caption": "Urządzenie TCP w projekcie",
       "path": "images/workshop-device-tcp.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-device-gpio.png",
@@ -330,8 +330,8 @@
       "physicalHardware": false,
       "caption": "Wybór wykrytej linii GPIO oraz parametrów",
       "path": "images/workshop-device-gpio.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-diagnostics.png",
@@ -344,8 +344,8 @@
       "physicalHardware": false,
       "caption": "Sygnały, ramki oraz stan silnika w diagnostyce",
       "path": "images/workshop-diagnostics.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "background-gradient-editor.png",
@@ -368,8 +368,8 @@
       "physicalHardware": false,
       "caption": "Formularz gradientu i podgląd strony w rzeczywistym edytorze",
       "path": "images/background-gradient-editor.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "background-nine-slice-editor.png",
@@ -392,8 +392,8 @@
       "physicalHardware": false,
       "caption": "9-slice: cztery kolorowe narożniki pozostają małe, a środek wypełnia stronę",
       "path": "images/background-nine-slice-editor.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "background-phone-editor.png",
@@ -416,8 +416,8 @@
       "physicalHardware": false,
       "caption": "Tło 9-slice w telefonicznym wariancie strony edytora",
       "path": "images/background-phone-editor.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-page-css.png",
@@ -435,8 +435,8 @@
       "physicalHardware": false,
       "caption": "Rozwinięty edytor CSS strony z polem reguł i opisem dozwolonego zakresu",
       "path": "images/workshop-page-css.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-python-bounded.png",
@@ -454,8 +454,8 @@
       "physicalHardware": false,
       "caption": "Kod ograniczonego symbolu Python i krok testu licznika z wynikiem 1",
       "path": "images/workshop-python-bounded.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-logic-python.png",
@@ -468,8 +468,8 @@
       "physicalHardware": false,
       "caption": "Licznik Python połączony z OR trzech impulsów",
       "path": "images/workshop-logic-python.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-phone-layout.png",
@@ -482,8 +482,8 @@
       "physicalHardware": false,
       "caption": "Wariant telefonu w edytorze",
       "path": "images/workshop-phone-layout.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "native": true,
@@ -512,8 +512,8 @@
       "physicalHardware": false,
       "caption": "AV Control Imager 1.6.3: aktualna natywna aplikacja Windows, bez zapisu fizycznej karty w ćwiczeniu",
       "path": "images/28-imager.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "30-rpi-www.png",
@@ -527,8 +527,8 @@
       "type": "screenshot",
       "caption": "Konfigurator Raspberry Pi w rendererze 1.6.3: SYMULOWANE dane modelu, systemu i interfejsów",
       "path": "images/30-rpi-www.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "31-rpi-network.png",
@@ -542,8 +542,8 @@
       "type": "screenshot",
       "caption": "Aktualny formularz potwierdzenia sieci 1.6.3: SYMULOWANE dane oraz szkoleniowy licznik powrotu",
       "path": "images/31-rpi-network.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-deployment.png",
@@ -556,8 +556,8 @@
       "physicalHardware": false,
       "caption": "Przygotowanie i aktywacja wersji projektu",
       "path": "images/workshop-deployment.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "native": true,
@@ -575,8 +575,8 @@
       "physicalHardware": false,
       "caption": "Samodzielny AV Control Player 1.6.3 w natywnej aplikacji Windows",
       "path": "images/29-player.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-updates.png",
@@ -592,8 +592,8 @@
       "type": "screenshot",
       "caption": "Ustawienia aktualizacji w Studio",
       "path": "images/workshop-updates.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "siec-ekspanderow.png",
@@ -616,8 +616,8 @@
       "type": "screenshot",
       "caption": "Konfiguracja USB–Ethernet w działającym interfejsie; dane kart i modelu są testowe, oznaczone jako symulacja systemu",
       "path": "images/32-usb-lan.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-expander-start.png",
@@ -630,8 +630,8 @@
       "physicalHardware": false,
       "caption": "Pierwszy krok kreatora ekspandera: nazwa, host, transport i panel producenta",
       "path": "images/workshop-expander-start.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-expander-ports.png",
@@ -644,8 +644,8 @@
       "physicalHardware": false,
       "caption": "Drugi krok: liczba kanałów, numeracja i wspólny format szeregowy",
       "path": "images/workshop-expander-ports.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-expander-plan.png",
@@ -658,8 +658,8 @@
       "physicalHardware": false,
       "caption": "Plan konfiguracji przed utworzeniem ekspandera i kanałów",
       "path": "images/workshop-expander-plan.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-expander-manager.png",
@@ -672,8 +672,8 @@
       "physicalHardware": false,
       "caption": "Edytor kanału 2 w Zarządzaniu ekspanderami: standard RS-485 oraz format transmisji",
       "path": "images/workshop-expander-manager.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-expander-device.png",
@@ -686,8 +686,8 @@
       "physicalHardware": false,
       "caption": "Urządzenie związane z kanałem ekspandera: profil, endpoint i ustawienia kolejki",
       "path": "images/workshop-expander-device.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-operator-expanders.png",
@@ -700,8 +700,8 @@
       "physicalHardware": false,
       "caption": "Panel ćwiczeń z Ethernet RS-232, adresowanym RS-485, Wi-Fi UDP i RFC2217",
       "path": "images/workshop-operator-expanders.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-expander-diagnostics.png",
@@ -714,8 +714,8 @@
       "physicalHardware": false,
       "caption": "Diagnostyka kanałów i wymuszanie odpowiedzi w lokalnym symulatorze",
       "path": "images/workshop-expander-diagnostics.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-device-symbol.png",
@@ -728,8 +728,8 @@
       "physicalHardware": false,
       "caption": "Urządzenie na schemacie: wejścia komend, argumenty i wyjścia stanu",
       "path": "images/workshop-device-symbol.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-routing.png",
@@ -742,8 +742,8 @@
       "physicalHardware": false,
       "caption": "Czytelne prowadzenie przewodów, odgałęzienia i przeszkody na schemacie",
       "path": "images/workshop-routing.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-debugger-signals.png",
@@ -756,8 +756,8 @@
       "physicalHardware": false,
       "caption": "Debugger w Logice: sygnały, wartości, jakość i panel bodźców",
       "path": "images/workshop-debugger-signals.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-debugger-trace.png",
@@ -770,8 +770,8 @@
       "physicalHardware": false,
       "caption": "Ślad debuggera z filtrem zdarzeń i eksportem dostępnego bufora",
       "path": "images/workshop-debugger-trace.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-python-test.png",
@@ -784,8 +784,8 @@
       "physicalHardware": false,
       "caption": "Pełny CPython: typowane porty i wynik średniej kroczącej NumPy",
       "path": "images/workshop-python-test.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-python-libraries.png",
@@ -798,8 +798,8 @@
       "physicalHardware": false,
       "caption": "Biblioteki projektu: wymagania, lokalny wheel i gotowe środowisko NumPy",
       "path": "images/workshop-python-libraries.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-python-helper.png",
@@ -812,8 +812,8 @@
       "physicalHardware": false,
       "caption": "Własny helpers.py w edytorze projektu i zatwierdzanie zmienionego kodu",
       "path": "images/workshop-python-helper.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-themes.png",
@@ -826,8 +826,8 @@
       "physicalHardware": false,
       "caption": "Paleta ośmiu gotowych motywów oraz tryb Własny we właściwościach strony",
       "path": "images/workshop-themes.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-panel-properties.png",
@@ -840,8 +840,8 @@
       "physicalHardware": false,
       "caption": "Materiał wypukły, kształt i ikona w rzeczywistym edytorze panelu",
       "path": "images/workshop-panel-properties.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-materials-liquid.png",
@@ -854,8 +854,8 @@
       "physicalHardware": false,
       "caption": "Płynne szkło nad grafiką panelu, bez gotowej tekstury szkła",
       "path": "images/workshop-materials-liquid.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-logic-menu.png",
@@ -868,8 +868,8 @@
       "physicalHardware": false,
       "caption": "Menu prawego kliknięcia w schemacie logiki",
       "path": "images/workshop-logic-menu.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-connection-menu.png",
@@ -882,8 +882,8 @@
       "physicalHardware": false,
       "caption": "Menu przewodu: przejście do nazwanych końców i usunięcie połączenia",
       "path": "images/workshop-connection-menu.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-panel-menu.png",
@@ -896,8 +896,8 @@
       "physicalHardware": false,
       "caption": "Menu panelu: wygląd, blokada pozycji, grupy, warstwy i wyrównywanie",
       "path": "images/workshop-panel-menu.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-collection-menu.png",
@@ -910,8 +910,8 @@
       "physicalHardware": false,
       "caption": "Menu kolekcji otwartej w bocznej konfiguracji Logiki",
       "path": "images/workshop-collection-menu.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-appearance-picker.png",
@@ -924,8 +924,8 @@
       "physicalHardware": false,
       "caption": "Globalny wybór wyglądu interfejsu z trzema trybami",
       "path": "images/workshop-appearance-picker.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "workshop-light-logic.png",
@@ -938,8 +938,8 @@
       "physicalHardware": false,
       "caption": "Jasny interfejs Signal Workshop: schemat, eksplorator i panel właściwości",
       "path": "images/workshop-light-logic.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-welcome-dark.png",
@@ -961,8 +961,8 @@
       "physicalHardware": false,
       "caption": "Ekran powitalny Studio w ciemnym motywie",
       "path": "images/service-welcome-dark.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-project-dark.png",
@@ -986,8 +986,8 @@
       "physicalHardware": false,
       "caption": "Metryka instalacji i pola projektu",
       "path": "images/service-project-dark.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-project-light.png",
@@ -1010,8 +1010,8 @@
       "physicalHardware": false,
       "caption": "Metryka w jasnym motywie",
       "path": "images/service-project-light.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-runtime-health.png",
@@ -1035,8 +1035,8 @@
       "physicalHardware": false,
       "caption": "Lokalny pomiar, przyczyna i przygotowanie do serwisu",
       "path": "images/service-runtime-health.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-service-detail.png",
@@ -1082,8 +1082,8 @@
       "physicalHardware": false,
       "caption": "Karta serwisowa na hostingu",
       "path": "images/service-service-detail.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-service-popup.png",
@@ -1106,8 +1106,8 @@
       "physicalHardware": false,
       "caption": "Popup zdarzeń po zalogowaniu",
       "path": "images/service-service-popup.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-service-mail.png",
@@ -1130,8 +1130,8 @@
       "physicalHardware": false,
       "caption": "Konfiguracja e-mail właściciela",
       "path": "images/service-service-mail.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-mail-connection.png",
@@ -1154,8 +1154,8 @@
       "physicalHardware": false,
       "caption": "Sprawdzenie połączenia SMTP w kreatorze",
       "path": "images/service-mail-connection.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-mail-recipients.png",
@@ -1178,8 +1178,8 @@
       "physicalHardware": false,
       "caption": "Odbiorcy i poziomy alarmów",
       "path": "images/service-mail-recipients.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "service-mail-start.png",
@@ -1203,8 +1203,8 @@
       "physicalHardware": false,
       "caption": "Zapis konfiguracji, osobny test i harmonogram",
       "path": "images/service-mail-start.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "accounts-users-settings.png",
@@ -1228,8 +1228,8 @@
       "physicalHardware": false,
       "caption": "Ustawienia kont w AV Control 1.6.3: lista i formularz użytkownika",
       "path": "images/accounts-users-settings.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "accounts-panel-login-softdark.png",
@@ -1253,8 +1253,8 @@
       "physicalHardware": false,
       "caption": "Logowanie w motywie Soft Dark w AV Control 1.6.3, na PC z domyślnie wyłączoną klawiaturą ekranową",
       "path": "images/accounts-panel-login-softdark.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "accounts-panel-login-phone.png",
@@ -1279,8 +1279,8 @@
       "physicalHardware": false,
       "caption": "Logowanie przy szerokości 390 px z jawnie włączoną klawiaturą ekranową",
       "path": "images/accounts-panel-login-phone.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "accounts-own-password.png",
@@ -1315,8 +1315,8 @@
       "physicalHardware": false,
       "caption": "Dialog Moje konto w AV Control 1.6.3: trzy czytelne pola zmiany hasła i ustawienie klawiatury",
       "path": "images/accounts-own-password.png",
-      "retainedFromReviewedRevision": "2026-10-11",
-      "retainedProvenanceSha256": "07f8325607e27d3fa519da84c288d84aecd4f4433de6dbb951ba511aa1b9b86b"
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "tab5-studio-1.6.6.png",
@@ -1329,7 +1329,9 @@
       "product": "AV Control",
       "type": "screenshot",
       "caption": "Parowanie i wysyłanie w ustawieniach Studio 1.6.6",
-      "path": "images/tab5-studio-1.6.6.png"
+      "path": "images/tab5-studio-1.6.6.png",
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "tab5-designer-1.6.6.png",
@@ -1342,7 +1344,9 @@
       "product": "AV Control",
       "type": "screenshot",
       "caption": "Okno wysyłania panelu z projektanta Studio 1.6.6",
-      "path": "images/tab5-designer-1.6.6.png"
+      "path": "images/tab5-designer-1.6.6.png",
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "tab5-sala.png",
@@ -1356,7 +1360,9 @@
       "evidenceFile": "images/release-1.6.6-captures.json",
       "type": "screenshot",
       "caption": "Osobny panel Sala odczytany z rzeczywistego TAB5",
-      "path": "images/tab5-sala.png"
+      "path": "images/tab5-sala.png",
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "tab5-laboratorium.png",
@@ -1370,7 +1376,9 @@
       "evidenceFile": "images/release-1.6.6-captures.json",
       "type": "screenshot",
       "caption": "Osobny panel Laboratorium odczytany z rzeczywistego TAB5",
-      "path": "images/tab5-laboratorium.png"
+      "path": "images/tab5-laboratorium.png",
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "hdmi-fixed.png",
@@ -1384,7 +1392,9 @@
       "evidenceFile": "images/release-1.6.6-captures.json",
       "type": "screenshot",
       "caption": "Czytelny ekran logowania HDMI po naprawie",
-      "path": "images/hdmi-fixed.png"
+      "path": "images/hdmi-fixed.png",
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     },
     {
       "file": "guidance-settings-1.6.6.png",
@@ -1397,7 +1407,9 @@
       "product": "AV Control",
       "type": "screenshot",
       "caption": "Przywracanie ukrytych podpowiedzi w Studio 1.6.6",
-      "path": "images/guidance-settings-1.6.6.png"
+      "path": "images/guidance-settings-1.6.6.png",
+      "retainedFromReviewedRevision": "2026-10-12",
+      "retainedProvenanceSha256": "e6e80c43248b6188c0b0b6399e3a7bb0850e2a2ee4b883e2bbb50ddefa391842"
     }
   ],
   "physicalHardwareVerified": true,

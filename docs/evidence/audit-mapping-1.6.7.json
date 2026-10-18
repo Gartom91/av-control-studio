@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "release": "1.6.7",
+  "source": "../audit-2026-10-18/findings-index.json",
+  "baselineCommit": "09ea0c199106b094843291a476de336e88255afe",
+  "count": 25,
+  "groups": {
+    "runtime": 9,
+    "ui": 9,
+    "packaging_and_documentation": 4,
+    "security": 3
+  },
+  "reviewedMeaning": "Inspected the mapping from each original finding to the current implementation and named regression/manual documentation case. This is not a passed test result, fixed status, release approval, or second independent security review.",
+  "verification": "Final execution evidence and release verification are recorded separately by the release owner; this mapping does not attest CI, build, native installer, physical TAB5 or physical RPi results.",
+  "findings": [
+    {
+      "id": "R1",
+      "fix": "Walidacja timerów TON/TOF/TP odrzuca wartości nieliczbowe, logiczne, ujemne i nieskończone przed aktywacją. Błędny import pozostawia działający projekt. Wyjątek pojedynczego skanu jest rejestrowany, a pętla i wygaszanie przytrzymań działają dalej.",
+      "files": [
+        "runtime/avcontrol/logic.py",
+        "runtime/avcontrol/controller.py"
+      ],
+      "evidence": [
+        "tests/test_audit_runtime_regressions.py::test_r1_invalid_timer_duration_is_rejected_before_activation",
+        "tests/test_audit_runtime_regressions.py::test_r1_valid_timer_durations_remain_supported",
+        "tests/test_audit_runtime_regressions.py::test_r1_bad_import_preserves_active_project_and_scans",
+        "tests/test_audit_runtime_regressions.py::test_r1_scan_failure_does_not_stop_ticks_or_lease_expiry"
+      ],
+      "boundary": "Testy kontrolera i silnika; brak pomiaru czasowego na fizycznym RPi.",
+      "title": "Nieprawidłowy parametr timera przechodzi walidację i zatrzymuje pętlę czasową sterownika.",
+      "priority": "P1",
+      "reviewed": true
+    },
+    {
+      "id": "R2",
+      "fix": "Zwolnienie mutexu następuje dopiero po powodzeniu akcji lub ukończeniu sekwencji. Błąd i anulowanie zachowują blokadę; token przejęcia chroni nowszą blokadę przed spóźnionym zwolnieniem.",
+      "files": [
+        "runtime/avcontrol/controller.py"
+      ],
+      "evidence": [
+        "tests/test_audit_runtime_regressions.py::test_r2_failed_release_keeps_mutex_until_success",
+        "tests/test_audit_runtime_regressions.py::test_r2_sequence_releases_only_on_completion",
+        "tests/test_audit_runtime_regressions.py::test_r2_delayed_release_does_not_clear_newer_acquire_claim"
+      ],
+      "boundary": "Awaria i opóźnienie transportu są kontrolowane w teście.",
+      "title": "Nieudana akcja zwalniająca usuwa blokadę i dopuszcza konkurencyjne działanie.",
+      "priority": "P1",
+      "reviewed": true
+    },
+    {
+      "id": "R3",
+      "fix": "Pola pasujących odpowiedzi z jednej ramki trafiają do jednej partii. Wszystkie wartości są walidowane przed zmianą stanu i wersji; partia wywołuje jeden skan, bez fałszywych stanów pośrednich.",
+      "files": [
+        "runtime/avcontrol/transports.py",
+        "runtime/avcontrol/controller.py",
+        "runtime/avcontrol/logic.py"
+      ],
+      "evidence": [
+        "tests/test_audit_runtime_regressions.py::test_r3_entire_frame_is_one_logic_scan",
+        "tests/test_audit_runtime_regressions.py::test_r3_invalid_batch_rolls_back_all_values_and_versions"
+      ],
+      "boundary": "Rzeczywisty dekoder, kolejka i silnik; bez urządzenia komunikacyjnego.",
+      "title": "Pola jednej odpowiedzi są stosowane osobno i wyzwalają akcję na fałszywym stanie pośrednim.",
+      "priority": "P1",
+      "reviewed": true
+    },
+    {
+      "id": "R4",
+      "fix": "Action i Device nie traktują odzyskania jakości wejścia wysokiego jako nowego zbocza. Kolejna akcja wymaga prawidłowego przejścia z wartości niskiej na wysoką.",
+      "files": [
+        "runtime/avcontrol/logic.py"
+      ],
+      "evidence": [
+        "tests/test_audit_runtime_regressions.py::test_r4_quality_recovery_never_replays_action"
+      ],
+      "boundary": "Przypadek parametryzowany obejmuje oba typy bloków i jakości sygnału.",
+      "title": "Odzyskanie jakości sygnału powtarza akcję mimo braku nowego zbocza wartości.",
+      "priority": "P1",
+      "reviewed": true
+    },
+    {
+      "id": "R5",
+      "fix": "Action i Device sprawdzają jakość argumentów przed wysłaniem. Samo odzyskanie poprawnego argumentu przy wysokim wyzwoleniu nie odtwarza polecenia; potrzebne jest nowe poprawne zbocze.",
+      "files": [
+        "runtime/avcontrol/logic.py"
+      ],
+      "evidence": [
+        "tests/test_audit_runtime_regressions.py::test_r5_unreliable_argument_requires_new_valid_edge"
+      ],
+      "boundary": "Weryfikacja silnika w izolacji.",
+      "title": "Blok Action przekazuje argument o niepoprawnej jakości, np. stale.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "R6",
+      "fix": "Akcja set przekazuje warunek do kolejki zmian, która sprawdza go ponownie tuż przed mutacją, po wcześniejszym feedbacku. Anulowane oczekujące żądanie nie zmienia sygnału.",
+      "files": [
+        "runtime/avcontrol/controller.py"
+      ],
+      "evidence": [
+        "tests/test_audit_runtime_regressions.py::test_r6_set_guard_is_rechecked_after_prior_feedback",
+        "tests/test_audit_runtime_regressions.py::test_r6_cancelled_queued_feedback_is_not_applied"
+      ],
+      "boundary": "Rzeczywista kolejka kontrolera z deterministyczną kolejnością zdarzeń.",
+      "title": "Akcja set wykonuje zmianę po wcześniejszym cofnięciu zezwolenia w kolejce.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "R7",
+      "fix": "Bufor ramkowania jest czyszczony przy zmianie klienta TCP; rozłączenie kończy oczekującą odpowiedź błędem. Fragment poprzedniego klienta nie może stać się początkiem ramki następnego.",
+      "files": [
+        "runtime/avcontrol/transports.py"
+      ],
+      "evidence": [
+        "tests/test_audit_runtime_regressions.py::test_r7_listener_never_combines_clients_and_fails_pending_reply"
+      ],
+      "boundary": "Strumienie w pamięci; brak próby fizycznej sieci.",
+      "title": "TCP w trybie nasłuchu skleja fragmenty z dwóch różnych połączeń.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "R8",
+      "fix": "Framer rozpoznaje upływ idleMs przed dołączeniem kolejnej porcji. Odczyt używa właściwego terminu, a odczyt szeregowy pobiera dostępne bajty bez oczekiwania na przyszłe. Niepoprawne idleMs jest odrzucane.",
+      "files": [
+        "runtime/avcontrol/codec.py",
+        "runtime/avcontrol/transports.py",
+        "runtime/avcontrol/logic.py",
+        "runtime/avcontrol/serialio.py"
+      ],
+      "evidence": [
+        "tests/test_audit_runtime_regressions.py::test_r8_feed_preserves_idle_gap_even_before_timeout_callback",
+        "tests/test_audit_runtime_regressions.py::test_r8_stream_uses_configured_deadline_and_emits_separate_frames",
+        "tests/test_audit_runtime_regressions.py::test_r8_serial_idle_read_does_not_wait_for_future_bytes",
+        "tests/test_audit_runtime_regressions.py::test_r8_invalid_idle_gap_is_rejected"
+      ],
+      "boundary": "Kontrolowane terminy i wejście szeregowe; brak pomiaru UART/RS-485 na sprzęcie.",
+      "title": "Ramkowanie idle skleja komunikaty mimo przerwy dłuższej niż ustawione idleMs.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "R9",
+      "fix": "Offset i długość pola odnoszą się do oryginalnej ramki, przed usuwaniem białych znaków. Pola tekstowe zachowują spacje; dekodowanie liczb i wartości logicznych z separatorami pozostaje zgodne.",
+      "files": [
+        "runtime/avcontrol/codec.py"
+      ],
+      "evidence": [
+        "tests/test_audit_runtime_regressions.py::test_r9_absolute_text_offsets_preserve_original_frame",
+        "tests/test_audit_runtime_regressions.py::test_r9_delimited_numeric_and_boolean_fields_remain_compatible",
+        "tests/test_audit_runtime_regressions.py::test_r9_delimited_text_preserves_whitespace_inside_frame"
+      ],
+      "boundary": "Test rzeczywistego dekodera.",
+      "title": "Usunięcie spacji przed zastosowaniem offsetu powoduje błędny odczyt tekstowych pól.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "UI-01",
+      "fix": "Przycisk chwilowy śledzi właścicieli naciśnięcia i utrzymuje jeden timer. Zwolnienie ostatniego wejścia kończy dzierżawę; spóźniona odpowiedź oraz odmontowanie komponentu nie odnawiają zwolnionego naciśnięcia.",
+      "files": [
+        "web/src/PanelRenderer.tsx"
+      ],
+      "evidence": [
+        "web/tests/audit-regressions.mjs::UI-01 multitouch keeps single timer until final pointer releases",
+        "web/tests/audit-regressions.mjs::UI-01 delayed press response cannot resurrect released lease",
+        "web/tests/audit-regressions.mjs::UI-01 unmount releases lease and stops renewal"
+      ],
+      "boundary": "Rzeczywisty komponent React w Chromium, zdarzenia dotyku CDP i kontrolowane API; brak fizycznego ekranu wielodotykowego.",
+      "title": "Przycisk chwilowy nadal odnawia naciśnięcie po zwolnieniu obu palców.",
+      "priority": "P1",
+      "reviewed": true
+    },
+    {
+      "id": "UI-02",
+      "fix": "Zatwierdzanie pokrętła ponownie sprawdza aktualne dopuszczenie sterowania i aktywny wskaźnik. Anulowanie lub wyłączenie w trakcie przeciągania nie wysyła akcji; dozwolone sterowanie klawiaturą pozostaje dostępne.",
+      "files": [
+        "web/src/PanelRenderer.tsx"
+      ],
+      "evidence": [
+        "web/tests/audit-regressions.mjs::UI-02 disabled knob pointer-up and cancellation send no action",
+        "web/tests/audit-regressions.mjs::UI-02 enabled knob keyboard still works",
+        "web/tests/audit-regressions.mjs::UI-02 disabling during drag prevents commit"
+      ],
+      "boundary": "Chromium i kontrolowane odpowiedzi API.",
+      "title": "Zablokowane pokrętło wysyła polecenie po zwolnieniu wskaźnika.",
+      "priority": "P1",
+      "reviewed": true
+    },
+    {
+      "id": "UI-03",
+      "fix": "Publikacja zachowuje tożsamość wysłanego dokumentu. Odpowiedź może zastąpić tylko niezmieniony wysłany stan; późniejsze edycje i historia cofania pozostają, a otwarty w międzyczasie inny projekt nie jest nadpisywany.",
+      "files": [
+        "web/src/main.tsx"
+      ],
+      "evidence": [
+        "web/tests/audit-regressions.mjs::UI-03 edits during publish survive activation response",
+        "web/tests/audit-regressions.mjs::UI-03 edit history remains usable after publish",
+        "web/tests/audit-regressions.mjs::UI-03 switching projects during publish preserves new document"
+      ],
+      "boundary": "Chromium z opóźnioną odpowiedzią aktywacji; brak deklaracji próby publikacji na fizyczny kontroler.",
+      "title": "Zakończenie publikacji nadpisuje zmiany wprowadzone podczas tej operacji.",
+      "priority": "P1",
+      "reviewed": true
+    },
+    {
+      "id": "UI-04",
+      "fix": "Natywny cel zapisu jest kandydatem do chwili potwierdzenia poprawnego otwarcia przez frontend. Odrzucony plik, błędny plik startowy i nieaktualny token nie zmieniają celu. Osobna klasa ProjectFileSession obsługuje także reset i Save As.",
+      "files": [
+        "desktop/AvControlStudio/ProjectFileSession.cs",
+        "desktop/AvControlStudio/StudioForm.cs",
+        "web/src/main.tsx"
+      ],
+      "evidence": [
+        "web/tests/audit-regressions.mjs::UI-04 failed server validation leaves current project and save target unchanged",
+        "web/tests/audit-regressions.mjs::UI-04 malformed archive leaves current save target unchanged",
+        "web/tests/audit-regressions.mjs::UI-04 accepted native open acknowledges new save target",
+        "web/tests/audit-regressions.mjs::UI-04 malformed startup file never becomes a save target",
+        "desktop/AvControlStudio/ProjectFileSession.cs::ProjectFileSession.SelfTest"
+      ],
+      "boundary": "Przeglądarka używa atrapy mostka. tests/native-file-session/Program.cs uruchamia rzeczywistą klasę C# na plikach tymczasowych; wynik tego uruchomienia i pełnej próby WebView2 nie jest poświadczany w tym zestawieniu.",
+      "title": "Nieudane otwarcie pliku zmienia cel zapisu i może nadpisać niewłaściwy plik.",
+      "priority": "P1",
+      "reviewed": true
+    },
+    {
+      "id": "UI-05",
+      "fix": "Odrzucone polecenie usuwa optymistyczny stan przełącznika i przywraca autorytatywny odczyt, również jeśli odczyt OFF nie zmienił się w międzyczasie. Zaakceptowane przełączenie pozostaje działające.",
+      "files": [
+        "web/src/PanelRenderer.tsx"
+      ],
+      "evidence": [
+        "web/tests/audit-regressions.mjs::UI-05 rejected toggle restores unchanged signal",
+        "web/tests/audit-regressions.mjs::UI-05 accepted toggle remains functional"
+      ],
+      "boundary": "Chromium z odrzucaną i akceptowaną akcją.",
+      "title": "Przełącznik pozostaje w stanie ON mimo odrzuconego polecenia i odczytu OFF.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "UI-06",
+      "fix": "Pole liczbowe sprawdza skończoną wartość, min, max, step i pusty wpis przed wysłaniem. Wartość poprawna nadal trafia do API.",
+      "files": [
+        "web/src/PanelRenderer.tsx"
+      ],
+      "evidence": [
+        "web/tests/audit-regressions.mjs::UI-06 range step empty numeric entries rejected",
+        "web/tests/audit-regressions.mjs::UI-06 valid numeric entry accepted"
+      ],
+      "boundary": "Chromium; test poprawnej wartości 42 i niepoprawnych wpisów.",
+      "title": "Pole liczbowe wysyła wartości spoza ustawionego zakresu.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "UI-07",
+      "fix": "Po utracie sesji kiosk usuwa tożsamość załadowanego projektu, dzięki czemu po logowaniu pobiera także tę samą rewizję. Odzyskiwanie obejmuje również przejściowy błąd sesji.",
+      "files": [
+        "web/src/kiosk.tsx"
+      ],
+      "evidence": [
+        "web/tests/audit-regressions.mjs::UI-07 unchanged project reloads after session expiration and login",
+        "web/tests/audit-regressions.mjs::UI-07 transient session error recovers at same revision"
+      ],
+      "boundary": "Przeglądarka i atrapa mostka kiosku; fizyczny HDMI/kiosk RPi niezweryfikowany.",
+      "title": "Panel HDMI nie odzyskuje projektu po ponownym logowaniu po utracie sesji.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "UI-08",
+      "fix": "TAB5 rozróżnia kontrolkę z samą akcją od kontrolki wymagającej feedbacku. Zapamiętuje zaakceptowaną wartość kontrolki akcyjnej w bieżącej generacji panelu, bez tworzenia fikcyjnego sygnału. Nieaktualny feedback i stara generacja nadal blokują sterowanie.",
+      "files": [
+        "firmware/tab5/src/tab5.cpp",
+        "firmware/tab5/src/panel_control.h"
+      ],
+      "evidence": [
+        "tests/test_tab5_session.py::test_action_only_controls_remember_accepted_values_without_forging_feedback",
+        "tests/test_hmi.py::test_action_only_value_controls_compile_and_execute_without_feedback_signal"
+      ],
+      "boundary": "Portable C++ oraz rzeczywisty kompilator/API HMI; fizyczny TAB5 i pełna próba firmware nie są poświadczone.",
+      "title": "TAB5 akceptuje kontrolki z samą akcją, lecz firmware uniemożliwia ich dotykanie.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "UI-09",
+      "fix": "Spacja i Enter obsługują naciśnięcie, odnowienie i zwolnienie przycisku chwilowego. Autopowtarzanie klawisza nie tworzy dodatkowych timerów, a utrata fokusu kończy przytrzymanie.",
+      "files": [
+        "web/src/PanelRenderer.tsx"
+      ],
+      "evidence": [
+        "web/tests/audit-regressions.mjs::UI-09 Space and Enter hold renew and release without autorepeat leaks",
+        "web/tests/audit-regressions.mjs::UI-09 focus loss releases hold"
+      ],
+      "boundary": "Rzeczywiste zdarzenia klawiatury Chromium.",
+      "title": "Przycisk chwilowy nie działa ze Spacji ani Enter.",
+      "priority": "P3",
+      "reviewed": true
+    },
+    {
+      "id": "P-01",
+      "fix": "Odzyskiwanie rollbacku dopuszcza ponowną próbę po usunięciu katalogu danych w przerwanej poprzedniej próbie. Prywatna kopia pozostaje źródłem odtworzenia; awaria nie usuwa znacznika i kopii potrzebnych do kolejnego startu.",
+      "files": [
+        "packaging/rpi/updater.py"
+      ],
+      "evidence": [
+        "tests/test_updates.py::test_recovery_itself_survives_power_loss_and_repeated_restarts",
+        "tests/test_updates.py::test_power_loss_recovery_at_transaction_boundaries",
+        "tests/test_updates.py::test_restore_failure_preserves_recovery_marker_and_backup",
+        "tests/test_updates.py::test_install_preserves_data_and_manual_rollback_restores_snapshot",
+        "tests/test_updates.py::test_failed_health_restores_original_code_and_data"
+      ],
+      "boundary": "Rzeczywisty updater na plikach tymczasowych z wstrzykiwanymi przerwaniami. Nie jest to fizyczny zanik zasilania karty RPi ani dowód działania systemd.",
+      "title": "Przerwany rollback nie potrafi odtworzyć danych przy kolejnych próbach.",
+      "priority": "P1",
+      "reviewed": true
+    },
+    {
+      "id": "P-02",
+      "fix": "Specyfikacja OpenAPI i JSON Schema projektu są generowane z rzeczywistych tras i modeli. Uzupełniono pominięte operacje i metadata; regresja porównuje pełne opublikowane kontrakty z wynikiem generatora.",
+      "files": [
+        "scripts/export-reference.py",
+        "docs/openapi.json",
+        "docs/project.schema.json"
+      ],
+      "evidence": [
+        "tests/test_reference_contracts.py::test_published_schema_and_all_api_operations_match_runtime"
+      ],
+      "boundary": "Porównanie całych kontraktów; nie zastępuje uruchomienia każdej operacji HTTP.",
+      "title": "Specyfikacja API pomija 25 operacji, a schemat projektu odrzuca obecne pole metadata.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "P-03",
+      "fix": "Architektura rozdziela ograniczony interpreter od zatwierdzonego pełnego CPython. Wyjaśnia uprawnienia konta Runtime/właściciela Studio, dostęp do systemu i brak sandboxa oraz różnicę między limitem zasobów a izolacją danych.",
+      "files": [
+        "docs/ARCHITEKTURA.md"
+      ],
+      "evidence": [
+        "docs/AUDYT-NAPRAWY-1.6.7.md::MANUAL-P-03"
+      ],
+      "boundary": "Ręczna kontrola treści dokumentacji; bez fikcyjnego testu automatycznego i bez twierdzenia, że CPython jest izolowany.",
+      "title": "Opis architektury błędnie sugeruje izolację wszystkich symboli Python od systemu.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "P-04",
+      "fix": "Przykład obrazu pobiera nazwę z image-release.json, a nazwa pakietu Runtime pobiera wersję z web/package.json. Instrukcja testów używa izolowanego runtime-fixture.py; ręczny symulator ma losowe hasło, a Studio sekret DPAPI. Historyczna migracja 1.1→1.2 pozostaje osobną procedurą.",
+      "files": [
+        "docs/BUDOWANIE.md"
+      ],
+      "evidence": [
+        "docs/AUDYT-NAPRAWY-1.6.7.md::MANUAL-P-04"
+      ],
+      "boundary": "Ręczna kontrola instrukcji i jej odwołań do metadanych; nie stanowi wyniku budowania, instalacji, QEMU ani CI.",
+      "title": "Instrukcja budowania bieżącego wydania wskazuje stare wersje obrazów i paczek.",
+      "priority": "P3",
+      "reviewed": true
+    },
+    {
+      "id": "S-01",
+      "fix": "Usunięto wspólne domyślne hasło symulatora. Studio przechowuje losowy sekret przez DPAPI CurrentUser i przekazuje go procesowi potomnemu; samodzielny CLI generuje własny sekret. Migracja obejmuje konta ze starym hasłem także po zmianie nazwy i unieważnia ich sesje, zachowując konta z własnym hasłem. ownerLogin rozwiązuje bieżącą nazwę właściciela po zmianie nazwy, działa wyłącznie w symulatorze i nie przywraca dostępu po zastąpieniu hasła.",
+      "files": [
+        "runtime/avcontrol/api.py",
+        "runtime/avcontrol/__main__.py",
+        "desktop/AvControlStudio/Host.cs"
+      ],
+      "evidence": [
+        "tests/test_simulation_auth.py::test_unconfigured_simulators_have_independent_owner_credentials",
+        "tests/test_simulation_auth.py::test_legacy_renamed_users_rotate_and_sessions_revoke_without_overwriting_custom_accounts",
+        "tests/test_simulation_auth.py::test_custom_simulator_password_is_never_reset_by_native_bootstrap",
+        "tests/test_simulation_auth.py::test_controller_initialization_does_not_inherit_simulator_credential",
+        "tests/test_simulation_auth.py::test_native_owner_login_survives_rename_but_not_password_replacement",
+        "tests/test_simulation_auth.py::test_owner_login_is_unavailable_on_real_controller"
+      ],
+      "boundary": "Testy API/magazynu sesji. DPAPI, uruchomienie Studio, powrót do lokalnego silnika i izolacja dwóch fizycznych kont Windows wymagają osobnego dowodu natywnego; nie wykonano drugiego pełnego przeglądu poprawek.",
+      "title": "Wspólne hasło symulatora pozwala innemu lokalnemu kontu wykonać Python jako właściciel Studio.",
+      "priority": "P2",
+      "reviewed": true
+    },
+    {
+      "id": "S-02",
+      "fix": "Operacje certyfikatów korzystają ze wspólnej PrivateDirectory: kontrolują katalogi i typy plików, odrzucają dowiązania i nieoczekiwanego właściciela, czytają i zapisują przez bezpieczne uchwyty/deskryptory oraz atomową podmianę. Konfigurator obsługuje jawne nazwy certyfikatów zamiast globu chmod/chown. Zabezpieczenia obejmują generowanie, odnowienie, setup oraz backup/restore; inicjalizacja nie ignoruje istniejącego WAL.",
+      "files": [
+        "runtime/avcontrol/certificate_io.py",
+        "runtime/avcontrol/__main__.py",
+        "packaging/rpi/configurator.py"
+      ],
+      "evidence": [
+        "tests/test_certificate_safety.py::test_certificate_names_never_follow_links_or_special_entries",
+        "tests/test_certificate_safety.py::test_renewal_ignores_extra_keys_and_certificates_and_preserves_ca",
+        "tests/test_certificate_safety.py::test_certificate_directory_and_ancestor_links_are_rejected",
+        "tests/test_certificate_safety.py::test_directory_rename_during_operation_cannot_redirect_io",
+        "tests/test_certificate_safety.py::test_symlink_inserted_at_read_boundary_is_not_followed",
+        "tests/test_certificate_safety.py::test_symlink_inserted_after_write_check_cannot_redirect_replace",
+        "tests/test_certificate_safety.py::test_initialization_preserves_database_and_ignores_unrelated_entries",
+        "tests/test_certificate_safety.py::test_initialization_rejects_state_links_before_mutating_files",
+        "tests/test_certificate_safety.py::test_initialization_refuses_live_or_recovery_wal_without_discarding_data",
+        "tests/test_certificate_safety.py::test_certificate_owner_checked_and_new_files_assigned_using_descriptors",
+        "tests/test_system_configuration.py::test_hostname_certificate_backup_restore_preserves_ca_and_permissions",
+        "tests/test_system_configuration.py::test_hostname_change_does_not_chown_or_chmod_extra_links",
+        "tests/test_system_configuration.py::test_backup_restore_never_reads_or_changes_link_targets",
+        "tests/test_system_configuration.py::test_backup_directory_symlink_is_rejected_before_chmod"
+      ],
+      "boundary": "Odrębny przypadek zmiany właściciela wymaga POSIX/root i może być pominięty na Windows lub bez root. ReadWritePaths ogranicza zasięg pierwotnego ryzyka; ta tabela nie poświadcza uruchomienia produkcyjnej usługi systemd ani fizycznego RPi.",
+      "title": "Root konfigurator podąża za dowiązaniami i zmienia uprawnienia ich celów.",
+      "priority": "P3",
+      "reviewed": true
+    },
+    {
+      "id": "S-03",
+      "fix": "USB provision dopuszcza rzeczywiście nowe urządzenie bez hasła konfiguracji, URL, pinu i tokenu albo aktualne lokalne odblokowanie konfiguracji. Limit 600000 ms jest sprawdzany przed USB i przed wczesnym wyjściem OTA. Zdalne wejście do menu nie odnawia lokalnej aktywności; blokowanie czyści stare trafienia/klawiaturę, a wrażliwe mutacje ponownie sprawdzają uprawnienie.",
+      "files": [
+        "firmware/tab5/src/setup_authorization.h",
+        "firmware/tab5/src/tab5.cpp"
+      ],
+      "evidence": [
+        "tests/test_tab5_session.py::test_usb_provisioning_requires_fresh_unit_or_current_local_unlock",
+        "tests/test_tab5_session.py::test_actual_usb_menu_path_cannot_refresh_expired_or_current_local_unlock",
+        "tests/test_tab5_session.py::test_actual_setup_lock_expiry_and_stale_keyboard_never_mutate_configuration",
+        "tests/test_tab5_session.py::test_setup_expiry_precedes_usb_and_ota_dispatch"
+      ],
+      "boundary": "Portable C++ wykonuje wybrane rzeczywiste gałęzie firmware z atrapami peryferiów; sprawdzenie kolejności w pętli jest statyczne. Brak próby USB/OTA na fizycznym TAB5 i brak drugiego pełnego przeglądu.",
+      "title": "Polecenie USB provision pomija hasło konfiguracji TAB5.",
+      "priority": "P3",
+      "reviewed": true
+    }
+  ]
+}

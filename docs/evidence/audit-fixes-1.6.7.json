@@ -1,0 +1,1926 @@
+{
+  "ok": true,
+  "version": "1.6.7",
+  "recordedAt": "2026-10-18T16:27:00.489357+00:00",
+  "build": {
+    "version": "1.6.7",
+    "sourceSha256": "59ebee5d3de8491bcd42079b590604865afbdd1307c8219f79f01adca50ee710",
+    "fileCount": 366
+  },
+  "findingCount": 25,
+  "verifiedReferenceCount": 77,
+  "findings": [
+    {
+      "id": "R1",
+      "title": "Nieprawidłowy parametr timera przechodzi walidację i zatrzymuje pętlę czasową sterownika.",
+      "fix": "Walidacja timerów TON/TOF/TP odrzuca wartości nieliczbowe, logiczne, ujemne i nieskończone przed aktywacją. Błędny import pozostawia działający projekt. Wyjątek pojedynczego skanu jest rejestrowany, a pętla i wygaszanie przytrzymań działają dalej.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r1_invalid_timer_duration_is_rejected_before_activation",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r1_invalid_timer_duration_is_rejected_before_activation",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[-1-tof]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[-1-ton]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[-1-tp]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[10-tof]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[10-ton]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[10-tp]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[None-tof]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[None-ton]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[None-tp]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[True-tof]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[True-ton]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[True-tp]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[inf-tof]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[inf-ton]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[inf-tp]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[invalid-tof]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[invalid-ton]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[invalid-tp]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[nan-tof]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[nan-ton]",
+                "test_r1_invalid_timer_duration_is_rejected_before_activation[nan-tp]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r1_valid_timer_durations_remain_supported",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r1_valid_timer_durations_remain_supported",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r1_valid_timer_durations_remain_supported[0-tof]",
+                "test_r1_valid_timer_durations_remain_supported[0-ton]",
+                "test_r1_valid_timer_durations_remain_supported[0-tp]",
+                "test_r1_valid_timer_durations_remain_supported[0.5-tof]",
+                "test_r1_valid_timer_durations_remain_supported[0.5-ton]",
+                "test_r1_valid_timer_durations_remain_supported[0.5-tp]",
+                "test_r1_valid_timer_durations_remain_supported[1000-tof]",
+                "test_r1_valid_timer_durations_remain_supported[1000-ton]",
+                "test_r1_valid_timer_durations_remain_supported[1000-tp]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r1_bad_import_preserves_active_project_and_scans",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r1_bad_import_preserves_active_project_and_scans",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r1_bad_import_preserves_active_project_and_scans"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r1_scan_failure_does_not_stop_ticks_or_lease_expiry",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r1_scan_failure_does_not_stop_ticks_or_lease_expiry",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r1_scan_failure_does_not_stop_ticks_or_lease_expiry"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Testy kontrolera i silnika; brak pomiaru czasowego na fizycznym RPi."
+    },
+    {
+      "id": "R2",
+      "title": "Nieudana akcja zwalniająca usuwa blokadę i dopuszcza konkurencyjne działanie.",
+      "fix": "Zwolnienie mutexu następuje dopiero po powodzeniu akcji lub ukończeniu sekwencji. Błąd i anulowanie zachowują blokadę; token przejęcia chroni nowszą blokadę przed spóźnionym zwolnieniem.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r2_failed_release_keeps_mutex_until_success",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r2_failed_release_keeps_mutex_until_success",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r2_failed_release_keeps_mutex_until_success"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r2_sequence_releases_only_on_completion",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r2_sequence_releases_only_on_completion",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r2_sequence_releases_only_on_completion[cancelled]",
+                "test_r2_sequence_releases_only_on_completion[completed]",
+                "test_r2_sequence_releases_only_on_completion[error]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r2_delayed_release_does_not_clear_newer_acquire_claim",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r2_delayed_release_does_not_clear_newer_acquire_claim",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r2_delayed_release_does_not_clear_newer_acquire_claim"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Awaria i opóźnienie transportu są kontrolowane w teście."
+    },
+    {
+      "id": "R3",
+      "title": "Pola jednej odpowiedzi są stosowane osobno i wyzwalają akcję na fałszywym stanie pośrednim.",
+      "fix": "Pola pasujących odpowiedzi z jednej ramki trafiają do jednej partii. Wszystkie wartości są walidowane przed zmianą stanu i wersji; partia wywołuje jeden skan, bez fałszywych stanów pośrednich.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r3_entire_frame_is_one_logic_scan",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r3_entire_frame_is_one_logic_scan",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r3_entire_frame_is_one_logic_scan[False]",
+                "test_r3_entire_frame_is_one_logic_scan[True]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r3_invalid_batch_rolls_back_all_values_and_versions",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r3_invalid_batch_rolls_back_all_values_and_versions",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r3_invalid_batch_rolls_back_all_values_and_versions"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Rzeczywisty dekoder, kolejka i silnik; bez urządzenia komunikacyjnego."
+    },
+    {
+      "id": "R4",
+      "title": "Odzyskanie jakości sygnału powtarza akcję mimo braku nowego zbocza wartości.",
+      "fix": "Action i Device nie traktują odzyskania jakości wejścia wysokiego jako nowego zbocza. Kolejna akcja wymaga prawidłowego przejścia z wartości niskiej na wysoką.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r4_quality_recovery_never_replays_action",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r4_quality_recovery_never_replays_action",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r4_quality_recovery_never_replays_action[False-error-False]",
+                "test_r4_quality_recovery_never_replays_action[False-error-True]",
+                "test_r4_quality_recovery_never_replays_action[False-stale-False]",
+                "test_r4_quality_recovery_never_replays_action[False-stale-True]",
+                "test_r4_quality_recovery_never_replays_action[False-unknown-False]",
+                "test_r4_quality_recovery_never_replays_action[False-unknown-True]",
+                "test_r4_quality_recovery_never_replays_action[True-error-False]",
+                "test_r4_quality_recovery_never_replays_action[True-error-True]",
+                "test_r4_quality_recovery_never_replays_action[True-stale-False]",
+                "test_r4_quality_recovery_never_replays_action[True-stale-True]",
+                "test_r4_quality_recovery_never_replays_action[True-unknown-False]",
+                "test_r4_quality_recovery_never_replays_action[True-unknown-True]"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Przypadek parametryzowany obejmuje oba typy bloków i jakości sygnału."
+    },
+    {
+      "id": "R5",
+      "title": "Blok Action przekazuje argument o niepoprawnej jakości, np. stale.",
+      "fix": "Action i Device sprawdzają jakość argumentów przed wysłaniem. Samo odzyskanie poprawnego argumentu przy wysokim wyzwoleniu nie odtwarza polecenia; potrzebne jest nowe poprawne zbocze.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r5_unreliable_argument_requires_new_valid_edge",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r5_unreliable_argument_requires_new_valid_edge",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r5_unreliable_argument_requires_new_valid_edge[error-False]",
+                "test_r5_unreliable_argument_requires_new_valid_edge[error-True]",
+                "test_r5_unreliable_argument_requires_new_valid_edge[stale-False]",
+                "test_r5_unreliable_argument_requires_new_valid_edge[stale-True]",
+                "test_r5_unreliable_argument_requires_new_valid_edge[unknown-False]",
+                "test_r5_unreliable_argument_requires_new_valid_edge[unknown-True]"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Weryfikacja silnika w izolacji."
+    },
+    {
+      "id": "R6",
+      "title": "Akcja set wykonuje zmianę po wcześniejszym cofnięciu zezwolenia w kolejce.",
+      "fix": "Akcja set przekazuje warunek do kolejki zmian, która sprawdza go ponownie tuż przed mutacją, po wcześniejszym feedbacku. Anulowane oczekujące żądanie nie zmienia sygnału.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r6_set_guard_is_rechecked_after_prior_feedback",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r6_set_guard_is_rechecked_after_prior_feedback",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r6_set_guard_is_rechecked_after_prior_feedback"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r6_cancelled_queued_feedback_is_not_applied",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r6_cancelled_queued_feedback_is_not_applied",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r6_cancelled_queued_feedback_is_not_applied"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Rzeczywista kolejka kontrolera z deterministyczną kolejnością zdarzeń."
+    },
+    {
+      "id": "R7",
+      "title": "TCP w trybie nasłuchu skleja fragmenty z dwóch różnych połączeń.",
+      "fix": "Bufor ramkowania jest czyszczony przy zmianie klienta TCP; rozłączenie kończy oczekującą odpowiedź błędem. Fragment poprzedniego klienta nie może stać się początkiem ramki następnego.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r7_listener_never_combines_clients_and_fails_pending_reply",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r7_listener_never_combines_clients_and_fails_pending_reply",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r7_listener_never_combines_clients_and_fails_pending_reply"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Strumienie w pamięci; brak próby fizycznej sieci."
+    },
+    {
+      "id": "R8",
+      "title": "Ramkowanie idle skleja komunikaty mimo przerwy dłuższej niż ustawione idleMs.",
+      "fix": "Framer rozpoznaje upływ idleMs przed dołączeniem kolejnej porcji. Odczyt używa właściwego terminu, a odczyt szeregowy pobiera dostępne bajty bez oczekiwania na przyszłe. Niepoprawne idleMs jest odrzucane.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r8_feed_preserves_idle_gap_even_before_timeout_callback",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r8_feed_preserves_idle_gap_even_before_timeout_callback",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r8_feed_preserves_idle_gap_even_before_timeout_callback"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r8_stream_uses_configured_deadline_and_emits_separate_frames",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r8_stream_uses_configured_deadline_and_emits_separate_frames",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r8_stream_uses_configured_deadline_and_emits_separate_frames"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r8_serial_idle_read_does_not_wait_for_future_bytes",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r8_serial_idle_read_does_not_wait_for_future_bytes",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r8_serial_idle_read_does_not_wait_for_future_bytes"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r8_invalid_idle_gap_is_rejected",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r8_invalid_idle_gap_is_rejected",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r8_invalid_idle_gap_is_rejected[-1]",
+                "test_r8_invalid_idle_gap_is_rejected[0]",
+                "test_r8_invalid_idle_gap_is_rejected[True]",
+                "test_r8_invalid_idle_gap_is_rejected[inf]",
+                "test_r8_invalid_idle_gap_is_rejected[invalid]",
+                "test_r8_invalid_idle_gap_is_rejected[nan]"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Kontrolowane terminy i wejście szeregowe; brak pomiaru UART/RS-485 na sprzęcie."
+    },
+    {
+      "id": "R9",
+      "title": "Usunięcie spacji przed zastosowaniem offsetu powoduje błędny odczyt tekstowych pól.",
+      "fix": "Offset i długość pola odnoszą się do oryginalnej ramki, przed usuwaniem białych znaków. Pola tekstowe zachowują spacje; dekodowanie liczb i wartości logicznych z separatorami pozostaje zgodne.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r9_absolute_text_offsets_preserve_original_frame",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r9_absolute_text_offsets_preserve_original_frame",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r9_absolute_text_offsets_preserve_original_frame[field0-42]",
+                "test_r9_absolute_text_offsets_preserve_original_frame[field1- 42]",
+                "test_r9_absolute_text_offsets_preserve_original_frame[field2- 42\\r\\n]",
+                "test_r9_absolute_text_offsets_preserve_original_frame[field3-42]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r9_delimited_numeric_and_boolean_fields_remain_compatible",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r9_delimited_numeric_and_boolean_fields_remain_compatible",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r9_delimited_numeric_and_boolean_fields_remain_compatible"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_audit_runtime_regressions.py::test_r9_delimited_text_preserves_whitespace_inside_frame",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_audit_runtime_regressions",
+          "baseName": "test_r9_delimited_text_preserves_whitespace_inside_frame",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_r9_delimited_text_preserves_whitespace_inside_frame"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Test rzeczywistego dekodera."
+    },
+    {
+      "id": "UI-01",
+      "title": "Przycisk chwilowy nadal odnawia naciśnięcie po zwolnieniu obu palców.",
+      "fix": "Przycisk chwilowy śledzi właścicieli naciśnięcia i utrzymuje jeden timer. Zwolnienie ostatniego wejścia kończy dzierżawę; spóźniona odpowiedź oraz odmontowanie komponentu nie odnawiają zwolnionego naciśnięcia.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-01 multitouch keeps single timer until final pointer releases",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-01 multitouch keeps single timer until final pointer releases"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-01 delayed press response cannot resurrect released lease",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-01 delayed press response cannot resurrect released lease"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-01 unmount releases lease and stops renewal",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-01 unmount releases lease and stops renewal"
+        }
+      ],
+      "initialMappingScope": "Rzeczywisty komponent React w Chromium, zdarzenia dotyku CDP i kontrolowane API; brak fizycznego ekranu wielodotykowego."
+    },
+    {
+      "id": "UI-02",
+      "title": "Zablokowane pokrętło wysyła polecenie po zwolnieniu wskaźnika.",
+      "fix": "Zatwierdzanie pokrętła ponownie sprawdza aktualne dopuszczenie sterowania i aktywny wskaźnik. Anulowanie lub wyłączenie w trakcie przeciągania nie wysyła akcji; dozwolone sterowanie klawiaturą pozostaje dostępne.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-02 disabled knob pointer-up and cancellation send no action",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-02 disabled knob pointer-up and cancellation send no action"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-02 enabled knob keyboard still works",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-02 enabled knob keyboard still works"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-02 disabling during drag prevents commit",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-02 disabling during drag prevents commit"
+        }
+      ],
+      "initialMappingScope": "Chromium i kontrolowane odpowiedzi API."
+    },
+    {
+      "id": "UI-03",
+      "title": "Zakończenie publikacji nadpisuje zmiany wprowadzone podczas tej operacji.",
+      "fix": "Publikacja zachowuje tożsamość wysłanego dokumentu. Odpowiedź może zastąpić tylko niezmieniony wysłany stan; późniejsze edycje i historia cofania pozostają, a otwarty w międzyczasie inny projekt nie jest nadpisywany.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-03 edits during publish survive activation response",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-03 edits during publish survive activation response"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-03 edit history remains usable after publish",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-03 edit history remains usable after publish"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-03 switching projects during publish preserves new document",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-03 switching projects during publish preserves new document"
+        }
+      ],
+      "initialMappingScope": "Chromium z opóźnioną odpowiedzią aktywacji; brak deklaracji próby publikacji na fizyczny kontroler."
+    },
+    {
+      "id": "UI-04",
+      "title": "Nieudane otwarcie pliku zmienia cel zapisu i może nadpisać niewłaściwy plik.",
+      "fix": "Natywny cel zapisu jest kandydatem do chwili potwierdzenia poprawnego otwarcia przez frontend. Odrzucony plik, błędny plik startowy i nieaktualny token nie zmieniają celu. Osobna klasa ProjectFileSession obsługuje także reset i Save As.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-04 failed server validation leaves current project and save target unchanged",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-04 failed server validation leaves current project and save target unchanged"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-04 malformed archive leaves current save target unchanged",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-04 malformed archive leaves current save target unchanged"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-04 accepted native open acknowledges new save target",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-04 accepted native open acknowledges new save target"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-04 malformed startup file never becomes a save target",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-04 malformed startup file never becomes a save target"
+        },
+        {
+          "reference": "desktop/AvControlStudio/ProjectFileSession.cs::ProjectFileSession.SelfTest",
+          "kind": "installed-native-self-test",
+          "status": "passed",
+          "receipts": [
+            "docs/evidence/installation-1.6.7.json",
+            "docs/evidence/native-studio-1.6.7.json"
+          ],
+          "facts": [
+            "Installed 1.6.7 self-test invokes ProjectFileSession.SelfTest before reporting ok.",
+            "Installed runtime ownerRenameLogin=true and ownerRenameRestored=true.",
+            "Full installed WebView2 acceptance and uninstall receipts are ok."
+          ]
+        }
+      ],
+      "initialMappingScope": "Przeglądarka używa atrapy mostka. tests/native-file-session/Program.cs uruchamia rzeczywistą klasę C# na plikach tymczasowych; wynik tego uruchomienia i pełnej próby WebView2 nie jest poświadczany w tym zestawieniu."
+    },
+    {
+      "id": "UI-05",
+      "title": "Przełącznik pozostaje w stanie ON mimo odrzuconego polecenia i odczytu OFF.",
+      "fix": "Odrzucone polecenie usuwa optymistyczny stan przełącznika i przywraca autorytatywny odczyt, również jeśli odczyt OFF nie zmienił się w międzyczasie. Zaakceptowane przełączenie pozostaje działające.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-05 rejected toggle restores unchanged signal",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-05 rejected toggle restores unchanged signal"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-05 accepted toggle remains functional",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-05 accepted toggle remains functional"
+        }
+      ],
+      "initialMappingScope": "Chromium z odrzucaną i akceptowaną akcją."
+    },
+    {
+      "id": "UI-06",
+      "title": "Pole liczbowe wysyła wartości spoza ustawionego zakresu.",
+      "fix": "Pole liczbowe sprawdza skończoną wartość, min, max, step i pusty wpis przed wysłaniem. Wartość poprawna nadal trafia do API.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-06 range step empty numeric entries rejected",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-06 range step empty numeric entries rejected"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-06 valid numeric entry accepted",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-06 valid numeric entry accepted"
+        }
+      ],
+      "initialMappingScope": "Chromium; test poprawnej wartości 42 i niepoprawnych wpisów."
+    },
+    {
+      "id": "UI-07",
+      "title": "Panel HDMI nie odzyskuje projektu po ponownym logowaniu po utracie sesji.",
+      "fix": "Po utracie sesji kiosk usuwa tożsamość załadowanego projektu, dzięki czemu po logowaniu pobiera także tę samą rewizję. Odzyskiwanie obejmuje również przejściowy błąd sesji.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-07 unchanged project reloads after session expiration and login",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-07 unchanged project reloads after session expiration and login"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-07 transient session error recovers at same revision",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-07 transient session error recovers at same revision"
+        }
+      ],
+      "initialMappingScope": "Przeglądarka i atrapa mostka kiosku; fizyczny HDMI/kiosk RPi niezweryfikowany."
+    },
+    {
+      "id": "UI-08",
+      "title": "TAB5 akceptuje kontrolki z samą akcją, lecz firmware uniemożliwia ich dotykanie.",
+      "fix": "TAB5 rozróżnia kontrolkę z samą akcją od kontrolki wymagającej feedbacku. Zapamiętuje zaakceptowaną wartość kontrolki akcyjnej w bieżącej generacji panelu, bez tworzenia fikcyjnego sygnału. Nieaktualny feedback i stara generacja nadal blokują sterowanie.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_tab5_session.py::test_action_only_controls_remember_accepted_values_without_forging_feedback",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_tab5_session",
+          "baseName": "test_action_only_controls_remember_accepted_values_without_forging_feedback",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_action_only_controls_remember_accepted_values_without_forging_feedback"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/audit-tab5-portable-linux-1.6.7.xml",
+              "passed": [
+                "test_action_only_controls_remember_accepted_values_without_forging_feedback"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_hmi.py::test_action_only_value_controls_compile_and_execute_without_feedback_signal",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_hmi",
+          "baseName": "test_action_only_value_controls_compile_and_execute_without_feedback_signal",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_action_only_value_controls_compile_and_execute_without_feedback_signal[fader]",
+                "test_action_only_value_controls_compile_and_execute_without_feedback_signal[knob]",
+                "test_action_only_value_controls_compile_and_execute_without_feedback_signal[number]",
+                "test_action_only_value_controls_compile_and_execute_without_feedback_signal[slider]",
+                "test_action_only_value_controls_compile_and_execute_without_feedback_signal[toggle]"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Portable C++ oraz rzeczywisty kompilator/API HMI; fizyczny TAB5 i pełna próba firmware nie są poświadczone."
+    },
+    {
+      "id": "UI-09",
+      "title": "Przycisk chwilowy nie działa ze Spacji ani Enter.",
+      "fix": "Spacja i Enter obsługują naciśnięcie, odnowienie i zwolnienie przycisku chwilowego. Autopowtarzanie klawisza nie tworzy dodatkowych timerów, a utrata fokusu kończy przytrzymanie.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-09 Space and Enter hold renew and release without autorepeat leaks",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-09 Space and Enter hold renew and release without autorepeat leaks"
+        },
+        {
+          "reference": "web/tests/audit-regressions.mjs::UI-09 focus loss releases hold",
+          "kind": "browser-check",
+          "status": "passed",
+          "receipt": "docs/evidence/audit-browser-1.6.7.json",
+          "check": "UI-09 focus loss releases hold"
+        }
+      ],
+      "initialMappingScope": "Rzeczywiste zdarzenia klawiatury Chromium."
+    },
+    {
+      "id": "P-01",
+      "title": "Przerwany rollback nie potrafi odtworzyć danych przy kolejnych próbach.",
+      "fix": "Odzyskiwanie rollbacku dopuszcza ponowną próbę po usunięciu katalogu danych w przerwanej poprzedniej próbie. Prywatna kopia pozostaje źródłem odtworzenia; awaria nie usuwa znacznika i kopii potrzebnych do kolejnego startu.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_updates.py::test_recovery_itself_survives_power_loss_and_repeated_restarts",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_updates",
+          "baseName": "test_recovery_itself_survives_power_loss_and_repeated_restarts",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[after_rename]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[before_rename]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[partial_remove]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[probe]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[removed]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[start]"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[after_rename]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[before_rename]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[partial_remove]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[probe]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[removed]",
+                "test_recovery_itself_survives_power_loss_and_repeated_restarts[start]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_updates.py::test_power_loss_recovery_at_transaction_boundaries",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_updates",
+          "baseName": "test_power_loss_recovery_at_transaction_boundaries",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_power_loss_recovery_at_transaction_boundaries[backed_up]",
+                "test_power_loss_recovery_at_transaction_boundaries[new_live]",
+                "test_power_loss_recovery_at_transaction_boundaries[old_moved]",
+                "test_power_loss_recovery_at_transaction_boundaries[prepared]"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_power_loss_recovery_at_transaction_boundaries[backed_up]",
+                "test_power_loss_recovery_at_transaction_boundaries[new_live]",
+                "test_power_loss_recovery_at_transaction_boundaries[old_moved]",
+                "test_power_loss_recovery_at_transaction_boundaries[prepared]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_updates.py::test_restore_failure_preserves_recovery_marker_and_backup",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_updates",
+          "baseName": "test_restore_failure_preserves_recovery_marker_and_backup",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_restore_failure_preserves_recovery_marker_and_backup"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_restore_failure_preserves_recovery_marker_and_backup"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_updates.py::test_install_preserves_data_and_manual_rollback_restores_snapshot",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_updates",
+          "baseName": "test_install_preserves_data_and_manual_rollback_restores_snapshot",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_install_preserves_data_and_manual_rollback_restores_snapshot"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_install_preserves_data_and_manual_rollback_restores_snapshot"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_updates.py::test_failed_health_restores_original_code_and_data",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_updates",
+          "baseName": "test_failed_health_restores_original_code_and_data",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_failed_health_restores_original_code_and_data"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_failed_health_restores_original_code_and_data"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Rzeczywisty updater na plikach tymczasowych z wstrzykiwanymi przerwaniami. Nie jest to fizyczny zanik zasilania karty RPi ani dowód działania systemd."
+    },
+    {
+      "id": "P-02",
+      "title": "Specyfikacja API pomija 25 operacji, a schemat projektu odrzuca obecne pole metadata.",
+      "fix": "Specyfikacja OpenAPI i JSON Schema projektu są generowane z rzeczywistych tras i modeli. Uzupełniono pominięte operacje i metadata; regresja porównuje pełne opublikowane kontrakty z wynikiem generatora.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_reference_contracts.py::test_published_schema_and_all_api_operations_match_runtime",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_reference_contracts",
+          "baseName": "test_published_schema_and_all_api_operations_match_runtime",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_published_schema_and_all_api_operations_match_runtime"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Porównanie całych kontraktów; nie zastępuje uruchomienia każdej operacji HTTP."
+    },
+    {
+      "id": "P-03",
+      "title": "Opis architektury błędnie sugeruje izolację wszystkich symboli Python od systemu.",
+      "fix": "Architektura rozdziela ograniczony interpreter od zatwierdzonego pełnego CPython. Wyjaśnia uprawnienia konta Runtime/właściciela Studio, dostęp do systemu i brak sandboxa oraz różnicę między limitem zasobów a izolacją danych.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "docs/AUDYT-NAPRAWY-1.6.7.md::MANUAL-P-03",
+          "kind": "manual-documentation",
+          "status": "passed",
+          "reviewBasis": "Document read by mapping reviewer and release owner; pinned reviewed bytes still match.",
+          "documents": [
+            {
+              "path": "docs/ARCHITEKTURA.md",
+              "bytes": 10619,
+              "sha256": "104db4092336eea9f42a2ef986e2c1ce2f404cdbb6801894f55143f048d576b8"
+            }
+          ],
+          "facts": [
+            "Restricted interpreter and full CPython distinguished.",
+            "OS-account privileges and absence of a full-CPython sandbox stated."
+          ]
+        }
+      ],
+      "initialMappingScope": "Ręczna kontrola treści dokumentacji; bez fikcyjnego testu automatycznego i bez twierdzenia, że CPython jest izolowany."
+    },
+    {
+      "id": "P-04",
+      "title": "Instrukcja budowania bieżącego wydania wskazuje stare wersje obrazów i paczek.",
+      "fix": "Przykład obrazu pobiera nazwę z image-release.json, a nazwa pakietu Runtime pobiera wersję z web/package.json. Instrukcja testów używa izolowanego runtime-fixture.py; ręczny symulator ma losowe hasło, a Studio sekret DPAPI. Historyczna migracja 1.1→1.2 pozostaje osobną procedurą.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "docs/AUDYT-NAPRAWY-1.6.7.md::MANUAL-P-04",
+          "kind": "manual-documentation",
+          "status": "passed",
+          "reviewBasis": "Build instructions read by mapping reviewer and release owner; pinned reviewed bytes still match.",
+          "documents": [
+            {
+              "path": "docs/BUDOWANIE.md",
+              "bytes": 11634,
+              "sha256": "4f7b305d59506bfdb92ba47bb6878b404a7a89f8ad297a22c902c4a3e7b8406e"
+            },
+            {
+              "path": "packaging/rpi/image-release.json",
+              "bytes": 390,
+              "sha256": "6d622829c6fbe224f6c6fd9dd194454d0e8dee7bc0c1fd507a6f4b2974f198f1"
+            },
+            {
+              "path": "web/package.json",
+              "bytes": 1920,
+              "sha256": "aff1bc215d2363d599215bbfe19fcb67e1744aa0c766f200fa195e0ae856f1c5"
+            }
+          ],
+          "facts": [
+            "Current artifact names derive from release metadata.",
+            "Actual package sizes and SHA-256 match package-verification and image/Linux metadata.",
+            "Test fixture and private simulator credentials documented."
+          ],
+          "verifiedArtifacts": [
+            {
+              "name": "AV-Control-Studio-1.6.7-Windows-x64.exe",
+              "path": "artifacts/AV-Control-Studio-1.6.7-Windows-x64.exe",
+              "bytes": 319890803,
+              "sha256": "d456bbe9f66e1bd60ce3dfbb0bcb7f7ea920c2668a122598c9636f8617369186"
+            },
+            {
+              "name": "AV-Control-Player-1.6.7-Windows-x64.exe",
+              "path": "artifacts/AV-Control-Player-1.6.7-Windows-x64.exe",
+              "bytes": 302432829,
+              "sha256": "a9bd1002a8275da68651a0a2bb98cc8201a30ddbf73b83ec6cdd3ff045b24ec0"
+            },
+            {
+              "name": "AV-Control-Imager-1.6.7-Windows-x64.exe",
+              "path": "artifacts/AV-Control-Imager-1.6.7-Windows-x64.exe",
+              "bytes": 1331772865,
+              "sha256": "c2ad8358c9b5cf1ac03bfaf6020c9f7246bfb2c7b143630d58af1489cf5b70b7"
+            },
+            {
+              "name": "AV-Control-Player-1.6.7-Linux-all.deb",
+              "path": "artifacts/AV-Control-Player-1.6.7-Linux-all.deb",
+              "bytes": 377688,
+              "sha256": "97af9f13d79da3f1fde5b2f264a8d5345ac1285cdc1ae9a1a6dfad203d5bf663"
+            },
+            {
+              "name": "AV-Control-Player-1.6.7-Linux.tar.gz",
+              "path": "artifacts/AV-Control-Player-1.6.7-Linux.tar.gz",
+              "bytes": 422471,
+              "sha256": "6af633bf0759079f264706e556f775ba0a87783cdc635026b74b5072abe66186"
+            },
+            {
+              "name": "AV-Control-Agent-1.1.1.zip",
+              "path": "artifacts/AV-Control-Agent-1.1.1.zip",
+              "bytes": 74019,
+              "sha256": "e0b09a291874a1d16b663af99297f7932b62eaf552e3cb82f68317575cc34c93"
+            },
+            {
+              "name": "AV-Control-RPi-1.6.7-arm64.img.xz",
+              "path": "work/AV-Control-RPi-1.6.7-arm64.img.xz",
+              "bytes": 1003458200,
+              "sha256": "87ea0c347a30f76c7ffcab30ad9452e3c21bc83158723cc904c552a894f133a2"
+            },
+            {
+              "name": "AV-Control-Runtime-1.6.7-arm64.zip",
+              "path": "work/AV-Control-Runtime-1.6.7-arm64.zip",
+              "bytes": 194866217,
+              "sha256": "5ef2be5120fb5fb6d0f459ce70eeed631234935e82196a343d8b2e4f1a36d0c4"
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Ręczna kontrola instrukcji i jej odwołań do metadanych; nie stanowi wyniku budowania, instalacji, QEMU ani CI."
+    },
+    {
+      "id": "S-01",
+      "title": "Wspólne hasło symulatora pozwala innemu lokalnemu kontu wykonać Python jako właściciel Studio.",
+      "fix": "Usunięto wspólne domyślne hasło symulatora. Studio przechowuje losowy sekret przez DPAPI CurrentUser i przekazuje go procesowi potomnemu; samodzielny CLI generuje własny sekret. Migracja obejmuje konta ze starym hasłem także po zmianie nazwy i unieważnia ich sesje, zachowując konta z własnym hasłem. ownerLogin rozwiązuje bieżącą nazwę właściciela po zmianie nazwy, działa wyłącznie w symulatorze i nie przywraca dostępu po zastąpieniu hasła.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_simulation_auth.py::test_unconfigured_simulators_have_independent_owner_credentials",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_simulation_auth",
+          "baseName": "test_unconfigured_simulators_have_independent_owner_credentials",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_unconfigured_simulators_have_independent_owner_credentials"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_unconfigured_simulators_have_independent_owner_credentials"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_simulation_auth.py::test_legacy_renamed_users_rotate_and_sessions_revoke_without_overwriting_custom_accounts",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_simulation_auth",
+          "baseName": "test_legacy_renamed_users_rotate_and_sessions_revoke_without_overwriting_custom_accounts",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_legacy_renamed_users_rotate_and_sessions_revoke_without_overwriting_custom_accounts"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_legacy_renamed_users_rotate_and_sessions_revoke_without_overwriting_custom_accounts"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_simulation_auth.py::test_custom_simulator_password_is_never_reset_by_native_bootstrap",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_simulation_auth",
+          "baseName": "test_custom_simulator_password_is_never_reset_by_native_bootstrap",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_custom_simulator_password_is_never_reset_by_native_bootstrap"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_custom_simulator_password_is_never_reset_by_native_bootstrap"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_simulation_auth.py::test_controller_initialization_does_not_inherit_simulator_credential",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_simulation_auth",
+          "baseName": "test_controller_initialization_does_not_inherit_simulator_credential",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_controller_initialization_does_not_inherit_simulator_credential"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_controller_initialization_does_not_inherit_simulator_credential"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_simulation_auth.py::test_native_owner_login_survives_rename_but_not_password_replacement",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_simulation_auth",
+          "baseName": "test_native_owner_login_survives_rename_but_not_password_replacement",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_native_owner_login_survives_rename_but_not_password_replacement"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_native_owner_login_survives_rename_but_not_password_replacement"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_simulation_auth.py::test_owner_login_is_unavailable_on_real_controller",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_simulation_auth",
+          "baseName": "test_owner_login_is_unavailable_on_real_controller",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_owner_login_is_unavailable_on_real_controller"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_owner_login_is_unavailable_on_real_controller"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Testy API/magazynu sesji. DPAPI, uruchomienie Studio, powrót do lokalnego silnika i izolacja dwóch fizycznych kont Windows wymagają osobnego dowodu natywnego; nie wykonano drugiego pełnego przeglądu poprawek."
+    },
+    {
+      "id": "S-02",
+      "title": "Root konfigurator podąża za dowiązaniami i zmienia uprawnienia ich celów.",
+      "fix": "Operacje certyfikatów korzystają ze wspólnej PrivateDirectory: kontrolują katalogi i typy plików, odrzucają dowiązania i nieoczekiwanego właściciela, czytają i zapisują przez bezpieczne uchwyty/deskryptory oraz atomową podmianę. Konfigurator obsługuje jawne nazwy certyfikatów zamiast globu chmod/chown. Zabezpieczenia obejmują generowanie, odnowienie, setup oraz backup/restore; inicjalizacja nie ignoruje istniejącego WAL.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_certificate_safety.py::test_certificate_names_never_follow_links_or_special_entries",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_certificate_names_never_follow_links_or_special_entries",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_certificate_names_never_follow_links_or_special_entries[dangling-ca.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[dangling-ca.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[dangling-server.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[dangling-server.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[directory-ca.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[directory-ca.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[directory-server.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[directory-server.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[hardlink-ca.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[hardlink-ca.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[hardlink-server.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[hardlink-server.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[symlink-ca.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[symlink-ca.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[symlink-server.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[symlink-server.key]"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_certificate_names_never_follow_links_or_special_entries[dangling-ca.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[dangling-ca.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[dangling-server.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[dangling-server.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[directory-ca.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[directory-ca.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[directory-server.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[directory-server.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[hardlink-ca.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[hardlink-ca.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[hardlink-server.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[hardlink-server.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[symlink-ca.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[symlink-ca.key]",
+                "test_certificate_names_never_follow_links_or_special_entries[symlink-server.crt]",
+                "test_certificate_names_never_follow_links_or_special_entries[symlink-server.key]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_certificate_safety.py::test_renewal_ignores_extra_keys_and_certificates_and_preserves_ca",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_renewal_ignores_extra_keys_and_certificates_and_preserves_ca",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_renewal_ignores_extra_keys_and_certificates_and_preserves_ca"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_renewal_ignores_extra_keys_and_certificates_and_preserves_ca"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_certificate_safety.py::test_certificate_directory_and_ancestor_links_are_rejected",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_certificate_directory_and_ancestor_links_are_rejected",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_certificate_directory_and_ancestor_links_are_rejected"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_certificate_directory_and_ancestor_links_are_rejected"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_certificate_safety.py::test_directory_rename_during_operation_cannot_redirect_io",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_directory_rename_during_operation_cannot_redirect_io",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_directory_rename_during_operation_cannot_redirect_io"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_directory_rename_during_operation_cannot_redirect_io"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_certificate_safety.py::test_symlink_inserted_at_read_boundary_is_not_followed",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_symlink_inserted_at_read_boundary_is_not_followed",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_symlink_inserted_at_read_boundary_is_not_followed"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_symlink_inserted_at_read_boundary_is_not_followed"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_certificate_safety.py::test_symlink_inserted_after_write_check_cannot_redirect_replace",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_symlink_inserted_after_write_check_cannot_redirect_replace",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_symlink_inserted_after_write_check_cannot_redirect_replace"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_symlink_inserted_after_write_check_cannot_redirect_replace"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_certificate_safety.py::test_initialization_preserves_database_and_ignores_unrelated_entries",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_initialization_preserves_database_and_ignores_unrelated_entries",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_initialization_preserves_database_and_ignores_unrelated_entries"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_initialization_preserves_database_and_ignores_unrelated_entries"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_certificate_safety.py::test_initialization_rejects_state_links_before_mutating_files",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_initialization_rejects_state_links_before_mutating_files",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_initialization_rejects_state_links_before_mutating_files[imager-provisioned]",
+                "test_initialization_rejects_state_links_before_mutating_files[runtime.db-shm]",
+                "test_initialization_rejects_state_links_before_mutating_files[runtime.db-wal]",
+                "test_initialization_rejects_state_links_before_mutating_files[runtime.db]"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_initialization_rejects_state_links_before_mutating_files[imager-provisioned]",
+                "test_initialization_rejects_state_links_before_mutating_files[runtime.db-shm]",
+                "test_initialization_rejects_state_links_before_mutating_files[runtime.db-wal]",
+                "test_initialization_rejects_state_links_before_mutating_files[runtime.db]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_certificate_safety.py::test_initialization_refuses_live_or_recovery_wal_without_discarding_data",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_initialization_refuses_live_or_recovery_wal_without_discarding_data",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_initialization_refuses_live_or_recovery_wal_without_discarding_data"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_initialization_refuses_live_or_recovery_wal_without_discarding_data"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_certificate_safety.py::test_certificate_owner_checked_and_new_files_assigned_using_descriptors",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_certificate_safety",
+          "baseName": "test_certificate_owner_checked_and_new_files_assigned_using_descriptors",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_certificate_owner_checked_and_new_files_assigned_using_descriptors"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_certificate_owner_checked_and_new_files_assigned_using_descriptors"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_system_configuration.py::test_hostname_certificate_backup_restore_preserves_ca_and_permissions",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_system_configuration",
+          "baseName": "test_hostname_certificate_backup_restore_preserves_ca_and_permissions",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_hostname_certificate_backup_restore_preserves_ca_and_permissions"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_hostname_certificate_backup_restore_preserves_ca_and_permissions"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_system_configuration.py::test_hostname_change_does_not_chown_or_chmod_extra_links",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_system_configuration",
+          "baseName": "test_hostname_change_does_not_chown_or_chmod_extra_links",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_hostname_change_does_not_chown_or_chmod_extra_links[extra.crt]",
+                "test_hostname_change_does_not_chown_or_chmod_extra_links[extra.key]"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_hostname_change_does_not_chown_or_chmod_extra_links[extra.crt]",
+                "test_hostname_change_does_not_chown_or_chmod_extra_links[extra.key]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_system_configuration.py::test_backup_restore_never_reads_or_changes_link_targets",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_system_configuration",
+          "baseName": "test_backup_restore_never_reads_or_changes_link_targets",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_backup_restore_never_reads_or_changes_link_targets[server.crt-backup]",
+                "test_backup_restore_never_reads_or_changes_link_targets[server.crt-restore]",
+                "test_backup_restore_never_reads_or_changes_link_targets[server.key-backup]",
+                "test_backup_restore_never_reads_or_changes_link_targets[server.key-restore]"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_backup_restore_never_reads_or_changes_link_targets[server.crt-backup]",
+                "test_backup_restore_never_reads_or_changes_link_targets[server.crt-restore]",
+                "test_backup_restore_never_reads_or_changes_link_targets[server.key-backup]",
+                "test_backup_restore_never_reads_or_changes_link_targets[server.key-restore]"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_system_configuration.py::test_backup_directory_symlink_is_rejected_before_chmod",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_system_configuration",
+          "baseName": "test_backup_directory_symlink_is_rejected_before_chmod",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_backup_directory_symlink_is_rejected_before_chmod"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/security-recovery-linux-1.6.7.xml",
+              "passed": [
+                "test_backup_directory_symlink_is_rejected_before_chmod"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Odrębny przypadek zmiany właściciela wymaga POSIX/root i może być pominięty na Windows lub bez root. ReadWritePaths ogranicza zasięg pierwotnego ryzyka; ta tabela nie poświadcza uruchomienia produkcyjnej usługi systemd ani fizycznego RPi."
+    },
+    {
+      "id": "S-03",
+      "title": "Polecenie USB provision pomija hasło konfiguracji TAB5.",
+      "fix": "USB provision dopuszcza rzeczywiście nowe urządzenie bez hasła konfiguracji, URL, pinu i tokenu albo aktualne lokalne odblokowanie konfiguracji. Limit 600000 ms jest sprawdzany przed USB i przed wczesnym wyjściem OTA. Zdalne wejście do menu nie odnawia lokalnej aktywności; blokowanie czyści stare trafienia/klawiaturę, a wrażliwe mutacje ponownie sprawdzają uprawnienie.",
+      "status": "fixed",
+      "verification": [
+        {
+          "reference": "tests/test_tab5_session.py::test_usb_provisioning_requires_fresh_unit_or_current_local_unlock",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_tab5_session",
+          "baseName": "test_usb_provisioning_requires_fresh_unit_or_current_local_unlock",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_usb_provisioning_requires_fresh_unit_or_current_local_unlock"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/audit-tab5-portable-linux-1.6.7.xml",
+              "passed": [
+                "test_usb_provisioning_requires_fresh_unit_or_current_local_unlock"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_tab5_session.py::test_actual_usb_menu_path_cannot_refresh_expired_or_current_local_unlock",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_tab5_session",
+          "baseName": "test_actual_usb_menu_path_cannot_refresh_expired_or_current_local_unlock",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_actual_usb_menu_path_cannot_refresh_expired_or_current_local_unlock"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/audit-tab5-portable-linux-1.6.7.xml",
+              "passed": [
+                "test_actual_usb_menu_path_cannot_refresh_expired_or_current_local_unlock"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_tab5_session.py::test_actual_setup_lock_expiry_and_stale_keyboard_never_mutate_configuration",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_tab5_session",
+          "baseName": "test_actual_setup_lock_expiry_and_stale_keyboard_never_mutate_configuration",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [],
+              "skipped": [
+                "test_actual_setup_lock_expiry_and_stale_keyboard_never_mutate_configuration"
+              ]
+            },
+            {
+              "receipt": "docs/evidence/audit-tab5-portable-linux-1.6.7.xml",
+              "passed": [
+                "test_actual_setup_lock_expiry_and_stale_keyboard_never_mutate_configuration"
+              ],
+              "skipped": []
+            }
+          ]
+        },
+        {
+          "reference": "tests/test_tab5_session.py::test_setup_expiry_precedes_usb_and_ota_dispatch",
+          "kind": "pytest",
+          "status": "passed",
+          "classname": "tests.test_tab5_session",
+          "baseName": "test_setup_expiry_precedes_usb_and_ota_dispatch",
+          "reports": [
+            {
+              "receipt": "docs/evidence/regression-windows-final-1.6.7.xml",
+              "passed": [
+                "test_setup_expiry_precedes_usb_and_ota_dispatch"
+              ],
+              "skipped": []
+            },
+            {
+              "receipt": "docs/evidence/audit-tab5-portable-linux-1.6.7.xml",
+              "passed": [
+                "test_setup_expiry_precedes_usb_and_ota_dispatch"
+              ],
+              "skipped": []
+            }
+          ]
+        }
+      ],
+      "initialMappingScope": "Portable C++ wykonuje wybrane rzeczywiste gałęzie firmware z atrapami peryferiów; sprawdzenie kolejności w pętli jest statyczne. Brak próby USB/OTA na fizycznym TAB5 i brak drugiego pełnego przeglądu."
+    }
+  ],
+  "testCounts": {
+    "docs/evidence/regression-windows-final-1.6.7.xml": {
+      "passed": 588,
+      "skipped": 29,
+      "failed": 0,
+      "errors": 0,
+      "total": 617
+    },
+    "docs/evidence/security-recovery-linux-1.6.7.xml": {
+      "passed": 110,
+      "skipped": 0,
+      "failed": 0,
+      "errors": 0,
+      "total": 110
+    },
+    "docs/evidence/audit-tab5-portable-linux-1.6.7.xml": {
+      "passed": 6,
+      "skipped": 0,
+      "failed": 0,
+      "errors": 0,
+      "total": 6
+    },
+    "docs/evidence/audit-browser-1.6.7.json": {
+      "passed": 21,
+      "failed": 0,
+      "total": 21
+    }
+  },
+  "packageArtifacts": [
+    {
+      "name": "AV-Control-Studio-1.6.7-Windows-x64.exe",
+      "path": "artifacts/AV-Control-Studio-1.6.7-Windows-x64.exe",
+      "bytes": 319890803,
+      "sha256": "d456bbe9f66e1bd60ce3dfbb0bcb7f7ea920c2668a122598c9636f8617369186"
+    },
+    {
+      "name": "AV-Control-Player-1.6.7-Windows-x64.exe",
+      "path": "artifacts/AV-Control-Player-1.6.7-Windows-x64.exe",
+      "bytes": 302432829,
+      "sha256": "a9bd1002a8275da68651a0a2bb98cc8201a30ddbf73b83ec6cdd3ff045b24ec0"
+    },
+    {
+      "name": "AV-Control-Imager-1.6.7-Windows-x64.exe",
+      "path": "artifacts/AV-Control-Imager-1.6.7-Windows-x64.exe",
+      "bytes": 1331772865,
+      "sha256": "c2ad8358c9b5cf1ac03bfaf6020c9f7246bfb2c7b143630d58af1489cf5b70b7"
+    },
+    {
+      "name": "AV-Control-Player-1.6.7-Linux-all.deb",
+      "path": "artifacts/AV-Control-Player-1.6.7-Linux-all.deb",
+      "bytes": 377688,
+      "sha256": "97af9f13d79da3f1fde5b2f264a8d5345ac1285cdc1ae9a1a6dfad203d5bf663"
+    },
+    {
+      "name": "AV-Control-Player-1.6.7-Linux.tar.gz",
+      "path": "artifacts/AV-Control-Player-1.6.7-Linux.tar.gz",
+      "bytes": 422471,
+      "sha256": "6af633bf0759079f264706e556f775ba0a87783cdc635026b74b5072abe66186"
+    },
+    {
+      "name": "AV-Control-Agent-1.1.1.zip",
+      "path": "artifacts/AV-Control-Agent-1.1.1.zip",
+      "bytes": 74019,
+      "sha256": "e0b09a291874a1d16b663af99297f7932b62eaf552e3cb82f68317575cc34c93"
+    },
+    {
+      "name": "AV-Control-RPi-1.6.7-arm64.img.xz",
+      "path": "work/AV-Control-RPi-1.6.7-arm64.img.xz",
+      "bytes": 1003458200,
+      "sha256": "87ea0c347a30f76c7ffcab30ad9452e3c21bc83158723cc904c552a894f133a2"
+    },
+    {
+      "name": "AV-Control-Runtime-1.6.7-arm64.zip",
+      "path": "work/AV-Control-Runtime-1.6.7-arm64.zip",
+      "bytes": 194866217,
+      "sha256": "5ef2be5120fb5fb6d0f459ce70eeed631234935e82196a343d8b2e4f1a36d0c4"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "artifacts/linux-player-build.json",
+      "bytes": 604,
+      "sha256": "ddd52ae7c88a1d3061a51479e151594ae0ab674bcd76c7f9572349f1ba9e5f8d"
+    },
+    {
+      "path": "desktop/AvControlStudio/Program.cs",
+      "bytes": 6676,
+      "sha256": "d1baf17f9185c6817c460a2da417a80f7055ee97003f781dccdb46111fbde19c"
+    },
+    {
+      "path": "desktop/AvControlStudio/ProjectFileSession.cs",
+      "bytes": 2831,
+      "sha256": "b852f336442ac1e06b0add4807125d3400b9a88954986d425d5ca6f794678ba8"
+    },
+    {
+      "path": "docs/ARCHITEKTURA.md",
+      "bytes": 10619,
+      "sha256": "104db4092336eea9f42a2ef986e2c1ce2f404cdbb6801894f55143f048d576b8"
+    },
+    {
+      "path": "docs/AUDYT-NAPRAWY-1.6.7.md",
+      "bytes": 27542,
+      "sha256": "16f9ee1b92e47517fa858dfb38a5011404e5fde18276c34d0c09b076386fe087"
+    },
+    {
+      "path": "docs/BUDOWANIE.md",
+      "bytes": 11634,
+      "sha256": "4f7b305d59506bfdb92ba47bb6878b404a7a89f8ad297a22c902c4a3e7b8406e"
+    },
+    {
+      "path": "docs/evidence/companions-installation-1.6.7.json",
+      "bytes": 2287,
+      "sha256": "a2ebcf87488de84e3d6522741a87ed55a105184e80fcfee49ff56506cb3eb235"
+    },
+    {
+      "path": "docs/evidence/installation-1.6.7.json",
+      "bytes": 646,
+      "sha256": "141eb54d9f3b1ce20defef38921c12183eceb7430c230a10d837ce69068ee6a1"
+    },
+    {
+      "path": "docs/evidence/linux-player-1.6.7.json",
+      "bytes": 536,
+      "sha256": "8119ad56dfb2293cbeccbb18d59223b81deace7c5e012f639ed5c1f8499b59e9"
+    },
+    {
+      "path": "docs/evidence/native-studio-1.6.7.json",
+      "bytes": 1009,
+      "sha256": "569b301e2ddc76e53cf661a1fb1b7b7553b14200dc0c7ffa3fb25fd1f5314263"
+    },
+    {
+      "path": "docs/evidence/package-verification-1.6.7.json",
+      "bytes": 3773,
+      "sha256": "b096d29acaf31ddad7760353ceda98f7700caffa60b587aa2bbe59baf0851596"
+    },
+    {
+      "path": "docs/evidence/python-native-windows-1.6.7.json",
+      "bytes": 472,
+      "sha256": "db341fa794bb749083719e5f93c93d798c5b0c0209c940e429e2c81501df0d67"
+    },
+    {
+      "path": "docs/evidence/update-arm-1.6.7.json",
+      "bytes": 702,
+      "sha256": "acd80df830967eaeaeb6156178ea196f4d9499e346d568bf7c1e9c57355ba336"
+    },
+    {
+      "path": "packaging/rpi/image-release.json",
+      "bytes": 390,
+      "sha256": "6d622829c6fbe224f6c6fd9dd194454d0e8dee7bc0c1fd507a6f4b2974f198f1"
+    },
+    {
+      "path": "packaging/source-stamp.py",
+      "bytes": 2110,
+      "sha256": "7b6064a0895f8f46142989924c949ccc1e7c0df013ed89fc9dd202c052dfc1d9"
+    },
+    {
+      "path": "tests/test_audit_runtime_regressions.py",
+      "bytes": 18471,
+      "sha256": "2f920f2a381b3cb63cc1d5598bc88e9cb7471240c2e9f9475ddc8d130534da01"
+    },
+    {
+      "path": "tests/test_certificate_safety.py",
+      "bytes": 9125,
+      "sha256": "ffa117ae4edff9c0159a54a4121624b2f86c2aebdcdb82fb3e2acf7aa9054ee8"
+    },
+    {
+      "path": "tests/test_hmi.py",
+      "bytes": 23677,
+      "sha256": "d2049e3903a9c5d7ba014df3617b1735ce16bf8002c2cf4686c60939e9e88987"
+    },
+    {
+      "path": "tests/test_reference_contracts.py",
+      "bytes": 737,
+      "sha256": "59ac54a1cad05adc140a312afa951fa256bfd6f2f28d909206200380fe4a0633"
+    },
+    {
+      "path": "tests/test_simulation_auth.py",
+      "bytes": 6525,
+      "sha256": "bb221f911928c0e1c5eac8715d1bddc14ac111a55b7d058b3f0ecb7307e76983"
+    },
+    {
+      "path": "tests/test_system_configuration.py",
+      "bytes": 14996,
+      "sha256": "60a2b67f87f728fe41a7fe93eef36d473cbf26e1d31316cbdcdb01e7f48fe7b0"
+    },
+    {
+      "path": "tests/test_tab5_session.py",
+      "bytes": 12990,
+      "sha256": "4e697cb534a0e282cff05910d81ee5c92231546a90f905a6918f2abf5a97a82b"
+    },
+    {
+      "path": "tests/test_updates.py",
+      "bytes": 18104,
+      "sha256": "28e655ff110922e55854685280666f0faa56fc72c90a81c4009f7f7831b709d7"
+    },
+    {
+      "path": "web/package.json",
+      "bytes": 1920,
+      "sha256": "aff1bc215d2363d599215bbfe19fcb67e1744aa0c766f200fa195e0ae856f1c5"
+    },
+    {
+      "path": "web/tests/audit-regressions.mjs",
+      "bytes": 16906,
+      "sha256": "4d571cb106352d8b61161bdc6cad033f4817d415e722b2dd0505b0f77abf2016"
+    },
+    {
+      "path": "docs/evidence/audit-mapping-1.6.7.json",
+      "bytes": 25380,
+      "sha256": "e3d78ef183303fba2a6860fae83f2f4225875802c6ab6b628ea83014f380996f",
+      "sourcePath": "work/audit-mapping-1.6.7.json"
+    },
+    {
+      "path": "docs/evidence/audit-browser-1.6.7.json",
+      "bytes": 2157,
+      "sha256": "298ba2fee1f4a893fd168136f0a19c63e205b43efcf670e49e12eab5e9a29f23",
+      "sourcePath": "work/audit-regressions/results.json"
+    },
+    {
+      "path": "docs/evidence/audit-tab5-portable-linux-1.6.7.xml",
+      "bytes": 1061,
+      "sha256": "dc716d0d2e39a540ed70bc9a48a595c917b8216295dc76f4f7753c19b1d684ea",
+      "sourcePath": "work/audit-tab5-portable-linux.xml"
+    },
+    {
+      "path": "work/finalize-audit-evidence-1.6.7.py",
+      "bytes": 25393,
+      "sha256": "ae414f9b34a871fd9feb1b10c95d20ade548e675b7af3e90c34e5861f21afcfd"
+    },
+    {
+      "path": "docs/evidence/regression-windows-final-1.6.7.xml",
+      "bytes": 88540,
+      "sha256": "cd7a32e357d094b86d1573bc5c204e1edb8bb63ee0d6fc0163e858dbe115f2a1",
+      "sourcePath": "work/regression-windows-final-1.6.7.xml"
+    },
+    {
+      "path": "docs/evidence/security-recovery-linux-1.6.7.xml",
+      "bytes": 14649,
+      "sha256": "5a9493389c142e391f8ee4cf61fca22d33af1f94e82aaccf9e36fa36e2ca915a",
+      "sourcePath": "work/security-recovery-linux-1.6.7.xml"
+    }
+  ],
+  "limits": {
+    "physicalTAB5Verified": false,
+    "physicalRPiVerified": false,
+    "physicalHdmiUartRs485GpioVerified": false,
+    "physicalUsbProvisionOtaTimeoutVerified": false,
+    "physicalPowerLossSdCardVerified": false,
+    "freshWindowsWithoutWebView2Verified": false,
+    "secondIndependentSecurityReviewPerformed": false,
+    "ciVerifiedByThisIntegrator": false,
+    "ciEvidence": "Seven exact-commit CI jobs must be verified by the separate final release manifest; they are not checked here.",
+    "junitProvenance": "JUnit contains test identities/results, not a source/commit stamp. Exact bytes are archived and hashed; current source_stamp is independently matched to package verification.",
+    "portableCppScope": "Host-compiled headers and selected real firmware branches with peripheral stubs; not physical TAB5 execution.",
+    "rollbackScope": "Injected interruptions of real updater file operations; not physical loss of power."
+  }
+}

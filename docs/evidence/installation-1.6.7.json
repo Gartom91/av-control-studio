@@ -1,0 +1,26 @@
+{
+  "installation": true,
+  "uninstall": true,
+  "freshMachineWithoutWebView2": false,
+  "installedWebView2": true,
+  "ok": true,
+  "installedRuntime": {
+    "ok": true,
+    "health": {
+      "ok": true,
+      "version": "1.6.7",
+      "simulation": true,
+      "instanceId": "7214ff25246540789cb4b7b2dfbd3aaa",
+      "fleetProtocol": 1
+    },
+    "role": "admin",
+    "ownerRenameLogin": true,
+    "ownerRenameRestored": true,
+    "dpapi": true,
+    "certificatePinning": true,
+    "wrongPinRejected": true,
+    "wrongHostnameRejected": true,
+    "expiredCertificateRejected": true,
+    "githubUpdateTests": true
+  }
+}
