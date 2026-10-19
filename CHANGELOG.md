@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## TAB5 0.3.1 — 2026-10-19
+
+PL: Osobna poprawka płynności TAB5: bezpośrednia kompozycja DSI, PPA, kopiowanie fragmentów wipe/slide i próbkowanie zoom na dwóch rdzeniach. Pomiar sprzętowy: 15–58 kl./s zamiast 4–8 kl./s. Kontroler i aplikacje pozostają na 1.6.8. [Instalacja i pomiary](docs/releases/tab5-v0.3.1.md).
+
+EN: Standalone TAB5 performance fix: direct DSI composition, PPA, strip copies for wipe/slide and dual-core zoom sampling. Physical-device timing: 15–58 fps instead of 4–8 fps. Controller and desktop apps remain at 1.6.8. [Installation and measurements](docs/releases/tab5-v0.3.1.md).
+
 ## 1.6.8 — 2026-10-19
 
 PL: Pięć przejść stron: fade, wipe, wash, slide i zoom, ustawienia czasu/kierunku/tempa/koloru i podgląd w edytorze. Efekty działają we wspólnym rendererze Studio/Player/WWW/HDMI oraz natywnie na TAB5 z firmware 0.3.0. Pięć stron istniejącej Wirtualnej sali AV demonstruje animacje. Ulepszono OTA TAB5, ochronę przed cofaniem firmware i udostępnianie dołączonego obrazu przez aktualizację Runtime. [Opis i pobieranie](docs/releases/v1.6.8.md#polski).

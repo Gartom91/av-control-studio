@@ -1,0 +1,127 @@
+{
+  "ok": true,
+  "scope": "TAB5 ST7123 firmware-only hotfix, controller remains 1.6.8",
+  "firmware": "0.3.1",
+  "sourceCommit": "d7b22fc950a43f3d1358a44f8e4b9377ff4104ab",
+  "build": {
+    "version": "1.6.8",
+    "sourceSha256": "440167a47105e2b54b6e964b8ff21cfe633e2093de343d952cae3be02e8406a6",
+    "fileCount": 378
+  },
+  "sdkconfigSha256": "c70f2f22e3376e04ed8c9df95d5e07a9115dde2d75459092700a22cbf9ab6a06",
+  "firmwareSha256": "52aa3ea5b7d5f2080a18bf0bf8554f359ee51d532d46c7b1eda076a0453299c3",
+  "partitionSha256": "81b878afa6569d22b99f06b89f02002e3c8d2bc543b4c585f3953d23776ab456",
+  "method": {
+    "physicalTAB5": true,
+    "navigation": "native widget actions through USB",
+    "serialPollingDuringMotion": false,
+    "configuredDurationMs": 520,
+    "physicalTouchVerified": false,
+    "lcdVisualAcceptanceVerified": false
+  },
+  "cases": [
+    {
+      "effect": "wipe",
+      "before": {
+        "firmware": "0.3.0",
+        "frames": 7,
+        "elapsedMs": 745,
+        "fps": 8.05
+      },
+      "after": {
+        "firmware": "0.3.1",
+        "frames": 31,
+        "elapsedMs": 516,
+        "fps": 58.14
+      },
+      "speedup": 7.22
+    },
+    {
+      "effect": "wash",
+      "before": {
+        "firmware": "0.3.0",
+        "frames": 5,
+        "elapsedMs": 591,
+        "fps": 6.77
+      },
+      "after": {
+        "firmware": "0.3.1",
+        "frames": 23,
+        "elapsedMs": 558,
+        "fps": 39.43
+      },
+      "speedup": 5.82
+    },
+    {
+      "effect": "slide",
+      "before": {
+        "firmware": "0.3.0",
+        "frames": 6,
+        "elapsedMs": 692,
+        "fps": 7.23
+      },
+      "after": {
+        "firmware": "0.3.1",
+        "frames": 17,
+        "elapsedMs": 538,
+        "fps": 29.74
+      },
+      "speedup": 4.11
+    },
+    {
+      "effect": "zoom",
+      "before": {
+        "firmware": "0.3.0",
+        "frames": 4,
+        "elapsedMs": 716,
+        "fps": 4.19
+      },
+      "after": {
+        "firmware": "0.3.1",
+        "frames": 10,
+        "elapsedMs": 594,
+        "fps": 15.15
+      },
+      "speedup": 3.62
+    },
+    {
+      "effect": "fade",
+      "before": {
+        "firmware": "0.3.0",
+        "frames": 4,
+        "elapsedMs": 623,
+        "fps": 4.82
+      },
+      "after": {
+        "firmware": "0.3.1",
+        "frames": 18,
+        "elapsedMs": 557,
+        "fps": 30.52
+      },
+      "speedup": 6.33
+    }
+  ],
+  "device": {
+    "online": true,
+    "paired": true,
+    "pages": 5,
+    "savedPanels": 7,
+    "transitionFallbacks": 0,
+    "transitionAcceleratorVerified": true,
+    "transitionAcceleratorErrors": 0,
+    "transitionParallelZoom": true,
+    "otaBootChecked": true,
+    "otaPendingVerify": false,
+    "displayPixelClockMHz": 80,
+    "displayLaneMbps": 1040
+  },
+  "verification": {
+    "portablePixelEquivalenceFrames": 1100,
+    "asanUbsan": true,
+    "zoomColumnSplitMatchesReference": true,
+    "incrementalWipeMatchesReference": true,
+    "linuxOtaAndSessionTestsPassed": 15,
+    "onDevicePpaRgb565AndConstantWashTest": true
+  },
+  "observedAt": "2026-10-19T22:29:01+0200"
+}

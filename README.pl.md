@@ -30,6 +30,8 @@ To **oficjalne repozytorium dystrybucyjne**: instalatory, obrazy kontrolera, akt
 
 *Rzeczywiste zrzuty aplikacji. Przykłady używają wirtualnych transportów i wyłączonych połączeń sprzętowych.*
 
+**TAB5 0.3.1:** poprawka płynności przejść dla kontrolera 1.6.8. Pomiar na urządzeniu: wipe 58, wash 39, slide/fade około 30, zoom 15 kl./s. [Pobierz i zaktualizuj firmware](docs/releases/tab5-v0.3.1.md).
+
 ## Wybierz aplikację
 
 | Aplikacja | Zastosowanie | Pobierz 1.6.8 |
@@ -38,7 +40,7 @@ To **oficjalne repozytorium dystrybucyjne**: instalatory, obrazy kontrolera, akt
 | **Player** | Obsługa opublikowanych paneli na osobnym komputerze, także w pełnym ekranie. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Player-1.6.8-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Player-1.6.8-Linux-all.deb) · [Archiwum Linux](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Player-1.6.8-Linux.tar.gz) |
 | **Imager** | Wybór modelu RPi, ustawienia kont i sieci, zapis i weryfikacja karty SD. Obraz jest dołączony. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Imager-1.6.8-Windows-x64.exe) |
 | **Kontroler RPi** | Samodzielne wykonywanie logiki i komunikacja z urządzeniami. | [Obraz SD, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-RPi-1.6.8-arm64.img.xz) · [Aktualizacja Runtime](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Runtime-1.6.8-arm64.zip) |
-| **TAB5 ST7123** | Natywny panel operatora M5Stack: parowanie, biblioteka SD i aktualizacja przez Wi‑Fi. | [Pierwsze wgranie USB](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-TAB5-ST7123-0.3.0.zip) · [Aplikacja OTA](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-TAB5-ST7123-0.3.0-OTA.bin) |
+| **TAB5 ST7123** | Natywny panel operatora M5Stack: parowanie, biblioteka SD i aktualizacja przez Wi‑Fi. | [Pierwsze wgranie USB](https://github.com/Gartom91/av-control-studio/releases/download/tab5-v0.3.1/AV-Control-TAB5-ST7123-0.3.1.zip) · [Aplikacja OTA](https://github.com/Gartom91/av-control-studio/releases/download/tab5-v0.3.1/AV-Control-TAB5-ST7123-0.3.1-OTA.bin) |
 | **Panel WWW** | Obsługa tych samych paneli na komputerze, tablecie lub telefonie. | Otwórz adres HTTPS kontrolera. |
 
 Windows: Windows 10 22H2 / Windows 11, x64; .NET i instalator WebView2 offline są dołączone. Publiczny Player Linux: Debian 13 / CPython 3.13 z GTK i WebKit. Obraz RPi: Raspberry Pi OS Lite 64-bit. Pakiet Runtime służy do aktualizacji istniejącego kontrolera AV Control.
