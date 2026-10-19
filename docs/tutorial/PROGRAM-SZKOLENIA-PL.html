@@ -1,0 +1,286 @@
+<!doctype html><html lang="pl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Signal Workshop - program szkolenia - Signal Workshop</title><style>
+    :root{color-scheme:light;--ink:#19374a;--green:#098b7c}*{box-sizing:border-box}
+    body{margin:0;background:#eef3f7;color:var(--ink);font:17px/1.7 'Segoe UI',Arial,sans-serif}
+    nav{position:fixed;top:0;bottom:0;left:0;width:280px;overflow:auto;background:#102a3b;padding:24px 18px;color:white}
+    nav strong{display:block;font-size:22px;color:#49e0c2;margin-bottom:18px}nav a{display:block;color:#dcecf4;text-decoration:none;font-size:13px;line-height:1.5;padding:8px;border-radius:6px}
+    nav a:hover,nav a:focus{background:#244c60}main{margin-left:280px;max-width:1140px;padding:52px 56px 100px;background:white}
+    h1{font-size:42px;line-height:1.12;letter-spacing:-1px}h2{font-size:31px;line-height:1.3;margin-top:72px;padding-top:18px;border-top:4px solid #16b89d;scroll-margin-top:20px}h3{font-size:22px;margin-top:34px}
+    a{color:#087f75}figure{margin:30px 0;padding:14px;background:#eaf1f6;border-radius:12px}figure img{display:block;max-width:100%;width:auto;height:auto;max-height:960px;margin:0 auto}figcaption{font-size:14px;line-height:1.5;margin-top:12px;color:#496476}
+    table{width:100%;border-collapse:collapse;font-size:15px;margin:26px 0}th,td{border:1px solid #cbdbe5;padding:11px 12px;text-align:left;vertical-align:top}th{background:#12354b;color:white}tr:nth-child(even){background:#f2f7fa}
+    pre{background:#112d40;color:#e3f4fa;padding:20px;border-radius:9px;font:14px/1.5 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere}code{font-family:Consolas,monospace}p code,li code,td code{font-size:.92em;color:#08776d;background:#eaf5f2;padding:2px 4px;border-radius:3px}
+    li{padding-left:4px;margin:8px 0}.downloads{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0;padding:18px;background:#e1f4ee;border-radius:10px}.downloads a{font-size:15px;font-weight:bold;padding:8px 12px;border:1px solid #86cdbb;border-radius:7px;text-decoration:none}
+    @media(max-width:900px){nav{position:static;width:auto;max-height:260px}main{margin:0;padding:28px 20px}h1{font-size:34px}h2{font-size:27px}table{font-size:13px}th,td{padding:8px}}
+    @media print{nav,.downloads{display:none}main{margin:0;padding:0;max-width:none}body{background:white}h2{break-before:page}figure{break-inside:avoid}a{color:inherit}}
+    </style><nav><strong>AV CONTROL<br>Signal Workshop</strong><a href="#chapter-01">1. Cel, uczestnicy i rezultat</a><a href="#chapter-02">2. Przygotowanie stanowiska</a><a href="#chapter-03">3. Harmonogram i bramki zaliczenia</a><a href="#chapter-04">4. Sesja 1 - od otwarcia do aktywnego projektu</a><a href="#chapter-05">5. Sesja 2 - panel, materiały i obsługa operatora</a><a href="#chapter-06">6. Sesja 3 - logika, pamięć, symbole urządzeń</a><a href="#chapter-07">7. Sesja 4 - debugger i celowo wywołane błędy</a><a href="#chapter-08">8. Sesja 5 - protokół, transport i odpowiedź</a><a href="#chapter-09">9. Sesja 6 - ograniczony Python i pełny CPython</a><a href="#chapter-10">10. Sesja 7 - plan wdrożenia i odbiór na sprzęcie</a><a href="#chapter-11">11. Sesja 8 - samodzielny projekt końcowy</a><a href="#chapter-12">12. Sesja 9 - metryka instalacji i monitoring lokalny</a><a href="#chapter-13">13. Sesja 10 - sondy, hosting, poczta, konta i serwis</a><a href="#chapter-14">14. Karta próby do skopiowania</a><a href="#chapter-15">15. Ocena końcowa i dalsze utrwalanie</a><a href="#chapter-16">16. Opcjonalny moduł sprzętowy - lokalny panel HDMI (60 minut)</a><a href="#chapter-17">17. Opcjonalny moduł sprzętowy - TAB5 ST7123 (90 minut)</a><a href="#chapter-18">18. Przejścia między stronami (20 minut)</a></nav><main><div class="downloads"><a href="AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf">PDF do pobrania</a><a href="index.html">Podręcznik HTML</a><a href="PROGRAM-SZKOLENIA-PL.html">Program szkolenia</a><a href="Szkolenie-Wirtualna-sala.avctrl" download>Projekt .avctrl</a><a href="Plan-sali.svg" download>Grafika sali SVG</a></div><h1>Signal Workshop - program szkolenia dla integratora i prowadzącego</h1>
+<p><strong>Program szkolenia dla AV Control 1.6.8 | rewizja 19 października 2026</strong></p>
+<p>Program prowadzi od otwarcia projektu do samodzielnego zaprojektowania sterowania. Obejmuje cztery główne karty, eksplorator Logiki, symbole urządzeń, przewody, debugger, panele z ośmioma motywami, ograniczony Python oraz pełny CPython z bibliotekami i własnymi plikami. Materiał podstawowy to <a href="index.html">Podręcznik Signal Workshop</a>, projekt <code>Szkolenie-Wirtualna-sala.avctrl</code> i grafika <code>Plan-sali.svg</code>. Konta, klawiatura, dokumentacja instalacji, monitoring i kreator e-mail stanowią część tego samego kursu. Podstawowy harmonogram obejmuje 10 sesji i 22 godziny; opcjonalny odbiór HDMI trwa dodatkowo 60 minut.</p>
+<p>Zajęcia 1-6 wykonuje się w lokalnym symulatorze. Sesja 7 zawiera oddzielny, warunkowy odbiór na sprzęcie. Zaliczenie lokalne nie potwierdza działania transportu, GPIO, instalatora Windows, Imagera, rzeczywistego telefonu ani nowego wydania na fizycznym Raspberry Pi. Prowadzący wpisuje zakres i środowisko każdego wyniku.</p>
+<h2 id="chapter-01">1. Cel, uczestnicy i rezultat</h2>
+<p>Uczestnik powinien po kursie umieć otworzyć/zapisać projekt, odróżnić edycję od aktywnej rewizji, zbudować panel z poprawnym wiązaniem, przeprowadzić żądanie przez logikę i zezwolenie do komendy, odczytać TX/RX oraz jakość, znaleźć błąd w debuggerze i przygotować własny symbol Python. Nie jest wymagane programowanie na początku; część CPython wymaga pracy z krótkimi funkcjami i słownikami.</p>
+<p>Rezultatem jest własny plik <code>.avctrl</code>, odrębny od oryginalnej Wirtualnej sali, oraz karta prób. Projekt zawiera minimum dwa urządzenia, trzy strony operatora, panel Telefon, logiczny wybór scen, interlock, timer, własny protokół, sekwencję z timeoutem, symbol urządzenia i sprawdzony symbol Python. Pełny CPython i przygotowanie bibliotek są przedmiotem sesji 6. Nie wpisuje się ich ukończenia po samej lekturze kodu. Jeżeli uczestnik realizuje krótszą ścieżkę bez CPython, karta wyników wskazuje ten pominięty zakres; nie nazywaj jej pełnym 22-godzinnym kursem.</p>
+<h2 id="chapter-02">2. Przygotowanie stanowiska</h2>
+<p>Prowadzący przed zajęciami:</p>
+<ol>
+<li>Sprawdza pakiet Studio z Signal Workshop oraz dostępność symulatora, a w wariancie przeglądarkowym działający lokalny silnik.</li>
+<li>Otwiera projekt szkoleniowy, potwierdza dziesięć wyłączonych urządzeń i brak komend startowych, uruchamia kopię w symulatorze.</li>
+<li>Sprawdza cztery karty: Projekt, Urządzenia, Logika, Panele. W Logice otwiera formularz sygnału, debugger i warsztat Python.</li>
+<li>Przygotowuje katalog prac uczestnika i kopie etapów. Nie używa aktywnej instalacji jako stanowiska przypadkowych prób.</li>
+<li>Dla CPython odczytuje rzeczywisty interpreter i przygotowuje bibliotekę wymaganą przez bieżący szablon NumPy. W tej edycji wymaganie to <code>numpy==2.5.3</code>.</li>
+<li>Dla wariantu offline dostarcza wheel oraz wszystkie zależności dla właściwego Python/systemu/architektury. Sprawdza nową instalację offline, a nie tylko wcześniej gotowy zestaw online.</li>
+<li>Przygotowuje własne pliki UTF-8 <code>helpers.py</code> oraz celowo konfliktowy plik o tej samej nazwie dla ćwiczenia importu.</li>
+<li>Ustala oddzielne stanowisko fizyczne, jeśli sesja sprzętowa ma być wykonywana. Potrzebne są dane rzeczywistego sprzętu i jego dokumentacja; profile szkoleniowe nie stanowią komend konkretnego producenta.</li>
+<li>Otwiera HTML/PDF offline i sprawdza komplet ilustracji z zachowanym pochodzeniem i datą. Zapisuje wersję aplikacji oraz datę kursu. Dane systemowe i sześć obrazów hostingu są kontrolowanymi zestawami testowymi; nie zaliczają sprzętu ani dostawy poczty.</li>
+<li>Przed sesją 9 przygotowuje neutralne dane metryki, kontroler testowy i raporty diagnostyczne. Przed sesją 10 przygotowuje dwie sesje izolowanego symulatora, osobne stanowisko z jednym administratorem do próby jego ochrony oraz konta TECHNIKAV o różnych zakresach instalacji.</li>
+<li>Jeżeli uczestnik zamierza wykonać rzeczywisty test e-mail, wcześniej zapewnia własny aktywny adres Proton w płatnym planie z domeną, token SMTP, uprawnioną skrzynkę odbiorczą oraz zgodę na wysłanie jednej wiadomości. Bez tego kreator ćwiczy się bez wysyłki, a dostawę oznacza NIEWERYFIKOWANĄ. Nie wpisuje się hasła do skrzynki jako tokenu.</li>
+</ol>
+<p>Materiały dla uczestnika: źródłowy projekt, podręcznik HTML/PDF, instrukcja Python, grafika sali, karta wyników i pusty folder etapów. Materiały sprzętowe: właściwe konwertery/transceivery, przewody, dane pinów oraz parametry urządzeń. Szczegóły napięć i transportów są w rozdziałach 17-18 podręcznika.</p>
+<h2 id="chapter-03">3. Harmonogram i bramki zaliczenia</h2>
+<table>
+<thead>
+<tr>
+<th>Sesja</th>
+<th>Czas</th>
+<th>Rozdziały</th>
+<th>Bramka zaliczenia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Organizacja pracy</td>
+<td>90 min</td>
+<td>2-7, 37</td>
+<td>Zapisana kopia, aktywna rewizja i poprawna nawigacja</td>
+</tr>
+<tr>
+<td>2. Panele i wygląd</td>
+<td>120 min</td>
+<td>8-10, 20, 22, 36-37</td>
+<td>Działający panel PC/Telefon oraz porównanie motywów</td>
+</tr>
+<tr>
+<td>3. Program sterowania</td>
+<td>120 min</td>
+<td>11-15, 33</td>
+<td>Tabela wyników, jeden impuls jednej komendy, czytelne przewody</td>
+</tr>
+<tr>
+<td>4. Debugger i diagnoza</td>
+<td>120 min</td>
+<td>19, 34</td>
+<td>Jakość, breakpoint, krok TON, ślad TX/RX i powrót do pracy</td>
+</tr>
+<tr>
+<td>5. Protokoły i transporty</td>
+<td>150 min</td>
+<td>16-18, 29-32</td>
+<td>Zgodne ramki, mapowanie odpowiedzi, rozpoznany timeout</td>
+</tr>
+<tr>
+<td>6. Python i biblioteki</td>
+<td>180 min</td>
+<td>21, 35</td>
+<td>Rzeczywisty import, pięć wyników, helper, błędy i konflikt</td>
+</tr>
+<tr>
+<td>7. Wdrożenie i odbiór</td>
+<td>180 min</td>
+<td>23-27</td>
+<td>Osobne dowody kontrolera, restartu i paneli albo NIEWERYFIKOWANE</td>
+</tr>
+<tr>
+<td>8. Projekt końcowy</td>
+<td>180 min</td>
+<td>28, 33-37</td>
+<td>Samodzielny projekt i karta prób z ograniczeniami</td>
+</tr>
+<tr>
+<td>9. Metryka i monitoring</td>
+<td>90 min</td>
+<td>38–46</td>
+<td>Metryka po ponownym otwarciu, wyniki i wskazówki serwisowe</td>
+</tr>
+<tr>
+<td>10. Sondy, hosting, konta i serwis</td>
+<td>90 min</td>
+<td>47–52</td>
+<td>Sonda, zakresy, kreator poczty, role, hasła, sesje i plan serwisu</td>
+</tr>
+</tbody>
+</table>
+<p>Łącznie: <strong>1320 minut = 22 godziny</strong>, bez przerw i samodzielnej powtórki. Konta i klawiatura mieszczą się w sesji 10; nie są kolejną osobną godziną kursu. Opcjonalny fizyczny moduł HDMI poniżej dodaje 60 minut, czyli cały wariant z tym modułem ma 23 godziny. Część sprzętową można odłożyć do osobnego terminu. Sesję CPython można rozdzielić na dwa spotkania po 90 minut. Jeżeli uczestnik nie zna podstaw funkcji i słowników, dodaj 60 minut wprowadzenia przed sesją 6.</p>
+<h2 id="chapter-04">4. Sesja 1 - od otwarcia do aktywnego projektu</h2>
+<p><strong>0-15 min:</strong> prowadzący demonstruje Studio, silnik, Player i Imager. Uczestnik zapisuje własnymi słowami, która część działa po zamknięciu komputera projektanta. Następnie otwiera projekt szkoleniowy i zapisuje <code>Sala-01.avctrl</code>. Porównuje ekran powitalny z metryką w Projekcie: otwarcie karty nie aktywuje instalacji, a wpis dokumentacji nie steruje urządzeniem.</p>
+<p><strong>15-35 min:</strong> przejście przez cztery karty. W Logice uczestnik znajduje sygnał w drzewie, otwiera formularz i zamyka go. Znajduje protokół w Komendach oraz Zezwolenia w Modułach i schematach. Otwiera Kontroler i narzędzia, przechodzi do Panelu operatora i wraca. Prowadzący pyta, czym różni się strona Sala od karty Panele.</p>
+<p><strong>35-55 min:</strong> zmiana nazwy instalacji, zapis i obserwacja starego aktywnego panelu. Uruchomienie nowej rewizji i odczyt <code>vN</code>. Każdy uczestnik zapisuje numer dokumentu i aktywnej rewizji w karcie próby.</p>
+<p><strong>55-75 min:</strong> nowy sygnał bool oraz number. Poprawny typ, wartość początkowa, trwałość i jakość. Kopiowanie/duplikowanie kolekcji, zmiana nazwy kopii, próba wklejenia do niewłaściwej kolekcji i odczyt odmowy. Przy urządzeniu prowadzący pokazuje wyłączoną kopię.</p>
+<p><strong>75-90 min:</strong> globalny Ciemny/Jasny/Jak w systemie, przewijanie listy i formularza. Odświeżenie i sprawdzenie preferencji. Zapis etapu.</p>
+<p><strong>Dowód:</strong> plik etapu, nazwa i aktywna rewizja, notatka „zapis nie uruchamia projektu”, poprawnie odrzucona obca kategoria schowka. <strong>Typowe problemy:</strong> panel bez aktywnego projektu, próba szukania dawnych osobnych kart Sygnały/Protokoły, nowa nazwa przy starej aktywnej wersji.</p>
+<h2 id="chapter-05">5. Sesja 2 - panel, materiały i obsługa operatora</h2>
+<p><strong>0-25 min:</strong> uczestnik tworzy własną stronę z przyciskiem chwilowym, przełącznikiem, suwakiem i odczytem. Definiuje wiązania i sprawdza zwolnienie impulsu. Importuje grafikę, wybiera dopasowanie i ukrywa etykietę obrazu.</p>
+<p><strong>25-50 min:</strong> duplikuje element i odczytuje nadal to samo wiązanie. Następnie zmienia wiązanie kopii na inne. Kopiuje wygląd z jednego źródła na dwa elementy i potwierdza zachowanie ich nazw, pozycji oraz funkcji.</p>
+<p><strong>50-70 min:</strong> grupowanie, rozgrupowanie, blokada położenia, dokładne pola pozycji, warstwy, wyrównanie dwóch oraz rozłożenie trzech niezablokowanych elementów. Prowadzący nie pozwala zaliczyć pozycji na podstawie samego otwarcia menu.</p>
+<p><strong>70-100 min:</strong> porównanie ośmiu gotowych motywów na tej samej stronie. Osobno Własny i indywidualne nadpisania. Zmiana motywu ustawia bazowy kolor, lecz zachowuje własny obraz/gradient; przed porównaniem domyślnych teł uczestnik wybiera Rodzaj tła: Jednolity kolor na kopii strony. Gradient z trzema kolorami, upload tła z listy, Wypełnij/Dopasuj oraz powielanie i kadrowanie. Wypukłość 0/0.5/1 oraz Glass/Liquid/Frost/Szron nad rzeczywistym tłem. Pełny i oszczędny wariant efektów.</p>
+<p><strong>100-120 min:</strong> Telefon, ramka 9-slice i zachowany rozmiar narożników, fokus klawiatury, poprawny i niedostępny przycisk oraz zła jakość odczytu. Uczestnik zapisuje <code>Sala-02.avctrl</code>, otwiera ponownie i sprawdza tło w panelu operatora; dołącza tabelę motywów.</p>
+<p><strong>Dowód:</strong> działanie trzech różnych wiązań, screenshot PC/Telefon, osiem wierszy porównania i wynik zezwolenia przy dwóch motywach. <strong>Typowe problemy:</strong> własny CSS ukrywający motyw, pomylenie globalnego wyglądu z motywem strony, nieczytelny tekst nad szkłem, etykieta ukryta wraz z oczekiwanym odczytem. Próba w emulacji telefonu pozostaje próbą emulowaną.</p>
+<h2 id="chapter-06">6. Sesja 3 - logika, pamięć, symbole urządzeń</h2>
+<p><strong>0-25 min:</strong> AND4, pełna tabela 16 kombinacji. Uczestnik sprawdza poprawną jedynkę, poprawne zero oraz jedynkę o złej jakości. Prowadzący odróżnia wartość od jakości.</p>
+<p>W trybie „Projekt roboczy · bez poleceń” uczestnik podłącza i usuwa przewód, zmienia stałą oraz wartość niepodłączonego wejścia. Sprawdza wynik bez publikowania, wykonuje Cofnij/Ponów i obserwuje timer odświeżany co około 200 ms. Porównuje podgląd z „Stanem opublikowanego programu” i potwierdza, że aktywna rewizja się nie zmieniła. Resetuje pamięci tylko podglądu. Pełny CPython sprawdza osobno zatwierdzonym testem w edytorze Python.</p>
+<p><strong>25-50 min:</strong> Interlock dla trzech scen i Truth table. Oczekiwane wyjścia: Prezentacja 100/101, Spotkanie 010/110, Przerwa 001/000. CLEAR zeruje, SET ALL daje 111 Interlocku. Naciśnięcie jest zwalniane między próbami.</p>
+<p><strong>50-70 min:</strong> pamięć T oraz TON. Uczestnik wskazuje stan chwilowy, trwały i retencję instancji. Prowadzący demonstruje, że zachowany wysoki stan nie jest nowym naciśnięciem.</p>
+<p><strong>70-95 min:</strong> TCP jako symbol urządzenia z ikoną, komendą i argumentem LEVEL. Uczestnik odróżnia „Połączenie TCP”, „Zajęty”, „Błąd” i „Odpowiedź aktualna” od zmapowanego odczytu. Dla UDP wskazuje gotowość lokalnego gniazda, dla RS-232 — otwarty port; żaden z tych dwóch stanów nie potwierdza obecności urządzenia. Podłącza jeden impuls i liczbowy argument <strong>value</strong>. Pole odpowiedzi <strong>level</strong> mapuje osobno na tcpFeedback; nie traktuje go jako nazwy parametru żądania. Usuwa podwójną drogę przez stary blok akcji, jeśli ją utworzył.</p>
+<p><strong>95-120 min:</strong> prowadzenie przewodów, odgałęzienie jednego źródła, mostek skrzyżowania różnych sygnałów, porządkowanie symboli. Wyniki AND przed/po rozmieszczeniu muszą być identyczne. Menu przewodu prowadzi do źródła i odbiorcy.</p>
+<p><strong>Dowód:</strong> tabela AND4, trzy sceny, symbol urządzenia, liczba żądań na impuls i schemat bez ostrzeżenia braku trasy. <strong>Typowe problemy:</strong> trzymana jedynka bez nowego zbocza, dwie akcje jednej komendy, niezgodne typy portów, brak miejsca na przewody, błędne uznanie skrzyżowania za połączenie.</p>
+<h2 id="chapter-07">7. Sesja 4 - debugger i celowo wywołane błędy</h2>
+<p><strong>0-20 min:</strong> otwarcie debuggera, cztery położenia względem schematu, przeciąganie separatora i regulacja klawiaturą, pełne okno oraz niezależne okno na drugim monitorze. Zapisanie osobnych proporcji wysokości i szerokości. Odczyt aktywnej rewizji, wyszukiwanie i pinezki. Przejście do Urządzeń przy działającym osobnym oknie, powrót i dołączenie bez utraty obserwacji/filtra. Źródła i odbiorcy prowadzą do bezpośrednio powiązanych bloków.</p>
+<p><strong>20-45 min:</strong> Warunek 4: 1/good, 1/stale, 0/good, 1/good. Uczestnik wysyła bodźce i zapisuje wynik AND oraz zezwolenie. Dla bool przyciski 0/1 są operacją podania wartości, a Impuls jest osobną operacją.</p>
+<p><strong>45-65 min:</strong> breakpoint narastającego zbocza Prezentacji, odczyt przyczyny pauzy, usunięcie punktu i wznowienie. Prowadzący sprawdza, że żaden punkt nie pozostał aktywny po ćwiczeniu.</p>
+<p><strong>65-90 min:</strong> zatrzymanie programu, wejście TON, pięć kroków z odczytem czasu i dłuższe czekanie bez przyrostu zegara. Następnie kroki do progu, reset i wznowienie. Sekwencje/komunikacja/CPython używające czasu systemowego nie są ogólnie zamrażane.</p>
+<p><strong>90-120 min:</strong> jedna komenda LEVEL, filtr TX/RX, wynik akcji, zatrzymanie przewijania śladu i eksport JSON. Próba timeoutu oraz przywrócenie normalnej odpowiedzi. Sprawdzenie pamięci i anulowanie sekwencji.</p>
+<p><strong>Dowód:</strong> układ boczny i pionowy, samodzielne okno z tym samym odczytem, zachowane pinezki/filtr, wartości/jakości, przyczyna breakpointu, pięć czasów TON, stan po wznowieniu, ślad i informacja o ewentualnej utracie starszych zdarzeń. <strong>Typowe problemy:</strong> blokada okien przez przeglądarkę, symbole poza widokiem po zwężeniu (Zmieść schemat), mylenie przycisków Ślad/Program, impuls przy pauzie, nieaktualna rewizja, eksport uznany za nieograniczoną historię. Na RPi nie wykonuje się pauzy/kroku programu ani breakpointów.</p>
+<h2 id="chapter-08">8. Sesja 5 - protokół, transport i odpowiedź</h2>
+<p><strong>0-30 min:</strong> profil LEVEL ASCII, parametr i CRLF. <code>LEVEL 40</code> ma 8 bajtów tekstu; CRLF dodaje 2, razem <strong>10 bajtów</strong>. Parametr komendy to <code>value</code>, a odebrane pole to <code>level</code>. Odpowiedź ma zmieniać odczyt, a nie wyłącznie żądaną wartość.</p>
+<p><strong>30-60 min:</strong> ramka binarna z CRC oraz mapowanie pola odpowiedzi. Celowy błąd separatora, offsetu albo typu pola; uczestnik diagnozuje go na TX/RX, potem poprawia.</p>
+<p><strong>60-90 min:</strong> USB-RS232, RS-485, UART, TCP, UDP i GPIO w symulatorze. Właściwy port/IP, kolejka magistrali, adres odbiorcy i rodzaj transportu. Parametry fizyczne pozostają zadaniem urządzenia docelowego.</p>
+<p><strong>90-120 min:</strong> trzy bramki i cztery kanały ekspanderów, oddzielny port kanału, mapowanie odczytu, adresowana RS-485, RFC2217. USR-W610 ma jeden kanał RS-232 albo RS-485 i przezroczysty TCP/UDP; standardowy RFC2217 wymaga innego zgodnego konwertera. Prowadzący wyjaśnia różnicę między siecią administracyjną a dodatkową siecią AV.</p>
+<p><strong>120-150 min:</strong> niezależne odpowiedzi dwóch kanałów, timeout i odmowa zezwolenia. Uczestnik sporządza plan rzeczywistego urządzenia z dokumentacją producenta i zakresem brakujących danych.</p>
+<p><strong>Dowód:</strong> dokładne bajty, RX i good odczytu, niezależne kanały, odczytany błąd, przywrócony stan. <strong>Typowe problemy:</strong> odpowiedź w niewłaściwym sygnale, wspólne mapowanie kopii urządzenia, niewłaściwy kanał konwertera, komenda szkoleniowa traktowana jako komenda producenta. Fizyczny transport pozostaje NIEWERYFIKOWANY do próby na sprzęcie.</p>
+<h2 id="chapter-09">9. Sesja 6 - ograniczony Python i pełny CPython</h2>
+<p><strong>0-30 min:</strong> licznik impulsów i histereza z rozdziału 21. Test licznika 0/1/1/0/1 daje 0/1/1/1/2. Uczestnik rozróżnia JSON false i Python False, number/bool oraz parametry instancji.</p>
+<p><strong>30-55 min:</strong> nowy symbol NumPy, pełne środowisko, stanowość, interval i timeout. Sprawdzenie rzeczywistego interpretera. Prowadzący wyjaśnia prawa konta silnika oraz wymagane zatwierdzenie kodu. Tester nie uruchamia zadeklarowanych akcji, ale kod CPython może mieć skutki systemowe; kurs używa wyłącznie obliczeń.</p>
+<p><strong>55-80 min:</strong> instalacja online z dokładnym wymaganiem i logiem, zatwierdzenie oraz import w kroku testu. Wartości 10/20/30/40/50 przy window=4 dają 10/15/20/25/35. Reset testu przywraca pamięć początkową.</p>
+<p><strong>80-105 min:</strong> helper w pliku UTF-8. Import z dysku albo Dodaj plik, <code>from helpers import average</code>, log <code>print</code>. Zmiana helpera, ponowne zatwierdzenie, sprawdzenie nowego wyniku i powrót do właściwego kodu.</p>
+<p><strong>105-135 min:</strong> świeże przygotowanie offline ze zgodnego wheel i pełnych zależności przy wyłączonym PyPI. Uczestnik zapisuje platformę, interpreter, nazwy plików oraz log. Jeżeli środowisko było już gotowe po online, prowadzący nie zalicza tego jako odrębnego dowodu offline.</p>
+<p><strong>135-155 min:</strong> ModuleNotFoundError, bool zwrócony do number, ValueError i kontrolowany timeout. Odczyt wyjątku oraz wskazanej linii. Przywrócenie prawidłowego kodu i zatwierdzenia.</p>
+<p><strong>155-180 min:</strong> zapis symbolu z wymaganiami/helperem w bibliotece, dodanie do kopii projektu, celowy konflikt pliku/wersji, odmowa bez nadpisania i uzgodnienie. Dwie instancje z innymi parametrami i niezależną pamięcią. Włączenie wyniku do grafu oraz panelu.</p>
+<p><strong>Dowód:</strong> pięć wyników, rzeczywisty import, helper i log, osobne online/offline, odrzucony konflikt, cztery komunikaty błędów i przywrócony kod. <strong>Typowe problemy:</strong> pakiet zainstalowany na PC zamiast kontrolerze, wheel Windows na ARM64, brak dependency, niezatwierdzona zmiana, ndarray w JSON, próbkowanie okresowe pomylone z próbkowaniem po zmianie. Serializowana pamięć podlega jednocześnie limitowi 64 KiB i limitom struktury; pojedyncza lista ma do 1024 elementów. Instancje mają odrębne state, lecz procesy pochodzą ze współdzielonej ograniczonej puli; globalna zmienna helpera nie jest pamięcią instancji.</p>
+<h2 id="chapter-10">10. Sesja 7 - plan wdrożenia i odbiór na sprzęcie</h2>
+<p>Ten moduł wymaga osobnego stanowiska i świadomego wskazania kontrolera. Jeżeli sprzętu brak, uczestnik sporządza plan; wyniki sprzętowe pozostają NIEWERYFIKOWANE.</p>
+<p><strong>0-30 min:</strong> wersja pakietu, model RPi, obraz, dane startowe, dwa konta i karta SD. Zapis nośnika jest wykonywany tylko na wskazanej karcie przeznaczonej do stanowiska. Bieżąca ilustracja natywnego Imagera pokazuje UI 1.6.3; nie jest dowodem zapisu i uruchomienia karty. Uczestnik zapisuje wynik weryfikacji nośnika oraz osobny wynik pierwszego startu.</p>
+<p><strong>30-60 min:</strong> pierwszy start, WWW, czas, certyfikat, sieć i punkt przywracania. Odczyt wersji usług oraz właściwego interpretera. Sprawdzenie zachowania konfiguracji po restarcie.</p>
+<p><strong>60-90 min:</strong> środowisko CPython kontrolera, wheel dla jego architektury, zatwierdzenie kodu i pięć wyników lokalnego testera na kontrolerze. Przygotowanie symulatora nie przygotowało automatycznie RPi.</p>
+<p><strong>90-120 min:</strong> publikowanie projektu, aktywna rewizja, Player/przeglądarka, dwie niezależne sesje i rzeczywiste TX/RX urządzenia. Prowadzący odczytuje potwierdzony stan, a nie efekt naciśnięcia.</p>
+<p><strong>120-150 min:</strong> restart silnika i kontrolera, zachowanie wybranych sygnałów/pamięci, brak niezamierzonej komendy startowej, odłączenie panelu. Fizyczny telefon/tablet wymaga własnej próby dotykowej oraz oceny materiałów.</p>
+<p><strong>150-180 min:</strong> historia wersji i przywracanie projektu, plan aktualizacji, odrębne dowody instalacji, usług i urządzenia. Wyniki rozdziela się w karcie odbioru.</p>
+<p><strong>Dowód:</strong> model, wersja aplikacji/silnika/interpretera, rewizja, rzeczywisty transport i odpowiedź, osobne session IDs albo inne identyfikatory próby, zachowanie danych oraz pliki dowodowe. Nie zapisuj haseł i kluczy prywatnych. Przerwa w dostępności albo brak wymaganego środowiska pozostaje blokadą odbioru, a nie sukcesem.</p>
+<h2 id="chapter-11">11. Sesja 8 - samodzielny projekt końcowy</h2>
+<p><strong>0-30 min:</strong> uczestnik otrzymuje wymaganie neutralnej sali: trzy sceny, poziom, dwa urządzenia, jedna sekwencja z gotowością i timeoutem, panel PC/Telefon. Sam tworzy sygnały i diagram drogi żądania/odpowiedzi.</p>
+<p><strong>30-75 min:</strong> buduje urządzenia, protokół, akcje, zezwolenia i logikę. Co najmniej jedno urządzenie występuje jako symbol; układ nie ma przewodów przez obiekty ani ostrzeżenia braku trasy.</p>
+<p><strong>75-115 min:</strong> tworzy panel, wybiera motyw, kopiuje wygląd i sprawdza trzy wiązania. Dodaje własny symbol obliczeniowy i helper. Dobiera retencję wprost do wymagania.</p>
+<p><strong>115-150 min:</strong> wykonuje próby poprawne oraz błędne w debuggerze. Eksportuje ślad i zapisuje rewizję. Udowadnia odmowę akcji przy złej jakości i poprawne przywrócenie działania.</p>
+<p><strong>150-180 min:</strong> prezentuje rezultat prowadzącemu. Prowadzący zmienia jeden parametr wejściowy i jedno wymaganie jakościowe, żeby sprawdzić zrozumienie, nie odtworzenie kolejności kliknięć. Uczestnik przekazuje projekt, karty wyników oraz listę brakujących prób sprzętowych.</p>
+<p><strong>Zaliczenie:</strong> każdy wymagany przypadek ma spodziewany i faktyczny wynik; niespełnione lub niepróbowane wymagania pozostają jawne. Sam screenshot formularza nie zalicza wykonania komendy, instalacji biblioteki ani odbioru urządzenia.</p>
+<h2 id="chapter-12">12. Sesja 9 - metryka instalacji i monitoring lokalny</h2>
+<p>Rozdziały 38–46 tworzą regularną sesję podstawowego kursu. Pracuj w kopii neutralnego projektu i lokalnym symulatorze. Źródło testowych danych systemowych pozwala rozpoznać pola Raspberry Pi; nie zalicza zmiany konfiguracji fizycznego kontrolera.</p>
+<p><strong>0-15 min — ekran powitalny i instalacja:</strong> uczestnik tworzy nowy projekt z ekranu powitalnego i porównuje go z kartą Projekt. Uzupełnia nazwę instalacji, kod, własną wersję programu, etap, klienta, integratora, obiekt, adres, pomieszczenia, zakres i tagi. Dodaje Numer umowy jako własne pole. Wskazuje różnicę między wersją programu autora, wersją aplikacji 1.6.8 i rewizją vN.</p>
+<p><strong>15-30 min — odpowiedzialność, dokumenty i terminy:</strong> przypisuje projektanta, programistę, weryfikującego i uruchamiającego. Dodaje dwa kontakty, jeden odnośnik dokumentu i pięć startowych czynności odbioru. Wpisuje termin przeglądu, ale nie nazywa go skonfigurowanym powiadomieniem. Wyjaśnia, dlaczego kontakt metryki nie jest kontem i odbiorcą poczty. Oznacza Wykonano tylko czynność z własnym dowodem.</p>
+<p><strong>30-45 min — historia i przenoszenie:</strong> dodaje wpis historii, sprawdza autora i datę. Cofnięcie i ponowienie wykonuje przyciskami. Eksportuje metrykę Markdown i pełny .avctrl, ponownie otwiera projekt i porównuje dane. Potwierdza, że plik Markdown nie odtwarza grafów ani zasobów. W Pracy silnika pozostawia jawne akcje startowe puste.</p>
+<p><strong>45-60 min — zakres monitorowania:</strong> w kopii symulatora włącza jedno ćwiczeniowe urządzenie i uruchamia tę rewizję. Konfiguruje Monitoruj urządzenie, stabilizację, lokalizację, wskazówki, części i narzędzia. Porównuje <strong>Połączenie TCP</strong>, <strong>Gniazdo UDP gotowe</strong>, <strong>Port otwarty</strong> i <strong>Odpowiedź aktualna</strong>. Gotowe UDP bez odbiornika nie potwierdza urządzenia; otwarty port nie wykrywa wyjęcia DB9. TCP obserwuje rzeczywisty socket i systemowy keepalive bez komend producenta.</p>
+<p><strong>60-75 min — wiek i jakość odpowiedzi:</strong> ustawia właściwą dodatnią ważność odpowiedzi, wymusza dopasowaną odpowiedź i sprawdza good. Potem wstrzymuje odpowiedź, obserwuje przekroczenie czasu oraz odczytuje przyczynę w Pomiary serwisowe. Dla urządzenia zgodnie z protokołem milczącego wybiera 0 i wyjaśnia, że Odpowiedź aktualna pozostaje nieznana. Sprawdza wyszukiwanie, filtr Błąd i szczegóły pomiaru.</p>
+<p><strong>75-90 min — awaria, przywrócenie i karta serwisu:</strong> porównuje stan błędny, nieznany i wstrzymanie alarmu. Odczytuje trzy błędne pomiary wymagane do otwarcia incydentu oraz dwa poprawne do zamknięcia. Przywraca prawidłową odpowiedź i monitoring. Sporządza kartę serwisu z ostatnim poprawnym pomiarem, hipotezą przyczyny, lokalizacją, częściami i testem na miejscu. Wyłączenie monitoringu nie zalicza naprawy.</p>
+<p><strong>Dowód:</strong> zgodna metryka po ponownym otwarciu, .avctrl i Markdown, karta odpowiedzialności, trzy stany pomiaru, dopasowana odpowiedź oraz jej przeterminowanie i przywrócenie. <strong>Typowe problemy:</strong> pozostawione wyłączone urządzenie, limit wieku 0 traktowany jak wieczna ważność, gotowość UDP traktowana jak połączenie z odbiornikiem, data przeglądu traktowana jak alarm. Wyjęcie USB, zamknięcie socketu i fizyczny brak odpowiedzi na stanowisku rzeczywistym mają osobne wyniki; ekran symulatora ich nie zastępuje.</p>
+<h2 id="chapter-13">13. Sesja 10 - sondy, hosting, poczta, konta i serwis</h2>
+<p>Rozdziały 47–52 tworzą drugą 90-minutową sesję podstawowego kursu. Prowadzący wcześniej przygotowuje projekt, uprawnienia TECHNIKAV, dwie sesje kont i ewentualne dane SMTP. Próba wysyłki jest osobną świadomą operacją uczestnika; bez przygotowanych warunków kończy się planem i statusem NIEWERYFIKOWANE.</p>
+<p><strong>0-15 min — sonda i zezwolenie:</strong> uczestnik wybiera rzeczywisty odczyt udokumentowany dla urządzenia albo neutralny profil w symulatorze. Wskazuje oczekiwaną odpowiedź, Bezpieczna do powtórzenia, akcję urządzenia oraz Potwierdzam, że zapytanie tylko odczytuje stan. Ustawia odstęp minimum 5 s. Sprawdza poprawny wynik, następnie odmowę zezwolenia i wynik odłożony. W Planowanym serwisie sonda jest wstrzymana; żaden z tych przypadków nie zamyka błędnego incydentu jako naprawionego. Nie używa POWER jako testu obecności.</p>
+<p><strong>15-30 min — wspólny hosting i zakres kont:</strong> otwiera <a href="https://technikav.pl/?app=av-control">AV Control w TECHNIKAV</a>, wybiera instalację, kontroler i Diagnostyka. Porównuje dwa konta o różnych zakresach. Odczytuje czas pomiaru i odbioru oraz Nieaktualny po braku kontaktu lub ponad 30 s od odbioru listy. Otwiera popup i oznacza zdarzenie przeczytane; drugie konto zachowuje własny stan. Eksportuje widoczną stronę pomiarów, nie nazywając jej całą historią. Utratę i powrót raportowania przygotowuje na kontrolowanym stanowisku.</p>
+<p><strong>30-50 min — cztery kroki kreatora Proton:</strong> właściciel otwiera Powiadomienia e-mail · konfiguracja właściciela. Wskazuje adres własnej domeny i odpowiadający mu token SMTP, nie hasło do Proton. Sprawdza <code>smtp.protonmail.ch:587</code>, STARTTLS i certyfikat. Używa <strong>Sprawdź połączenie bez wysyłki</strong>, wybiera uprawnionego odbiorcę i progi, a następnie zapisuje przy wyłączonych alarmach. Sprawdza warunki harmonogramu: istniejące <code>--update</code> albo pełna komenda Cron wyświetlona przez kreator. Omawia wymianę tokenu, Odłącz pocztę i jawne ponawianie niepewnych wyników. Jeżeli przygotowano własny token i zgodę, uczestnik używa <strong>Wyślij jedną wiadomość testową</strong> i sprawdza skrzynkę, Spam oraz Proton Wysłane. Sam sukces transportu nie dowodzi otrzymania. Bez rzeczywistego testu wpisuje NIEWERYFIKOWANE; testowe obrazy hostingu i transport zastępczy nie dowodzą dostawy.</p>
+<p><strong>50-60 min — kolejka i przygotowanie wyjazdu:</strong> porównuje ostatni dobry pomiar z hipotezą przyczyny. Uzupełnia kartę części, dokumentacji i testów na miejscu. Wyjaśnia lokalny monitoring bez internetu, trwałą kolejkę, ponowne raportowanie bez duplikatów oraz Historia ma przerwy po utracie starszych stron. Odróżnia oznaczenie alertu jako przeczytanego od zamknięcia incydentu. Przywraca projekt, sondy i ustawienia poczty do uzgodnionego stanu testowego.</p>
+<p><strong>60-65 min — role i kontroler:</strong> w izolowanym symulatorze tworzy operatora oraz drugiego administratora. Potwierdza brak edycji w panelu nawet po podaniu konta administratora. Wybiera login bez spacji na początku/końcu; aplikacja odrzuca takie spacje, a nie przycina nazwy.</p>
+<p><strong>65-70 min — klawiatura:</strong> potwierdza domyślny brak klawiatury i uchwytu w WWW na PC. Świadomie włącza ją w Ustawienia wprowadzania, wykonuje <code>ąĄ!</code>, sprawdza Alt, Shift, kursor, kasowanie i uchwyt. Pola pozostają nad wysuniętą klawiaturą; Enter w polu wielowierszowym wstawia nową linię. Zmiana preferencji PC nie zmienia domyślnej klawiatury natywnego HDMI.</p>
+<p><strong>70-75 min — sesje:</strong> sprawdza logowanie bez pamiętania, wylogowanie i odświeżenie. Następnie loguje z pamiętaniem 30 dni, sprawdza powrót ważnej sesji i jej usunięcie przez Wyloguj z panelu. Zapamiętywana jest sesja, nie hasło. Zwykły dostęp wygasa po 12 godzinach.</p>
+<p><strong>75-80 min — własne hasło:</strong> w Moje konto podaje obecne hasło, nowe oraz powtórzenie. Sprawdza komunikat niezgodności, udaną zmianę i odwołanie drugiej sesji. Stare hasło ma być odrzucone, nowe przyjęte. Zamknięcie dialogu × lub Escape bez zapisu nie zmienia hasła.</p>
+<p><strong>80-85 min — administracja:</strong> administrator resetuje hasło operatora bez znajomości starego, zmienia login i sprawdza ponowne logowanie. Puste pola nowego hasła zachowują poprzednie. Usunięcie testowego konta odwołuje jego sesje. Na przygotowanym osobnym symulatorze aplikacja ma odmówić usunięcia lub degradacji ostatniego administratora.</p>
+<p><strong>85-90 min — wygląd i zamknięcie kursu:</strong> porównuje Moje konto i logowanie w jasnym/ciemnym interfejsie oraz materiale panelu. Przy szerokości 390 px jawnie włącza klawiaturę i sprawdza czytelne trzy pola, przewijanie i zamknięcie. Przywraca opcję PC do wyłączonej, usuwa próby i zapisuje kartę wyników. Fizyczne HDMI, USB i dotyk pozostają osobnym odbiorem.</p>
+<p><strong>Dowód:</strong> sonda z potwierdzeniem oraz wynik odłożony, zakresy dwóch kont TECHNIKAV, własny stan odczytu popupu, cztery kroki kreatora i harmonogram albo plan testu, karta serwisu, role, sesje, odwołanie starego hasła i ochrona ostatniego administratora. <strong>Typowe problemy:</strong> kontakt w metryce pomylony z uprawnionym odbiorcą, hasło skrzynki zamiast tokenu, port 587 zablokowany na hostingu, stary raport uznany za naprawę, ukryta klawiatura PC uznana za błąd, konto SSH używane do logowania panelu. Moduły C/D/E rozdziału 51 i ćwiczenia kont rozdziału 52 są szczegółami tych samych 90 minut.</p>
+<h2 id="chapter-14">14. Karta próby do skopiowania</h2>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Wpis uczestnika</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identyfikator ćwiczenia</td>
+<td>Sesja / punkt / własny numer</td>
+</tr>
+<tr>
+<td>Data i środowisko</td>
+<td>Symulator Windows / lokalna przeglądarka / fizyczny RPi / telefon</td>
+</tr>
+<tr>
+<td>Wersja aplikacji i silnika</td>
+<td>Rzeczywisty odczyt</td>
+</tr>
+<tr>
+<td>Projekt i aktywna rewizja</td>
+<td>Nazwa, ID, vN</td>
+</tr>
+<tr>
+<td>Dane wejściowe</td>
+<td>Wartość, jakość, czas, parametry</td>
+</tr>
+<tr>
+<td>Oczekiwany wynik</td>
+<td>Konkretna liczba/stan/ramka/komunikat</td>
+</tr>
+<tr>
+<td>Faktyczny wynik</td>
+<td>Odczyt z panelu, debuggera lub RX</td>
+</tr>
+<tr>
+<td>Dowód</td>
+<td>Plik, zrzut, log instalacji, ślad JSON</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>ZALICZONE / NIEZALICZONE / NIEWERYFIKOWANE / ZABLOKOWANE</td>
+</tr>
+<tr>
+<td>Przyczyna lub ograniczenie</td>
+<td>Bez pomijania brakujących testów</td>
+</tr>
+<tr>
+<td>Stan po próbie</td>
+<td>Wznowiono program, usunięto breakpoint, przywrócono jakość/kod</td>
+</tr>
+</tbody>
+</table>
+<p>Za ZALICZONE uznaj tylko wykonany przypadek z odpowiednim dowodem. NIEWERYFIKOWANE oznacza brak próby; ZABLOKOWANE oznacza znaną przeszkodę, np. brak zgodnego pakietu lub niedostępny kontroler. Sukces lokalny może współistnieć z niewykonanym odbiorem sprzętowym.</p>
+<h2 id="chapter-15">15. Ocena końcowa i dalsze utrwalanie</h2>
+<p>Ocena składa się z sześciu obszarów: model projektu, działanie panelu, logika/zezwolenia, komunikacja/potwierdzenie, diagnoza oraz Python. Każdy obszar oceniaj jako samodzielnie wykonany, wykonany z pomocą lub wymagający powtórzenia. Nie zastępuj brakującej próby średnią z pozostałych punktów.</p>
+<p>Po kursie uczestnik powtarza projekt od pustego pliku, dodaje nową scenę, przenosi symbol z biblioteką do innego projektu oraz diagnozuje nieznaną jakość. Próby fizycznych transportów, RPi i telefonu wykonuje na osobnym stanowisku. Zmiana wydania wymaga sprawdzenia zgodności pakietu, dokumentacji i ponownego wykonania istotnych prób.</p>
+<h2 id="chapter-16">16. Opcjonalny moduł sprzętowy - lokalny panel HDMI (60 minut)</h2>
+<p>Ten moduł rozszerza kurs podstawowy do <strong>23 godzin</strong>. Potrzebne są fizyczne Raspberry Pi 3B, 4B albo 5, monitor, właściwy kabel HDMI/micro HDMI, rozpoznawana mysz/touchpad lub dotyk USB i klawiatura. Sam HDMI przesyła obraz; dotyk wymaga osobnego połączenia USB. Prowadzący używa wyłączonych lub wirtualnych urządzeń i zapewnia własne systemowe konto serwisowe. Test Cage/GTK/WebKit z wirtualnym ekranem nie zalicza sprzętu.</p>
+<p><strong>0-10 min — projekt:</strong> otwórz neutralny projekt, przygotuj dwie strony, nawigację, chwilowy przycisk i suwak. Potwierdź brak niezamierzonych akcji startowych. Sprawdź funkcje najpierw w symulatorze.</p>
+<p><strong>10-20 min — aktywna rewizja:</strong> wybierz właściwy kontroler, opublikuj po walidacji i porównaj vN. Lokalny panel pokazuje aktywny projekt, nie roboczą edycję Studio. Przygotuj login operatora AV Control na tym kontrolerze.</p>
+<p><strong>20-35 min — monitor i USB:</strong> podłącz monitor i obserwuj automatyczne wykrywanie. Sprawdź monit logowania oraz domyślnie włączoną klawiaturę HDMI. Zaloguj bez pamiętania, porównaj mysz, touchpad i dotyk, sprawdź dwie strony oraz końcową wartość suwaka. Wybór PC wyłączający klawiaturę nie może wyłączyć jej tu. Spróbuj prawego kliknięcia, gestu historii i przeciągnięcia pliku: panel nie ma otwierać innej aplikacji, przeglądarki plików ani pulpitu.</p>
+<p><strong>35-45 min — ustawienia i dostęp:</strong> jako administrator zdalnie otwórz konfigurację Raspberry Pi, sekcję Panel lokalny HDMI. Ustaw Strona początkowa, zapisz, wyłącz i włącz Automatycznie wyświetlaj panel po podłączeniu monitora. Silnik i sieciowe panele pozostają działające. Sprawdź Moje konto, wylogowanie i ponowne logowanie operatora; wylogowanie nie otwiera pulpitu.</p>
+<p><strong>45-55 min — odłączenie i restart:</strong> odłącz monitor, podłącz ponownie i potwierdź aktualny panel bez powtórzenia wcześniejszego żądania. Podczas neutralnej próby przytrzymaj chwilowy przycisk i odłącz wejście: w debuggerze potwierdź wygaśnięcie dzierżawy. Sprawdź zachowanie preferencji po restarcie oraz brak niezamierzonego odtworzenia komend.</p>
+<p><strong>55-60 min — tty2 i powrót:</strong> fizyczną klawiaturą użyj Ctrl+Alt+F2, zaloguj własnym kontem systemowym i odczytaj stan usługi. Konto AV Control nie jest loginem Linux. Zakończ sesję przez <code>exit</code> i wróć Ctrl+Alt+F1; na niektórych klawiaturach potrzebny jest Fn. Zapisz wyniki i przywróć ustawienia stanowiska.</p>
+<p><strong>Odbiór:</strong> wykrycie HDMI, poprawny obraz, logowanie i klawiatura, urządzenia USB, rzeczywisty dotyk, brak wyjścia poza panel gestami/myszą, tty2, powrót i brak powtórzenia komend. Każdy niewykonany przypadek oznacz NIEWERYFIKOWANYM. To opis zajęć w tym programie, a nie odrębny suplement szkoleniowy; techniczne szczegóły są w instrukcji PANEL-HDMI-PL.md.</p>
+<h2 id="chapter-17">17. Opcjonalny moduł sprzętowy - TAB5 ST7123 (90 minut)</h2>
+<p>Materiał: rozdziały 53-55 podręcznika i instrukcja TAB5. Ten moduł dodaje 90 minut do podstawowych 22 godzin; z modułem HDMI cały plan obejmuje 24,5 godziny. Prowadzący przygotowuje TAB5 ST7123 z firmware 0.3.0, kartę FAT/exFAT, sieć 2,4 GHz oraz kontroler z sygnałami wirtualnymi.</p>
+<ul>
+<li><strong>0-15 min:</strong> Wi-Fi, sieć ukryta, hasło konfiguracji i blokada wejścia.</li>
+<li><strong>15-30 min:</strong> jednorazowy kod parowania i porównanie pełnego odcisku certyfikatu.</li>
+<li><strong>30-50 min:</strong> wysłanie dwóch różnych zestawów stron ze Studio i porównanie wyglądu.</li>
+<li><strong>50-65 min:</strong> cztery przełączenia z SD, jasność, dźwięk i blokada sterowania offline.</li>
+<li><strong>65-80 min:</strong> aktualizacja aplikacji przez Wi-Fi i potwierdzenie po restarcie.</li>
+<li><strong>80-90 min:</strong> wpisanie wersji, rewizji i rzeczywistego zakresu wyników do karty odbioru.</li>
+</ul>
+<p>Brak sprzętu oznacza ćwiczenie w symulatorze bez zaliczenia dotyku, SD ani OTA na TAB5. Odcinanie zasilania i wymuszenie rollbacku wymagają oddzielnie przygotowanej próby; nie są domyślnymi krokami kursu.</p>
+<h2 id="chapter-18">18. Przejścia między stronami (20 minut)</h2>
+<p>Ćwiczenie dodaje 20 minut do wybranego wariantu harmonogramu. Wariant podstawowy trwa wtedy
+22 godziny 20 minut, a wariant z HDMI i TAB5 — 24 godziny 50 minut.</p>
+<p>W aktualnym projekcie szkoleniowym każda z pięciu stron demonstruje inny efekt przez 520 ms:
+Sala — fade, Sceny i logika — wipe w lewo, Laboratorium — wash przez kolor, Łączność — slide w górę,
+Ekspandery — zoom. Nazwa i czas są widoczne na stronie. Pierwszy ekran pojawia się bez animacji;
+fade sprawdza się przy powrocie do Sali.</p>
+<p>Przejdź przez strony zakładkami i przyciskami u dołu panelu. Otwórz <strong>Animacje stron — ćwiczenie</strong>,
+porównaj cztery kierunki wipe/slide oraz kolor wash. W <strong>Wygląd strony / CSS</strong> zmień czas na 0 ms
+i przywróć 520 ms. Po publikacji powtórz próbę w panelu WWW, Windows Playerze, HDMI i TAB5
+z aktualnym firmware oraz ponownie wysłanym panelem. Sprawdź brak powielonych komend.
+W WWW włącz ograniczenie ruchu w systemie i potwierdź pominięcie animacji. Pełny opis:
+<a href="../PRZEJSCIA-STRON-PL.md">Przejścia stron panelu</a>.</p>
+</main></html>

@@ -29,6 +29,8 @@ Alternatywny dostęp do konfiguracji: przytrzymaj pięć palców na ekranie prze
 
 W projektancie wybierz wariant **TAB5** i rozmiar **1280 × 720**, aby układ odpowiadał wymiarom urządzenia. Dostępne są przyciski, przełączniki, suwaki, fadery, pokrętła, wartości liczbowe, wskaźniki, teksty, obrazy i nawigacja. Rozmiar tekstu dostosowuje się do skali strony i dostępnego miejsca. Brak warunku widoczności oznacza, że element jest widoczny. Przypisany warunek musi mieć aktualną wartość logiczną prawda.
 
+Przełącznik, pole liczbowe, suwak, fader i pokrętło mogą wysyłać parametr akcji bez przypisanego sygnału zwrotnego. Wtedy pokazują ostatnią wartość zaakceptowanego polecenia w bieżącej sesji panelu; początkowo przełącznik jest wyłączony, a kontrolka liczbowa pokazuje minimum zakresu. Nie jest to potwierdzenie fizycznego stanu urządzenia. Jeżeli przypiszesz sygnał zwrotny, jego wartość i jakość sterują wyświetlaniem; nieaktualna lub nieznana jakość blokuje kontrolkę.
+
 Możesz zapisać oddzielne panele z różnych stron tego samego opublikowanego projektu. Zaznacz tylko potrzebne strony i nadaj układowi własną nazwę. Przyciski prowadzące do niewybranych stron są pomijane w kopii dla TAB5; podgląd informuje o tym przed wysłaniem. Sam projekt pozostaje zachowany. Różne nazwy nadane tym samym stronom tworzą kopie tego samego układu.
 
 Istniejące strony o innych proporcjach są dopasowywane do całego ekranu. Grafiki zachowują sposób dopasowania **contain**, **cover** lub **stretch** ustawiony w projekcie. Dla najlepszego układu użyj osobnego wariantu TAB5.
@@ -47,22 +49,26 @@ Nowy błąd sekwencji uruchomionej z panelu pojawia się również jako komunika
 
 ## Aktualizacja firmware przez Wi-Fi
 
-1. Połącz TAB5 z Wi-Fi i właściwą maliną. Pierwsza instalacja obsługi OTA wymaga USB; użyj przygotowanego firmware 0.2.3 lub nowszego.
-2. W **Ustawienia → Panele M5Stack TAB5 → Firmware przez Wi-Fi (OTA)** wybierz plik **firmware.bin** aplikacji AV Control TAB5 ST7123. Plik może mieć do 5 MiB.
+1. Zaktualizuj malinę z GitHub przez **Ustawienia → Aktualizacje Raspberry Pi → Sprawdź aktualizacje → Zainstaluj aktualizację RPi** w Studio lub panelu WWW administratora. Po restarcie połącz TAB5 z właściwym kontrolerem. Pierwsza instalacja obsługi OTA na nowym TAB5 wymaga USB.
+2. W **Ustawienia → Panele M5Stack TAB5 → Firmware przez Wi-Fi (OTA)** wybierz wersję **0.3.0** dołączoną do wydania 1.6.8. Aktualizacja Runtime udostępnia ten firmware automatycznie. Można też ręcznie dodać plik **firmware.bin** aplikacji AV Control TAB5 ST7123 o rozmiarze do 5 MiB.
 3. Wybierz wersję i naciśnij **Aktualizuj firmware** przy właściwym urządzeniu. Uprawnienia administratora Studio są wymagane do zlecenia aktualizacji.
-4. TAB5 poczeka na zwolnienie przycisków i zakończenie edycji ustawień. Przy baterii poniżej 20% poczeka na ładowanie. Pokaże postęp pobierania, sprawdzi plik i uruchomi się ponownie.
+4. TAB5 poczeka na zwolnienie przycisków, zakończenie animacji i edycji ustawień. Przy baterii poniżej 20% poczeka na ładowanie. Pokaże postęp pobierania i zapisu, sprawdzi plik i uruchomi się ponownie.
 5. Poczekaj na **Aktualizacja potwierdzona** w Studio. Ten komunikat oznacza sprawdzenie nowego firmware po restarcie. Wi-Fi, parowanie, hasło konfiguracji, jasność, głośność i panele zostają zachowane.
+
+Po aktualizacji do 0.3.0 ponownie wyślij panel z projektu z ustawionymi przejściami stron.
+Firmware jest uporządkowany według numeru wersji; aplikacja blokuje zlecenie starszej wersji niż zainstalowana.
+[Przejścia stron i ćwiczenie szkoleniowe](PRZEJSCIA-STRON-PL.md) obejmują fade, wipe, wash, slide i zoom.
 
 Aktualizacja zapisuje drugi obszar aplikacji. Niepełny albo błędny plik nie zastępuje działającej wersji. Jeśli nowa aplikacja nie przejdzie kontroli rozruchu w ciągu minuty, urządzenie wróci do poprzedniej wersji. Połączenie z maliną musi działać podczas pierwszego startu nowej wersji. OTA aktualizuje aplikację ESP32-P4; nie zmienia układu pamięci ani oprogramowania radia ESP32-C6.
 
 ## Firmware i pakiety
 
-Obsługa TAB5 jest częścią oficjalnego Studio od 1.6.6. Pobierz pakiet firmware 0.2.5 oraz aplikacje z [wydania 1.6.7](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.7). Pierwsze wgrywanie przez USB opisuje instrukcja dołączona do pakietu; dalsze aktualizacje aplikacji wykonasz ze Studio przez Wi-Fi. Numer firmware jest niezależny od numeru Studio.
+Studio 1.6.8 współpracuje z firmware TAB5 0.3.0, które dodaje natywne przejścia stron. Pobierz pakiet firmware oraz aplikacje z [wydania 1.6.8](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.8). Pierwsze wgrywanie przez USB opisuje instrukcja dołączona do pakietu; dalsze aktualizacje aplikacji wykonasz ze Studio lub WWW przez Wi-Fi. Numer firmware jest niezależny od numeru Studio.
 
 Zwykłe wgrywanie firmware zachowuje Wi-Fi, parowanie, hasło konfiguracji i ustawienia. Jeśli hasło zostanie zapomniane, odzyskanie dostępu wymaga fizycznego USB i jawnego wymazania pamięci ustawień; usuwa to także Wi-Fi i parowanie. Hasła nie można odczytać przez menu ani diagnostykę USB.
 
-W firmware 0.2.5 zmiana konfiguracji chronionego panelu przez USB wymaga najpierw lokalnego odblokowania menu hasłem. Samo podłączenie kabla nie odblokowuje konfiguracji. Pierwsze przygotowanie bez ustawionego hasła pozostaje osobnym etapem. Firmware 0.2.5 obsługuje również kontrolki powiązane wyłącznie z akcją. Historyczne próby sprzętowe firmware 0.2.3 nie są odbiorem nowego pliku 0.2.5.
+Polecenie konfiguracji USB `provision` jest dostępne bez hasła tylko przed pierwszym ustawieniem hasła i zapisaniem adresu, odcisku certyfikatu lub tokenu kontrolera. Pozwala wtedy kolejno połączyć Wi-Fi i sparować nowy panel. Na skonfigurowanym urządzeniu najpierw odblokuj konfigurację hasłem na ekranie TAB5. Po dziesięciu minutach bezczynności albo powrocie do panelu ponownie wymagane jest odblokowanie, również podczas aktualizacji firmware. Diagnostyka USB do odczytu pozostaje dostępna przy zablokowanej konfiguracji.
 
 Sprzęt i sposób wejścia do trybu wgrywania opisuje [dokumentacja M5Stack TAB5](https://docs.m5stack.com/en/core/Tab5).
 
-Od firmware 0.2.4 panel po starcie lub wyborze z SD potwierdza układ przez przypięte połączenie z kontrolerem przed włączeniem sterowania. Podczas braku sieci zachowuje wyłącznie lokalny podgląd. Skan biblioteki ma ograniczony zakres pracy; katalog powinien zawierać tylko pliki paneli zapisane przez TAB5.
+Firmware po starcie lub wyborze z SD potwierdza układ przez przypięte połączenie z kontrolerem przed włączeniem sterowania. Podczas braku sieci zachowuje wyłącznie lokalny podgląd. Skan biblioteki ma ograniczony zakres pracy; katalog powinien zawierać tylko pliki paneli zapisane przez TAB5.

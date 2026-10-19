@@ -11,7 +11,7 @@ Build operator panels, connect equipment and program your installation locally.
 
 **[Polski](README.pl.md) · English**
 
-[**Download 1.6.7 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.7) · [Release history](CHANGELOG.md) · [Offline training](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Szkolenie-1.6.7.zip)
+[**Download 1.6.8 — Signal Workshop**](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.8) · [Release history](CHANGELOG.md) · [Offline training](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Szkolenie-1.6.8.zip)
 
 **Windows · Raspberry Pi 3B / 4B / 5 · Linux Player · Browser panels**
 
@@ -32,16 +32,24 @@ This is the **official distribution repository** for installers, controller imag
 
 ## Choose your application
 
-| Application | Purpose | Download 1.6.7 |
+| Application | Purpose | Download 1.6.8 |
 | --- | --- | --- |
-| **Studio** | Design devices, protocols, panels and logic; simulate, debug and publish. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Studio-1.6.7-Windows-x64.exe) |
-| **Player** | Operate published panels on a separate computer, including full screen. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Player-1.6.7-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Player-1.6.7-Linux-all.deb) · [Linux archive](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Player-1.6.7-Linux.tar.gz) |
-| **Imager** | Select the Pi model, configure initial accounts/network, write and verify an SD card. Includes the image. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Imager-1.6.7-Windows-x64.exe) |
-| **RPi Controller** | Execute logic and communicate with devices autonomously. | [SD image, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-RPi-1.6.7-arm64.img.xz) · [Runtime update](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Runtime-1.6.7-arm64.zip) |
-| **TAB5 ST7123** | Native M5Stack operator panel: pairing, SD library and Wi‑Fi updates. | [Initial USB installation](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-TAB5-ST7123-0.2.5.zip) · [OTA application](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-TAB5-ST7123-0.2.5-OTA.bin) |
+| **Studio** | Design devices, protocols, panels and logic; simulate, debug and publish. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Studio-1.6.8-Windows-x64.exe) |
+| **Player** | Operate published panels on a separate computer, including full screen. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Player-1.6.8-Windows-x64.exe) · [Linux .deb](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Player-1.6.8-Linux-all.deb) · [Linux archive](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Player-1.6.8-Linux.tar.gz) |
+| **Imager** | Select the Pi model, configure initial accounts/network, write and verify an SD card. Includes the image. | [Windows x64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Imager-1.6.8-Windows-x64.exe) |
+| **RPi Controller** | Execute logic and communicate with devices autonomously. | [SD image, ARM64](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-RPi-1.6.8-arm64.img.xz) · [Runtime update](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Runtime-1.6.8-arm64.zip) |
+| **TAB5 ST7123** | Native M5Stack operator panel: pairing, SD library and Wi‑Fi updates. | [Initial USB installation](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-TAB5-ST7123-0.3.0.zip) · [OTA application](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-TAB5-ST7123-0.3.0-OTA.bin) |
 | **Web panel** | Operate the same panels on a computer, tablet or phone. | Open the controller's HTTPS address. |
 
 Windows: Windows 10 22H2 / Windows 11, x64; .NET and an offline WebView2 installer are included. Public Linux Player: Debian 13 / CPython 3.13 with GTK and WebKit. Pi image: Raspberry Pi OS Lite 64-bit. A Runtime update is for an existing AV Control controller, rather than an SD card.
+
+## Page transitions in 1.6.8
+
+**Fade, wipe, wash, slide and zoom** share settings and previews across Studio, Player, web, HDMI and TAB5. Destination pages define duration, direction, easing and wash colour. The existing five-page classroom project demonstrates the effects.
+
+[Settings and exercise](docs/PRZEJSCIA-STRON-PL.md) · [1.6.8 release notes](docs/releases/v1.6.8.md#english) · [Release verification](docs/WERYFIKACJA-1.6.8.md).
+
+Update the controller through its web panel; TAB5 requires firmware **0.3.0** and a new panel upload. The current training programme supplements the retained, reviewed 18 October PDF.
 
 ## Audit fixes in 1.6.7
 
@@ -53,9 +61,9 @@ This release addresses **all 25 findings from the 18 October audit**: editing an
 
 **Since 1.6.6:** the HDMI kiosk rendering fix removes horizontal corruption. The owner confirmed a readable display on a Pi 4B and a 2560 × 1440 monitor after applying the fix to 1.6.5.
 
-TAB5 ST7123 renders its panel locally while Pi runs installation logic. Studio 1.6.7 supports single-use pairing with full certificate fingerprint confirmation, selected-page uploads, up to 32 named panels on FAT/exFAT and Wi‑Fi updates to firmware 0.2.5. Its pull-down bar provides panel selection, brightness and sound. A cached SD panel requires connection and controller verification before it can control the installation. Initial installation requires USB; OTA uses only the application binary.
+TAB5 ST7123 renders its panel locally while Pi runs installation logic. Studio 1.6.8 supports single-use pairing with full certificate fingerprint confirmation, selected-page uploads, up to 32 named panels on FAT/exFAT and Wi‑Fi updates to firmware 0.3.0. Its pull-down bar provides panel selection, brightness and sound. A cached SD panel requires connection and controller verification before it can control the installation. Initial installation requires USB; OTA uses only the application binary.
 
-[TAB5 instructions](docs/TAB5-PL.md) · [Prototype hardware verification](docs/WERYFIKACJA-TAB5.md) · [Confirmed HDMI correction](docs/WERYFIKACJA-HDMI-2026-10-12.md). Physical TAB5 acceptance covers firmware 0.2.3; it does not establish acceptance of the new 0.2.5 binary.
+[TAB5 instructions](docs/TAB5-PL.md) · [Prototype hardware verification](docs/WERYFIKACJA-TAB5.md) · [Confirmed HDMI correction](docs/WERYFIKACJA-HDMI-2026-10-12.md). Firmware 0.3.0 passed Wi-Fi updating and boot checks on a physical TAB5 while preserving all six panels; the owner reported no update flashes. Animation and physical touch evidence are recorded separately in the 1.6.8 report.
 
 ![Distinct TAB5 panel — Room](media/tab5-sala.png)
 
@@ -142,13 +150,13 @@ Sign in to the web interface as **`admin`** with the password you chose in Image
 
 **Training revision: 18 October 2026, included in AV Control 1.6.7.** The **217-page handbook** covers **55 chapters and four appendices**, with **80 screen illustrations and three diagrams**. The programme contains **10 sessions / 22 hours**, plus optional **one-hour HDMI** and **90-minute TAB5 modules**.
 
-- [Offline training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Szkolenie-1.6.7.zip) — handbook HTML/PDF, training programme, illustrations and neutral examples.
-- [PDF: 217 pages](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Training programme, Markdown](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/PROGRAM-SZKOLENIA-PL.md).
+- [Offline training course](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Szkolenie-1.6.8.zip) — handbook HTML/PDF, training programme, illustrations and neutral examples.
+- [PDF: 217 pages](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Studio-Tutorial-PL-Signal-Workshop.pdf) · [Training programme, Markdown](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/PROGRAM-SZKOLENIA-PL.md).
 
 The revised handbook is included in the 1.6.7 installers, Raspberry Pi image, documentation archive and offline course. Downloading the course alone does not update the software. All 80 screenshots are explicitly retained historical illustrations from 11–12 October, with their original versions and evidence. The 1.6.7 text describes the new sign-in flow, USB configuration lock and corrected protocol offsets; these illustrations are not presented as new 1.6.7 trials.
 
-- [Complete documentation](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/AV-Control-Studio-1.6.7-Dokumentacja.zip) · [Python manual](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/SYMBOLE-PYTHON-PL.md) · [USB, RS485 and UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/USB-RS485-UART-PL.md) · [Network gateways](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/EKSPANDERY-SIECIOWE-PL.md).
-- [Verification report](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/WERYFIKACJA-1.6.7.md) · [Build/test manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/RELEASE-MANIFEST.json) · [ECDSA signature](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/RELEASE-SIGNATURE.json) · [SHA256 sums](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/SHA256SUMS.txt).
+- [Complete documentation](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/AV-Control-Studio-1.6.8-Dokumentacja.zip) · [Python manual](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/SYMBOLE-PYTHON-PL.md) · [USB, RS485 and UART](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/USB-RS485-UART-PL.md) · [Network gateways](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/EKSPANDERY-SIECIOWE-PL.md).
+- [Verification report](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/WERYFIKACJA-1.6.8.md) · [Build/test manifest](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/RELEASE-MANIFEST.json) · [ECDSA signature](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/RELEASE-SIGNATURE.json) · [SHA256 sums](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/SHA256SUMS.txt).
 
 The detailed course and UI are currently in Polish. README and release descriptions are available in Polish and English; use the language links above.
 
@@ -156,7 +164,7 @@ The detailed course and UI are currently in Polish. README and release descripti
 
 ## Distribution and licensing
 
-Use the release's **Assets** section. The signed manifest records package digests, source version and verification evidence for the release. Version 1.6.7 distributes compiled applications and documentation with no product source archive. Bytecode and browser bundles are not encryption or a guarantee against reverse engineering. [Packaging details](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.7/PAKOWANIE-BINARNE-1.5-PL.md).
+Use the release's **Assets** section. The signed manifest records package digests, source version and verification evidence for the release. Version 1.6.8 distributes compiled applications and documentation with no product source archive. Bytecode and browser bundles are not encryption or a guarantee against reverse engineering. [Packaging details](https://github.com/Gartom91/av-control-studio/releases/download/v1.6.8/PAKOWANIE-BINARNE-1.5-PL.md).
 
 An updater installed before 1.6.4 cannot yet verify the independent signature during its first upgrade. Follow the [1.6.4 release notes](https://github.com/Gartom91/av-control-studio/releases/tag/v1.6.4) for that transition.
 

@@ -1,5 +1,11 @@
 # Releases · Wydania
 
+## 1.6.8 — 2026-10-19
+
+PL: Pięć przejść stron: fade, wipe, wash, slide i zoom, ustawienia czasu/kierunku/tempa/koloru i podgląd w edytorze. Efekty działają we wspólnym rendererze Studio/Player/WWW/HDMI oraz natywnie na TAB5 z firmware 0.3.0. Pięć stron istniejącej Wirtualnej sali AV demonstruje animacje. Ulepszono OTA TAB5, ochronę przed cofaniem firmware i udostępnianie dołączonego obrazu przez aktualizację Runtime. [Opis i pobieranie](docs/releases/v1.6.8.md#polski).
+
+EN: Five page transitions: fade, wipe, wash, slide and zoom, with duration, direction, easing, colour and editor preview. Effects use the shared Studio/Player/web/HDMI renderer and native TAB5 firmware 0.3.0. The existing five-page classroom demonstrates them. TAB5 OTA, downgrade protection and bundled firmware staging were improved. [Details and downloads](docs/releases/v1.6.8.md#english).
+
 ## 1.6.7 — 2026-10-18
 
 PL: Naprawiono wszystkie 25 ustaleń audytu: logikę i protokoły, kontrolki i pliki Studio, sesję HDMI, odzyskiwanie aktualizacji, kontrakty API i dokumentację oraz trzy problemy bezpieczeństwa. Lokalny symulator używa prywatnego poświadczenia właściciela zamiast wspólnego hasła. TAB5 0.2.5: kontrolki z samą akcją i blokada konfiguracji USB. Dodano regresje i zaktualizowano tekst podręcznika, zachowując jawne historyczne pochodzenie ilustracji. [Pełna lista i pobieranie](docs/releases/v1.6.7.md#polski).

@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "firmware": {
+    "ok": true,
+    "firmwareVersion": "0.3.0",
+    "target": "m5stack-tab5-st7123",
+    "sdkconfigSha256": "c70f2f22e3376e04ed8c9df95d5e07a9115dde2d75459092700a22cbf9ab6a06",
+    "build": {
+      "version": "1.6.8",
+      "sourceSha256": "95909b7dc6bd29c6bc8a2065ed0290c05b7cac6a8ad4c3649da16dd6c0d97955",
+      "fileCount": 377
+    },
+    "files": [
+      {
+        "name": "firmware.bin",
+        "bytes": 2439040,
+        "sha256": "6ebea268ea19b6d25e45b80c461fe52fdc9c0f5cc6336fb8d4965b5698d53536"
+      },
+      {
+        "name": "bootloader.bin",
+        "bytes": 24160,
+        "sha256": "26a4b603e5fb3567336618f4edbbcc53e9a6e3ab3006342a39541e764474551e"
+      },
+      {
+        "name": "partitions.bin",
+        "bytes": 3072,
+        "sha256": "81b878afa6569d22b99f06b89f02002e3c8d2bc543b4c585f3953d23776ab456"
+      },
+      {
+        "name": "boot_app0.bin",
+        "bytes": 8192,
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+      }
+    ]
+  },
+  "otaInspection": {
+    "sha256": "6ebea268ea19b6d25e45b80c461fe52fdc9c0f5cc6336fb8d4965b5698d53536",
+    "version": "0.3.0",
+    "target": "m5stack-tab5-st7123",
+    "bytes": 2439040
+  },
+  "artifacts": [
+    {
+      "name": "AV-Control-TAB5-ST7123-0.3.0.zip",
+      "bytes": 1657488,
+      "sha256": "688148ae2b00b1e0bee5797df166741131b1254baab7b41daeed426d910fbc71"
+    },
+    {
+      "name": "AV-Control-TAB5-ST7123-0.3.0-OTA.bin",
+      "bytes": 2439040,
+      "sha256": "6ebea268ea19b6d25e45b80c461fe52fdc9c0f5cc6336fb8d4965b5698d53536"
+    }
+  ],
+  "build": {
+    "version": "1.6.8",
+    "sourceSha256": "95909b7dc6bd29c6bc8a2065ed0290c05b7cac6a8ad4c3649da16dd6c0d97955",
+    "fileCount": 377
+  },
+  "localRunnerBuilt": true,
+  "localBuildPlatform": "Windows x64 / PlatformIO 6.2.0 / ESP-IDF 5.5.5 / Arduino 3.3.12",
+  "ciFirmwareGate": "Independent Linux exact-commit build required before publication",
+  "physicalOtaReceipt": "docs/evidence/tab5-ota-0.3.0.json",
+  "physicalOtaVersionVerified": true,
+  "physicalAnimatedHmiVerified": false,
+  "userObservedOtaNoFlashes": true,
+  "physicalTouchVerified": false,
+  "usbArchiveMembers": 14
+}

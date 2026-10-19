@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "version": "1.6.8",
+  "compiledPackage": true,
+  "nativeGtk": true,
+  "nativeWebKit": true,
+  "bundledStylesApplied": true,
+  "realTlsPinCheckBeforeHttp": true,
+  "operatorLogin": true,
+  "panelAction": true,
+  "blockedEditorAndAdminRoutes": true,
+  "fullscreen": true,
+  "offlineControlsDisabled": true,
+  "noOfflineActionReplay": true,
+  "profileSelectionSurvivesRelaunch": true,
+  "passwordsAndSessionTokensPersisted": false,
+  "softwareFixture": true,
+  "physicalLinuxDesktopVerified": false,
+  "bridgeCalls": 42,
+  "pageTransitions": [
+    {
+      "effect": "fade",
+      "inert": true,
+      "outgoing": 1
+    },
+    {
+      "effect": "wipe",
+      "outgoing": 1,
+      "inert": true
+    },
+    {
+      "effect": "wash",
+      "outgoing": 1,
+      "inert": true
+    },
+    {
+      "outgoing": 1,
+      "inert": true,
+      "effect": "slide"
+    },
+    {
+      "effect": "zoom",
+      "inert": true,
+      "outgoing": 1
+    }
+  ],
+  "transitionNoReplay": true
+}

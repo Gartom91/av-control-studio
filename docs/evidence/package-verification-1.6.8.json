@@ -1,0 +1,101 @@
+{
+  "ok": true,
+  "version": "1.6.8",
+  "recordedAt": "2026-10-19T19:39:54.962544+00:00",
+  "build": {
+    "version": "1.6.8",
+    "sourceSha256": "95909b7dc6bd29c6bc8a2065ed0290c05b7cac6a8ad4c3649da16dd6c0d97955",
+    "fileCount": 377
+  },
+  "artifacts": [
+    {
+      "name": "AV-Control-Studio-1.6.8-Windows-x64.exe",
+      "path": "artifacts/AV-Control-Studio-1.6.8-Windows-x64.exe",
+      "bytes": 319998565,
+      "sha256": "8713defccc2bf6b09c05f65d669d82c79614d1103b94ff210c7cab0155571a0a"
+    },
+    {
+      "name": "AV-Control-Player-1.6.8-Windows-x64.exe",
+      "path": "artifacts/AV-Control-Player-1.6.8-Windows-x64.exe",
+      "bytes": 302426284,
+      "sha256": "719097d1bc1ef7d273919b79ae065c36d054122175aa45f455549a31ccef6d1d"
+    },
+    {
+      "name": "AV-Control-Imager-1.6.8-Windows-x64.exe",
+      "path": "artifacts/AV-Control-Imager-1.6.8-Windows-x64.exe",
+      "bytes": 1333377103,
+      "sha256": "b7499fa598c64362d55b6db29e6789cd55f0c5e53dca83d8c3064407876b4f14"
+    },
+    {
+      "name": "AV-Control-Player-1.6.8-Linux-all.deb",
+      "path": "artifacts/AV-Control-Player-1.6.8-Linux-all.deb",
+      "bytes": 379172,
+      "sha256": "7778c0b55624d980a5b5eef049a969b7d442623e7a43687bf5b93592d5805a91"
+    },
+    {
+      "name": "AV-Control-Player-1.6.8-Linux.tar.gz",
+      "path": "artifacts/AV-Control-Player-1.6.8-Linux.tar.gz",
+      "bytes": 417767,
+      "sha256": "e6f581d9520794e5739e52e2b71c5d8c856f62b8ed69ee077b794a4a69b88af8"
+    },
+    {
+      "name": "AV-Control-Agent-1.1.1.zip",
+      "path": "artifacts/AV-Control-Agent-1.1.1.zip",
+      "bytes": 74020,
+      "sha256": "e8ddea4b242de4f7e354cc0524eb9d4205289a1c9da93f5901e34cdf84c4da8f"
+    },
+    {
+      "name": "AV-Control-RPi-1.6.8-arm64.img.xz",
+      "path": "work/AV-Control-RPi-1.6.8-arm64.img.xz",
+      "bytes": 1005061364,
+      "sha256": "3e0040238fc5a317da1ebf11b238e9c0b25b1ab81290aedacb6c481530b492b4"
+    },
+    {
+      "name": "AV-Control-Runtime-1.6.8-arm64.zip",
+      "path": "work/AV-Control-Runtime-1.6.8-arm64.zip",
+      "bytes": 196476628,
+      "sha256": "df00a003236c801066fa66153a5291a14d7aef2e09ea207605568387313fb61e"
+    }
+  ],
+  "receipts": [
+    {
+      "name": "installation-1.6.8.json",
+      "path": "docs/evidence/installation-1.6.8.json",
+      "bytes": 646,
+      "sha256": "93cff8b476da03ca2c4b6e854e104b73da27abd8e42c988c7e825452ca07bbdb"
+    },
+    {
+      "name": "companions-installation-1.6.8.json",
+      "path": "docs/evidence/companions-installation-1.6.8.json",
+      "bytes": 2287,
+      "sha256": "0ced38e0b0eb41221a1c27f7c8c8124bbdaf5460e62a00e716355a6ad33b8170"
+    },
+    {
+      "name": "linux-player-1.6.8.json",
+      "path": "docs/evidence/linux-player-1.6.8.json",
+      "bytes": 984,
+      "sha256": "20cbdcfd24e01bfde6612c63df7ea371b83eec0bc4a945d6535651d1eafa488e"
+    },
+    {
+      "name": "native-studio-1.6.8.json",
+      "path": "docs/evidence/native-studio-1.6.8.json",
+      "bytes": 1009,
+      "sha256": "569b301e2ddc76e53cf661a1fb1b7b7553b14200dc0c7ffa3fb25fd1f5314263"
+    },
+    {
+      "name": "python-native-windows-1.6.8.json",
+      "path": "docs/evidence/python-native-windows-1.6.8.json",
+      "bytes": 472,
+      "sha256": "10f5e186c196c34bcd39db7ca9c18be82eeec21bf8b03cefd106c1d3530e3a90"
+    },
+    {
+      "name": "update-arm-1.6.8.json",
+      "path": "docs/evidence/update-arm-1.6.8.json",
+      "bytes": 702,
+      "sha256": "bc9b86900bb621a9198b719dc4963ef16e954e70e051adfae7a3fff6b1ac84e9"
+    }
+  ],
+  "installerTests": "Studio and Player install/native/uninstall; protected Imager install/native, retained on host",
+  "freshWindowsWithoutWebView2": false,
+  "physicalSdWrite": false
+}

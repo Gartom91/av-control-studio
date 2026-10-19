@@ -1,0 +1,85 @@
+{
+  "freshMachineWithoutWebView2": false,
+  "apps": [
+    {
+      "selfTest": {
+        "ok": true,
+        "editorApisBlocked": true,
+        "dpapi": true,
+        "embeddedRuntime": false,
+        "githubUpdateTests": true
+      },
+      "installation": true,
+      "physicalDiskWritten": false,
+      "keptInstalled": false,
+      "app": "Player",
+      "nativeAcceptance": {
+        "ok": true,
+        "native": true,
+        "adminGetsOnlyPanels": true,
+        "operator": false,
+        "pages": true,
+        "imageFrameAndHiddenLabel": true,
+        "elementAndScopedPageCss": true,
+        "commands": true,
+        "sliderFinalValue": true,
+        "momentary": true,
+        "momentaryLeaseExpiresDuringDisconnect": true,
+        "interlock": true,
+        "fullscreen": true,
+        "savedConnectionAndSession": true,
+        "windowsUpdateSettings": true,
+        "projectUpdate": true,
+        "disconnectBlocksControls": true,
+        "reconnectDoesNotReplay": true,
+        "errors": []
+      },
+      "uninstall": true
+    },
+    {
+      "selfTest": {
+        "ok": true,
+        "models": [
+          "3B",
+          "4B",
+          "5"
+        ],
+        "unsafeTargetsRejected": true,
+        "swappedTargetRejected": true,
+        "hashChecked": true,
+        "encryptedJobs": true,
+        "verificationEnabled": true,
+        "fixtures": true,
+        "imageVerified": true,
+        "physicalDiskWritten": false,
+        "githubUpdateTests": true
+      },
+      "installation": true,
+      "physicalDiskWritten": false,
+      "keptInstalled": true,
+      "app": "Imager",
+      "nativeAcceptance": {
+        "ok": true,
+        "native": true,
+        "offlineImage": true,
+        "models": [
+          "3B",
+          "4B",
+          "5"
+        ],
+        "diskEnumeration": true,
+        "protectedDisksExcluded": true,
+        "invalidTargetRejected": true,
+        "unconfirmedWriteRejected": true,
+        "readOnlyPlanTested": false,
+        "physicalDiskWritten": false,
+        "windowsUpdateSettings": true,
+        "updatesManualOffline": true,
+        "actualWriteInvoked": false,
+        "errors": []
+      },
+      "uninstall": false
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,111 @@
+{
+  "ok": true,
+  "at": "2026-10-19T19:29:48.052305+00:00",
+  "build": {
+    "version": "1.6.8",
+    "sourceSha256": "95909b7dc6bd29c6bc8a2065ed0290c05b7cac6a8ad4c3649da16dd6c0d97955",
+    "fileCount": 377
+  },
+  "effects": [
+    "fade",
+    "wipe",
+    "wash",
+    "slide",
+    "zoom"
+  ],
+  "platforms": {
+    "chrome": {
+      "ok": true,
+      "cases": 8,
+      "report": "work/page-transitions/report.json",
+      "sha256": "2e34cf0ff200c327d38be75e0a2adc63ad704a1857933a9934a06e04c06e55a0"
+    },
+    "windowsPlayer": {
+      "ok": true,
+      "cases": 5,
+      "report": "work/page-transitions-native/report.json",
+      "sha256": "3112ee0590376eaabf9478d2ae74c653b8a5f1e5bd9970a80a3357358329ec36"
+    },
+    "windowsStudio": {
+      "ok": true,
+      "cases": 5,
+      "report": "work/page-transitions-studio-native/report.json",
+      "sha256": "2b5bec3665c67b94d951c0b4ddab748a484a9a717c4c7bc04af43197b13ac05a"
+    },
+    "linuxPlayer": {
+      "ok": true,
+      "cases": 5,
+      "report": "docs/evidence/linux-player-1.6.8.json",
+      "path": "docs/evidence/linux-player-1.6.8.json",
+      "bytes": 984,
+      "sha256": "20cbdcfd24e01bfde6612c63df7ea371b83eec0bc4a945d6535651d1eafa488e"
+    },
+    "webkitKiosk": {
+      "ok": true,
+      "cases": 5,
+      "report": "docs/evidence/hdmi-1.6.8/page-transitions-webkit.json",
+      "path": "docs/evidence/hdmi-1.6.8/page-transitions-webkit.json",
+      "bytes": 476,
+      "sha256": "da0a65468e49babf1267157ac21b26dde7fabada6b724b9e897def05b610315e"
+    }
+  },
+  "nativeCompositor": {
+    "ok": true,
+    "at": "2026-10-19T19:06:16.529202+00:00",
+    "sourceCommit": "e05540b4afa80f41822a210cfd3160ef4e8f4126",
+    "asan": true,
+    "ubsan": true,
+    "compiler": "WSL g++ C++17",
+    "equivalentFrames": 1100,
+    "dimensions": [
+      [
+        8,
+        6
+      ],
+      [
+        64,
+        48
+      ],
+      [
+        31,
+        720
+      ],
+      [
+        31,
+        721
+      ],
+      [
+        1280,
+        720
+      ]
+    ],
+    "effects": 5,
+    "directions": 4,
+    "baselineCommit": "5aa5b22",
+    "softwareOnly": true,
+    "physicalTAB5": false,
+    "sources": {
+      "firmware/tab5/src/panel_transition.h": "748d5acd2a8b534de2c50ec5b9e4ccec418e1c6ad0093dd87f8ed0c5670d0e8d",
+      "firmware/tab5/tools/test_transitions.cpp": "40d8952f063e1474e5deb6565d6ee4400b705f75e8f66064418db07f993433b3"
+    }
+  },
+  "trainingPages": 5,
+  "noControlReplay": true,
+  "noControlReplayEvidence": "Chrome acceptance asserted live training counter stayed zero after navigation; compiled Linux Player asserted no action replay.",
+  "trainingExample": {
+    "path": "examples/Szkolenie-Wirtualna-sala.avctrl",
+    "bytes": 10966,
+    "sha256": "f9f6be1632a011c94b88a49e4d446ebd29492060f0fd2e7a3c821f70010ef02b"
+  },
+  "windowsBinaries": {
+    "app": {
+      "bytes": 117384138,
+      "sha256": "5d1a9673f6e2e23970b678ebbf680ac3906dc6fa2ba2a9cbe56889936d5efaae"
+    },
+    "player": {
+      "bytes": 117363658,
+      "sha256": "ebd6b07aca8750afd7524b6c606968444d94194b5f8b83c90c967ed938bc55e9"
+    }
+  },
+  "physicalTAB5TransitionAcceptance": false
+}

@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "at": "2026-10-19T19:19:58.615734+00:00",
+  "build": {
+    "version": "1.6.8",
+    "sourceSha256": "95909b7dc6bd29c6bc8a2065ed0290c05b7cac6a8ad4c3649da16dd6c0d97955",
+    "fileCount": 377
+  },
+  "installedPlayerBuild": {
+    "version": "1.6.8",
+    "sourceSha256": "95909b7dc6bd29c6bc8a2065ed0290c05b7cac6a8ad4c3649da16dd6c0d97955",
+    "fileCount": 377
+  },
+  "installedPackages": [
+    "av-control-player\t1.6.8",
+    "libgtk-3-0t64:amd64\t3.24.49-3",
+    "libwebkit2gtk-4.1-0:amd64\t2.54.0-1~deb13u2",
+    "python3\t3.13.5-1"
+  ],
+  "installedDebNativeGtkWebKit": true,
+  "unprivilegedUser": "avctrltest",
+  "portableLauncherVersion": "AV Control Player 1.6.8",
+  "portableFilesIdenticalToInstalledDeb": 29,
+  "nativeKioskBackend": "wayland-0",
+  "receipts": [
+    {
+      "path": "docs/evidence/linux-player-1.6.8.json",
+      "bytes": 984,
+      "sha256": "20cbdcfd24e01bfde6612c63df7ea371b83eec0bc4a945d6535651d1eafa488e"
+    },
+    {
+      "path": "docs/evidence/hdmi-1.6.8/kiosk-view.json",
+      "bytes": 581,
+      "sha256": "5f5d84ed756861c8faf38ae7db8f37f385e35cb7d62d341a32f678df36703746"
+    },
+    {
+      "path": "docs/evidence/agent-package-1.6.8.json",
+      "bytes": 1432,
+      "sha256": "c1eb1170c92dd74f96e4ffd5d10c2ab23df3d94f5c634c545c94cf5d6bb58165"
+    }
+  ],
+  "screenshotsReviewed": [
+    {
+      "path": "work/linux-player-1.6.8/linux-player.png",
+      "bytes": 41559,
+      "sha256": "e1ff06b3b48956179d6a292103c6a75ad9c5e739fd9f26309b4ef5eada5546d2"
+    },
+    {
+      "path": "docs/evidence/hdmi-1.6.8/hdmi-panel.png",
+      "bytes": 46814,
+      "sha256": "20fbe428e063bf17ab2a0c6cac2da5ccf4788af78ad65e6597548a646f829073"
+    }
+  ],
+  "visualReview": "Both final 1.6.8 GTK/WebKit captures individually viewed. Polish labels and controls readable; lower panel content uses scrolling with the keyboard dock.",
+  "environmentWarnings": [
+    "GTK locale fallback on the CLI version check; the GUI test used C.UTF-8.",
+    "Cage could not start optional XWayland because /tmp/.X11-unix lacked a sticky bit. Required native Wayland GTK/WebKit ran and passed."
+  ],
+  "physicalHdmiVerified": false,
+  "physicalUsbInputVerified": false,
+  "externalAgentEnrollmentPerformed": false
+}

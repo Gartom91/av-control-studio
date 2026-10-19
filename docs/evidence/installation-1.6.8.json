@@ -1,0 +1,26 @@
+{
+  "installedRuntime": {
+    "ok": true,
+    "health": {
+      "ok": true,
+      "version": "1.6.8",
+      "simulation": true,
+      "instanceId": "6047c99fabd14dd1aeca910103ae7595",
+      "fleetProtocol": 1
+    },
+    "role": "admin",
+    "ownerRenameLogin": true,
+    "ownerRenameRestored": true,
+    "dpapi": true,
+    "certificatePinning": true,
+    "wrongPinRejected": true,
+    "wrongHostnameRejected": true,
+    "expiredCertificateRejected": true,
+    "githubUpdateTests": true
+  },
+  "installation": true,
+  "installedWebView2": true,
+  "uninstall": true,
+  "freshMachineWithoutWebView2": false,
+  "ok": true
+}
